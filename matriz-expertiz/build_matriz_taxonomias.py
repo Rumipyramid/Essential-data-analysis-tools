@@ -113,8 +113,17 @@ TAXONOMIAS = [
      "evalúan aquí: aparecen solo como modelo de colaboración.",
      "Diseño Conductual (única)",
      "Declaración de alcance en la cabecera de la matriz."),
-    ("NIVELES DE LA CAPACIDAD — de más abstracto (T1) a más concreto (T4); T5 a T9 son transversales",
+    ("NIVELES DE LA CAPACIDAD — T0 gobierna la composición; T1 a T4 son secuencia; T5 a T9, transversales",
      None, None, None, None),
+    ("T0. Meta-capacidad",
+     "¿Sabe elegir, no solo ejecutar?",
+     "La capacidad de COMPONER los niveles T1–T4 de forma coherente con la decisión que hay que tomar: "
+     "elegir el objetivo correcto, el enfoque proporcionado, la metodología que la decisión exige y la "
+     "técnica que corresponde. Es lo que distingue a un Specialist de un Expert: no ejecutar mejor, "
+     "elegir mejor. Cada dimensión tiene la suya.",
+     "D1 Estrategia de investigación · D2 Juicio estratégico · D3 Criterio de intervención · "
+     "D4 Criterio de evidencia · D5 Criterio de escalamiento y liderazgo",
+     "Encabeza cada dimensión, por encima de T1. Ver hoja «3. Meta-capacidades»."),
     ("T1. Objetivo",
      "¿Para qué investigamos o intervenimos?",
      "La intención de conocimiento o de cambio. Define el tipo de pregunta, no el modo de responderla. "
@@ -159,12 +168,14 @@ TAXONOMIAS = [
      "Bloque transversal; conecta directo con la columna «Evidencias sugeridas»."),
     ("T7. Calidad y ética",
      "¿Bajo qué estándar es válido?",
-     "Criterios que hacen la evidencia y la intervención defendibles. Deben aparecer en las cinco "
-     "dimensiones, no solo en una.",
+     "Criterios que hacen la evidencia, la intervención y el ejercicio del liderazgo defendibles. "
+     "Deben aparecer en las cinco dimensiones, no solo en una. Donde hay liderazgo, la ética deja de "
+     "ser solo ética de la evidencia y pasa a ser también ética del trato con el equipo.",
      "Calidad y suficiencia de evidencia · Gestión de sesgos · Validez interna y externa · "
      "Control de variables · Potencia y tamaño muestral · Ética de la investigación y de la influencia · "
-     "Privacidad y trazabilidad",
-     "Bloque transversal en las 5 dimensiones."),
+     "Privacidad y trazabilidad · Ética del liderazgo (ver hoja «4. Ética del liderazgo»)",
+     "Bloque transversal en las 5 dimensiones. En D5 y en los niveles 3–4 de todas las dimensiones "
+     "incluye la ética del liderazgo."),
     ("T8. Práctica operativa (Ops)",
      "¿Cómo se sostiene y escala en el tiempo?",
      "Sistemas, procesos y activos que convierten estudios sueltos en capacidad organizacional acumulativa.",
@@ -239,7 +250,189 @@ CAMPOS = [
      "Cae dentro de Híbrido. Abrirlo por separado fragmenta el eje sin ganancia evaluativa."),
 ]
 
-# --------------------------------------------- 3. desglose de la columna ----
+# ------------------------------------------------ 3. meta-capacidades -------
+# Una por dimensión. La meta-capacidad no es "otra capacidad más": es la que
+# gobierna cómo se componen las demás. (Dimensión, nombre, qué compone,
+# pregunta que resuelve, progresión 1→4, cómo se evidencia, cambio por campo)
+
+META_CAPACIDADES = [
+    ("1. Discovery e Insights",
+     "Estrategia de investigación",
+     "T1 objetivo + T2 enfoque + T3 metodología + T4 técnica",
+     "¿Es esta la investigación que esta decisión necesita, o solo la que sabemos hacer?",
+     "1 Professional: ejecuta la estrategia que otro definió y reconoce sus límites.  "
+     "2 Specialist: elige metodología y técnicas para un objetivo dado.  "
+     "3 Expert: define el objetivo y combina métodos para problemas ambiguos o mal formulados.  "
+     "4 Master: define qué preguntas merece hacerse la organización antes de que alguien las pida.",
+     "Plan de investigación con la justificación del método frente a alternativas descartadas, "
+     "y no solo el método elegido.",
+     "En Digital el sesgo es sobrerrepresentar lo instrumentable; en Físico, el acceso al campo "
+     "condiciona el diseño; en Híbrido, la unidad de análisis es la transición entre canales."),
+
+    ("2. Estrategia y Problem Solving",
+     "Juicio estratégico",
+     "T1 framing + T5 marco + T7 criterio de suficiencia + T9 lectura de negocio",
+     "¿Qué problema merece resolverse, y con cuánta evidencia basta para decidirlo?",
+     "1 Professional: interpreta insights dentro de un encuadre dado.  "
+     "2 Specialist: reencuadra el problema e integra usuario, conducta y negocio.  "
+     "3 Expert: sostiene la decisión bajo evidencia incompleta y hace explícito el riesgo de "
+     "equivocarse.  "
+     "4 Master: cambia el encuadre con el que la organización lee sus propios problemas.",
+     "Una decisión tomada con evidencia parcial, con el umbral de suficiencia declarado por "
+     "adelantado y revisado después.",
+     "El campo condiciona el costo de equivocarse: en Físico la corrección es lenta y cara, "
+     "lo que sube el estándar de evidencia exigible antes de decidir."),
+
+    ("3. Diseño y Orquestación de Experiencias",
+     "Criterio de intervención",
+     "T1 conducta objetivo + T5 palanca + T7 ética de la influencia",
+     "¿Cuánta intervención pide esta conducta — y cuándo lo correcto es no intervenir?",
+     "1 Professional: aplica palancas conocidas a problemas acotados.  "
+     "2 Specialist: elige la palanca proporcional al problema y la justifica.  "
+     "3 Expert: orquesta intervenciones múltiples anticipando efectos de segundo orden.  "
+     "4 Master: define qué está y qué no está permitido intervenir, y por qué.",
+     "Una intervención descartada por desproporcionada o por riesgo ético, con el razonamiento "
+     "escrito. Saber no intervenir es evidencia de nivel, no ausencia de trabajo.",
+     "En Físico la intervención es más difícil de revertir y afecta a terceros presentes; "
+     "en Híbrido el riesgo es que la palanca funcione en un canal y rompa el otro."),
+
+    ("4. Experimentación, Medición e Impacto",
+     "Criterio de evidencia",
+     "T1 objetivo evaluativo + T2 control + T3 metodología + T7 validez",
+     "¿Cuánto rigor exige esta decisión — y cuánto sería desperdiciarlo?",
+     "1 Professional: ejecuta la validación definida y lee sus límites.  "
+     "2 Specialist: elige el diseño según la evidencia que la decisión necesita.  "
+     "3 Expert: ajusta rigor, costo, reversibilidad y riesgo, y defiende la causalidad que afirma.  "
+     "4 Master: define el estándar de evidencia por tipo de decisión para toda la organización.",
+     "Dos decisiones resueltas con distinto nivel de rigor y la justificación de por qué cada una "
+     "merecía el suyo.",
+     "En Digital el experimento es barato y reversible; en Físico rara vez hay aleatorización "
+     "posible, y el cuasi-experimento por sede pasa a ser el diseño de referencia."),
+
+    ("5. Escalamiento y Liderazgo",
+     "Criterio de escalamiento y liderazgo",
+     "T8 práctica operativa + T7 gobernanza y ética del liderazgo + T9 influencia",
+     "¿Qué se estandariza, qué se deja variar, y a qué ritmo se le puede exigir a un equipo?",
+     "1 Professional: usa los procesos y documenta para otros.  "
+     "2 Specialist: mejora prácticas y acompaña a personas.  "
+     "3 Expert: decide qué se vuelve estándar y sostiene el equilibrio entre lo que el equipo "
+     "produce y lo que el equipo puede sostener.  "
+     "4 Master: responde por que ese equilibrio esté instrumentado y auditado, no solo declarado.",
+     "Un estándar adoptado sin imposición, y el resultado del feedback ascendente del equipo "
+     "junto a su indicador de entrega en el mismo periodo.",
+     "Transversal a los campos. Lo que cambia con el campo es el costo operativo de cada "
+     "estándar, no el criterio."),
+]
+
+# ----------------------------------------------- 4. ética del liderazgo -----
+
+ETICA_PARTES = [
+    ("A. El equilibrio",
+     "Productividad del equipo ↔ satisfacción del equipo con la persona que lidera.",
+     "Se mide y se pondera. Ninguno de los dos se lee solo.",
+     "Un líder con alta entrega y baja satisfacción está quemando al equipo y la matriz debe "
+     "verlo. Un líder muy valorado con el equipo estancado tampoco está en nivel. El nivel "
+     "está en sostener ambos a la vez, no en maximizar uno."),
+    ("B. El umbral",
+     "Respeto básico: sin acoso, sin mansplaining, sin conductas excluyentes en el trato cotidiano.",
+     "Se verifica, NO se pondera. Es un piso, no una variable.",
+     "Si el respeto básico entrara en la balanza, la matriz estaría diciendo que un buen "
+     "resultado puede compensarlo. No puede. El incumplimiento verificado bloquea el nivel, "
+     "por alto que sea el equilibrio de la parte A y por alto que sea el puntaje en las otras "
+     "cuatro dimensiones."),
+]
+
+ETICA_INDICADORES = [
+    ("A · Productividad del equipo",
+     "Estudios e intervenciones entregados Y usados en una decisión",
+     "ResearchOps / KnowledgeOps",
+     "Entregado sin uso no cuenta: mide actividad, no valor."),
+    ("A · Productividad del equipo",
+     "Tiempo de ciclo de la evidencia: de pregunta a decisión",
+     "ResearchOps",
+     "Es el indicador que más tienta a forzar al equipo. Por eso nunca se lee sin el bloque de "
+     "satisfacción."),
+    ("A · Productividad del equipo",
+     "Reutilización del conocimiento y cumplimiento del estándar metodológico",
+     "KnowledgeOps / gestión de calidad",
+     "Distingue producir mucho de producir capacidad acumulativa."),
+    ("A · Satisfacción con quien lidera",
+     "Feedback ascendente anónimo: claridad de dirección, apoyo al desarrollo, seguridad "
+     "psicológica para discrepar",
+     "Encuesta al equipo directo, anónima",
+     "n mínimo de 5 respuestas para publicar cualquier resultado. Por debajo, se reporta "
+     "agregado o no se reporta."),
+    ("A · Satisfacción con quien lidera",
+     "Intención declarada de volver a trabajar con esa persona",
+     "Encuesta al equipo directo, anónima",
+     "Es el indicador que mejor resiste la deseabilidad social: pregunta por conducta futura, "
+     "no por opinión."),
+    ("A · Satisfacción con quien lidera",
+     "Rotación voluntaria del equipo y motivo declarado en la salida",
+     "Personas / entrevista de salida",
+     "Indicador rezagado: confirma, no anticipa. Nunca se usa solo."),
+    ("B · Respeto básico (umbral)",
+     "Distribución del habla, de las interrupciones y de la atribución de ideas en reuniones",
+     "Observación estructurada de sesiones reales",
+     "Es la medición directa del mansplaining: quién es interrumpido y a quién se le atribuye "
+     "después la idea. Es conducta observable, no percepción — y es exactamente la técnica que "
+     "este equipo ya sabe aplicar."),
+    ("B · Respeto básico (umbral)",
+     "Equidad en la asignación de oportunidades visibles: quién presenta al comité, quién lleva "
+     "el estudio estratégico",
+     "Registro de asignaciones del periodo",
+     "El trato desigual aparece antes en el reparto de oportunidades que en un reporte formal."),
+    ("B · Respeto básico (umbral)",
+     "Atribución de autoría en entregables y presentaciones",
+     "Repositorio de evidencia",
+     "Trazable sin necesidad de encuesta."),
+    ("B · Respeto básico (umbral)",
+     "Casos abiertos o sostenidos en el canal formal de reporte",
+     "Canal de la organización",
+     "Es la verificación final, no la primera señal. Una matriz que solo mira aquí llega tarde "
+     "siempre."),
+]
+
+ETICA_NIVELES = [
+    ("1 — Professional",
+     "No lidera equipo: no hay equilibrio que medir.",
+     "El umbral aplica igual, a su conducta como integrante: respeto, escucha, atribución de "
+     "ideas ajenas."),
+    ("2 — Specialist",
+     "Lidera estudios y acompaña a otras personas. Primeras señales del equilibrio: satisfacción "
+     "de quienes acompaña, junto al avance de lo que lidera.",
+     "Umbral verificado con las personas a las que acompaña, no solo con su jefatura."),
+    ("3 — Expert",
+     "Lidera personas y prácticas. El equilibrio se mide formalmente: feedback ascendente anónimo "
+     "y entrega del equipo, leídos en el mismo periodo y juntos.",
+     "Umbral verificado con el equipo directo. Un incumplimiento verificado impide alcanzar o "
+     "mantener este nivel."),
+    ("4 — Master",
+     "Define la gobernanza. Además de sostener su propio equilibrio, responde por que exista el "
+     "sistema: los indicadores, el canal, el anonimato y la consecuencia.",
+     "Umbral verificado y, además, instrumentado para toda la capacidad. Un Master no alcanza el "
+     "nivel si el sistema de medición no existe, aunque su equipo esté satisfecho."),
+]
+
+ETICA_CAUTELAS = [
+    ("Anonimato con n mínimo",
+     "Por debajo de 5 respuestas no se publica resultado desagregado. Medir satisfacción con el "
+     "líder en un equipo de tres personas sin protección es exponer a quien responde."),
+    ("Sin represalia, y verificable",
+     "El acceso al resultado desagregado y el momento de entrega deben estar definidos antes de "
+     "la primera medición, no después de conocer el resultado."),
+    ("La percepción de la jefatura no sustituye la del equipo",
+     "El umbral se verifica con las personas que reciben el trato, no con quien supervisa a "
+     "quien lo da. Es el error de diseño más común de estos sistemas."),
+    ("El equilibrio se lee en el mismo periodo",
+     "Productividad de un trimestre contra satisfacción de otro permite justificar cualquier "
+     "cosa. Misma ventana temporal o no se lee."),
+    ("Umbral incumplido no se compensa",
+     "No entra en la ponderación 30/20/15/20/15. Bloquea el nivel con independencia del puntaje "
+     "de las otras cuatro dimensiones."),
+]
+
+# --------------------------------------------- 5. desglose de la columna ----
 # (Dimensión, ítem tal como está hoy, taxonomía, ítem normalizado, decisión, nota)
 
 DESGLOSE = [
@@ -248,12 +441,12 @@ DESGLOSE = [
      "Problem framing: traducir una decisión de negocio en pregunta de investigación y conducta objetivo",
      "Reubicar",
      "Es el acto de fijar el objetivo del estudio, no un método. Debe encabezar la lista."),
-    ("1. Discovery e Insights", "Research Strategy", "META-CAPACIDAD",
+    ("1. Discovery e Insights", "Research Strategy", "T0. Meta-capacidad",
      "Estrategia de investigación: componer objetivo, enfoque, metodología y técnicas de forma coherente",
      "Renombrar",
      "Es la capacidad de ARTICULAR los niveles T1–T4. Ponerla como un ítem más de la lista la iguala "
-     "a una técnica. Recomendación: declararla meta-capacidad de la dimensión."),
-    ("1. Discovery e Insights", "estrategia de investigación", "META-CAPACIDAD",
+     "a una técnica. Es la única meta-capacidad que la matriz ya tenía, aunque sin nombrarla como tal."),
+    ("1. Discovery e Insights", "estrategia de investigación", "T0. Meta-capacidad",
      "(absorbido por «Research Strategy»)", "Eliminar",
      "Duplicado literal dentro de la misma celda."),
     ("1. Discovery e Insights", "investigación cualitativa, cuantitativa y mixta", "T2. Enfoque",
@@ -328,6 +521,11 @@ DESGLOSE = [
      "es un criterio obligatorio también en D3 y D4."),
     ("2. Estrategia y Problem Solving", "storytelling estratégico", "T9. Competencia transversal",
      "Storytelling estratégico", "Reubicar", ""),
+    ("2. Estrategia y Problem Solving", "— ausente —", "T0. Meta-capacidad",
+     "Juicio estratégico: qué problema merece resolverse y con cuánta evidencia basta para decidirlo",
+     "Añadir (gap)",
+     "La dimensión enumera técnicas de encuadre pero no la capacidad de elegir entre ellas. "
+     "Sin meta-capacidad, la progresión Specialist→Expert se lee como «conoce más frameworks»."),
 
     # ---- D3
     ("3. Diseño y Orquestación de Experiencias", "diseño de intervenciones conductuales",
@@ -363,6 +561,11 @@ DESGLOSE = [
      "incentivos, normas sociales, personalización", "Desagregar y completar",
      "Hoy se nombran tres palancas sueltas mezcladas con marcos. Conviene una taxonomía explícita "
      "de palancas: es lo que hace evaluable el diseño conductual."),
+    ("3. Diseño y Orquestación de Experiencias", "— ausente —", "T0. Meta-capacidad",
+     "Criterio de intervención: cuánta intervención pide la conducta, qué palanca es proporcional "
+     "y cuándo lo correcto es no intervenir", "Añadir (gap)",
+     "Es la meta-capacidad más importante de un rol que diseña conducta. Sin ella, la matriz premia "
+     "intervenir y no tiene forma de reconocer la decisión de no hacerlo."),
 
     # ---- D4
     ("4. Experimentación, Medición e Impacto", "Formulación y validación de hipótesis", "T1 + T4",
@@ -417,6 +620,11 @@ DESGLOSE = [
     ("4. Experimentación, Medición e Impacto", "— ausente —", "T3. Metodología — campo físico",
      "Piloto en campo; cuasi-experimento por sede o territorio", "Añadir (gap)",
      "GAP: toda la dimensión está escrita desde el campo digital."),
+    ("4. Experimentación, Medición e Impacto", "— ausente —", "T0. Meta-capacidad",
+     "Criterio de evidencia: cuánto rigor exige cada decisión y cuánto sería desperdiciarlo",
+     "Añadir (gap)",
+     "Sin esta meta-capacidad, «más rigor» se lee siempre como «mejor», y la matriz no puede "
+     "reconocer el juicio de proporcionalidad, que es justo lo que distingue a un Expert."),
 
     # ---- D5
     ("5. Escalamiento y Liderazgo", "ResearchOps", "T8. Práctica operativa",
@@ -457,14 +665,32 @@ DESGLOSE = [
      "Es el propósito de la dimensión, no una capacidad. Ya está dicho en «Definición para el rol»."),
     ("5. Escalamiento y Liderazgo", "mejora continua", "T8. Práctica operativa",
      "Mejora continua", "Mantener", ""),
+    ("5. Escalamiento y Liderazgo", "— ausente —", "T0. Meta-capacidad",
+     "Criterio de escalamiento y liderazgo: qué se estandariza, qué se deja variar y a qué ritmo se "
+     "le puede exigir a un equipo", "Añadir (gap)",
+     "La dimensión enumera prácticas de Ops y competencias, pero no la capacidad de decidir entre "
+     "ellas ni de calibrar la exigencia sobre el equipo."),
+    ("5. Escalamiento y Liderazgo", "— ausente —", "T7b. Ética del liderazgo — EQUILIBRIO",
+     "Productividad del equipo ↔ satisfacción del equipo con la persona que lidera, leídas en el "
+     "mismo periodo", "Añadir (gap)",
+     "La dimensión mide lo que el liderazgo PRODUCE (estándares, gobernanza, capacidades) pero no "
+     "cómo trata a quienes lo hacen posible. Sin el contrapeso de la satisfacción, «capability "
+     "building» y «mejora continua» premian a quien exprime al equipo."),
+    ("5. Escalamiento y Liderazgo", "— ausente —", "T7b. Ética del liderazgo — UMBRAL",
+     "Respeto básico: sin acoso, sin mansplaining, sin conductas excluyentes. Se verifica; no se "
+     "pondera", "Añadir (gap)",
+     "No es una variable del equilibrio: es un piso. Si entrara en la ponderación 30/20/15/20/15, "
+     "la matriz estaría diciendo que un buen resultado puede compensarlo. Su incumplimiento "
+     "verificado bloquea el nivel."),
 ]
 
 # ------------------------------------- 4. columna C reescrita por niveles ---
 
 COLUMNA_C_NUEVA = {
     "1. Discovery e Insights":
-        "META-CAPACIDAD · Estrategia de investigación: componer objetivo, enfoque, metodología y técnicas "
-        "de forma coherente con la decisión que se necesita tomar.\n\n"
+        "T0 META-CAPACIDAD · Estrategia de investigación: componer objetivo, enfoque, metodología y "
+        "técnicas de forma coherente con la decisión que se necesita tomar. ¿Es esta la investigación "
+        "que la decisión necesita, o solo la que sabemos hacer?\n\n"
         "T1 OBJETIVO · Problem framing (de decisión de negocio a pregunta de investigación y conducta "
         "objetivo); exploración de necesidades, experiencias y contexto; diagnóstico conductual; "
         "diagnóstico sistémico.\n\n"
@@ -482,6 +708,8 @@ COLUMNA_C_NUEVA = {
         "T9 COMPETENCIA · Pensamiento crítico.",
 
     "2. Estrategia y Problem Solving":
+        "T0 META-CAPACIDAD · Juicio estratégico: decidir qué problema merece resolverse y con cuánta "
+        "evidencia basta para decidirlo, haciendo explícito el riesgo de equivocarse.\n\n"
         "T1 OBJETIVO · Problem reframing; opportunity framing; formulación y priorización de hipótesis "
         "estratégicas.\n\n"
         "T5 MARCO · Frameworks de Research, Design y Behavioral Science (COM-B, EAST, MINDSPACE); "
@@ -496,6 +724,9 @@ COLUMNA_C_NUEVA = {
 
     "3. Diseño y Orquestación de Experiencias":
         "E3 ESPECIALIDAD · Diseño conductual (única especialidad de diseño evaluada por esta matriz).\n\n"
+        "T0 META-CAPACIDAD · Criterio de intervención: decidir cuánta intervención pide una conducta, "
+        "elegir la palanca proporcional al problema y al riesgo ético, y reconocer cuándo lo correcto "
+        "es no intervenir.\n\n"
         "T1 OBJETIVO · Traducir evidencia y estrategia en principios, conceptos e intervenciones; "
         "intervenir sobre una conducta objetivo; orquestar la experiencia a través de touchpoints y canales.\n\n"
         "T5 MARCO · Arquitectura de decisiones; journey thinking; systems thinking.\n\n"
@@ -510,6 +741,8 @@ COLUMNA_C_NUEVA = {
         "Design en la conceptualización y orquestación de la experiencia.",
 
     "4. Experimentación, Medición e Impacto":
+        "T0 META-CAPACIDAD · Criterio de evidencia: decidir cuánto rigor exige cada decisión y cuánto "
+        "sería desperdiciarlo, ajustando el diseño al costo, al riesgo y a la reversibilidad.\n\n"
         "T1 OBJETIVO · UX validation (concepto, prototipo, experiencia); evaluación del efecto de "
         "intervenciones conductuales; evaluación de impacto; decisión de iterar, escalar o detener.\n\n"
         "T2 ENFOQUE · Observacional frente a experimental; cuantitativo, cualitativo de validación y mixto.\n\n"
@@ -525,12 +758,21 @@ COLUMNA_C_NUEVA = {
         "reversibilidad).",
 
     "5. Escalamiento y Liderazgo":
+        "T0 META-CAPACIDAD · Criterio de escalamiento y liderazgo: decidir qué se estandariza, qué se "
+        "deja variar y a qué ritmo se le puede exigir a un equipo, sosteniendo el equilibrio entre lo "
+        "que el equipo produce y lo que el equipo puede sostener.\n\n"
         "T1 OBJETIVO · Escalar conocimiento, prácticas y capacidades; sostener la decisión basada en "
         "evidencia.\n\n"
         "T8 PRÁCTICA OPERATIVA · ResearchOps; BehavioralOps; KnowledgeOps; gestión y activación del "
         "conocimiento; repositorios y trazabilidad; automatización; capability building; mejora continua.\n\n"
         "T7 GOBERNANZA, CALIDAD Y ÉTICA · Estándares metodológicos; gobernanza de datos y privacidad; "
         "gestión de calidad; ética aplicada.\n\n"
+        "T7b ÉTICA DEL LIDERAZGO · Se mide en dos partes que no se mezclan. "
+        "EQUILIBRIO (se pondera): productividad del equipo ↔ satisfacción del equipo con la persona "
+        "que lidera, leídas en el mismo periodo y nunca por separado. "
+        "UMBRAL (se verifica, no se pondera): respeto básico — sin acoso, sin mansplaining, sin "
+        "conductas excluyentes. El umbral no entra en la ponderación: su incumplimiento verificado "
+        "bloquea el nivel. Ver hoja «4. Ética del liderazgo».\n\n"
         "T6 ARTEFACTO · Estándares y playbooks; repositorio de evidencia; catálogo de intervenciones "
         "reutilizables; modelo de capacidades del Council.\n\n"
         "T9 COMPETENCIA · Stakeholder management; influencia; comunicación estratégica; facilitación; "
@@ -545,7 +787,7 @@ HALLAZGOS = [
      "criterios y competencias. Ejemplo literal en D1: «desk research» (metodología), «muestreo» (técnica), "
      "«diagnóstico conductual» (objetivo) y «calidad de evidencia» (criterio), separados solo por comas.",
      "Impide comparar personas: dos evaluadores leen la misma lista con jerarquías distintas.",
-     "Ordenar cada celda por los niveles T1→T9 (ver hoja «4. Columna C propuesta»)."),
+     "Ordenar cada celda por los niveles T1→T9 (ver hoja «6. Columna C propuesta»)."),
     ("H2", "«UX Research» y «Behavioral Research» aparecen como capacidades", "D1",
      "Están listados entre metodologías, cuando en la nueva visión son el CAMPO y la LENTE.",
      "Reproduce dentro de la matriz la separación de roles que la unificación busca eliminar.",
@@ -595,6 +837,25 @@ HALLAZGOS = [
     ("H10", "Erratum", "D4",
      "«UX Validatio» (falta la «n») en el archivo original.", "Menor.",
      "Corregido en la propuesta."),
+    ("H11", "La meta-capacidad existía en una sola dimensión", "D1 la tenía; D2, D3, D4 y D5 no",
+     "«Research Strategy» es lo único parecido a una meta-capacidad en toda la matriz, y aun así "
+     "está escrito como un ítem más de la enumeración, al lado de «muestreo».",
+     "Sin meta-capacidad, la progresión Professional→Master se lee como acumulación: «conoce más "
+     "frameworks», «sabe más técnicas», «usa más rigor». Lo que separa a un Expert no es ejecutar "
+     "más, es elegir mejor — y eso no estaba en ninguna parte.",
+     "Declarar una meta-capacidad por dimensión (T0), por encima de T1, y anclar en ella la "
+     "progresión Specialist→Expert. Ver hoja «3. Meta-capacidades»."),
+    ("H12", "El liderazgo se mide por lo que produce, no por cómo trata al equipo",
+     "D5 y niveles 3–4 de todas las dimensiones",
+     "D5 evalúa estándares, gobernanza, capability building y mejora continua. No hay un solo "
+     "indicador sobre la experiencia de las personas lideradas.",
+     "Tal como está, «capability building» y «mejora continua» premian a quien exprime al equipo "
+     "igual que a quien lo desarrolla: el resultado se ve, el costo humano no. Y en una matriz de "
+     "un rol que diseña conducta ajena, no medir la propia conducta hacia el equipo es una "
+     "contradicción difícil de sostener.",
+     "Añadir T7b en dos partes: EQUILIBRIO productividad ↔ satisfacción del equipo (se pondera) "
+     "sobre un UMBRAL de respeto básico (se verifica, bloquea el nivel). Ver hoja «4. Ética del "
+     "liderazgo»."),
 ]
 
 PREGUNTAS = [
@@ -622,6 +883,14 @@ PREGUNTAS = [
      "Si el campo es solo una etiqueta, la matriz sigue siendo digital-first. Si se evalúa, hay que "
      "decidir si un Expert debe demostrar solvencia en más de un campo.",
      "Recomendación: exigir un campo a Specialist, dos a Expert, y visión híbrida a Master."),
+    ("P6", "¿Quién administra la medición de la ética del liderazgo, y quién ve el resultado?",
+     "Es la decisión que hace que el sistema funcione o se vuelva decorativo. El acceso al resultado "
+     "desagregado, el n mínimo para publicar y el momento de entrega tienen que quedar definidos "
+     "ANTES de la primera medición: si se deciden después de conocer los resultados, el instrumento "
+     "pierde credibilidad ante el equipo y nadie vuelve a responder con honestidad.",
+     "Recomendación: Personas administra el instrumento y custodia el anonimato; el Council define "
+     "los indicadores; el resultado agregado se comparte con el equipo que respondió. El n mínimo "
+     "(≥5) y la regla de bloqueo se publican de antemano."),
 ]
 
 BLOQUES_LEEME = [
@@ -645,20 +914,34 @@ BLOQUES_LEEME = [
      "«calidad de evidencia» = criterio (el estándar bajo el cual lo anterior es válido).\n"
      "Hoy los cinco conviven en la misma celda separados por comas."),
     ("Cómo leer este libro",
-     "1. Taxonomías — el diccionario: nueve clases (T1 a T9), tres ejes transversales (E1 a E3) y dos "
-     "categorías de control (X, Y) para lo que hoy está en la columna sin ser una capacidad.\n"
+     "1. Taxonomías — el diccionario: la meta-capacidad (T0), nueve clases (T1 a T9), tres ejes "
+     "transversales (E1 a E3) y dos categorías de control (X, Y) para lo que hoy está en la columna "
+     "sin ser una capacidad.\n"
      "2. Ejes transversales — campos de investigación (incluye la respuesta a «¿alguna más?»), sujetos "
      "y especialidad de diseño.\n"
-     "3. Desglose capacidades — los ítems actuales, uno por fila, con su clase, su nombre normalizado "
+     "3. Meta-capacidades — una por dimensión: qué compone, qué pregunta resuelve, cómo progresa de "
+     "Professional a Master y cómo cambia según el campo.\n"
+     "4. Ética del liderazgo — el modelo de medición de T7b: el equilibrio que se pondera, el umbral "
+     "que se verifica, los indicadores, la aplicación por nivel y las cautelas del instrumento.\n"
+     "5. Desglose capacidades — los ítems actuales, uno por fila, con su clase, su nombre normalizado "
      "y la decisión propuesta.\n"
-     "4. Columna C propuesta — la columna reescrita y ordenada por niveles, lista para pegar.\n"
-     "5. Matriz propuesta — la matriz completa con la columna C nueva y el resto intacto.\n"
-     "6. Hallazgos y decisiones — los problemas detectados y las preguntas abiertas para cerrar con "
+     "6. Columna C propuesta — la columna reescrita y ordenada por niveles, lista para pegar.\n"
+     "7. Matriz propuesta — la matriz completa con la columna C nueva y el resto intacto.\n"
+     "8. Hallazgos y decisiones — los problemas detectados y las preguntas abiertas para cerrar con "
      "los dos leads."),
     ("Criterio de ordenamiento aplicado a cada celda",
-     "META-CAPACIDAD (si aplica) → T1 Objetivo → T2 Enfoque → T3 Metodología → T4 Técnica → "
-     "T5 Marco conceptual → T6 Artefacto → T7 Calidad y ética → T8 Práctica operativa → "
-     "T9 Competencia transversal."),
+     "T0 Meta-capacidad → T1 Objetivo → T2 Enfoque → T3 Metodología → T4 Técnica → "
+     "T5 Marco conceptual → T6 Artefacto → T7 Calidad y ética (T7b Ética del liderazgo donde "
+     "corresponde) → T8 Práctica operativa → T9 Competencia transversal."),
+    ("Dos incorporaciones sobre la primera versión",
+     "(a) META-CAPACIDAD EN TODAS LAS DIMENSIONES. Antes existía solo en D1 y sin nombrarse como tal. "
+     "Ahora cada dimensión declara la suya: es lo que distingue elegir bien de ejecutar mucho, y es "
+     "donde debe anclarse la progresión Specialist→Expert.\n"
+     "(b) ÉTICA DEL LIDERAZGO (T7b). Donde hay liderazgo, la ética se mide como el equilibrio entre "
+     "la productividad del equipo y su satisfacción con quien lidera. El respeto básico —sin acoso, "
+     "sin mansplaining, sin conductas excluyentes— NO forma parte de ese equilibrio: es un umbral "
+     "que se verifica y que bloquea el nivel. Ponerlo en la balanza equivaldría a decir que un buen "
+     "resultado puede compensarlo."),
 ]
 
 SUJETOS = [
@@ -820,8 +1103,99 @@ def main():
         par_etiqueta_nota(ws, fila, esp, nota, 5)
         fila += 1
 
-    # ------------------------------------------ 3. Desglose de la columna ---
-    ws = wb.create_sheet("3. Desglose capacidades")
+    # ------------------------------------------- 3. Meta-capacidades -------
+    ws = wb.create_sheet("3. Meta-capacidades")
+    fc = encabezar(
+        ws, "T0 — Una meta-capacidad por dimensión",
+        "La meta-capacidad no es una capacidad más: es la que gobierna cómo se componen las demás. "
+        "Responde a «¿sabe elegir, no solo ejecutar?» y es donde debe anclarse la progresión "
+        "Specialist→Expert. Antes existía solo en D1, y sin nombrarse como tal.", 7)
+    ultima = escribir_tabla(
+        ws, fc,
+        ["Dimensión", "Meta-capacidad", "Qué compone", "La pregunta que resuelve",
+         "Cómo progresa (1 → 4)", "Cómo se evidencia", "Cómo cambia según el campo (E1)"],
+        [list(x) for x in META_CAPACIDADES], [26, 26, 30, 40, 62, 46, 46])
+    for i in range(fc + 1, ultima + 1):
+        ws.row_dimensions[i].height = 118
+        ws.cell(row=i, column=2).font = NEGRITA
+        ws.cell(row=i, column=2).fill = FILL_VERDE
+        ws.cell(row=i, column=4).font = Font(name="Calibri", size=10, italic=True, color=AZUL)
+
+    # ------------------------------------------ 4. Ética del liderazgo -----
+    ws = wb.create_sheet("4. Etica del liderazgo")
+    fc = encabezar(
+        ws, "T7b — Ética del liderazgo",
+        "Aplica en la Dimensión 5 y como condición de los niveles 3 y 4 de todas las dimensiones, "
+        "que es donde la matriz ya describe liderar, orientar y desarrollar personas. Se mide en dos "
+        "partes que NO se mezclan.", 4)
+    ultima = escribir_tabla(
+        ws, fc,
+        ["Parte", "Qué es", "Cómo se trata", "Por qué así"],
+        [list(x) for x in ETICA_PARTES], [22, 54, 40, 78])
+    for i in range(fc + 1, ultima + 1):
+        ws.row_dimensions[i].height = 92
+        ws.cell(row=i, column=1).font = NEGRITA
+        ws.cell(row=i, column=1).fill = FILL_VERDE if i == fc + 1 else FILL_AMBAR
+
+    fila = ultima + 3
+    subtitulo_bloque(ws, fila, "Indicadores sugeridos", 4)
+    fila += 1
+    for j, nombre in enumerate(["Componente", "Indicador", "Fuente", "Nota"], start=1):
+        c = ws.cell(row=fila, column=j, value=nombre)
+        c.font = CABECERA
+        c.fill = FILL_CABECERA
+        c.alignment = TOP_WRAP_CENTER
+        c.border = BORDE
+    fila += 1
+    for comp, ind, fuente, nota in ETICA_INDICADORES:
+        for j, valor in enumerate([comp, ind, fuente, nota], start=1):
+            c = ws.cell(row=fila, column=j, value=valor)
+            c.font = NORMAL
+            c.alignment = TOP_WRAP
+            c.border = BORDE
+        ws.cell(row=fila, column=1).font = NEGRITA
+        ws.cell(row=fila, column=1).fill = (
+            FILL_AMBAR if comp.startswith("B") else FILL_VERDE)
+        ws.row_dimensions[fila].height = 46
+        fila += 1
+
+    fila += 2
+    subtitulo_bloque(ws, fila, "Cómo se aplica en cada nivel", 4)
+    fila += 1
+    for j, nombre in enumerate(["Nivel", "Equilibrio (se pondera)", "Umbral (se verifica)", ""],
+                               start=1):
+        c = ws.cell(row=fila, column=j, value=nombre)
+        c.font = CABECERA
+        c.fill = FILL_CABECERA
+        c.alignment = TOP_WRAP_CENTER
+        c.border = BORDE
+    fila += 1
+    for nivel, equilibrio, umbral in ETICA_NIVELES:
+        for j, valor in enumerate([nivel, equilibrio, umbral], start=1):
+            c = ws.cell(row=fila, column=j, value=valor)
+            c.font = NORMAL
+            c.alignment = TOP_WRAP
+            c.border = BORDE
+        ws.cell(row=fila, column=1).font = NEGRITA
+        ws.merge_cells(start_row=fila, start_column=3, end_row=fila, end_column=4)
+        ws.cell(row=fila, column=4).border = BORDE
+        ws.cell(row=fila, column=3).fill = FILL_AMBAR
+        ws.cell(row=fila, column=4).fill = FILL_AMBAR
+        ws.row_dimensions[fila].height = 62
+        fila += 1
+
+    fila += 2
+    subtitulo_bloque(ws, fila, "Cautelas del instrumento — medir esto mal hace más daño que no medirlo", 4)
+    fila += 1
+    for cautela, detalle in ETICA_CAUTELAS:
+        par_etiqueta_nota(ws, fila, cautela, detalle, 4)
+        ws.cell(row=fila, column=1).fill = PatternFill("solid", fgColor=NARANJA)
+        ws.row_dimensions[fila].height = 46
+        fila += 1
+    ws.column_dimensions["A"].width = 34
+
+    # ------------------------------------------ 5. Desglose de la columna ---
+    ws = wb.create_sheet("5. Desglose capacidades")
     fc = encabezar(
         ws, "Desglose ítem por ítem de «Capacidades incluidas»",
         "Cada ítem de la columna original, tal como está escrito hoy, con la clase taxonómica que le "
@@ -841,8 +1215,8 @@ def main():
         ws.cell(row=i, column=3).font = NEGRITA
     ws.auto_filter.ref = "A%d:F%d" % (fc, ultima)
 
-    # ------------------------------------------- 4. Columna C propuesta ----
-    ws = wb.create_sheet("4. Columna C propuesta")
+    # ------------------------------------------- 6. Columna C propuesta ----
+    ws = wb.create_sheet("6. Columna C propuesta")
     fc = encabezar(
         ws, "Columna «Capacidades incluidas» reescrita y ordenada",
         "Mismo contenido, ordenado por niveles. Orden aplicado: META-CAPACIDAD → T1 Objetivo → "
@@ -862,8 +1236,8 @@ def main():
         ws.cell(row=i, column=3).fill = FILL_GRIS
         ws.cell(row=i, column=4).fill = FILL_VERDE
 
-    # ---------------------------------------------- 5. Matriz propuesta ----
-    ws = wb.create_sheet("5. Matriz propuesta")
+    # ---------------------------------------------- 7. Matriz propuesta ----
+    ws = wb.create_sheet("7. Matriz propuesta")
     ncols = 12
     c = ws.cell(row=1, column=1, value=titulo_rol)
     c.font = TITULO
@@ -904,8 +1278,8 @@ def main():
         ws.cell(row=i, column=2).number_format = "0%"
         ws.cell(row=i, column=3).fill = FILL_VERDE
 
-    # ---------------------------------------- 6. Hallazgos y decisiones ----
-    ws = wb.create_sheet("6. Hallazgos y decisiones")
+    # ---------------------------------------- 8. Hallazgos y decisiones ----
+    ws = wb.create_sheet("8. Hallazgos y decisiones")
     fc = encabezar(
         ws, "Hallazgos del ejercicio y decisiones pendientes",
         "Problemas detectados al separar taxonomías en la columna «Capacidades incluidas», y preguntas "
