@@ -812,6 +812,46 @@ COLUMNA_C_NUEVA = {
         "mentoring; priorización de portafolio.",
 }
 
+# ---------------------------------------------- evidencias sugeridas -------
+# La columna venía vacía en el archivo original. Cada evidencia se ancla a un
+# artefacto real de la dimensión, no a una declaración de la persona.
+
+EVIDENCIAS = {
+    "1. Discovery e Insights":
+        "· Un plan de investigación con la justificación del método frente a las alternativas "
+        "descartadas.\n"
+        "· Un estudio completo con su guía, criterio muestral y notas de campo.\n"
+        "· Un set de insights trazables a la evidencia que los sustenta (verbatims, datos, fuentes).\n"
+        "· Un caso en que la evidencia cambió la decisión que ya se iba a tomar.",
+
+    "2. Estrategia y Problem Solving":
+        "· Un problema reencuadrado: el enunciado inicial, el final y el razonamiento entre ambos.\n"
+        "· Un mapa de oportunidades con los criterios de priorización explícitos.\n"
+        "· Una decisión tomada con evidencia parcial, con el umbral de suficiencia declarado antes.\n"
+        "· Una recomendación que se sostuvo ante negocio frente a objeciones.",
+
+    "3. Diseño y Orquestación de Experiencias":
+        "· Una intervención conductual documentada: conducta objetivo, palanca elegida y por qué esa.\n"
+        "· Principios y criterios de diseño que otro equipo usó después.\n"
+        "· Un blueprint de orquestación a través de canales.\n"
+        "· Una intervención descartada por desproporcionada o por riesgo ético, con el razonamiento "
+        "escrito.",
+
+    "4. Experimentación, Medición e Impacto":
+        "· Un diseño experimental completo: hipótesis, variables, regla de asignación y tamaño "
+        "muestral.\n"
+        "· Una lectura de resultados con tamaño de efecto y límites de validez declarados.\n"
+        "· Dos decisiones resueltas con distinto nivel de rigor, con la justificación de cada una.\n"
+        "· Un caso de resultado negativo en que se detuvo o se rehízo la intervención.",
+
+    "5. Escalamiento y Liderazgo":
+        "· Un estándar o playbook adoptado por otros sin imposición.\n"
+        "· Evidencia reutilizada por alguien que no participó del estudio original.\n"
+        "· El indicador de entrega del equipo y su feedback ascendente del mismo periodo, leídos "
+        "juntos.\n"
+        "· Un plan de desarrollo con progresión demostrable de otra persona.",
+}
+
 # ------------------------------------------- 6. hallazgos y decisiones ------
 
 HALLAZGOS = [
@@ -1310,8 +1350,10 @@ def main():
     for fila_m in matriz:
         nuevo = COLUMNA_C_NUEVA.get(fila_m[0], fila_m[2])
         esp = "Diseño Conductual" if fila_m[0].startswith("3.") else "—"
+        resto = list(fila_m[3:])
+        resto[5] = EVIDENCIAS.get(fila_m[0], resto[5])  # columna «Evidencias sugeridas»
         filas.append([fila_m[0], fila_m[1], nuevo,
-                      CAMPOS_POR_DIMENSION.get(fila_m[0], ""), esp] + fila_m[3:])
+                      CAMPOS_POR_DIMENSION.get(fila_m[0], ""), esp] + resto)
     ultima = escribir_tabla(
         ws, 5, cab, filas, [26, 7, 94, 22, 18, 44, 40, 40, 40, 40, 44, 48])
     for i in range(6, ultima + 1):
