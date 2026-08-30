@@ -1,0 +1,734 @@
+<title>Dos Tipos de Trabajo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+
+<style>
+  :root {
+    --ground:      #FDFDFC;
+    --panel:       #F2F3F5;
+    --panel-2:     #E7E9ED;
+    --ink:         #14181F;
+    --ink-soft:    #39414D;
+    --muted:       #6C7684;
+    --rule:        #D8DCE2;
+    --rule-strong: #B4BBC5;
+
+    --conv:        #245C86;   /* convergente — azul acero */
+    --conv-soft:   #E1ECF4;
+    --div:         #8A5A12;   /* divergente — ocre latón */
+    --div-soft:    #F6EDDC;
+    --stop:        #97372B;   /* rompe la validez */
+    --stop-soft:   #F7E2DE;
+    --go:          #2C6A4A;   /* razonable */
+    --go-soft:     #DFEEE5;
+
+    --display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+    --body: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+    --measure: 66ch;
+    --pad: clamp(1.25rem, 4vw, 3.5rem);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:      #0F1216;
+      --panel:       #171B21;
+      --panel-2:     #20252D;
+      --ink:         #E9ECF0;
+      --ink-soft:    #C3CAD3;
+      --muted:       #8C96A4;
+      --rule:        #282E37;
+      --rule-strong: #3D4550;
+      --conv:        #7EB6DC;
+      --conv-soft:   #162835;
+      --div:         #DCA94F;
+      --div-soft:    #2E2513;
+      --stop:        #E68C7E;
+      --stop-soft:   #331B17;
+      --go:          #6FBE95;
+      --go-soft:     #16281F;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground:      #0F1216;
+    --panel:       #171B21;
+    --panel-2:     #20252D;
+    --ink:         #E9ECF0;
+    --ink-soft:    #C3CAD3;
+    --muted:       #8C96A4;
+    --rule:        #282E37;
+    --rule-strong: #3D4550;
+    --conv:        #7EB6DC;
+    --conv-soft:   #162835;
+    --div:         #DCA94F;
+    --div-soft:    #2E2513;
+    --stop:        #E68C7E;
+    --stop-soft:   #331B17;
+    --go:          #6FBE95;
+    --go-soft:     #16281F;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: var(--pad);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(3rem, 6vw, 4.75rem);
+  }
+
+  p { margin: 0; max-width: var(--measure); }
+
+  /* ---------------------------------------------------------- masthead -- */
+
+  .masthead { display: flex; flex-direction: column; gap: 1.4rem; }
+
+  .kicker {
+    font-family: var(--mono);
+    font-size: .74rem;
+    font-weight: 500;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  h1 {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: clamp(2.6rem, 7vw, 4.5rem);
+    line-height: .98;
+    letter-spacing: -.025em;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  .lede {
+    font-size: clamp(1.1rem, 2.1vw, 1.3rem);
+    line-height: 1.5;
+    color: var(--ink-soft);
+    max-width: 54ch;
+  }
+
+  /* ----------------------------------------------------------- section -- */
+
+  section { display: flex; flex-direction: column; gap: 1.5rem; }
+  .sec-head { display: flex; flex-direction: column; gap: .55rem; }
+
+  .label {
+    font-family: var(--mono);
+    font-size: .72rem;
+    font-weight: 500;
+    letter-spacing: .11em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  h2 {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: clamp(1.55rem, 3.4vw, 2.2rem);
+    line-height: 1.12;
+    letter-spacing: -.018em;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  h3 {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 1.05rem;
+    letter-spacing: -.005em;
+    margin: 0;
+  }
+
+  .pull {
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: clamp(1.2rem, 2.6vw, 1.55rem);
+    line-height: 1.3;
+    letter-spacing: -.012em;
+    max-width: 40ch;
+    border-left: 4px solid var(--ink);
+    padding-left: 1.25rem;
+    text-wrap: balance;
+  }
+
+  /* ------------------------------------------------------- comparativa -- */
+
+  .split {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.25rem;
+  }
+
+  .kind {
+    border: 1px solid var(--rule);
+    border-top-width: 5px;
+    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    background: var(--panel);
+  }
+  .kind.conv { border-top-color: var(--conv); }
+  .kind.div  { border-top-color: var(--div); }
+
+  .kind-name {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: -.015em;
+    line-height: 1.1;
+  }
+  .kind.conv .kind-name { color: var(--conv); }
+  .kind.div  .kind-name { color: var(--div); }
+
+  .kind-sub { font-size: 1rem; color: var(--ink); font-weight: 600; margin-top: -.7rem; }
+
+  .kind dl { margin: 0; display: flex; flex-direction: column; gap: .9rem; }
+  .kind dt {
+    font-family: var(--mono);
+    font-size: .68rem;
+    font-weight: 500;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: .15rem;
+  }
+  .kind dd { margin: 0; font-size: .96rem; color: var(--ink-soft); }
+  .kind dd b { color: var(--ink); }
+
+  .plan {
+    border-top: 1px solid var(--rule-strong);
+    padding-top: .9rem;
+    font-size: .96rem;
+  }
+  .kind.conv .plan b { color: var(--conv); }
+  .kind.div  .plan b { color: var(--div); }
+
+  /* --------------------------------------------------------- tres cajas -- */
+
+  .trio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1rem;
+  }
+  .box {
+    border: 1px solid var(--rule);
+    padding: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    background: var(--panel);
+  }
+  .box .bt {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 1.15rem;
+    letter-spacing: .02em;
+  }
+  .box p { font-size: .94rem; color: var(--ink-soft); }
+  .box.seguir { border-left: 4px solid var(--conv); }
+  .box.seguir .bt { color: var(--conv); }
+  .box.cerrar { border-left: 4px solid var(--go); }
+  .box.cerrar .bt { color: var(--go); }
+  .box.parar  { border-left: 4px solid var(--div); }
+  .box.parar .bt { color: var(--div); }
+
+  /* ------------------------------------------------------------ listas -- */
+
+  .cols {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 1.5rem;
+  }
+  .col { display: flex; flex-direction: column; gap: .8rem; }
+  .col-head {
+    font-family: var(--mono);
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    padding: .45rem .7rem;
+  }
+  .col.si .col-head { background: var(--go-soft); color: var(--go); }
+  .col.no .col-head { background: var(--stop-soft); color: var(--stop); }
+
+  ul.plain {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: .85rem;
+  }
+  ul.plain li {
+    font-size: .95rem;
+    color: var(--ink-soft);
+    padding-left: 1.1rem;
+    position: relative;
+  }
+  ul.plain li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: .62em;
+    width: .45rem;
+    height: 2px;
+    background: var(--rule-strong);
+  }
+  .col.si ul.plain li::before { background: var(--go); }
+  .col.no ul.plain li::before { background: var(--stop); }
+  ul.plain li b { color: var(--ink); font-weight: 600; }
+  ul.plain li .why { display: block; color: var(--muted); font-size: .89rem; margin-top: .1rem; }
+
+  ol.numbered {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: n;
+    display: flex;
+    flex-direction: column;
+  }
+  ol.numbered li {
+    counter-increment: n;
+    display: grid;
+    grid-template-columns: 2.5rem 1fr;
+    gap: 0 1rem;
+    padding: .9rem 0;
+    border-top: 1px solid var(--rule);
+    font-size: .96rem;
+    color: var(--ink-soft);
+    align-items: start;
+  }
+  ol.numbered li:last-child { border-bottom: 1px solid var(--rule); }
+  ol.numbered li::before {
+    content: counter(n, decimal-leading-zero);
+    font-family: var(--mono);
+    font-size: .8rem;
+    font-weight: 500;
+    color: var(--stop);
+    padding-top: .15rem;
+  }
+  ol.numbered li b { color: var(--ink); font-weight: 600; }
+
+  /* -------------------------------------------------------------- jira -- */
+
+  .spec {
+    border: 1px solid var(--rule);
+    background: var(--panel);
+    display: flex;
+    flex-direction: column;
+  }
+  .spec-row {
+    display: grid;
+    grid-template-columns: minmax(120px, 200px) 1fr;
+    gap: 0 1.5rem;
+    padding: 1rem 1.4rem;
+    border-bottom: 1px solid var(--rule);
+    font-size: .95rem;
+  }
+  .spec-row:last-child { border-bottom: none; }
+  .spec-row dt {
+    font-family: var(--mono);
+    font-size: .74rem;
+    font-weight: 500;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding-top: .18rem;
+  }
+  .spec-row dd { margin: 0; color: var(--ink-soft); }
+  .spec-row dd b { color: var(--ink); font-weight: 600; }
+  .spec-row code {
+    font-family: var(--mono);
+    font-size: .86rem;
+    background: var(--panel-2);
+    padding: .1rem .35rem;
+    color: var(--ink);
+  }
+
+  /* ------------------------------------------------------------ métrica -- */
+
+  .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }
+  .metric {
+    border: 1px solid var(--rule-strong);
+    padding: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+  .metric .mn {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: -.01em;
+  }
+  .metric p { font-size: .93rem; color: var(--ink-soft); }
+
+  /* -------------------------------------------------------------- ask -- */
+
+  .ask-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: a;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .ask-list li {
+    counter-increment: a;
+    display: grid;
+    grid-template-columns: 2.75rem 1fr;
+    gap: 0 1rem;
+    align-items: start;
+  }
+  .ask-list li::before {
+    content: counter(a);
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: var(--conv);
+  }
+  .ask-list b { display: block; color: var(--ink); font-size: 1.02rem; }
+  .ask-list span { color: var(--ink-soft); font-size: .95rem; }
+
+  .closer {
+    background: var(--panel-2);
+    padding: 1.5rem 1.75rem;
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.35;
+    letter-spacing: -.01em;
+    max-width: 46ch;
+  }
+
+  footer {
+    border-top: 1px solid var(--rule);
+    padding-top: 1.4rem;
+    font-family: var(--mono);
+    font-size: .76rem;
+    line-height: 1.7;
+    color: var(--muted);
+  }
+
+  :focus-visible { outline: 2px solid var(--conv); outline-offset: 3px; }
+
+  @media (max-width: 560px) {
+    .spec-row { grid-template-columns: 1fr; gap: .35rem; }
+    ol.numbered li { grid-template-columns: 1.9rem 1fr; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="kicker">Anexo operativo · Research &amp; Behavioral Design</div>
+    <h1>Dos tipos de trabajo</h1>
+    <p class="lede">Cómo planificar, estimar y comprometer investigación estratégica dentro de un
+      modelo de tickets, tallas y ANS. No pedimos una excepción: proponemos una distinción.</p>
+  </header>
+
+  <section>
+    <div class="sec-head">
+      <div class="label">El punto de partida</div>
+      <h2>El modelo asume que el trabajo se puede describir antes de empezar</h2>
+    </div>
+    <p>Para la mayor parte de lo que hace este equipo, eso es cierto. El modelo operativo funciona
+      sin cambios y no hay discusión: se estima, se talla, se compromete una fecha y se cumple.</p>
+    <p>Para una parte menor, no es cierto. Y no porque ese trabajo sea menos medible, sino porque su
+      objetivo es descubrir qué hay que hacer. Describir el resultado antes de empezar equivale a
+      inventarlo.</p>
+    <div class="pull">La solución no es sacar ese trabajo del sistema. Es separarlo del otro y darle
+      un mecanismo de compromiso equivalente — con fecha, presupuesto y control.</div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <div class="label">La distinción</div>
+      <h2>Convergente y divergente</h2>
+      <p>Es la única separación que este documento pide. Todo lo demás se deriva de ella.</p>
+    </div>
+
+    <div class="split">
+      <div class="kind conv">
+        <div>
+          <div class="kind-name">Convergente</div>
+        </div>
+        <div class="kind-sub">El problema ya está definido.</div>
+        <dl>
+          <div>
+            <dt>Qué es</dt>
+            <dd>Se sabe qué hay que responder y cómo responderlo. El trabajo consiste en ejecutarlo
+              bien.</dd>
+          </div>
+          <div>
+            <dt>Ejemplos</dt>
+            <dd>Usability test · Validación de concepto o prototipo · A/B test · Análisis de un
+              dataset existente · Encuesta con cuestionario cerrado · Revisión heurística.</dd>
+          </div>
+          <div>
+            <dt>Cuánto del trabajo</dt>
+            <dd><b>La mayor parte.</b></dd>
+          </div>
+        </dl>
+        <div class="plan"><b>Se planifica igual que el resto del área:</b> ticket, talla y ANS. Sin
+          cambios, sin excepciones, sin negociación.</div>
+      </div>
+
+      <div class="kind div">
+        <div>
+          <div class="kind-name">Divergente</div>
+        </div>
+        <div class="kind-sub">El problema todavía no está definido.</div>
+        <dl>
+          <div>
+            <dt>Qué es</dt>
+            <dd>El objetivo del trabajo es descubrir cuál es la pregunta correcta. El alcance es el
+              resultado, no el punto de partida.</dd>
+          </div>
+          <div>
+            <dt>Ejemplos</dt>
+            <dd>Discovery · Etnografía y trabajo en campo · Diagnóstico conductual · Diagnóstico
+              sistémico · Exploración de un segmento o mercado nuevo.</dd>
+          </div>
+          <div>
+            <dt>Cuánto del trabajo</dt>
+            <dd><b>La parte menor</b> — y es la que sostiene las decisiones caras.</dd>
+          </div>
+        </dl>
+        <div class="plan"><b>Se planifica con timebox y puerta de decisión:</b> fecha comprometida,
+          presupuesto cerrado y una revisión obligatoria al final.</div>
+      </div>
+    </div>
+
+    <div class="pull">Una talla estima esfuerzo a partir de un alcance conocido. Cuando el alcance
+      es lo que se busca, la talla no retrasa el trabajo: lo deforma. El equipo termina respondiendo
+      la pregunta que ya sabía responder.</div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <div class="label">El mecanismo</div>
+      <h2>Timebox con puerta de decisión</h2>
+      <p>Un periodo cerrado, con fecha de inicio y de fin, un presupuesto de tiempo y personas, y
+        una revisión obligatoria al terminar. Es un compromiso duro, no un permiso abierto.</p>
+    </div>
+
+    <div class="cols">
+      <div class="col si">
+        <div class="col-head">Sí se compromete</div>
+        <ul class="plain">
+          <li><b>La fecha de la puerta.</b><span class="why">Es firme y se cumple, como cualquier otra fecha del área.</span></li>
+          <li><b>El presupuesto de tiempo y de personas.</b><span class="why">Cerrado por adelantado. Excederlo requiere aprobación, igual que cualquier otro sobrecosto.</span></li>
+          <li><b>La decisión que quedará habilitada.</b><span class="why">Se declara antes de empezar: al final de este timebox, quién podrá decidir qué.</span></li>
+        </ul>
+      </div>
+      <div class="col no">
+        <div class="col-head">No se compromete</div>
+        <ul class="plain">
+          <li><b>Cuántas entrevistas, sesiones o visitas.</b><span class="why">El número lo determina la saturación, no el calendario.</span></li>
+          <li><b>Qué se va a encontrar.</b><span class="why">Comprometer el hallazgo por adelantado convierte la investigación en una formalidad.</span></li>
+          <li><b>Que el resultado confirme la hipótesis de quien encarga.</b><span class="why">Si esa es la expectativa, el estudio no hace falta.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>La puerta tiene tres salidas, y siempre se elige una</h3>
+    <div class="trio">
+      <div class="box seguir">
+        <div class="bt">Seguir</div>
+        <p>Hay señal y falta profundidad. Se abre un timebox más, con presupuesto nuevo y aprobación
+          explícita. No se prorroga en silencio.</p>
+      </div>
+      <div class="box cerrar">
+        <div class="bt">Cerrar</div>
+        <p>Hay suficiente para decidir. Se pasa a síntesis y recomendación, que sí es trabajo
+          convergente y sí se talla.</p>
+      </div>
+      <div class="box parar">
+        <div class="bt">Parar</div>
+        <p>La pregunta era otra, o la decisión que lo motivaba ya no está en pie. Se documenta lo
+          aprendido y se libera al equipo.</p>
+      </div>
+    </div>
+    <p><b>Parar es un resultado válido y debe poder reportarse sin costo para el equipo.</b> Un
+      equipo que no puede parar termina entregando estudios que nadie usa — y eso cuesta más que
+      haber parado a tiempo.</p>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <div class="label">Acuerdos de nivel de servicio</div>
+      <h2>Qué ANS sí es razonable y cuál rompe la validez</h2>
+      <p>El problema no son los ANS. Es medir con ellos la parte equivocada del trabajo. Estos son
+        exigentes y los aceptamos; aquellos producen un resultado inválido de forma predecible.</p>
+    </div>
+
+    <div class="cols">
+      <div class="col si">
+        <div class="col-head">Razonables — comprométanlos</div>
+        <ul class="plain">
+          <li><b>Fecha de la puerta de decisión.</b><span class="why">Es el compromiso real, y es duro.</span></li>
+          <li><b>Días entre el cierre del campo y la lectura de resultados.</b><span class="why">Mide la velocidad del equipo, no la del hallazgo.</span></li>
+          <li><b>Tiempo de respuesta a una solicitud nueva.</b><span class="why">Por ejemplo, tres días hábiles para responder si se toma, cómo y cuándo.</span></li>
+          <li><b>Disponibilidad para consulta de un stakeholder.</b></li>
+          <li><b>Días entre la decisión y su registro en el repositorio.</b></li>
+        </ul>
+      </div>
+      <div class="col no">
+        <div class="col-head">Rompen la validez — no los pongan</div>
+        <ul class="plain">
+          <li><b>Número mínimo de entrevistas por semana.</b><span class="why">Fuerza muestra de conveniencia: se entrevista a quien es fácil de contactar, no a quien informa la pregunta.</span></li>
+          <li><b>Duración máxima por sesión.</b><span class="why">Corta justo la parte de la entrevista donde aparece lo que nadie preguntó.</span></li>
+          <li><b>Porcentaje de avance semanal durante el campo.</b><span class="why">El campo no avanza de forma lineal: avanza por saturación. Un porcentaje obliga a inventar el número.</span></li>
+          <li><b>Fecha fija de cierre de análisis, independiente del volumen de datos.</b><span class="why">Produce un informe de citas vistosas en lugar de patrones.</span></li>
+          <li><b>El mismo ANS para campo digital y presencial.</b><span class="why">Una visita a sucursal implica coordinación, traslado y permisos. No cabe en el tiempo de una sesión remota.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <div class="label">Definición de listo</div>
+      <h2>El cambio más importante, y el más exigente</h2>
+    </div>
+    <p>Hoy «listo» significa entregado. Para este trabajo, un estudio entregado y no usado es un
+      costo, no un resultado: consumió semanas de equipo y no movió ninguna decisión.</p>
+    <div class="pull">Propuesta: un estudio está listo cuando la decisión que lo motivaba quedó
+      tomada y registrada — con fecha, con quién decidió y con qué se decidió.</div>
+    <p>Es una definición <b>más dura</b> que la actual, no más blanda. Obliga al equipo a perseguir
+      la decisión, no a cerrar el ticket.</p>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <div class="label">Implementación</div>
+      <h2>Cómo se ve esto en Jira</h2>
+      <p>Sin herramientas nuevas y sin flujos paralelos. Seis reglas sobre lo que ya existe.</p>
+    </div>
+    <dl class="spec">
+      <div class="spec-row">
+        <dt>Épica</dt>
+        <dd>Es <b>la pregunta de decisión</b>, no el nombre del método.<br>
+          <code>¿Por qué el 40 % abandona la cotización en el paso 3?</code><br>
+          y no <code>Investigación de cotizador</code>.</dd>
+      </div>
+      <div class="spec-row">
+        <dt>Issues</dt>
+        <dd>Las cuatro fases: <b>Encuadre · Campo · Síntesis · Decisión</b>.</dd>
+      </div>
+      <div class="spec-row">
+        <dt>Estimación</dt>
+        <dd>Talla en <b>Encuadre</b> y en <b>Síntesis</b> — son convergentes. Timebox en
+          <b>Campo</b>.</dd>
+      </div>
+      <div class="spec-row">
+        <dt>Campos obligatorios</dt>
+        <dd><b>Decisión que habilita</b> y <b>quién decide</b>. Sin los dos, la épica no entra al
+          backlog. Esta regla sola elimina la mitad de las solicitudes que hoy no llevan a nada.</dd>
+      </div>
+      <div class="spec-row">
+        <dt>Estado «En campo»</dt>
+        <dd>No reporta porcentaje de avance. Reporta <b>días restantes del timebox</b> y <b>nivel de
+          saturación</b>: si los últimos participantes siguen aportando información nueva o ya no.</dd>
+      </div>
+      <div class="spec-row">
+        <dt>Done</dt>
+        <dd><b>Decisión registrada.</b></dd>
+      </div>
+    </dl>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <div class="label">Riesgo declarado</div>
+      <h2>Qué se degrada si se fuerza la estimación fija</h2>
+      <p>No es una advertencia retórica. Son los modos de falla conocidos de aplicar estimación fija
+        a trabajo divergente. Se dejan por escrito, con fecha, para que si aparecen no haya que
+        discutir la causa.</p>
+    </div>
+    <ol class="numbered">
+      <li><b>Muestra de conveniencia.</b> Los hallazgos describen a quien fue fácil de contactar, no
+        a quien importa para la decisión.</li>
+      <li><b>Análisis truncado.</b> Se reportan las citas más vistosas en lugar de los patrones. Se
+        ve bien en una presentación y no resiste una pregunta.</li>
+      <li><b>Se responde la pregunta fácil.</b> Para caber en la talla, el equipo reformula hacia lo
+        que ya sabe responder. El problema original queda intacto.</li>
+      <li><b>Desaparece el campo físico.</b> Sucursal, clínica y punto de venta no caben en un
+        sprint. Queda solo lo remoto, justo en un negocio cuyos momentos críticos son presenciales.</li>
+      <li><b>Se apaga el discovery.</b> El equipo deja de traer problemas nuevos y solo valida los
+        que ya vienen decididos. La capacidad se vuelve reactiva de forma irreversible.</li>
+      <li><b>Rotación del perfil senior.</b> Es el que tiene alternativa fuera, y es el primero que
+        se va. Reemplazarlo cuesta entre seis y doce meses de curva.</li>
+    </ol>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <div class="label">Contrapartida</div>
+      <h2>Dos métricas que proponemos, más duras que la talla</h2>
+      <p>Este equipo no pide quedar fuera de la medición. Pide que se lo mida por lo que produce en
+        decisiones. Ambas se calculan solas desde Jira y el repositorio, son públicas, y castigan al
+        equipo tanto si trabaja de más como si trabaja para nadie.</p>
+    </div>
+    <div class="metrics">
+      <div class="metric">
+        <div class="mn">Tiempo de ciclo de la evidencia</div>
+        <p>Días entre que se formula la pregunta de decisión y que la decisión se toma. Penaliza al
+          equipo si se extiende — es exactamente el control que la nueva dirección busca, aplicado
+          en la unidad correcta.</p>
+      </div>
+      <div class="metric">
+        <div class="mn">Porcentaje de estudios usados</div>
+        <p>Proporción de estudios que terminaron en una decisión registrada. Un estudio entregado y
+          no usado cuenta como cero, por impecable que sea. Ninguna métrica de talla es tan
+          exigente.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <div class="label">Lo que pedimos</div>
+      <h2>Tres decisiones, y el modelo operativo sigue igual</h2>
+    </div>
+    <ol class="ask-list">
+      <li><span><b>Etiquetar cada solicitud como convergente o divergente en el triage.</b>
+        Es una casilla. La decide el equipo al recibir, y se puede auditar.</span></li>
+      <li><span><b>Aceptar el timebox con puerta como forma de compromiso para lo divergente.</b>
+        Fecha firme, presupuesto cerrado, revisión obligatoria con tres salidas.</span></li>
+      <li><span><b>Cambiar la definición de listo a «decisión registrada», para todo el trabajo.</b>
+        Es la más exigente de las tres y aplica también a lo convergente.</span></li>
+    </ol>
+    <div class="closer">Todo lo demás del modelo operativo se mantiene: los tickets, las tallas, los
+      ANS y el tablero. La discusión no es si medirse. Es en qué unidad.</div>
+  </section>
+
+  <footer>
+    Documento operativo de Research &amp; Behavioral Design. Complementa la Matriz de Expertiz del
+    rol, que define qué se evalúa como capacidad y en qué nivel.<br>
+    Las fases Encuadre, Campo, Síntesis y Decisión corresponden a los bloques Objetivo, Metodología,
+    Técnica y Artefacto de esa matriz.
+  </footer>
+
+</div>
