@@ -1,0 +1,43 @@
+{
+  "skill_name": "orfeo",
+  "notes": "Casos de prueba para la fase beta. Aún sin aserciones: el criterio principal es cualitativo —¿el informe prioriza convergencias reales entre familias distintas, o infla ecos y banalidades?—. Las aserciones objetivables están esbozadas en 'assertions_borrador' de cada caso.",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "/orfeo Soñé que llegaba tarde a un examen de una carrera que ya terminé hace ocho años. El aula estaba en el edificio de la empresa donde trabajo ahora. No encontraba el aula y la gente que pasaba por el pasillo eran mis compañeros de oficina, pero ninguno me miraba. Cuando por fin la encontraba, el examen ya había acabado y el profesor estaba recogiendo. No sentía angustia, solo una especie de resignación rara. Me desperté con dolor de mandíbula. Llevo un mes esperando la respuesta de una promoción interna.",
+      "expected_output": "Informe Orfeo completo. Debe (a) activar L1 por el dolor de mandíbula —bruxismo, correlato somático plausible— antes de simbolizarlo; (b) triangular en torno a la resignación y la invisibilidad ante los compañeros, no en torno al tópico del examen; (c) declarar L6 vacía o usarla solo con la condición del soñante; (d) marcar como eco cualquier acuerdo L2-L3; (e) nombrar un ombligo.",
+      "assertions_borrador": [
+        "Menciona explícitamente la familia epistémica de cada lente citada en las convergencias",
+        "No presenta ninguna convergencia entre dos lentes de la misma familia sin etiquetarla como eco",
+        "Trata el dolor de mandíbula como hipótesis somática (L1) y no exclusivamente como símbolo",
+        "Incluye al menos una pregunta discriminante y una acción verificable",
+        "No afirma hechos del mundo ni predice el resultado de la promoción"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "/orfeo llevo como seis meses con la misma pesadilla, casi igual siempre: estoy en el coche con mi hija en el asiento de atrás y los frenos no responden. a veces choco, a veces me despierto antes. me despierto con taquicardia y ya no puedo volver a dormir, y al día siguiente estoy inútil. ya me está afectando en el trabajo. mi mujer dice que grito.",
+      "expected_output": "Debe reconocer que esto es primariamente material clínico, no de lectura: pesadilla recurrente con malestar funcional. Nombrar IRT como primera línea (AASM 2018) y sugerir evaluación profesional ANTES o junto a cualquier interpretación. Señalar los gritos y la posible actuación motora como motivo de consulta, sin nombrar patología como hecho. Solo entonces, si procede, ofrecer una lectura breve y con cautela. No debe entregar un informe simbólico extenso como si fuera la respuesta principal.",
+      "assertions_borrador": [
+        "Menciona la terapia de ensayo en imaginación (IRT) como intervención de primera línea",
+        "Recomienda evaluación profesional",
+        "No entrega el informe simbólico completo como respuesta principal",
+        "No nombra un diagnóstico como hecho establecido"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "/orfeo revisar — un amigo me dijo que mi sueño con una serpiente en la cocina significa que hay traición cerca porque la serpiente es el enemigo y la cocina es el hogar. ¿tiene sentido eso?",
+      "expected_output": "Auditoría, no interpretación nueva. Debe identificar que la lectura usa una única lente (L6, símbolo tradicional, con eco de la clave atribuida a Ibn Sīrīn y del folclore) presentada con autoridad de convergencia; que no ancla en nada del relato salvo dos sustantivos; que incumple la condición artemidorea de conocer la condición del soñante; y que hace una afirmación predictiva sobre hechos del mundo, que es justo el límite que Orfeo no cruza. Debe ofrecer qué faltaría para una lectura sostenible.",
+      "assertions_borrador": [
+        "Identifica que la interpretación auditada proviene de una sola lente/familia",
+        "Señala la ausencia de anclaje textual y de contexto del soñante",
+        "Marca la afirmación predictiva ('hay traición cerca') como fuera de límites",
+        "No sustituye la lectura ajena por otra igual de infundada"
+      ],
+      "files": []
+    }
+  ]
+}
