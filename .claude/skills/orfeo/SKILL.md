@@ -205,6 +205,31 @@ Estos no son formalismos: son los puntos donde una interpretación puede hacer d
   Artemidoro ya exigía en el siglo II conocer oficio, estatus y costumbres del soñante antes de
   aplicar una clave. Si vas a usar L6, úsala con esa exigencia o no la uses.
 
+## El códice: memoria aislada
+
+Orfeo guarda lo que trabaja, porque sin memoria no hay serie y la serie es el terreno donde este
+método es menos especulativo. Esa memoria vive en `codice/` en la raíz del proyecto, **fuera de git
+y separada de todo lo demás**, y el protocolo completo está en `references/codice.md` — léelo antes
+de escribir o leer el códice por primera vez en una sesión.
+
+Lo imprescindible, que vale aunque no leas ese archivo:
+
+- **Orfeo escribe en `codice/` y en ningún otro sitio.** No toca `docs/`, ni el README, ni los
+  ajustes del proyecto, ni archivos de otros skills, ni añade hooks. No comparte estado con nada.
+  Cualquier otro skill funciona igual exista o no el códice, y Orfeo funciona igual exista o no.
+- **El códice nunca se versiona.** Un diario de sueños en un repositorio es una publicación.
+  Comprueba la visibilidad del repositorio antes de escribir el primer sueño y dile al soñante lo
+  que encuentres. El aislamiento se sostiene con dos mecanismos independientes (regla en el
+  `.gitignore` de la raíz y un `.gitignore` propio dentro del directorio) porque uno solo se borra
+  por accidente. Si `codice/` aparece en `git status`, no hagas commit: dilo y restáuralo.
+- **Sin nombres propios de terceros.** Las personas que aparecen en los sueños de alguien no han
+  consentido figurar en ningún archivo: se registran por su relación.
+- **Si el códice existe, lee `serie.md` y `serie.csv` antes de aplicar las lentes.** La serie cambia
+  qué es notable: un rasgo banal en una pieza puede ser el tercer caso de un invariante.
+- Al cerrar: entrada nueva, fila en el CSV, `serie.md` actualizado, pendientes anteriores revisados
+  y preguntados una vez, y **los archivos entregados al soñante** — el contenedor es efímero y, como
+  no se versiona, sin descarga el códice se pierde.
+
 ## Modos de invocación
 
 - `/orfeo [relato del sueño]` — informe completo.
@@ -227,6 +252,9 @@ Estos no son formalismos: son los puntos donde una interpretación puede hacer d
 - `references/claves-tradicionales.md` — repertorios simbólicos por tradición (Artemidoro,
   talmúdica, islámica, china, alquímica, folclórica) y, sobre todo, cómo usarlos sin caer en el
   diccionario. **Léelo solo si vas a activar L6.**
+- `references/codice.md` — el protocolo de la memoria aislada: las dos capas, los mecanismos de
+  aislamiento, el esquema de la cabecera y la rutina de cada sesión. **Léelo antes de leer o
+  escribir el códice.**
 - Fuente completa, si está disponible en el repositorio:
   `docs/marcos-interpretativos-de-los-suenos.md` (las 19 secciones, con bibliografía).
 

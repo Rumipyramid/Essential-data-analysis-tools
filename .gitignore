@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Códice Orfeo — bitácora de sueños. Contenido personal sensible.
+# NUNCA se versiona: este repositorio es publico.
+codice/
