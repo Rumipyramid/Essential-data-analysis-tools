@@ -6,11 +6,11 @@ Para una aseguradora en Perú, las oportunidades mejor respaldadas son siete: si
 
 ## Cómo leer este informe
 
-El informe tiene seis partes: el punto de partida peruano, cómo se captura valor en la región (distribución, experiencia de cliente, back-office y lo que no funcionó), las oportunidades para Perú, un mapa de señales de innovación, el estado de la evidencia y la conclusión.
+El informe tiene siete partes: el punto de partida peruano, cómo se captura valor en la región (distribución, experiencia de cliente, back-office y lo que no funcionó), las oportunidades para Perú, un mapa de señales de innovación, México e India como territorios de exploración, el estado de la evidencia y la conclusión.
 
 Sobre la evidencia conviene tener presentes tres cosas:
 
-- **Cifras cotejadas y no cotejadas.** Las cifras sin marca se leyeron en el documento original. Las marcadas con **†** no pudieron confirmarse: o el sitio rechazó el acceso automatizado, o la página se leyó y la cifra concreta no apareció en ella. La sección 5 detalla cuál es cada caso.
+- **Cifras cotejadas y no cotejadas.** Las cifras sin marca se leyeron en el documento original. Las marcadas con **†** no pudieron confirmarse: o el sitio rechazó el acceso automatizado, o la página se leyó y la cifra concreta no apareció en ella. La sección 6 detalla cuál es cada caso.
 - **Casi todo es autodeclarado.** Los resultados de casos provienen de la aseguradora o de su proveedor, sin auditoría independiente.
 - **Benchmark externo incorporado.** Se sumaron los casos mejor respaldados de un benchmark de aseguradoras de Latinoamérica fechado el 11 de noviembre de 2026, después de cotejar sus cifras contra las fuentes que cita. Incluye casos de México (Quálitas, GNP), que quedan fuera de Sudamérica y se señalan como tales.
 - **Síntesis propia.** El orden de las oportunidades y la lectura de las señales de innovación son conclusiones de este informe, no recomendaciones publicadas por alguna fuente. Los cálculos propios se señalan como tales.
@@ -36,7 +36,7 @@ Con crecimiento débil y gastos al alza, automatizar el back-office y abaratar l
 
 ### Competidores y madurez digital
 
-El mercado está muy concentrado: 17 compañías, y las cinco mayores suman 84,7% de las primas ([PCR](https://ww3.ratingspcr.com/peru-sector-seguros/)). Pacífico reporta una participación de 24,2% en 2024 ([Pacífico, Memoria Integrada 2024](https://www.pacifico.com.pe/documents/28730/151929053/Memoria+integrada+2024.pdf/74e4c16c-e4b2-e36c-b522-cdaebf9c91cf)); las cuotas de Rimac varían según la fuente (ver sección 5).
+El mercado está muy concentrado: 17 compañías, y las cinco mayores suman 84,7% de las primas ([PCR](https://ww3.ratingspcr.com/peru-sector-seguros/)). Pacífico reporta una participación de 24,2% en 2024 ([Pacífico, Memoria Integrada 2024](https://www.pacifico.com.pe/documents/28730/151929053/Memoria+integrada+2024.pdf/74e4c16c-e4b2-e36c-b522-cdaebf9c91cf)); las cuotas de Rimac varían según la fuente (ver sección 6).
 
 La madurez digital es bimodal:
 
@@ -318,7 +318,71 @@ La mayoría de las aseguradoras de la región sigue en etapa temprana. En Argent
 
 Tres señales merecen una prueba pequeña en Perú por su bajo costo de entrada: la apertura de siniestros por nota de voz, la póliza simplificada y el paramétrico para carteras de crédito de cajas y microfinancieras. Esta selección es una lectura propia.
 
-## 5. Estado de la evidencia
+## 5. Territorios de exploración: México e India
+
+Estos dos mercados no forman parte de Sudamérica. Se incluyen como territorios de exploración: lugares donde ya ocurren, a mayor escala o con más datos públicos, cosas que en Perú recién empiezan. México es el vecino comparable; India es el laboratorio de inclusión y de infraestructura digital pública.
+
+| | Perú | México | India |
+|---|---|---|---|
+| Penetración (primas sobre PBI) | Cerca de 2,0% | 2,5% en 2023; 2,94% en 2025 según AMIS† | 3,7% en el ejercicio 2024-25 |
+| Rasgo dominante | Dos líderes concentran el mercado | Bancaseguros fuerte y especialista de autos líder | Comparadores y aseguradoras digitales cotizadas en bolsa |
+| Infraestructura digital | Yape, de un grupo privado | Billeteras y bancos digitales en expansión | Pagos instantáneos, identidad y, pronto, mercado de seguros públicos |
+| Qué explorar | — | Siniestros digitales a escala y antifraude en salud | Economía de la distribución digital y velocidad en salud |
+
+### 5.1 México: el espejo cercano
+
+**Mercado.** Las primas directas crecieron 16% en 2024 y superaron los MXN 919 mil millones, pero la tenencia de seguros entre adultos siguió baja: 32% en la región Noreste y 16-17% en el centro-sur y el sur ([El Cronista](https://www.cronista.com/mexico/finanzas-economia/primas-del-sector-asegurador-crecieron-16-pero-la-tenencia-bajo)). Para 2025 la AMIS habla del primer billón de pesos en primas y de una penetración de 2,94% del PIB†, con solo 23% de los adultos asegurados ([Vanguardia](https://vanguardia.com.mx/noticias/mexico/alcanzan-23-polizas-de-seguros-en-mexico-pide-hacienda-a-ip-cerrar-brecha-CC20664798)†). Es el mismo patrón peruano: primas que crecen sin que crezca la base de asegurados.
+
+**Qué muestra México que todavía no se ve en Sudamérica.**
+
+- **Siniestros digitales a escala en una aseguradora especialista.** Quálitas resolvió el 28% de sus siniestros de 2024 por ajuste digital exprés y atiende más de 100.000 llamadas al mes con agentes de voz (sección 2.2). Es la referencia más útil para la oportunidad 1.
+- **Antifraude en salud con retorno publicado.** Un proveedor reporta MXN 30 millones de ahorro y retorno positivo a los seis meses en una aseguradora de salud (sección 2.3). El contexto lo explica: la inflación médica de dos dígitos dejó pérdidas de 6% en el ramo en 2025, pese a un récord de 14,5 millones de asegurados ([El Cronista](https://www.cronista.com/mexico/finanzas-economia/crisis-en-seguros-costos-hospitalarios-devoran-la-rentabilidad-y-dejan-perdidas-del-6-en-2025)).
+- **Plataforma de datos para toda la operación.** GNP, la mayor aseguradora del país, contrató a Palantir para detección de fraude y suscripción, como primer cliente comercial anunciado de esa empresa en América Latina ([Let's Money](https://www.letsmoney.com.br/noticias/palantir-gnp-seguros-ia-fraude/)). No hay resultados publicados.
+- **Bancaseguros digital.** BBVA Seguros emitió más de MXN 91.000 millones en primas en 2025 (+18%), pagó más de 519 mil siniestros y es el segundo jugador del mercado con 9,5% de participación; para 2026 apoya su estrategia en IA y en el asistente Blue dentro de la app del banco ([BBVA](https://www.bbva.com/es/mx/bbva-seguros-pago-mas-de-519-mil-siniestros-por-mas-de-44913-millones-de-pesos-en-2025/)). No publica qué parte de sus pólizas se contrata por canales digitales.
+- **Producto de compra en grupo.** BBVA lanzó Club Seguro: entre 4 y 10 vehículos de familiares, vecinos o compañeros de trabajo se agrupan para obtener un precio preferencial, con póliza individual para cada uno ([BBVA](https://www.bbva.com/es/innovacion/bbva-mexico-lanza-club-seguro-para-ampliar-el-acceso-al-seguro-de-auto/)). Es una forma de usar la comunidad como canal, aplicable a un país donde solo 1 de cada 4 vehículos estaría asegurado†.
+- **Billetera con aseguradora detrás.** Mercado Pago entró en 2023 con un seguro digital contra robos operado por BNP Paribas Cardif ([DPL News](https://dplnews.com/?p=182472)). Mismo modelo que en Brasil, sin cifras de volumen para México.
+- **Insurtech con licencia propia.** Momento Seguros multiplicó por más de tres su base de clientes en 2025 y cerró una ronda de US$ 10,25 millones ([El Cronista](https://www.cronista.com/mexico/finanzas-economia/insurtech-en-mexico-asi-estan-reinventando-el-seguro-con-datos-apps-y-salud-digital)); Crabi levantó US$ 13,6 millones para seguro de auto ([Pulse 2.0](https://pulse2.com/crabi-13-6-million-raised-for-scaling-access-to-auto-insurance-across-mexico/)). México tendría unas 150 insurtech, solo detrás de Brasil†.
+
+**Advertencia.** Las quejas contra aseguradoras crecieron 7,76% en el primer semestre de 2026, con 26.863 reclamaciones ([Expansión](https://expansion.mx/economia/2026/10/13/quejas-contra-aseguradoras-en-mexico-crecen-7-76-y-los-reclamos-suman-2-386-mdp)). Digitalizar la venta sin cuidar el servicio traslada el problema a la posventa.
+
+**Qué explorar desde Perú.** El modelo operativo de siniestros de Quálitas (criterios de elegibilidad para el ajuste sin visita), el caso de negocio antifraude en salud y el diseño de compra en grupo. Esta selección es una lectura propia.
+
+### 5.2 India: el laboratorio de escala
+
+**Mercado.** La penetración total se mantuvo en 3,7% del PBI en el ejercicio 2024-25; la de vida cayó por tercer año, a 2,7%, y la de no vida siguió en 1% ([Angel One](https://www.angelone.in/news/economy/life-insurance-penetration-falls-for-third-year-overall-insurance-coverage-stays-flat-in-fy25); [Business Standard](https://www.business-standard.com/finance/insurance/mis-selling-indian-insurance-sector-significant-concern-irdai-125123001092_1.html)). India muestra que la escala digital no basta por sí sola para subir la penetración.
+
+**Qué muestra India que no existe en la región.**
+
+- **La distribución digital puede ser un negocio rentable.** PB Fintech, dueña del comparador Policybazaar, cerró su ejercicio 2025-26 con primas intermediadas de ₹29.934 crore (+42%), ingresos de ₹6.794 crore (+37%) y utilidad de ₹670 crore (+115%) ([Whalesbook](https://www.whalesbook.com/corporate-news/English/tech/PB-Fintech-FY26-Profit-Soars-115percent-to-indian-rupee670-Cr-as-Revenue-Jumps-37percent/69fb38ffd27867b982d4414d)). Un crore equivale a 10 millones de rupias. Es el contraste con la región, donde ningún canal digital publica rentabilidad.
+- **Una aseguradora nacida digital puede sostenerse, pero suscribiendo aún con pérdida técnica.** Go Digit emitió ₹11.300 crore en primas y obtuvo una rentabilidad sobre patrimonio de 17,7%, con un ratio combinado de 105,7% ([Whalesbook](https://www.whalesbook.com/corporate-news/English/insurance/Go-Digits-FY26-Premiums-Surpass-indian-rupee11300-Cr-ROE-Strong-at-177percent/69fb1142d27867b982d38f90)): gana por inversiones, no por suscripción. ACKO habría pasado a utilidad en el mismo ejercicio†. Matiza la lección de Youse y Pier: el modelo puede funcionar con escala y capital, y tarda años.
+- **Velocidad publicada en siniestros de salud.** Digit aprobó el 82,9% de sus solicitudes de atención sin desembolso en menos de 30 minutos, con un promedio de 21,38 minutos, frente al estándar de una hora que fija el regulador ([Business Today](https://www.businesstoday.in/personal-finance/insurance/story/83-health-cashless-requests-approved-within-30-minutes-digit-insurance-530108-2026-05-06)). Star Health procesa cerca de 20% de esas solicitudes solo con IA, sin intervención humana, y apunta a más de 50% en dos años ([Digital Health News](https://www.digitalhealthnews.com/star-health-targets-ai-driven-settlement-for-majority-of-cashless-claims)). En Sudamérica no se halló ninguna métrica equivalente en salud.
+- **Siniestro vehicular resuelto por WhatsApp con tope de monto.** HDFC ERGO liquida por WhatsApp siniestros de hasta ₹20.000 con inspección asistida por IA ([Outlook Business](https://www.outlookbusiness.com/personal-finance/insurance/know-how-to-get-your-instant-motor-claim-settlement-via-whatsapp), nota de 2024). El tope de monto es un criterio de elegibilidad simple y replicable.
+- **Billetera de pagos como distribuidor masivo.** PhonePe había vendido 1,85 crore de pólizas (18,5 millones) con 29 aseguradoras a septiembre de 2025 ([Inc42](https://inc42.com/features/how-phonepe-makes-money-upi-loans-merchants-more/)), y ofrece seguro de salud con pago mensual por débito automático†. Es el equivalente de Yape con muchas aseguradoras detrás en lugar de una.
+- **Seguros masivos por débito en cuenta bancaria.** Los programas públicos de vida y accidentes suman 27,84 crore y 58,78 crore de inscripciones acumuladas, es decir 278 y 588 millones ([Outlook Money](https://www.outlookmoney.com/personal-finance/pmjjby-enrolments-cross-278-crore-pmsby-reaches-588-crore-as-insurance-coverage-expands-finance-ministry)). El mecanismo es una prima anual mínima cobrada automáticamente de la cuenta.
+- **Crecimiento fuera de las grandes ciudades.** Los distritos de mayoría rural aportaron 43% de las primas nuevas de vida y salud, frente a 41% dos años antes ([Insurance Business](https://www.insurancebusinessmag.com/asia/news/breaking-news/indias-insurance-growth-shifts-to-nonmetros-572184.aspx)).
+- **Infraestructura pública para seguros.** El regulador prepara un mercado electrónico único, Bima Sugam, junto con una revisión de comisiones: el sector pagó cerca de ₹1 lakh crore en comisiones en un año ([Angel One](https://www.angelone.in/news/economy/irdai-to-roll-out-major-insurance-reforms-launch-bima-sugam-marketplace-in-4-6-months)) y las aseguradoras habrían aceptado en principio ofrecer allí productos sin comisión, con una tarifa de plataforma ([Angel One](https://www.angelone.in/news/economy/irdai-s-zero-commission-push-on-bima-sugam-to-reshape-insurance-distribution)). El proyecto se propuso en 2022 y acumula retrasos†.
+
+**Advertencias.**
+
+- **Venta indebida.** El regulador señala la venta indebida como causa principal de cancelaciones y quejas, y pide a las aseguradoras analizar sus causas ([Outlook Money](https://www.outlookmoney.com/insurance/irdai-flags-mis-selling-tells-insurers-to-look-inward-as-profits-climb)). La distribución masiva sin asesoría tiene ese costo.
+- **Infraestructura sin adopción.** La bolsa nacional de reclamos de salud está operativa, pero su volumen sigue siendo mínimo por los costos de integración de los hospitales y la falta de incentivos ([Whalesbook](https://www.whalesbook.com/news/English/insurance/Indias-NHCX-Health-Insurance-Overhaul-Stalls-With-Slow-Adoption/69f9b511d87e3288bea940bc)). Coincide con lo ocurrido con el Open Insurance brasileño.
+- **Índices agrícolas discutidos.** El seguro agrícola público usa estimación de rendimientos por satélite; los agricultores valoran la rapidez del pago pero algunos reportan indemnizaciones menores que con la medición manual†. Es el mismo riesgo de base del piloto de Ecuador.
+
+**Qué explorar desde Perú.** Publicar y gestionar tiempos de aprobación en salud, el tope de monto como regla para liquidar por WhatsApp, y el cobro anual mínimo por débito automático como vía de microseguro. Esta selección es una lectura propia.
+
+### 5.3 Lo que ambos territorios añaden a las oportunidades
+
+| Oportunidad | Aporte de México | Aporte de India |
+|---|---|---|
+| 1. Siniestros de punta a punta | Quálitas: 28% por ajuste digital | HDFC ERGO: tope de monto por WhatsApp |
+| 3. Embebidos y billeteras | Mercado Pago con Cardif | PhonePe: 18,5 millones de pólizas con 29 aseguradoras |
+| 4. Antifraude y salud | MXN 30 millones de ahorro; GNP con Palantir | Aprobación en 21 minutos; 20% solo con IA |
+| 6. Cobro recurrente | — | Débito automático en programas masivos |
+| Canal digital propio | Momento y Crabi, aún sin rentabilidad publicada | Policybazaar rentable; Go Digit con ratio combinado de 105,7% |
+
+Las cifras de ambos países provienen de prensa y comunicados, no de los informes de los reguladores, y varias fuentes indias son agregadores de resultados corporativos. Sirven para orientar una exploración, no para dimensionar un caso de negocio.
+
+## 6. Estado de la evidencia
 
 ### Confirmado en la fuente original
 
@@ -354,6 +418,10 @@ Del benchmark de aseguradoras de Latinoamérica del 11 de noviembre de 2026 se c
 - GNP con Palantir: la página no cargó su contenido; se incluye solo como señal, con †.
 - Las tres fuentes de McKinsey: sin acceso.
 - La matriz de priorización y el mapa de oportunidades del benchmark son juicio de sus autores, no evidencia; coinciden con el orden de este informe en poner siniestros y back-office primero y distribución embebida después.
+
+### México e India
+
+De 27 fuentes consultadas para la sección 5 se descargaron 25, y las cifras citadas sin † se leyeron en ellas. Quedan con †: los datos de AMIS para 2025 y la tenencia de 23% (el sitio rechazó el acceso), el número de insurtech mexicanas, la utilidad de ACKO, el pago mensual de PhonePe, el calendario de Bima Sugam y la evaluación del seguro agrícola. No se encontró una cifra de cuota digital del mercado para ninguno de los dos países, ni datos de fraude de México.
 
 ### Sin confirmar tras intentar la lectura completa
 
@@ -403,12 +471,14 @@ Algunas de estas páginas cargan su contenido de forma dinámica, de modo que "n
 - Resultados medidos de Sura, BCI Seguros, Consorcio, Chubb, Protecta y Qualitas.
 - Alianzas de seguros con Plin o con operadores de telefonía en Perú.
 
-## 6. Conclusión
+## 7. Conclusión
 
 La región muestra una economía digital del seguro con dos velocidades. El costo de servir cae donde la aseguradora controla la jornada completa, y el crecimiento ocurre donde otro controla al cliente. Para una aseguradora peruana la pregunta deja de ser "cuánto vender por canales propios" y pasa a ser en qué jornadas quiere ser la mejor operadora y en qué plataformas acepta ser proveedora de riesgo. Las normas de 2026 añaden una tercera opción poco explorada: actuar ella misma como distribuidora de productos financieros de terceros.
 
 El contexto de 2026 vuelve la eficiencia más urgente: primas que crecen 1,1% en el semestre y ganancias a la baja en la mitad de las compañías. Las dos oportunidades mejor respaldadas, siniestros de punta a punta y herramientas para corredores, responden a esa presión y no dependen de un socio externo.
 
 El patrón que más se repite, y que el benchmark externo confirma con casos de Pacífico, SURA y Quálitas, es que el valor aparece cuando el canal digital activa un proceso interno completo y no solo digitaliza un punto de contacto.
+
+México e India amplían el horizonte en dos direcciones. México muestra siniestros digitales y antifraude a una escala que Sudamérica aún no publica. India muestra que la distribución digital puede ser rentable y que la salud puede gestionarse con tiempos medidos en minutos, pero también que la penetración no sube sola y que la venta masiva sin asesoría termina en cancelaciones.
 
 El hallazgo menos cómodo es que casi nadie mide el retorno. Las compañías publican adopción, tiempos y NPS, no primas ni rentabilidad atribuibles a lo digital, y en el mercado más avanzado el 84% de las aseguradoras no espera que la IA le aporte más de 1% de ingresos por ahora. Una aseguradora que fije desde el inicio su línea base de costo por contacto, fuga de siniestros, conversión y persistencia tendrá una ventaja sobre sus pares. Las cifras confirmadas pueden citarse con su fuente; las marcadas con † siguen siendo hipótesis bien orientadas que requieren comprobación antes de sostener una decisión de inversión.
