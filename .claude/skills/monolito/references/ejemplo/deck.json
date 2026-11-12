@@ -1,0 +1,41 @@
+{
+ "v": 4,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-20T15:00:00Z"
+ },
+ "lists": "css",
+ "title": "El diseño conductual ha muerto. Larga vida al diseño conductual.",
+ "cover": "cover",
+ "order": [
+  "cover",
+  "muerte",
+  "condiciones",
+  "dinamica",
+  "capas",
+  "sistemas",
+  "manifiesto",
+  "referencias"
+ ],
+ "sections": {
+  "s1": {
+   "description": "Ejemplo · Portada, cifras, grilla con habilitador y figuras centrales",
+   "start": "cover"
+  },
+  "s2": {
+   "description": "Ejemplo · Cierre: manifiesto y referencias",
+   "start": "manifiesto"
+  }
+ },
+ "faces": {
+  "archivo-black": {
+   "family": "Archivo Black",
+   "href": "https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
+  },
+  "space-mono": {
+   "family": "Space Mono",
+   "href": "https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+  }
+ },
+ "designSystems": []
+}
