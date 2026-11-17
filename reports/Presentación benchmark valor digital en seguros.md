@@ -165,7 +165,8 @@ Esta síntesis es nuestra lectura del conjunto de casos; ninguna fuente la formu
 - En India, el banco central permite cobrar primas de seguros por débito automático hasta ₹100.000 sin autenticación adicional, frente a ₹15.000 para otros pagos recurrentes (Reserve Bank of India, 2026).
 - En Brasil, la aseguradora Justos cobra el seguro de auto en hasta 10 cuotas con una sola autorización por Pix, sin tarjeta y sin escanear un código cada mes (Justos, 2026).
 - En Turquía, Türkiye Sigorta ofreció pagar seguros de salud y de auto en hasta 12 cuotas al precio de contado "para facilitar el acceso" (Habertürk, 2025).
-- En Perú, el Banco Central probará en diciembre de 2026 una plataforma de pagos entre cuentas con unas 20 entidades, que permitiría programar pagos como los seguros médicos (Perú Retail, 2026).
+- En Perú, el Banco Central probará en diciembre de 2026 una plataforma de pagos entre cuentas (TAPP) con unas 20 entidades, que operará desde 2027 y permitiría programar pagos como los seguros médicos (Perú Retail, 2026; Vodanovic, 2026).
+- En Perú, la opción predeterminada tiene un límite legal: Indecopi sanciona activar productos sin permiso expreso, y la Superintendencia solo permite condicionar el desgravamen en créditos hipotecarios (matriz de benchmark del equipo, 2026). Hay que validar cualquier default con el área legal.
 
 **Facilitar no es obligar.**
 
@@ -215,7 +216,7 @@ Esta síntesis es nuestra lectura del conjunto de casos; ninguna fuente la formu
 "La IA es un commodity. El humano es el nuevo lujo", sostiene un consultor del sector (Gestión, 2026b). Coincide con que 85% de los consumidores quiere hablar con un asesor en algún momento (Capgemini y LIMRA, 2026).
 
 **2. El pago de un solo paso llega a Perú.**
-El Banco Central probará en diciembre de 2026 su plataforma de pagos entre cuentas (Perú Retail, 2026). En India y Brasil, el débito con una sola autorización ya se usa para cobrar primas (Reserve Bank of India, 2026; Justos, 2026).
+El Banco Central probará en diciembre de 2026 su plataforma de pagos entre cuentas, que operará desde 2027 (Perú Retail, 2026; Vodanovic, 2026). En India y Brasil, el débito con una sola autorización ya se usa para cobrar primas (Reserve Bank of India, 2026; Justos, 2026).
 
 **3. Seguros atados a un momento concreto.**
 Yape muestra en su aplicación seguros aún no disponibles, con un botón "Me interesa": asistencia de hogar desde S/ 5 al mes, mascotas desde S/ 10, accidentes al recargar la tarjeta del Metropolitano (Yape, 2026). Es una prueba de demanda antes de construir el producto.
@@ -239,7 +240,7 @@ El sistema brasileño que permite compartir datos de seguros registró solo unos
 
 | Apuesta | Qué pasó |
 |---|---|
-| Competir con el corredor | Pier, aseguradora digital brasileña, despidió a 39% de su equipo en 2023 (Startups.com.br, 2023) |
+| Competir con el corredor | Pier, aseguradora digital brasileña, despidió a 39% de su equipo en 2023 (Startups.com.br, 2023) y giró hacia los corredores; en 2026 declara punto de equilibrio con 200 mil clientes (Let's Money, 2026) |
 | Bienestar como modelo de negocio | Betterfly, empresa chilena de beneficios y seguros, cerró en cinco países (Forbes Chile, 2025) |
 | Aseguradora nacida digital | Go Digit, de India, aún paga en siniestros y gastos 105,7% de lo que cobra en primas; su utilidad proviene de las inversiones (Go Digit, 2026) |
 | Obligar a comprar | En India, atar un seguro de salud obligatorio al crédito hizo que más clientes dejaran el crédito (Banerjee, Duflo y Hornbeck, 2014) |
@@ -341,5 +342,7 @@ El sistema brasileño que permite compartir datos de seguros registró solo unos
 - Reserve Bank of India (2026). *Digital Payments – E-mandate Framework, 2026.* Directivas del 21 de abril, reproducidas por TaxGuru. https://taxguru.in/rbi/rbi-issues-consolidated-directions-digital-payments-e-mandate-framework-2026.html
 - Revista Economía (2026). *RIMAC apunta a crecer en la colocación de microseguros mediante alianza con Efectibank.* 6 de noviembre. https://www.revistaeconomia.com/?p=144412
 - SBS (2026). Resolución SBS N.° 02260-2026, Reglamento de Seguros Paramétricos, reseñada por El Peruano el 14 de septiembre. https://elperuano.pe/noticia/304690-terremotos-tsunamis-y-lluvias-sbs-regula-seguros-parametricos-que-activan-pagos-automaticamente
+- Vodanovic, L. (2026). *Nace TAPP para modernizar los pagos digitales en el Perú.* Gestión. https://gestion.pe/opinion/nace-tapp-para-modernizar-los-pagos-digitales-en-el-peru-por-ljubica-vodanovic-noticia/
+- Let's Money (2026). Pier: R$ 200 millones de facturación y punto de equilibrio (citado de la matriz del equipo; el sitio bloquea el acceso automatizado). https://www.letsmoney.com.br/noticias/pier-200-milhoes-faturamento-breakeven/
 - Startups.com.br (2023). *Insurtech Pier demite cerca de 39% da força de trabalho.* 12 de enero. https://startups.com.br/negocios/insurtech-pier-demite-cerca-de-39-da-forca-de-trabalho/
 - Yape (2026). Sección «Mundo Protección» de la aplicación, observada en noviembre de 2026; sin documento público.
