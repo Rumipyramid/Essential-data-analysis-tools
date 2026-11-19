@@ -28,6 +28,7 @@ Fuentes: OIT vía Bloomberg Línea (2024); MAPFRE Economics, «El mercado asegur
 - **Colombia:** sector creció 5,6% en 2024 (Valora Analitik, 2025). Segurísimo/Nequi (OIT, 2022). Seguros Mundial 1,8 millones de SOAT en apps (presentación al CEO). Solidaria +300 APIs (matriz del equipo).
 - **Ecuador:** 33% de la población con algún seguro médico (El Diario, 2025). Piloto de seguro agrícola paramétrico (El Diario, 3 ago 2026).
 - **Paraguay:** 82% de los pagos de servicios en digital (DPL News, 10 sep 2026, Bancard Report). ueno: 2,9 millones de clientes en un país de 6,1 millones; intervenido el 3 nov 2026; 9% de los depósitos; solo 30% del valor de depósitos dentro de la garantía (Bloomberg Línea, nov 2026).
+- **Brasil (incluido en la comparación a pedido del equipo):** informalidad 37,2%; penetración 3,3% sin primas de seguridad social; vida 63,2% de las primas; brecha de protección 1,4. Casos: Mercado Pago 11 millones de clientes de seguros; Pix Automático más de R$ 1.200 millones al mes, ya usado para cobrar primas; Porto abre 70% de los avisos de robo con IA en WhatsApp; Segura apoya a más de 1.200 corredores de Bradesco; Open Insurance con unos 3.000 consentimientos. Por estructura está tan lejos de Perú como Chile y Uruguay, no más.
 - **Uruguay:** mayor crecimiento real de la región en 2024, 25,8% (Infomercado, 2025, con MAPFRE). Sin casos digitales con cifras encontrados.
 
 ## No verificado o no accesible
