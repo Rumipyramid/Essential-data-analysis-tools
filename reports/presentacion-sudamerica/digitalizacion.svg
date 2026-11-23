@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 788" width="900" height="788" style="font-family:ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif" role="img" aria-label="Adultos con cuenta y adultos que hicieron o recibieron un pago digital, por país">
+<rect width="900" height="788" fill="#fcfcfb"/>
+<rect x="170" y="22" width="14" height="14" rx="3" fill="#c9c6bf"/><text x="190" y="34" font-size="13" fill="#1b1b1a">Tiene una cuenta (banco, financiera o dinero móvil)</text>
+<rect x="170" y="48" width="14" height="14" rx="3" fill="#2a78d6"/><text x="190" y="60" font-size="13" fill="#1b1b1a">Hizo o recibió un pago digital en el último año</text>
+<text x="170" y="88" font-size="12" fill="#55534e">Porcentaje de adultos (15 años o más), 2024. * Dato de 2021, el último disponible.</text>
+<line x1="170.0" y1="104" x2="170.0" y2="732" stroke="#d9d6cf" opacity=".6"/><text x="170.0" y="750" font-size="12" fill="#55534e" text-anchor="middle">0%</text>
+<line x1="298.0" y1="104" x2="298.0" y2="732" stroke="#d9d6cf" opacity=".6"/><text x="298.0" y="750" font-size="12" fill="#55534e" text-anchor="middle">20%</text>
+<line x1="426.0" y1="104" x2="426.0" y2="732" stroke="#d9d6cf" opacity=".6"/><text x="426.0" y="750" font-size="12" fill="#55534e" text-anchor="middle">40%</text>
+<line x1="554.0" y1="104" x2="554.0" y2="732" stroke="#d9d6cf" opacity=".6"/><text x="554.0" y="750" font-size="12" fill="#55534e" text-anchor="middle">60%</text>
+<line x1="682.0" y1="104" x2="682.0" y2="732" stroke="#d9d6cf" opacity=".6"/><text x="682.0" y="750" font-size="12" fill="#55534e" text-anchor="middle">80%</text>
+<line x1="810.0" y1="104" x2="810.0" y2="732" stroke="#d9d6cf" opacity=".6"/><text x="810.0" y="750" font-size="12" fill="#55534e" text-anchor="middle">100%</text>
+<text x="8" y="130" font-size="12" font-weight="700" letter-spacing=".6" fill="#55534e">SUDAMÉRICA</text>
+<text x="158" y="164.5" font-size="14" font-weight="500" fill="#1b1b1a" text-anchor="end">Chile</text>
+<g><title>Chile · Tiene cuenta: 85,1%</title><path d="M170.0,144.0 h540.6 q4,0 4,4 v6.0 q0,4 -4,4 h-540.6 z" fill="#c9c6bf"/><text x="720.6" y="156.0" font-size="12" font-weight="400" fill="#1b1b1a">85,1%</text></g>
+<g><title>Chile · Pago digital: 84,3%*</title><path d="M170.0,161.0 h535.5 q4,0 4,4 v6.0 q0,4 -4,4 h-535.5 z" fill="#2a78d6"/><text x="715.5" y="173.0" font-size="12" font-weight="400" fill="#1b1b1a">84,3%*</text></g>
+<text x="158" y="209.5" font-size="14" font-weight="500" fill="#1b1b1a" text-anchor="end">Brasil</text>
+<g><title>Brasil · Tiene cuenta: 86,4%</title><path d="M170.0,189.0 h549.0 q4,0 4,4 v6.0 q0,4 -4,4 h-549.0 z" fill="#c9c6bf"/><text x="729.0" y="201.0" font-size="12" font-weight="400" fill="#1b1b1a">86,4%</text></g>
+<g><title>Brasil · Pago digital: 77,4%</title><path d="M170.0,206.0 h491.4 q4,0 4,4 v6.0 q0,4 -4,4 h-491.4 z" fill="#2a78d6"/><text x="671.4" y="218.0" font-size="12" font-weight="400" fill="#1b1b1a">77,4%</text></g>
+<text x="158" y="254.5" font-size="14" font-weight="500" fill="#1b1b1a" text-anchor="end">Argentina</text>
+<g><title>Argentina · Tiene cuenta: 81,7%</title><path d="M170.0,234.0 h518.9 q4,0 4,4 v6.0 q0,4 -4,4 h-518.9 z" fill="#c9c6bf"/><text x="698.9" y="246.0" font-size="12" font-weight="400" fill="#1b1b1a">81,7%</text></g>
+<g><title>Argentina · Pago digital: 72,2%</title><path d="M170.0,251.0 h458.1 q4,0 4,4 v6.0 q0,4 -4,4 h-458.1 z" fill="#2a78d6"/><text x="638.1" y="263.0" font-size="12" font-weight="400" fill="#1b1b1a">72,2%</text></g>
+<text x="158" y="299.5" font-size="14" font-weight="500" fill="#1b1b1a" text-anchor="end">Uruguay</text>
+<g><title>Uruguay · Tiene cuenta: 73,7%</title><path d="M170.0,279.0 h467.7 q4,0 4,4 v6.0 q0,4 -4,4 h-467.7 z" fill="#c9c6bf"/><text x="647.7" y="291.0" font-size="12" font-weight="400" fill="#1b1b1a">73,7%</text></g>
+<g><title>Uruguay · Pago digital: 68,0%*</title><path d="M170.0,296.0 h431.2 q4,0 4,4 v6.0 q0,4 -4,4 h-431.2 z" fill="#2a78d6"/><text x="611.2" y="308.0" font-size="12" font-weight="400" fill="#1b1b1a">68,0%*</text></g>
+<text x="158" y="344.5" font-size="14" font-weight="500" fill="#1b1b1a" text-anchor="end">Paraguay</text>
+<g><title>Paraguay · Tiene cuenta: 60,9%</title><path d="M170.0,324.0 h385.8 q4,0 4,4 v6.0 q0,4 -4,4 h-385.8 z" fill="#c9c6bf"/><text x="565.8" y="336.0" font-size="12" font-weight="400" fill="#1b1b1a">60,9%</text></g>
+<g><title>Paraguay · Pago digital: 55,5%</title><path d="M170.0,341.0 h351.2 q4,0 4,4 v6.0 q0,4 -4,4 h-351.2 z" fill="#2a78d6"/><text x="531.2" y="353.0" font-size="12" font-weight="400" fill="#1b1b1a">55,5%</text></g>
+<rect x="0" y="363" width="900" height="43" fill="#eaf2fc"/>
+<text x="158" y="389.5" font-size="15" font-weight="700" fill="#1b1b1a" text-anchor="end">Perú</text>
+<g><title>Perú · Tiene cuenta: 59,3%</title><path d="M170.0,369.0 h375.5 q4,0 4,4 v6.0 q0,4 -4,4 h-375.5 z" fill="#c9c6bf"/><text x="555.5" y="381.0" font-size="12" font-weight="700" fill="#1b1b1a">59,3%</text></g>
+<g><title>Perú · Pago digital: 51,7%</title><path d="M170.0,386.0 h326.9 q4,0 4,4 v6.0 q0,4 -4,4 h-326.9 z" fill="#2a78d6"/><text x="506.9" y="398.0" font-size="12" font-weight="700" fill="#1b1b1a">51,7%</text></g>
+<text x="158" y="434.5" font-size="14" font-weight="500" fill="#1b1b1a" text-anchor="end">Colombia</text>
+<g><title>Colombia · Tiene cuenta: 57,1%</title><path d="M170.0,414.0 h361.4 q4,0 4,4 v6.0 q0,4 -4,4 h-361.4 z" fill="#c9c6bf"/><text x="541.4" y="426.0" font-size="12" font-weight="400" fill="#1b1b1a">57,1%</text></g>
+<g><title>Colombia · Pago digital: 49,2%</title><path d="M170.0,431.0 h310.9 q4,0 4,4 v6.0 q0,4 -4,4 h-310.9 z" fill="#2a78d6"/><text x="490.9" y="443.0" font-size="12" font-weight="400" fill="#1b1b1a">49,2%</text></g>
+<text x="158" y="479.5" font-size="14" font-weight="500" fill="#1b1b1a" text-anchor="end">Bolivia</text>
+<g><title>Bolivia · Tiene cuenta: 56,8%</title><path d="M170.0,459.0 h359.5 q4,0 4,4 v6.0 q0,4 -4,4 h-359.5 z" fill="#c9c6bf"/><text x="539.5" y="471.0" font-size="12" font-weight="400" fill="#1b1b1a">56,8%</text></g>
+<g><title>Bolivia · Pago digital: 43,6%</title><path d="M170.0,476.0 h275.0 q4,0 4,4 v6.0 q0,4 -4,4 h-275.0 z" fill="#2a78d6"/><text x="455.0" y="488.0" font-size="12" font-weight="400" fill="#1b1b1a">43,6%</text></g>
+<text x="158" y="524.5" font-size="14" font-weight="500" fill="#1b1b1a" text-anchor="end">Ecuador</text>
+<g><title>Ecuador · Tiene cuenta: 64,5%</title><path d="M170.0,504.0 h408.8 q4,0 4,4 v6.0 q0,4 -4,4 h-408.8 z" fill="#c9c6bf"/><text x="588.8" y="516.0" font-size="12" font-weight="400" fill="#1b1b1a">64,5%</text></g>
+<g><title>Ecuador · Pago digital: 43,3%</title><path d="M170.0,521.0 h273.1 q4,0 4,4 v6.0 q0,4 -4,4 h-273.1 z" fill="#2a78d6"/><text x="453.1" y="533.0" font-size="12" font-weight="400" fill="#1b1b1a">43,3%</text></g>
+<text x="8" y="569" font-size="12" font-weight="700" letter-spacing=".6" fill="#55534e">REFERENCIAS FUERA DE SUDAMÉRICA</text>
+<text x="158" y="603.5" font-size="14" font-weight="500" fill="#1b1b1a" text-anchor="end">Turquía</text>
+<g><title>Turquía · Tiene cuenta: 81,6%</title><path d="M170.0,583.0 h518.2 q4,0 4,4 v6.0 q0,4 -4,4 h-518.2 z" fill="#c9c6bf"/><text x="698.2" y="595.0" font-size="12" font-weight="400" fill="#1b1b1a">81,6%</text></g>
+<g><title>Turquía · Pago digital: 71,4%</title><path d="M170.0,600.0 h453.0 q4,0 4,4 v6.0 q0,4 -4,4 h-453.0 z" fill="#2a78d6"/><text x="633.0" y="612.0" font-size="12" font-weight="400" fill="#1b1b1a">71,4%</text></g>
+<text x="158" y="648.5" font-size="14" font-weight="500" fill="#1b1b1a" text-anchor="end">India</text>
+<g><title>India · Tiene cuenta: 89,0%</title><path d="M170.0,628.0 h565.6 q4,0 4,4 v6.0 q0,4 -4,4 h-565.6 z" fill="#c9c6bf"/><text x="745.6" y="640.0" font-size="12" font-weight="400" fill="#1b1b1a">89,0%</text></g>
+<g><title>India · Pago digital: 48,5%</title><path d="M170.0,645.0 h306.4 q4,0 4,4 v6.0 q0,4 -4,4 h-306.4 z" fill="#2a78d6"/><text x="486.4" y="657.0" font-size="12" font-weight="400" fill="#1b1b1a">48,5%</text></g>
+<text x="158" y="693.5" font-size="14" font-weight="500" fill="#1b1b1a" text-anchor="end">México</text>
+<g><title>México · Tiene cuenta: 53,0%</title><path d="M170.0,673.0 h335.2 q4,0 4,4 v6.0 q0,4 -4,4 h-335.2 z" fill="#c9c6bf"/><text x="515.2" y="685.0" font-size="12" font-weight="400" fill="#1b1b1a">53,0%</text></g>
+<g><title>México · Pago digital: 41,4%</title><path d="M170.0,690.0 h261.0 q4,0 4,4 v6.0 q0,4 -4,4 h-261.0 z" fill="#2a78d6"/><text x="441.0" y="702.0" font-size="12" font-weight="400" fill="#1b1b1a">41,4%</text></g>
+<text x="170" y="776" font-size="11" fill="#55534e">Fuente: Banco Mundial, Global Findex 2025 (datos de 2024).</text>
+</svg>

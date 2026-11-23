@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 740" width="1000" height="740" style="font-family:ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif" role="img" aria-label="Cuadrantes: formalidad laboral frente a penetración voluntaria del seguro, Sudamérica y México">
 <rect width="1000" height="740" fill="#fcfcfb"/>
-<rect x="90" y="130" width="457" height="187" fill="#f2f0ea"/>
+<rect x="90" y="130" width="435" height="187" fill="#f2f0ea"/>
 <line x1="90.0" y1="130" x2="90.0" y2="640" stroke="#d9d6cf" opacity=".5"/>
 <text x="90.0" y="662" font-size="13" fill="#55534e" text-anchor="middle">10%</text>
 <line x1="198.8" y1="130" x2="198.8" y2="640" stroke="#d9d6cf" opacity=".5"/>
@@ -31,35 +31,35 @@
 <text x="80" y="270.0" font-size="13" fill="#55534e" text-anchor="end">3,0%</text>
 <line x1="90" y1="181.0" x2="960" y2="181.0" stroke="#d9d6cf" opacity=".5"/>
 <text x="80" y="185.0" font-size="13" fill="#55534e" text-anchor="end">3,5%</text>
-<line x1="546.8" y1="130" x2="546.8" y2="640" stroke="#55534e" stroke-width="1.5" stroke-dasharray="6 5"/>
+<line x1="525.0" y1="130" x2="525.0" y2="640" stroke="#55534e" stroke-width="1.5" stroke-dasharray="6 5"/>
 <line x1="90" y1="317.0" x2="960" y2="317.0" stroke="#55534e" stroke-width="1.5" stroke-dasharray="6 5"/>
-<text x="552.8" y="604" font-size="12" fill="#55534e">Formalidad promedio</text><text x="552.8" y="619" font-size="12" fill="#55534e">de la región: 52%</text>
+<text x="531.0" y="604" font-size="12" fill="#55534e">La mitad de los</text><text x="531.0" y="619" font-size="12" fill="#55534e">trabajadores es formal</text>
 <text x="102" y="309.0" font-size="12" fill="#55534e">Promedio de América Latina: 2,7% del PBI</text>
 <text x="102" y="154" font-size="13" font-weight="700" letter-spacing=".6" fill="#9a978f" text-anchor="start">INFORMAL Y MUY ASEGURADO</text>
 <text x="102" y="172" font-size="12" fill="#9a978f" text-anchor="start">ningún país</text>
 <text x="948" y="154" font-size="13" font-weight="700" letter-spacing=".6" fill="#9a978f" text-anchor="end">FORMAL Y ASEGURADO</text>
 <text x="948" y="626" font-size="13" font-weight="700" letter-spacing=".6" fill="#9a978f" text-anchor="end">FORMAL, POCO ASEGURADO</text>
 <text x="102" y="626" font-size="13" font-weight="700" letter-spacing=".6" fill="#9a978f" text-anchor="start">INFORMAL Y POCO ASEGURADO</text>
-<g><title>Uruguay: formalidad 77,8%, penetración voluntaria 1,5% del PBI, gasto US$ 853 por habitante</title><circle cx="827.3" cy="521.0" r="37.6" fill="#9a978f" fill-opacity=".55" stroke="#fcfcfb" stroke-width="2"/></g>
-<g><title>Chile: formalidad 74,2%, penetración voluntaria 2,8% del PBI, gasto US$ 762 por habitante</title><circle cx="788.2" cy="300.0" r="35.7" fill="#9a978f" fill-opacity=".55" stroke="#fcfcfb" stroke-width="2"/></g>
-<g><title>Argentina: formalidad 52,6%, penetración voluntaria 2,3% del PBI, gasto US$ 418 por habitante</title><circle cx="553.3" cy="385.0" r="27.5" fill="#9a978f" fill-opacity=".55" stroke="#fcfcfb" stroke-width="2"/></g>
-<g><title>México: formalidad 46,9%, penetración voluntaria 2,6% del PBI, gasto US$ 383 por habitante</title><circle cx="491.3" cy="334.0" r="26.5" fill="none" stroke="#9a978f" stroke-width="2" stroke-dasharray="4 3"/></g>
-<g><title>Brasil: formalidad 62,8%, penetración voluntaria 3,3% del PBI, gasto US$ 338 por habitante</title><circle cx="664.2" cy="215.0" r="25.1" fill="#9a978f" fill-opacity=".55" stroke="#fcfcfb" stroke-width="2"/></g>
-<g><title>Colombia: formalidad 44,2%, penetración voluntaria 2,2% del PBI, gasto US$ 261 por habitante</title><circle cx="461.9" cy="402.0" r="22.6" fill="#9a978f" fill-opacity=".55" stroke="#fcfcfb" stroke-width="2"/></g>
-<g><title>Perú: formalidad 26,4%, penetración voluntaria 1,7% del PBI, gasto US$ 173 por habitante</title><circle cx="268.4" cy="487.0" r="19.1" fill="#2a78d6" fill-opacity=".92" stroke="#fcfcfb" stroke-width="2"/></g>
-<g><title>Ecuador: formalidad 31,3%, penetración voluntaria 1,8% del PBI, gasto US$ 124 por habitante</title><circle cx="321.6" cy="470.0" r="16.8" fill="#9a978f" fill-opacity=".55" stroke="#fcfcfb" stroke-width="2"/></g>
-<g><title>Paraguay: formalidad 37,5%, penetración voluntaria 1,2% del PBI, gasto US$ 78 por habitante</title><circle cx="389.1" cy="572.0" r="14.2" fill="#9a978f" fill-opacity=".55" stroke="#fcfcfb" stroke-width="2"/></g>
-<g><title>Bolivia: formalidad 19,2%, penetración voluntaria 1,6% del PBI, gasto US$ 63 por habitante</title><circle cx="190.1" cy="504.0" r="13.1" fill="#9a978f" fill-opacity=".55" stroke="#fcfcfb" stroke-width="2"/></g>
-<text x="268.4" y="460.0" font-size="17" font-weight="700" fill="#1b1b1a" text-anchor="middle">Perú</text>
-<text x="174.1" y="509.0" font-size="14" font-weight="500" fill="#1b1b1a" text-anchor="end">Bolivia</text>
-<text x="339.6" y="460.0" font-size="14" font-weight="500" fill="#1b1b1a" text-anchor="start">Ecuador</text>
-<text x="389.1" y="602.0" font-size="14" font-weight="500" fill="#1b1b1a" text-anchor="middle">Paraguay</text>
-<text x="461.9" y="374.0" font-size="14" font-weight="500" fill="#1b1b1a" text-anchor="middle">Colombia</text>
-<text x="459.3" y="339.0" font-size="14" font-weight="500" fill="#1b1b1a" text-anchor="end">México (referencia)</text>
-<text x="585.3" y="390.0" font-size="14" font-weight="500" fill="#1b1b1a" text-anchor="start">Argentina</text>
-<text x="664.2" y="183.0" font-size="14" font-weight="500" fill="#1b1b1a" text-anchor="middle">Brasil</text>
-<text x="788.2" y="256.0" font-size="14" font-weight="500" fill="#1b1b1a" text-anchor="middle">Chile</text>
-<text x="827.3" y="577.0" font-size="14" font-weight="500" fill="#1b1b1a" text-anchor="middle">Uruguay</text>
+<g><title>Uruguay: formalidad 67,3%, penetración voluntaria 1,5% del PBI, gasto US$ 853 por habitante</title><circle cx="713.1" cy="521.0" r="37.6" fill="#9a978f" fill-opacity=".55" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>Chile: formalidad 73,6%, penetración voluntaria 2,8% del PBI, gasto US$ 762 por habitante</title><circle cx="781.6" cy="300.0" r="35.7" fill="#9a978f" fill-opacity=".55" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>Argentina: formalidad 47,2%, penetración voluntaria 2,3% del PBI, gasto US$ 418 por habitante</title><circle cx="494.6" cy="385.0" r="27.5" fill="#9a978f" fill-opacity=".55" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>México: formalidad 43,1%, penetración voluntaria 2,6% del PBI, gasto US$ 383 por habitante</title><circle cx="450.0" cy="334.0" r="26.5" fill="none" stroke="#9a978f" stroke-width="2" stroke-dasharray="4 3"/></g>
+<g><title>Brasil: formalidad 64,4%, penetración voluntaria 3,3% del PBI, gasto US$ 338 por habitante</title><circle cx="681.6" cy="215.0" r="25.1" fill="#9a978f" fill-opacity=".55" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>Colombia: formalidad 44,0%, penetración voluntaria 2,2% del PBI, gasto US$ 261 por habitante</title><circle cx="459.8" cy="402.0" r="22.6" fill="#9a978f" fill-opacity=".55" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>Perú: formalidad 29,5%, penetración voluntaria 1,7% del PBI, gasto US$ 173 por habitante</title><circle cx="302.1" cy="487.0" r="19.1" fill="#2a78d6" fill-opacity=".92" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>Ecuador: formalidad 31,5%, penetración voluntaria 1,8% del PBI, gasto US$ 124 por habitante</title><circle cx="323.8" cy="470.0" r="16.8" fill="#9a978f" fill-opacity=".55" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>Paraguay: formalidad 35,5%, penetración voluntaria 1,2% del PBI, gasto US$ 78 por habitante</title><circle cx="367.3" cy="572.0" r="14.2" fill="#9a978f" fill-opacity=".55" stroke="#fcfcfb" stroke-width="2"/></g>
+<g><title>Bolivia: formalidad 14,4%, penetración voluntaria 1,6% del PBI, gasto US$ 63 por habitante</title><circle cx="137.9" cy="504.0" r="13.1" fill="#9a978f" fill-opacity=".55" stroke="#fcfcfb" stroke-width="2"/></g>
+<text x="276.1" y="493.0" font-size="17" font-weight="700" fill="#1b1b1a" text-anchor="end">Perú</text>
+<text x="137.9" y="534.0" font-size="14" font-weight="500" fill="#1b1b1a" text-anchor="middle">Bolivia</text>
+<text x="345.8" y="456.0" font-size="14" font-weight="500" fill="#1b1b1a" text-anchor="start">Ecuador</text>
+<text x="367.3" y="602.0" font-size="14" font-weight="500" fill="#1b1b1a" text-anchor="middle">Paraguay</text>
+<text x="431.8" y="424.0" font-size="14" font-weight="500" fill="#1b1b1a" text-anchor="end">Colombia</text>
+<text x="420.0" y="339.0" font-size="14" font-weight="500" fill="#1b1b1a" text-anchor="end">México (referencia)</text>
+<text x="528.5" y="390.0" font-size="14" font-weight="500" fill="#1b1b1a" text-anchor="start">Argentina</text>
+<text x="681.6" y="183.0" font-size="14" font-weight="500" fill="#1b1b1a" text-anchor="middle">Brasil</text>
+<text x="781.6" y="256.0" font-size="14" font-weight="500" fill="#1b1b1a" text-anchor="middle">Chile</text>
+<text x="713.1" y="577.0" font-size="14" font-weight="500" fill="#1b1b1a" text-anchor="middle">Uruguay</text>
 <text x="525.0" y="692" font-size="14" fill="#1b1b1a" text-anchor="middle" font-weight="600">Formalidad laboral: % de trabajadores formales →</text>
 <text transform="translate(26 385.0) rotate(-90)" font-size="14" fill="#1b1b1a" text-anchor="middle" font-weight="600">Penetración voluntaria del seguro, % del PBI →</text>
 <text x="90" y="52" font-size="12" fill="#55534e">Tamaño de la burbuja = gasto en seguros por habitante:</text>
