@@ -286,6 +286,55 @@ Fuentes: Banco Mundial (2025), Global Findex, datos de 2024; OIT, ILOSTAT (2026)
 
 ---
 
+## Anexo B · Qué comparamos para medir la distancia de conducta a Perú
+
+Puede usarse como lámina de respaldo si preguntan cómo se calculó la «distancia de conducta».
+
+### Título en la lámina
+
+**Medimos el parecido de conducta con nueve hábitos financieros: cómo ahorra la gente, a quién recurre ante un imprevisto y qué le preocupa**
+
+### Visual
+
+Matriz: `matriz-conducta.svg` (vector) o `matriz-conducta.png` (imagen).
+
+![Qué comparamos para medir la distancia de conducta a Perú](matriz-conducta.png)
+
+- **Filas:** los nueve indicadores del Global Findex, agrupados en tres temas: ahorro, red de seguridad ante imprevistos, y preocupaciones y seguro.
+- **Columnas:** Perú como base (columna azul) y los demás países, ordenados de más a menos parecidos.
+- **Celdas:** el valor de cada país; el color dice cuánto se aleja de Perú en ese indicador (de claro, parecido, a oscuro, muy distinto) y la flecha, si está por encima o por debajo.
+- **Última fila:** la distancia total, que resume las nueve diferencias en un solo número.
+
+### Cómo se calcula, en tres pasos
+
+1. **Tomamos los nueve indicadores** para los 20 países que tienen todos los datos de 2024.
+2. **Medimos cada diferencia con Perú en «desviaciones»:** cuánto se separa el país de Perú, dividido por cuánto varía ese indicador entre los 20 países. Así, una diferencia de 5 puntos pesa más en un indicador donde todos los países son parecidos que en uno donde varían mucho.
+3. **Promediamos las nueve diferencias** (raíz del promedio de los cuadrados). Cero es igual a Perú; cuanto más alto, más distinto. Ningún indicador pesa más que otro.
+
+### Los nueve indicadores
+
+| Tema | Indicador (pregunta del Findex) | Por qué importa para el seguro | Perú |
+|---|---|---|---|
+| Ahorro | Ahorró dinero en el último año | Capacidad de apartar dinero para pagar una prima | 44,0% |
+| Ahorro | Ahorró en un banco, financiera o billetera | Hábito de usar el sistema formal para protegerse | 31,4% |
+| Red de seguridad | Pidió prestado a familiares o amigos | Peso de la familia como «seguro informal» | 20,8% |
+| Red de seguridad | Pidió prestado para gastos de salud | Riesgo de salud que hoy se cubre con deuda | 16,3% |
+| Red de seguridad | En una emergencia, recurriría a la familia | Con qué se compite: la familia como primer recurso | 39,4% |
+| Red de seguridad | En una emergencia, usaría sus ahorros | Autoprotección con recursos propios | 17,8% |
+| Preocupaciones y seguro | Lo que más le preocupa: gastos médicos graves | Necesidad sentida de protección en salud | 27,2% |
+| Preocupaciones y seguro | Lo que más le preocupa: dinero para la vejez | Necesidad sentida de ahorro y vida | 18,5% |
+| Preocupaciones y seguro | Paga con regularidad a una aseguradora | Hábito actual de pagar un seguro | 10,2% |
+
+### Lectura para la conversación
+
+- **Los más parecidos (Ecuador, México y Colombia)** se alejan de Perú en pocos indicadores y por poco: casi todas sus celdas son claras.
+- **Turquía** se parece en cómo usa la familia en una emergencia (41,7% frente a 39,4%) y en lo que le preocupa, pero se aleja en algo clave: casi nadie pide prestado para salud (3,9% frente a 16,3%), y pide más prestado a familiares (29,5%).
+- **India** se aleja justamente en la red de seguridad: pide mucho más prestado a familiares (33,5%) y para salud (30,5%), y se preocupa menos por los gastos médicos (17,3%). Paga seguros en la misma proporción que Perú (10,0%).
+- **Paraguay**, aunque se parece mucho en estructura, es el más distinto en conducta: casi nadie usaría sus ahorros en una emergencia (6,7%) y lo que más le preocupa son los gastos médicos (41,9%).
+- **Límite:** son hábitos financieros declarados en una encuesta, no rasgos culturales o psicológicos. Para afirmar similitudes «culturales» haría falta otra fuente.
+
+---
+
 ## Referencias de las tres láminas y el anexo
 
 - Allianz Türkiye (2025). *Allianz Küresel Sigorta Raporu 2025.* 2 de junio, sobre el Allianz Global Insurance Report 2025. https://www.allianz.com.tr/tr_TR/faaliyetlerimiz/bizden-haberler/allianz-kuresel-sigorta-raporu.html
