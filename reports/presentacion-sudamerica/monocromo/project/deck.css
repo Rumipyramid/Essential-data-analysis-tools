@@ -1,0 +1,31 @@
+body { font-family: 'Space Mono', 'Courier New', monospace; color: #ECEBE6; }
+section { background: #0F0F0E; color: #ECEBE6; font-family: 'Space Mono', 'Courier New', monospace; padding: 128px 128px 160px; display: flex; flex-direction: column; gap: 20px; }
+section.alt { background: #1B1B19; }
+section.inv { background: #ECEBE6; color: #0F0F0E; }
+.t { font-family: 'Archivo Black', Arial, sans-serif; font-size: 80px; font-weight: 400; line-height: 1.0; text-transform: uppercase; }
+.sub { font-size: 28px; line-height: 1.3; color: #A3A29C; }
+.src { font-size: 24px; line-height: 1.3; color: #A3A29C; }
+.foot { position: absolute; left: 128px; bottom: 64px; width: 1664px; font-size: 24px; line-height: 1.2; color: #A3A29C; text-transform: uppercase; letter-spacing: 2px; }
+.inv .sub { color: #4A4944; }
+.inv .src { color: #4A4944; }
+.inv .foot { color: #4A4944; }
+.spacer { flex: 1; }
+.row { display: flex; flex-direction: row; gap: 56px; }
+.host { position: relative; }
+.lab { position: absolute; font-size: 24px; line-height: 1.25; color: #A3A29C; }
+.labpe { position: absolute; font-size: 24px; line-height: 1.25; color: #ECEBE6; font-weight: 700; }
+.big { font-family: 'Archivo Black', Arial, sans-serif; font-size: 88px; font-weight: 400; line-height: 1.0; }
+.k { font-size: 24px; line-height: 1.3; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; }
+.txt { font-size: 24px; line-height: 1.35; }
+.dim { font-size: 24px; line-height: 1.35; color: #A3A29C; }
+.inv .dim { color: #4A4944; }
+.stat { display: flex; flex-direction: column; gap: 8px; border-top: 4px solid #ECEBE6; padding-top: 16px; }
+.cols3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 48px; }
+.cols2 { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; }
+.col { display: flex; flex-direction: column; gap: 14px; border-top: 8px solid #ECEBE6; padding-top: 20px; }
+.inv .col { border-top-color: #0F0F0E; }
+.strip { border: 4px solid #ECEBE6; padding: 18px 28px; font-size: 24px; line-height: 1.35; }
+.inv .strip { border-color: #0F0F0E; }
+.tbl { font-size: 24px; line-height: 1.3; width: 100%; color: #ECEBE6; }
+.inv .tbl { color: #0F0F0E; }
+.card { display: flex; flex-direction: column; gap: 12px; border-top: 4px solid #ECEBE6; padding-top: 16px; }
