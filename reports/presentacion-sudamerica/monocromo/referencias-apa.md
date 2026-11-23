@@ -2,6 +2,8 @@
 
 Presentación «Seguros digitales: Perú y la región» (noviembre de 2026). Lista completa, con enlaces.
 
+100% Seguro. (2026). *La IA entra en acción: las insurtech latinoamericanas revelaron sus novedades en ITC Vegas 2026*. https://100seguro.com.ar/la-ia-entra-en-accion-las-insurtech-latinoamericanas-revelaron-sus-novedades-en-el-breaking-news-de-la-aip-en-itc-vegas-2026/
+
 ABC Economía. (2026). *Aseguradora Solidaria y sus más de 300 APIs*. https://abceconomia.co/?p=52699
 
 Agraria.pe. (2025, 10 de diciembre). *Lanzan proyecto Café Seguro Perú*. https://agraria.pe/noticias/lanzan-proyecto-cafe-seguro-peru-41290
@@ -26,11 +28,15 @@ Blumenstock, J., Callen, M. y Ghani, T. (2018). Why do defaults affect behavior?
 
 BNP Paribas Cardif Perú. (2026). *Memoria anual 2025*. https://bnpparibascardif.com/peru/wp-content/uploads/sites/20/2026/04/Memoria-Anual-2025.pdf
 
+Chócale. (2025, 29 de mayo). *Lider Bci habilita contratación de seguros por WhatsApp*. https://chocale.cl/2025/05/lider-bci-habilita-contratacion-de-seguros-por-whatsapp/
+
 CQCS. (2024, 15 de julio). *Tokio Marine encurta prazo de pagamento de sinistros no seguro auto*. https://cqcs.com.br/noticia/tokio-marine-encurta-prazo-de-pagamento-de-sinistros-no-seguro-auto/
 
 CQCS. (2026a, 3 de septiembre). *Bradesco Seguros e Segura lançam modelo que combina inteligência artificial e atendimento humano para apoiar vendas de mais de 1.200 corretores*. https://cqcs.com.br/noticia/bradesco-seguros-e-segura-lancam-modelo-que-combina-inteligencia-artificial-e-atendimento-humano-para-apoiar-vendas-de-mais-de-1-200-corretores/
 
 CQCS. (2026b, 25 de junio). *Porto simplifica jornada de sinistro e investe em novos recursos*. https://cqcs.com.br/noticia/porto-simplifica-jornada-de-sinistro-e-investe-em-novos-recursos/
+
+DaviPlata. (s. f.). *Seguro de Vida DaviPlata*. https://www.daviplata.com/wps/portal/daviplata/Home/MicrosegurosDaviplata/SeguroVida
 
 Darío Celis. (2026, 27 de agosto). *Seguros SURA apuesta por la IA para anticipar riesgos y acelerar la atención a clientes*. https://dariocelis.mx/inteligencia-artificial-seguros-sura-prevencion-riesgos/
 
@@ -86,6 +92,8 @@ Marchi, R., Dogliani, G. y Craddock, C. (2026, 21 de julio). No mercado de segur
 
 McKinsey & Company. (2025). *Informe global de seguros 2025* [Reseñado por Diario Financiero]. https://www.df.cl/mercados/seguros/america-latina-lidera-crecimiento-global-en-seguros-y-abre-espacio-para
 
+Multibagg. (2026). [Presentación a inversionistas de Aditya Birla Health Insurance]. https://www.multibagg.ai/market-pulse/articles/aditya-birla-health-insurance-outcomes-ppt-cmvuu5klp002u2klze0uqbf7b
+
 Organización Internacional del Trabajo. (2026). *ILOSTAT: Tasa de empleo informal (EMP_NIFL_SEX_RT)* [Base de datos]. https://ilostat.ilo.org/
 
 Orozco, S. y Morales, N. (2022). *Social finance brief: Segurísimo*. Organización Internacional del Trabajo. https://www.ilo.org/publications/social-finance-brief-segurisimo
@@ -100,13 +108,17 @@ Quálitas. (2025). *Integrated annual report 2024*. https://qinversionistas.qual
 
 Revista Apólice. (2026, 1 de octubre). *Porto automatiza 70% dos sinistros de roubo e furto*. https://revistaapolice.com.br/2026/10/porto-automatiza-70-dos-sinistros-de-roubo-e-furto/
 
-RIMAC. (2026a). *Cliente digital RIMAC: radiografía del cliente digital y funcionalidades asociadas* [Presentación interna no publicada].
+RIMAC. (2026a). *Benchmark de seguros digitales* [Matriz no publicada, corte del 11 de noviembre de 2026].
 
-RIMAC. (2026b). *Entrevistas en profundidad a dos usuarias de aplicaciones de aseguradoras* [Datos no publicados].
+RIMAC. (2026b). *Cliente digital RIMAC: radiografía del cliente digital y funcionalidades asociadas* [Presentación interna no publicada].
+
+RIMAC. (2026c). *Entrevistas en profundidad a dos usuarias de aplicaciones de aseguradoras* [Datos no publicados].
 
 RPP. (2026, 5 de noviembre). *Tras colocar más de dos millones de créditos, Yape ahora apunta a facilitar el acceso a seguros a sus usuarios*. https://rpp.pe/economia/economia/tras-colocar-mas-de-dos-millones-de-creditos-yape-ahora-apunta-a-facilitar-el-acceso-a-seguros-a-sus-usuarios-noticia-1716179
 
 S&P Global. (2026). *Insurify CEO flags overreaction to new AI app as brokers take a hit*. https://www.spglobal.com/market-intelligence/en/news-insights/articles/2026/2/insurify-ceo-flags-overreaction-to-new-ai-app-as-brokers-take-a-hit-98554977
+
+Saurit Román, N. (2021, 17 de febrero). Mercado Libre, una amenaza que nos debe unir. *Revista Seguros*. https://revistaseguros.aapas.org.ar/mercado-libre-una-amenaza-que-nos-debe-unir/
 
 Semana. (2026, 4 de agosto). *Seguros Mundial creció 21 % en seguros generales y abrió nueva sede administrativa en Bogotá*. https://www.semana.com/economia/capsulas/articulo/seguros-mundial-crecio-21-en-seguros-generales-y-abrio-nueva-sede-administrativa-en-bogota/202623/
 
