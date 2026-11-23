@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 788" width="900" height="788" style="font-family:ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif" role="img" aria-label="Adultos con cuenta y adultos que hicieron o recibieron un pago digital, por país">
-<rect width="900" height="788" fill="#fcfcfb"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 810" width="900" height="810" style="font-family:ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif" role="img" aria-label="Adultos con cuenta y adultos que hicieron o recibieron un pago digital, por país">
+<rect width="900" height="810" fill="#fcfcfb"/>
 <rect x="170" y="22" width="14" height="14" rx="3" fill="#c9c6bf"/><text x="190" y="34" font-size="13" fill="#1b1b1a">Tiene una cuenta (banco, financiera o dinero móvil)</text>
 <rect x="170" y="48" width="14" height="14" rx="3" fill="#2a78d6"/><text x="190" y="60" font-size="13" fill="#1b1b1a">Hizo o recibió un pago digital en el último año</text>
 <text x="170" y="88" font-size="12" fill="#55534e">Porcentaje de adultos (15 años o más), 2024. * Dato de 2021, el último disponible.</text>
@@ -48,5 +48,6 @@
 <text x="158" y="693.5" font-size="14" font-weight="500" fill="#1b1b1a" text-anchor="end">México</text>
 <g><title>México · Tiene cuenta: 53,0%</title><path d="M170.0,673.0 h335.2 q4,0 4,4 v6.0 q0,4 -4,4 h-335.2 z" fill="#c9c6bf"/><text x="515.2" y="685.0" font-size="12" font-weight="400" fill="#1b1b1a">53,0%</text></g>
 <g><title>México · Pago digital: 41,4%</title><path d="M170.0,690.0 h261.0 q4,0 4,4 v6.0 q0,4 -4,4 h-261.0 z" fill="#2a78d6"/><text x="441.0" y="702.0" font-size="12" font-weight="400" fill="#1b1b1a">41,4%</text></g>
-<text x="170" y="776" font-size="11" fill="#55534e">Fuente: Banco Mundial, Global Findex 2025 (datos de 2024).</text>
+<text x="16" y="780" font-size="11" fill="#55534e">Fuente: Banco Mundial (2025), The Global Findex Database 2025, datos de 2024; Chile y Uruguay, pago digital de 2021 (último disponible).</text>
+<text x="16" y="796" font-size="11" fill="#55534e">Indicadores: «Tiene una cuenta» (FX.OWN.TOTL.ZS) y «Hizo o recibió un pago digital» (g20.any). Consultado en api.worldbank.org, noviembre de 2026.</text>
 </svg>

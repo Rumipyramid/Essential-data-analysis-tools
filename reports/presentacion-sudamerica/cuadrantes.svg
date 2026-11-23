@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 740" width="1000" height="740" style="font-family:ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif" role="img" aria-label="Cuadrantes: formalidad laboral frente a penetración voluntaria del seguro, Sudamérica y México">
-<rect width="1000" height="740" fill="#fcfcfb"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" width="1000" height="800" style="font-family:ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif" role="img" aria-label="Cuadrantes: formalidad laboral frente a penetración voluntaria del seguro, Sudamérica y México">
+<rect width="1000" height="800" fill="#fcfcfb"/>
 <rect x="90" y="130" width="435" height="187" fill="#f2f0ea"/>
 <line x1="90.0" y1="130" x2="90.0" y2="640" stroke="#d9d6cf" opacity=".5"/>
 <text x="90.0" y="662" font-size="13" fill="#55534e" text-anchor="middle">10%</text>
@@ -68,4 +68,7 @@
 <circle cx="665.5" cy="48" r="36.5" fill="none" stroke="#9a978f" stroke-width="1.5"/><text x="708.1" y="52" font-size="12" fill="#55534e">US$ 800</text>
 <circle cx="98" cy="100" r="8" fill="#2a78d6"/><text x="112" y="104" font-size="12" fill="#55534e">Perú</text>
 <circle cx="170" cy="100" r="8" fill="#9a978f" fill-opacity=".55"/><text x="184" y="104" font-size="12" fill="#55534e">Otros países de Sudamérica</text><circle cx="380" cy="100" r="8" fill="none" stroke="#9a978f" stroke-width="2" stroke-dasharray="4 3"/><text x="394" y="104" font-size="12" fill="#55534e">Fuera de Sudamérica, como referencia</text>
+<text x="16" y="748" font-size="11" fill="#55534e">Fuentes: formalidad = 100 − tasa de empleo informal, OIT, ILOSTAT (EMP_NIFL_SEX_RT), 2025, consultado en noviembre de 2026;</text>
+<text x="16" y="764" font-size="11" fill="#55534e">penetración sin primas de la seguridad social, promedio de América Latina (2,7%) y gasto por habitante: MAPFRE Economics (2025),</text>
+<text x="16" y="780" font-size="11" fill="#55534e">El mercado asegurador latinoamericano en 2024, datos de 2024. Cuadrantes: elaboración propia.</text>
 </svg>

@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1220 790" width="1220" height="790" style="font-family:ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif" role="img" aria-label="Indicadores de conducta financiera usados para medir la distancia a Perú">
-<rect width="1220" height="790" fill="#fcfcfb"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1220 818" width="1220" height="818" style="font-family:ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif" role="img" aria-label="Indicadores de conducta financiera usados para medir la distancia a Perú">
+<rect width="1220" height="818" fill="#fcfcfb"/>
 <text x="16" y="30" font-size="18" font-weight="700" fill="#1b1b1a">Qué comparamos para decir si un país se parece a Perú en conducta financiera</text>
 <text x="16" y="54" font-size="13" fill="#55534e">Porcentaje de adultos (15 años o más) en 2024. El color indica cuánto se aleja cada país del valor de Perú en ese indicador.</text>
 <rect x="360" y="70" width="84" height="592" fill="#eaf2fc"/>
@@ -142,5 +142,6 @@
 <rect x="650.8" y="702" width="22" height="16" rx="3" fill="#c44f1c"/><text x="678.8" y="715" font-size="12" fill="#55534e">Muy distinto: más de 1,5</text>
 <text x="16" y="740" font-size="12" fill="#55534e">▲ valor más alto que el de Perú · ▼ valor más bajo. Una «desviación» es cuánto varía ese indicador entre los 20 países con datos.</text>
 <text x="16" y="760" font-size="12" fill="#55534e">Distancia total: raíz del promedio de las nueve diferencias al cuadrado, medidas en desviaciones; así ningún indicador pesa más que otro.</text>
-<text x="16" y="788" font-size="11" fill="#55534e">Fuente: Banco Mundial (2025), Global Findex, datos de 2024; cálculo de distancias: elaboración propia con los 20 países que tienen los nueve indicadores.</text>
+<text x="16" y="788" font-size="11" fill="#55534e">Fuente: Banco Mundial (2025), The Global Findex Database 2025, datos de 2024, consultado en api.worldbank.org, noviembre de 2026. Indicadores, en orden:</text>
+<text x="16" y="804" font-size="11" fill="#55534e">save.any.t.d, fin17a.17a1.d, fin22b, fin22d, fin24fam, fin24sav, fin45c, fin45a y fin19. Cálculo de distancias: elaboración propia con los 20 países que tienen los nueve indicadores.</text>
 </svg>
