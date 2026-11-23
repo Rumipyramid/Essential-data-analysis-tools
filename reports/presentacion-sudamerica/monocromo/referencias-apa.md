@@ -54,6 +54,8 @@ FID Seguros. (2026). *Memoria anual integrada 2025*. https://www.fidseguros.cl/c
 
 Forbes Chile. (2025, 17 de marzo). *Betterfly cierra en cinco países y despide a 30 empleados por plan de reestructuración*. https://forbes.cl/negocios/2025-03-17/betterfly-cierra-en-cinco-paises-y-despide-a-30-empleados-por-plan-de-reestructuracion
 
+Gan@Más. (2026). *Credicorp redefine su estrategia para rentabilizar la escala de su ecosistema financiero*. https://revistaganamas.com.pe/credicorp-redefine-su-estrategia-para-rentabilizar-la-escala-de-su-ecosistema-financiero/
+
 Gestión. (2026a, 2 de octubre). *Ganancias bajan en la mitad de las compañías de seguros*. https://gestion.pe/tu-dinero/ganancias-bajan-en-la-mitad-de-las-companias-de-seguros-cuanto-gana-la-suya-noticia/
 
 Gestión. (2026b, 22 de abril). *Lanzan seguros desde S/ 3 para protección en viajes*. https://gestion.pe/tu-dinero/viajes-lanzan-seguros-desde-s3-para-proteccion-que-peligros-cubren-noticia/
@@ -98,7 +100,9 @@ Organización Internacional del Trabajo. (2026). *ILOSTAT: Tasa de empleo inform
 
 Orozco, S. y Morales, N. (2022). *Social finance brief: Segurísimo*. Organización Internacional del Trabajo. https://www.ilo.org/publications/social-finance-brief-segurisimo
 
-Perú Retail. (2026, 3 de julio). *BCRP lanzará TAPP: cómo funcionará la nueva plataforma de pagos inmediatos*. https://www.peru-retail.com/bcrp-lanzara-tapp-como-funcionara-la-nueva-plataforma-de-pagos-inmediatos/
+Perú Retail. (2026a, 3 de julio). *BCRP lanzará TAPP: cómo funcionará la nueva plataforma de pagos inmediatos*. https://www.peru-retail.com/bcrp-lanzara-tapp-como-funcionara-la-nueva-plataforma-de-pagos-inmediatos/
+
+Perú Retail. (2026b, 13 de noviembre). *IFS: utilidad neta creció 11% a septiembre, impulsada por Interbank e Interseguro*. https://www.peru-retail.com/ifs-elevo-su-utilidad-neta-11-a-septiembre-de-2026-que-resultados-impulsaron-su-crecimiento/
 
 Prensa Aseguradora. (2026, 17 de noviembre). *Cartera digital Río Uruguay Seguros*. https://www.prensaaseguradora.com/post/cartera-digital-r%C3%ADo-uruguay-seguros
 
