@@ -106,8 +106,6 @@ Prensa Aseguradora. (2026, 17 de noviembre). *Cartera digital Río Uruguay Segur
 
 Proactivo. (s. f.). *La Positiva desarrolla seguros para la adaptación al cambio climático*. https://proactivo.com.pe/la-positiva-desarrolla-seguros-para-la-adaptacion-al-cambio-climatico/
 
-Programa de las Naciones Unidas para el Desarrollo. (2025). *Human Development Report 2025: A matter of choice: People and possibilities in the age of AI* [Informe y base de datos]. https://hdr.undp.org/data-center/documentation-and-downloads
-
 Quálitas. (2025). *Integrated annual report 2024*. https://qinversionistas.qualitas.com.mx/uploads/informes/2024/anual/en/IA_Qualitas_2024_FINAL_ING.pdf
 
 Revista Apólice. (2026, 1 de octubre). *Porto automatiza 70% dos sinistros de roubo e furto*. https://revistaapolice.com.br/2026/10/porto-automatiza-70-dos-sinistros-de-roubo-e-furto/
