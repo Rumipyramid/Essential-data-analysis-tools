@@ -2,7 +2,7 @@
 
 **Corte:** 24 de noviembre de 2026
 **Para qué sirve:** reunir en un solo lugar todo lo que el equipo sabe sobre cómo las aseguradoras de Sudamérica capturan valor con canales digitales y nuevas tecnologías, en el front (lo que ve el cliente) y en el back (la operación), y qué significa para Perú y para RIMAC.
-**De dónde sale:** el informe de investigación «Dónde captura valor lo digital en seguros» (noviembre de 2026), la presentación «Seguros digitales: Perú y la región» (versión final de 19 láminas), las notas de investigación del repositorio, la matriz de benchmark del equipo, la radiografía digital y la presentación al CEO de RIMAC, y dos entrevistas en profundidad.
+**De dónde sale:** el documento de literatura y estado de la cuestión «Valor digital en aseguradoras de Sudamérica y oportunidades para Perú», el informe de investigación «Dónde captura valor lo digital en seguros» (noviembre de 2026), el documento «20 insights», la presentación «Seguros digitales: Perú y la región» (versión final de 19 láminas), las notas de investigación del repositorio, la matriz de benchmark del equipo, la radiografía digital y la presentación al CEO de RIMAC, y dos entrevistas en profundidad.
 
 > **Uso interno.** Este documento incluye datos internos de RIMAC (secciones marcadas «USO INTERNO») y citas de entrevistas anonimizadas. Antes de compartirlo fuera de la compañía hay que retirar esas secciones o validarlas con el área dueña de los datos.
 
@@ -14,7 +14,7 @@
 - **«Lectura nuestra»** marca una inferencia del equipo, no algo que diga una fuente.
 - **«Declarado por la empresa»**: casi todas las cifras de casos las publica la propia aseguradora o su proveedor. Ninguna tiene evaluación independiente de impacto.
 - **«USO INTERNO»** marca datos de RIMAC que no son públicos.
-- **Cuando dos fuentes dan cifras distintas**, usamos la más reciente o la más directa y lo explicamos en la sección 20, «Discrepancias y pendientes».
+- **Cuando dos fuentes dan cifras distintas**, usamos la más reciente o la más directa y lo explicamos en la sección 24, «Discrepancias y pendientes», que incluye el estado de la evidencia (24.6).
 - **Letras de las referencias de RIMAC:** se mantienen las de la presentación: RIMAC (2026a) es la matriz de benchmark; (2026b), la presentación al CEO «Cliente digital RIMAC»; (2026c), las entrevistas. Se suman (2026d), la radiografía digital, y (2026e), la memoria anual 2025.
 
 ### Conceptos clave
@@ -37,7 +37,7 @@
 
 1. Resumen ejecutivo
 2. Pregunta, alcance y método
-3. Perú y la región: estructura, seguro, digitalización y conducta
+3. Perú y la región: estructura, seguro, digitalización y conducta (incluye mercado, canales y regulación peruana: 3.6 a 3.8)
 4. Perfil de cada país
 5. Qué se traslada y qué no: lo universal y lo que depende del contexto
 6. El benchmark del equipo: qué contiene y qué muestra
@@ -47,16 +47,20 @@
 10. Idea 2 · Vender donde ya está el cliente
 11. Idea 3 · Equipar al corredor
 12. Idea 4 · Quitar pasos: pagar y renovar con un clic
-13. Territorios de exploración: México, India y Turquía
-14. De lo más probado a lo que aún está en prueba
-15. Lo que no funcionó y lo que nadie publica
-16. Perú: competencia, grupos financieros y lo que viene
-17. RIMAC por dentro (USO INTERNO)
-18. Lo que dicen las usuarias
-19. Qué significa para RIMAC: prioridades y hoja de ruta
-20. Conclusiones, preguntas de investigación, límites, discrepancias y pendientes
-21. Glosario
-22. Referencias
+13. Back-office y operaciones: tarea, cuenta de resultados, fraude y núcleo
+14. Territorios de exploración: México, India y Turquía
+15. Siete oportunidades para una aseguradora en Perú
+16. Mapa de señales de innovación
+17. De lo más probado a lo que aún está en prueba
+18. Lo que no funcionó y lo que nadie publica
+19. Perú: competencia, grupos financieros y lo que viene
+20. RIMAC por dentro (USO INTERNO)
+21. Lo que dicen las usuarias
+22. Qué significa para RIMAC: prioridades y hoja de ruta
+23. Veinte insights en una página
+24. Conclusiones, preguntas de investigación, límites, discrepancias, pendientes y estado de la evidencia
+25. Glosario
+26. Referencias
 
 ---
 
@@ -125,6 +129,7 @@ Casi ninguna aseguradora publica el retorno en dinero. En Perú el freno es el s
 ### 2.2 Fuentes
 
 - **Públicas:** memorias, estados financieros, reguladores, gremios, consultoras, prensa especializada y estudios académicos.
+- **Documentos de trabajo del equipo:** el documento de literatura «Valor digital en aseguradoras de Sudamérica y oportunidades para Perú» (unas 10 mil palabras, con más de 150 fuentes enlazadas y una verificación de cifras en la fuente original), el informe «Dónde captura valor lo digital en seguros», el documento «20 insights», la presentación de benchmark y las notas de investigación del repositorio. Este documento madre los integra; donde difieren, manda la versión más reciente y verificada (sección 24).
 - **Internas de RIMAC (uso interno):**
     - la radiografía digital con corte a julio de 2026 (RIMAC, 2026d);
     - la presentación al CEO de noviembre de 2026, con la versión corregida de esos datos y una revisión de evidencia del equipo de Research (RIMAC, 2026b);
@@ -313,11 +318,54 @@ Chile y Uruguay no tienen estos indicadores en 2024.
 
 **Conclusión:** Ecuador y Colombia salen parecidos a Perú en las tres medidas; Paraguay se parece en estructura pero no en conducta. Brasil, Chile y Uruguay están lejos en las tres. Los países parecidos publican pocos casos con cifras; Brasil y Chile publican muchos, pero se parecen menos. Por eso conviene separar lo universal de lo que depende del contexto (sección 5).
 
+### 3.6 El mercado peruano en detalle
+
+**Tamaño.** El sistema cerró 2025 con primas netas de S/ 24.035 millones (+8,3%); Vida creció 16,3% y Riesgos Generales retrocedió 2,9% (Pacífico Seguros, 2026a; BNP Paribas Cardif Perú, 2026). La penetración fue de 2,04% del PBI; la densidad ronda los US$ 200 por habitante según PCR (2025), y los US$ 173 de MAPFRE Economics (2025) con su propia metodología.
+
+**El potencial.** El presidente de APESEG sostiene que, por ingreso, Perú debería rondar 3% del PBI (Caretas, 2026). Alcanzarlo supondría un mercado cerca de 50% mayor: unos S/ 12.000 millones adicionales sobre la base de 2025 (cálculo propio).
+
+**La desprotección es concreta.** Solo 1 de cada 4 vehículos livianos está asegurado (APESEG, citada por Credicorp en Gan@Más, 2026) y 96,5% de las viviendas carece de seguro ante sismos (Hoy Regional, 2026).
+
+**Rentabilidad bajo presión, en cifras.**
+
+- Primer semestre de 2026: primas de S/ 9.451 millones (+1,1%); la utilidad conjunta subió 7,5% a S/ 1.391 millones, pero con una «alerta en la rentabilidad propia del negocio asegurador», y las ganancias bajaron en la mitad de las compañías (Gestión, 2026a).
+- Siniestros pagados: S/ 9.849 millones en los doce meses a marzo de 2026 (+2,2%) (Gestión, 2026f).
+- Resultado técnico neto: de S/ 874 millones a S/ 814 millones al tercer trimestre de 2025 (APESEG, 2025).
+- Lectura del informe de noviembre: con crecimiento débil y gastos al alza, automatizar el back-office y abaratar la adquisición es el argumento financiero más directo.
+
+**Concentración.** 17 compañías; las cinco mayores suman 84,7% de las primas (PCR, 2025). Pacífico reportaba 24,2% en 2024 (Pacífico Seguros, 2025); en 2025, con datos de la SBS, RIMAC tiene 28,44% y Pacífico 22,57% (BNP Paribas Cardif Perú, 2026). Las cuotas varían según la fuente (sección 24.4).
+
+### 3.7 Canales e infraestructura de distribución en Perú
+
+- **No hay registro público de primas por canal**, ni en la SBS ni en las compañías (El Comercio, s. f.-a). Cualquier «cuota digital» peruana es una estimación.
+- **Bancaseguros:** una firma de investigación le atribuye 37,65% del mercado en 2025 (Mordor Intelligence, s. f.); en Pacífico aporta 35% de las primas (Gan@Más, 2026).
+- **Emisión digital:** un ejecutivo afirmó que cerca de 25% de las nuevas emisiones de pólizas proviene del canal digital (Gestión, 2026g).
+- **Infraestructura masiva y móvil:** Yape tenía 15,5 millones de usuarios activos al mes en noviembre de 2025, 82% de la PEA (Perú Retail, 2025), y 17 millones en septiembre de 2026 (Gan@Más, 2026). Según el INEI, 58,9% de los hogares tiene internet y 95,2% tiene celular (INEI, 2025).
+- **Yape como canal de Pacífico:** Pacífico, del mismo grupo, la describe como uno de sus principales canales (Gestión, 2025a), con vida desde S/ 5,99 al mes y salud desde S/ 9,90 (Yape, s. f.). Más de un millón de clientes alcanzados por Yape (Pacífico Seguros, 2026b); el piloto de salud empezó con 2.100 pólizas (Perú Retail, s. f.). El canal de mayor alcance lo captura una sola aseguradora, y su volumen de seguros no se publica.
+- **Retail:** Pacífico lanzó 12 productos nuevos con Falabella en 2025, en una alianza de 15 años (Pacífico Seguros, 2026b; Gestión, 2025a). RIMAC co-crea seguros con Grupo EFE usando IA sobre los perfiles de sus clientes (Mercado Negro, 2026).
+- **Demanda declarada de embebidos:** 43% de los peruanos encuestados compraría un seguro integrado a la compra de otro producto, según un estudio de BCG de 2023 difundido por APESEG (Gestión, s. f.).
+- **Vacío:** no se encontró ninguna alianza de seguros con Plin, Claro o Entel.
+
+### 3.8 Regulación peruana
+
+La regulación no es el cuello de botella, y en 2026 se amplió:
+
+| Tema | Qué permite o exige | Fuente |
+| --- | --- | --- |
+| Venta a distancia y bancaseguros | Habilitadas entre 2017 y 2021 | El Peruano (s. f.) |
+| Seguros paramétricos | Resolución SBS N.° 02260-2026 (septiembre de 2026): pago automático al alcanzarse un umbral | SBS (2026); Gestión (2026h) |
+| Productos de terceros | Resolución SBS N.° 02645-2026: las aseguradoras pueden comercializar productos financieros de terceros por canales presenciales y digitales (alcance exacto por verificar en el texto) | LP Derecho (2026) |
+| Protección de datos | Nuevo reglamento de la Ley 29733, vigente desde marzo de 2025: consentimiento expreso y notificación de incidentes en 48 horas. Es la restricción más relevante para usar datos en venta y tarificación | Garrigues (2025) |
+| Consentimiento en el consumo | Indecopi sanciona activar productos sin permiso expreso; la SBS solo permite condicionar el desgravamen en créditos hipotecarios | RIMAC (2026a) |
+| Productos «más ágiles y menos costosos» | Norma en preparación; dos licencias de aseguradoras en trámite | Gestión (2026d) |
+| Finanzas abiertas | Hoja de ruta hasta 2029; la norma se prevé para inicios de 2027 (otras fuentes dicen enero de 2028); llegará a seguros tarde y de forma indirecta | SBS (s. f.); El Peruano (2026b) |
+| BaaS | Reglamento anunciado para julio de 2026 | El Peruano (2026b) |
+
 ---
 
 ## 4. Perfil de cada país
 
-Cada perfil reúne estructura, seguro, digitalización, conducta y casos. La informalidad sale de ILOSTAT, datos de 2025 (OIT, 2026). El informe de noviembre usaba cifras de 2024 recogidas por Bloomberg Línea, que difieren algo (sección 20).
+Cada perfil reúne estructura, seguro, digitalización, conducta y casos. La informalidad sale de ILOSTAT, datos de 2025 (OIT, 2026). El informe de noviembre usaba cifras de 2024 recogidas por Bloomberg Línea, que difieren algo (sección 24).
 
 ### Perú (bloque bajo)
 
@@ -326,7 +374,7 @@ Cada perfil reúne estructura, seguro, digitalización, conducta y casos. La inf
 - **Digital:** 59,3% con cuenta, 51,7% con pagos digitales, 42,5% con dinero móvil. Yape tiene 17 millones de usuarios activos al mes.
 - **Conducta:** la familia primero (39,4%); 10,2% paga un seguro.
 - **Salud:** 7 de cada 10 personas que necesitaron atención de salud no la obtuvieron (Banco Mundial, s. f., con datos de ENAHO 2022, citado en RIMAC, 2026a).
-- **Casos:** secciones 16 a 18.
+- **Casos:** secciones 19 a 21.
 
 ### Ecuador (el más parecido a Perú)
 
@@ -341,7 +389,7 @@ Cada perfil reúne estructura, seguro, digitalización, conducta y casos. La inf
 
 - **Estructura:** índice 58; 56,0% de informalidad; IDH 0,788.
 - **Seguro:** 2,2% del PBI en seguros voluntarios + SOAT (3,3% total); US$ 261 por habitante. El mercado creció 5,6% en 2024, tres veces más que la economía (Valora Analitik, 2025).
-- **Digital:** 57,1% con cuenta, 49,2% con pagos digitales. Bre-B, el sistema de pagos inmediatos, figura en la matriz como débito recurrente con una autorización (por confirmar, sección 20).
+- **Digital:** 57,1% con cuenta, 49,2% con pagos digitales. Bre-B, el sistema de pagos inmediatos, figura en la matriz como débito recurrente con una autorización (por confirmar, sección 24).
 - **Conducta:** distancia 0,65; 45,1% acudiría a familia o amigos, el valor más alto de la matriz.
 - **Casos:** Seguros Mundial (apps de otros), Aseguradora Solidaria (más de 300 APIs), Seguros Bolívar (datos e IA), Segurísimo en Nequi (diseñado con la población objetivo), Figuro (multicotizador para corredores). Fracaso: el seguro de vida de DaviPlata ya no acepta solicitudes.
 - **Creencia documentada:** parte de la población cree que comprar un seguro «llama la desgracia» (Orozco y Morales, 2022).
@@ -657,7 +705,7 @@ Todas las cifras las declaran las empresas o sus proveedores, sin evaluación in
 ### 8.4 Cobrar sin pasos
 
 **Pix Automático (Brasil) · infraestructura**
-- El débito automático del sistema de pagos inmediatos mueve más de R$ 1.000 millones al mes a un año de su lanzamiento; MAG Seguros y Tokio Marine ya cobran primas por esa vía (Let's Money, 2026b). La presentación y el informe usaron R$ 1.200 millones (sección 20).
+- El débito automático del sistema de pagos inmediatos mueve más de R$ 1.000 millones al mes a un año de su lanzamiento; MAG Seguros y Tokio Marine ya cobran primas por esa vía (Let's Money, 2026b). La presentación y el informe usaron R$ 1.200 millones (sección 24).
 
 **Justos (Brasil) · persistencia**
 - Cobra el seguro de auto en hasta 10 cuotas con una sola autorización por Pix, sin tarjeta, «para evitar la cancelación por olvido» (Justos, 2026). No publica todavía el efecto en renovación.
@@ -717,6 +765,29 @@ En Brasil, 80% de las aseguradoras usa IA, 77% describe sus ganancias como mejor
 - **Lente conductual:** oportunidad física. Resolver por chat y con fotos elimina el traslado, la espera y la visita del ajustador; el traspaso a una persona debe estar bien diseñado.
 - **Indicadores:** costo por contacto, tiempo de pago del siniestro, índice de recomendación, participación digital en siniestros.
 
+### 9.6 Más casos y métricas de servicio
+
+**El patrón de madurez regional tiene tres escalones:** app o portal de autoservicio; WhatsApp como canal principal; e IA generativa que resuelve de punta a punta jornadas acotadas y de alto volumen. Porto, Mapfre Brasil y Bradesco están en el tercero; RIMAC y Pacífico, entre el segundo y el tercero (informe de noviembre).
+
+**Porto, el caso más completo:** su app llegó a 4 millones de usuarios en el primer trimestre de 2025 (Legismap, 2025a); 64% de sus interacciones fue digital en el segundo trimestre de 2026 (Acionista, 2026); el tiempo de análisis de siniestros bajó de 4-7 días a 1-2 días (Mobile Time, 2026); el análisis se libera automáticamente en 85% de los casos (CQCS, s. f.-a); cerró 2025 con 18,6 millones de clientes y 149 millones de interacciones y servicios digitales en el cuarto trimestre (Porto, 2026). La reducción de contactos (−29%) es el indicador publicado más cercano a «costo de servir», pero no se puede convertir en ahorro porque ninguna aseguradora publica su costo por contacto.
+
+| Caso | País | Dato | Fuente |
+| --- | --- | --- | --- |
+| Bradesco Seguros | Brasil | Casi +600% de interacciones por WhatsApp en dos años; +11 puntos de NPS en cuatro años; su proveedor publica +9 puntos, 95% de nivel de servicio y más de US$ 3,6 millones de ahorro operativo anualizado, una de las pocas cifras de ahorro en dinero de la región | Legismap (s. f.-a); Let's Money (s. f.-a); Genesys (s. f.) |
+| Tokio Marine | Brasil | 9% menos de plazo de pago de siniestros en 2025; NPS de siniestros de 81 | Legismap (2026a) |
+| Mapfre Brasil | Brasil | Primera jornada de siniestro resuelta íntegramente por IA en WhatsApp, con apertura por nota de voz | TI Inside (2025) |
+| SURA | Región | Reembolsos de salud con lectura de documentos e IA generativa: más de 80% de efectividad en tres meses, según su proveedor | NTT DATA (s. f.) |
+| Quálitas | México | Agentes de voz con IA: más de 100.000 llamadas al mes, 30% más de contención en asistencia vial y el triple en robo parcial, según el proveedor | SoundHound (s. f.) |
+| Pacífico | Perú | App Mi Espacio Pacífico: 7,5 millones de transacciones en 2025 (+45%), más de 80% de la posventa autogestionada, 76% de resolución en el primer contacto, 50% de los siniestros leves de auto declarados en menos de cinco minutos; Vera: más de 330 mil transacciones autónomas y NPS 13% mejor; flujos de un clic que bajaron pagos «de días a solo horas» | Pacífico Seguros (2026b) |
+| Cardif | Colombia | Nueve de cada diez siniestros pagados en línea | Valora Analitik (s. f.) |
+| Sancor Seguros (Cori) | Argentina | Asistente con IA y voz para denunciar siniestros, pedir asistencia y consultar pólizas, 24/7; sin métricas | Revista Seguros (s. f.) |
+
+**De la mejor experiencia a la retención, la evidencia regional es mínima.** El único dato es la ficha de RIMAC EstarBien en los Effie Perú 2025 (fuga de 1,3%, NPS 90, 49% de recurrencia de usuarios antiguos), sin periodo ni método (Effie Perú, 2025). Fuera de eso, un benchmark antiguo de Bain dice que un promotor vale cerca de siete veces lo que un detractor en EE. UU. (Bain & Company, 2014). Y lo digital es ambivalente: si más de 90% de los consumidores busca más de una cotización (McKinsey & Company, s. f.-a), digitalizar también abarata irse.
+
+**Sesgo de selección:** el NPS más alto del siniestro digital probablemente incluye que los siniestros simples son los que se resuelven en digital. La regla de diseño que se desprende: el traspaso del bot al humano importa tanto como la automatización.
+
+**En salud, el efecto en costos no está medido.** La telemedicina declara resolutividades de 72% a 90% (Medicina S/A, s. f.), pero no se halló ninguna cifra de su efecto en la siniestralidad. SulAmérica atribuyó su mejora al control de reembolsos fraudulentos, no a la telemedicina (NeoFeed, s. f.).
+
 ---
 
 ## 10. Idea 2 · Vender donde ya está el cliente
@@ -764,6 +835,17 @@ En Brasilprev, el canal digital vendió 17% de los planes pero solo 4,44% del di
 - **Lo que depende del contexto:** quién es dueño de la billetera, cuánto margen cede la aseguradora y si el cliente recuerda qué aseguradora lo protege. En Perú, el canal de mayor alcance (Yape) pertenece al grupo de un competidor.
 - **Lente conductual:** oportunidad física y social. Hay barreras que la tecnología no resuelve, como la creencia de que un seguro «llama la desgracia».
 - **Indicadores:** clientes nuevos, primas por canal, costo de adquisición, renovación de pólizas de bajo valor.
+
+### 10.6 Más evidencia sobre distribución
+
+- **La venta digital propia es pequeña y cara.** Bradesco Seguros vendió R$ 2.700 millones por canales digitales en el primer semestre de 2026 (+20,3%) y R$ 3.700 millones a septiembre (+22,8%) (Legismap, 2026b, 2026c): unos 4% a 5% de su facturación (cálculo orientativo, con periodos no comparables). «Es carísimo conseguir un cliente en un canal digital, cada vez más caro», dice un consultor citado en Perú; es opinión experta, no medición (Gestión, 2026e).
+- **Nubank con Chubb:** 2 millones de pólizas activas; la mitad de sus clientes de vida contrataba un seguro por primera vez (Nubank, s. f.; Legismap, s. f.-b).
+- **Mercado Pago:** 7,3 millones de clientes de seguros en junio de 2025 y meta de 15 millones a fines de 2026; aseguradoras portadoras: Prudential, Chubb, MetLife, Assurant y Porto (Notícias do Brasil, s. f.).
+- **Las fintech habrían pasado de 5% a 12% del mercado asegurador brasileño** entre 2023 y 2025 (Notícias do Brasil, s. f.).
+- **Retail:** en Brasil, la cadena Bemol alcanzó en 72 días el resultado que antes le tomaba 10 meses, y sus compras diarias de seguros subieron más de 400% tras integrar la oferta en una plataforma única, según Assurant (Assurant, s. f.).
+- **Riesgos documentados del modelo «la plataforma distribuye, la aseguradora suscribe»:** la desintermediación (PicPay compra su aseguradora) y la conducta de mercado: un medio reporta que PicPay debió resarcir a beneficiarios del INSS por venta atada (Diário do Pará, s. f.).
+- **Las cifras miden unidades distintas** (clientes, contratos, pólizas) y ninguna plataforma publica primas, costo de adquisición ni siniestralidad.
+- **MetLife Xcelerator** tiene una unidad dedicada a embebidos en fintech y sostiene que el acceso «no es un problema de demanda» (Chócale, 2026).
 
 ---
 
@@ -816,6 +898,15 @@ Fuente: Superintendencia de Seguros de la Nación, ejercicio 2021-2022, recogido
 - **Lo que depende del contexto:** el peso del corredor frente al banco y la plataforma (68,2% de intermediarios en Argentina; en RIMAC, 42% de los registros llega por bancos y retail), y la reacción de los corredores ante plataformas que venden directo, que depende de la regulación local.
 - **Lectura nuestra:** si el soporte al corredor es su principal dificultad también en Perú, la tecnología para el corredor podría rendir más que la tecnología para el cliente final.
 - **Indicadores:** primas por corredor, participación de la aseguradora en la cartera del corredor, tiempo de emisión.
+
+### 11.6 Más evidencia sobre el corredor
+
+- Según McKinsey, corredores y agentes concentran 60% a 65% de las primas de la región y el mix de canales «ha cambiado poco o nada»; lo digital pesa en la búsqueda más que en la compra (McKinsey & Company, 2025; Diario Financiero, s. f.).
+- El presidente de Bradesco Seguros: «los corredores siempre serán el principal canal» (CQCS, s. f.-b).
+- Pier crece hoy con más de 1.500 corredores socios (Legismap, s. f.-c).
+- Junto Seguros (Brasil) permite emisiones y consultas en lenguaje natural para corredores (Baguete, s. f.).
+- En Perú existe el precedente de Iglu, la plataforma de AVLA para corredores que promete cotizaciones en menos de 5 minutos (Infomercado, 2022).
+- No hay métricas independientes de productividad del corredor; los únicos números vienen de proveedores.
 
 ---
 
@@ -889,9 +980,78 @@ Turquía hizo obligatorio el seguro de terremoto para viviendas en 2000, y aun a
 - **Límite de la evidencia:** no encontramos estudios que midan, en seguros, cuánto aumenta la renovación con un pago de un solo paso.
 - **Indicadores:** renovación, cancelación por falta de pago, conversión del proceso de compra, adopción del cobro automático.
 
+### 12.8 Más evidencia sobre el cobro
+
+- MAG Seguros extendió el Pix Automático a todo Brasil (CQCS, s. f.-c) y Tokio Marine lo activó en enero de 2026. En Perú ya se pueden pagar seguros de Pacífico por Yape.
+- En Brasil solo hay expectativas de menor morosidad, ninguna medición (Legismap, s. f.-d).
+- **Un contrapunto:** el fallo del débito automático servía de aviso temprano de impago y daba tiempo para renegociar; con liquidación inmediata se pierde esa señal.
+- India cobra seguros masivos de vida y accidentes con una prima anual mínima debitada de la cuenta: 278 y 588 millones de inscripciones acumuladas (Outlook Money, s. f.-a).
+
 ---
 
-## 13. Territorios de exploración: México, India y Turquía
+## 13. Back-office y operaciones
+
+**En una frase:** la tarea mejora mucho, la cuenta de resultados mejora poco por ahora, y el fraude es el problema mejor dimensionado y el retorno peor documentado.
+
+### 13.1 La tarea mejora mucho
+
+| Caso | País | Resultado declarado | Fuente |
+| --- | --- | --- | --- |
+| Tokio Marine | Brasil | −95% en el tiempo de cotización de un seguro de transporte: de unos 10 minutos a 30 segundos | TI Inside (2026) |
+| Porto | Brasil | Análisis de siniestros liberado automáticamente en 85% de los casos | CQCS (s. f.-a) |
+| San Cristóbal | Argentina | Cotización de 10 a 2 minutos y ciclo de siniestros de 3 meses a 1 tras migrar a Guidewire; tomó casi una década (2016-2025), según el proveedor | Guidewire (s. f.) |
+| Allianz Türkiye | Turquía | Siniestros 5 veces más rápidos; cotización comercial de 4 horas a 15 minutos; 99% de precisión en documentos | Allianz Türkiye (2026) |
+| Seguros SURA | México | Correos de intermediarios de 20 horas a 8 minutos | Darío Celis (2026) |
+| RIMAC | Perú | Siniestro vehicular de 48 horas a 60 segundos; +5% de detección de inconsistencias en salud y +2% en auto | Infomercado (2025a); RIMAC (2026e) |
+| HDI Seguros | Brasil | IA generativa en la ingeniería de productos, sobre un núcleo de Vida recién migrado (piloto) | CQCS (s. f.-d) |
+| Mapfre Brasil con Solera | Brasil | Estimación automática de daños con inteligencia visual y copiloto para peritos; sin cifras de ahorro | Solera (s. f.) |
+
+### 13.2 La cuenta de resultados mejora poco, por ahora
+
+- Cerca de 80% de las aseguradoras brasileñas usa IA, pero 77% califica sus ganancias como incrementales y 84% no espera más de 1% de ingresos adicionales. Sus motivaciones declaradas: productividad (100%), experiencia del cliente (81%), automatización (69%) y reducción de costos (65%) (CNseg, 2026).
+- El único indicador regional duro de eficiencia es el de Porto: gastos administrativos sobre ingresos de 10,9% en 2025, 0,4 puntos mejor, mientras su siniestralidad habría empeorado 0,4 puntos hasta 51,7% (Porto, 2026). Las fuentes no aíslan cuánto se debe a la automatización.
+- El sector brasileño proyecta invertir cerca de R$ 2.600 millones en IA en 2026 (IT Forum, s. f.).
+- En Argentina, 51% de las aseguradoras aplica IA en casos puntuales, 29% está en pilotos y solo 11% la tiene desplegada en varias áreas (EY y CIDeS, citados por iProfesional, s. f.).
+
+### 13.3 Los benchmarks globales marcan el potencial, no lo logrado
+
+| Fuente | Estimación |
+| --- | --- |
+| Bain & Company (s. f.) | La IA generativa podría reducir 20% a 25% los gastos de ajuste de siniestros y 30% a 50% las fugas |
+| BCG (s. f.) | Hasta 3 puntos de siniestralidad por mejor suscripción; la baja de gastos aportó solo 1 a 3 puntos al ratio combinado |
+| McKinsey & Company (s. f.-b) | El ratio de gastos de seguros generales lleva desde 2005 entre 27% y 32% pese a dos décadas de digitalización; quienes escalan la IA mejoran hasta 5 puntos el control de pérdidas y crecen 10% a 15% en primas nuevas |
+| Risk & Insurance (s. f.) | 78% de las aseguradoras de generales adoptó IA generativa, pero solo 4% la escaló en siniestros |
+
+No se halló ningún benchmark específico de América Latina.
+
+### 13.4 Fraude
+
+| Dato | Dónde | Fuente |
+| --- | --- | --- |
+| De R$ 41.000 millones en siniestros, R$ 5.400 millones sospechosos (13,3%) y R$ 1.100 millones confirmados como fraude (2,7%, frente a 2,2% en 2023) | Brasil, 2024 | CQCS (2025) |
+| Fraudes y desperdicios en salud de R$ 30.000 a 34.000 millones, 11,1% a 12,7% de los ingresos del sector | Brasil | IESS (2023) |
+| 30.739 casos por más de COP 272.000 millones; 60% son inconsistencias documentales | Colombia, 2024 | Fasecolda (s. f.) |
+| R$ 450 millones en pagos indebidos evitados y unos seis mil beneficiarios expulsados | SulAmérica, Brasil | NeoFeed (s. f.) |
+| R$ 16,6 millones ahorrados en el primer año, con la efectividad del análisis de rechazos de 50% a 70% (aseguradora no identificada; los R$ 490 millones a cinco años son proyección) | Brasil | act digital (s. f.) |
+| MXN 30 millones de ahorro, detección 70% más rápida y retorno positivo a los seis meses en una aseguradora de salud | México | Qantev (s. f.) |
+| Recepción y clasificación de siniestros de 2-3 días a 30 minutos; expedientes completos en el primer envío de 40% a 85% (piloto) | Colombia | Ditempo (s. f.) |
+| Allianz Türkiye: +30% en detección de fraude | Turquía | Allianz Türkiye (2026) |
+| Sin cifra gremial de fraude; La Positiva dice usar IA para patrones de fraude en masivos | Perú | Informe de noviembre (sin confirmar) |
+
+**Lectura nuestra:** con siniestros pagados cercanos a S/ 9.850 millones al año en Perú, cada punto porcentual recuperado equivaldría a unos S/ 100 millones para el sistema (cálculo ilustrativo).
+
+### 13.5 Núcleo, nube y datos
+
+- RIMAC migró sus bases de datos críticas a Oracle Cloud, con tiempos de respuesta del sistema central hasta 80% menores según el proveedor (Oracle, s. f.).
+- Interseguro migra a Google Cloud con Kyndryl, anuncio de marzo de 2024 (Revista Economía, 2024).
+- Mapfre declara más de 150 casos de uso de IA en el grupo durante 2025 (Interempresas, 2025).
+- Seguros Bolívar rehízo su arquitectura de datos y apunta a que la mitad de sus interacciones pase por IA a fines de 2026 (Impacto TIC, 2026).
+- Interseguro aprobó y certificó una política de uso de IA por directorio (Interseguro, 2026b, documento ya no disponible en la dirección citada).
+- No se hallaron costos de programa ni fracasos de núcleo documentados con nombre; el horizonte típico es de 3 a 5 años.
+
+---
+
+## 14. Territorios de exploración: México, India y Turquía
 
 Tres mercados donde ya ocurre, a mayor escala, lo que en Sudamérica recién empieza.
 
@@ -906,9 +1066,176 @@ Tres mercados donde ya ocurre, a mayor escala, lo que en Sudamérica recién emp
 
 **Lectura nuestra:** India muestra lo que hace la infraestructura pública cuando quita pasos; México, que una plataforma de pagos sin adopción no basta; Turquía, que la IA puede medirse en dinero cuando se publica.
 
+### 14.1 México en detalle
+
+- **Mercado:** las primas directas crecieron 16% en 2024 y superaron los MXN 919.000 millones, pero la tenencia siguió baja: 32% de los adultos en el Noreste y 16% a 17% en el centro-sur y el sur (El Cronista, 2026a). Para 2025, la AMIS habla del primer billón de pesos y de una penetración de 2,94% del PIB, con solo 23% de los adultos asegurados (Vanguardia, s. f.). Es el patrón peruano: primas que crecen sin que crezca la base de asegurados.
+- **Bancaseguros digital:** BBVA Seguros emitió más de MXN 91.000 millones en primas en 2025 (+18%) y pagó más de 519 mil siniestros (BBVA, 2026b).
+- **Billetera con aseguradora detrás:** Mercado Pago entró en 2023 con un seguro contra robos operado por BNP Paribas Cardif (DPL News, s. f.).
+- **Plataforma de datos:** GNP, la mayor aseguradora del país, contrató a Palantir para fraude y suscripción; sin resultados publicados (Let's Money, s. f.-b).
+- **Insurtech con licencia propia:** Momento Seguros triplicó su base en 2025 y levantó US$ 10,25 millones (El Cronista, s. f.); Crabi levantó US$ 13,6 millones para seguro de auto (Pulse 2.0, s. f.). México tendría unas 150 insurtech, solo detrás de Brasil.
+- **Advertencia:** las quejas contra aseguradoras crecieron 7,76% en el primer semestre de 2026, con 26.863 reclamaciones (Expansión, 2026). Digitalizar la venta sin cuidar el servicio traslada el problema a la posventa.
+- **Qué explorar desde Perú (lectura nuestra):** los criterios de elegibilidad del ajuste sin visita de Quálitas, el caso antifraude en salud y la compra en grupo de BBVA.
+
+### 14.2 India en detalle
+
+- **Mercado:** penetración total de 3,7% en 2024-25; la de vida cayó por tercer año, a 2,7%; la de no vida siguió en 1% (IRDAI, 2025). La escala digital no basta para subir la penetración.
+- **La distribución digital puede ser rentable:** PB Fintech, dueña de Policybazaar, intermedió ₹29.934 crore en primas (+42%), con ingresos de ₹6.794 crore (+37%) y utilidad de ₹670 crore (+115%) en 2025-26 (PB Fintech, 2026).
+- **Una aseguradora nacida digital puede sostenerse, pero con pérdida técnica:** Go Digit emitió ₹11.300 crore, con ROE de 17,7% y ratio combinado de 105,7%: gana por inversiones (Go Digit, 2026).
+- **Salud en minutos:** Digit aprobó 82,9% de sus solicitudes sin desembolso en menos de 30 minutos (promedio 21,38) (Business Today, 2026); Star Health procesa cerca de 20% solo con IA y apunta a más de 50% en dos años (Digital Health News, s. f.).
+- **WhatsApp con tope de monto:** HDFC ERGO liquida por WhatsApp siniestros de auto de hasta ₹20.000 con inspección asistida por IA (Outlook Business, s. f.). El tope de monto es un criterio de elegibilidad simple y replicable.
+- **Seguros masivos por débito:** los programas públicos de vida y accidentes suman 278 y 588 millones de inscripciones acumuladas, con prima anual mínima cobrada de la cuenta (Outlook Money, s. f.-a).
+- **Fuera de las grandes ciudades:** los distritos de mayoría rural aportaron 43% de las primas nuevas de vida y salud, frente a 41% dos años antes (Insurance Business, s. f.).
+- **Infraestructura pública:** el regulador prepara Bima Sugam, un mercado electrónico único, con revisión de comisiones (el sector pagó cerca de ₹1 lakh crore en un año) y productos sin comisión con tarifa de plataforma; el proyecto viene de 2022 y acumula retrasos (Angel One, s. f.-a, s. f.-b).
+- **Advertencias:** la venta indebida es la causa principal de cancelaciones y quejas (Outlook Money, s. f.-b; Business Standard, s. f.); la bolsa nacional de reclamos de salud tiene volumen mínimo por costos de integración (Whalesbook, s. f.); el seguro agrícola por satélite paga rápido, pero algunos agricultores reportan indemnizaciones menores.
+- **Qué explorar desde Perú (lectura nuestra):** publicar y gestionar tiempos de aprobación en salud, el tope de monto para liquidar por WhatsApp y el cobro anual mínimo por débito como vía de microseguro.
+
 ---
 
-## 14. De lo más probado a lo que aún está en prueba
+## 15. Siete oportunidades para una aseguradora en Perú
+
+El informe de noviembre ordenó siete oportunidades por la solidez de su respaldo; la presentación al CEO y el informe final las agruparon en cuatro ideas (secciones 9 a 12). Esta sección conserva las siete para no perder detalle. El orden es lectura propia.
+
+**La barrera en Perú es de demanda y acceso (informalidad, confianza, complejidad del producto), más que tecnológica.** Un panel de APESEG: «el canal digital por sí solo no hace la tarea, también se necesita que sea asistido» (Gestión, 2024).
+
+| # | Oportunidad | Palanca de valor | Solidez del respaldo | Idea |
+| --- | --- | --- | --- | --- |
+| 1 | Siniestros vehiculares de punta a punta por WhatsApp | Costo de servir, tiempos, satisfacción | Alta | 1 |
+| 2 | Herramientas de IA para corredores | Productividad comercial, comisiones | Media-alta | 3 |
+| 3 | Seguros embebidos de bajo ticket | Clientes nuevos | Media (volumen sí, prima no) | 2 |
+| 4 | Antifraude documental y en reembolsos de salud | Costo de siniestros | Media (sin datos de Perú) | Back-office |
+| 5 | Paramétricos de sismo y lluvia | Producto nuevo, brecha de protección | Baja-media (regulación nueva) | Producto |
+| 6 | Cobro recurrente digital | Persistencia | Baja (solo expectativas en seguros) | 4 |
+| 7 | Plataforma de datos y nube por etapas | Habilitador de las demás | Media | Back-office |
+
+**1. Siniestros vehiculares de punta a punta por WhatsApp.**
+- **Qué es:** automatizar con IA generativa las jornadas simples y de alto volumen: robo, lunas, autopartes, asistencia.
+- **Referencias:** Porto, Tokio Marine, RIMAC, Pacífico, Quálitas, HDFC ERGO.
+- **Por qué en Perú:** ataca la presión de gastos y es donde está la evidencia más sólida de satisfacción.
+- **Cautelas:** RIMAC y Pacífico ya están ahí; el traspaso a un humano debe diseñarse bien; ningún caso publica ahorro en moneda.
+
+**2. Herramientas de IA para corredores.**
+- **Qué es:** dar al corredor cotización, emisión, renovaciones y soporte asistidos por IA, en lugar de competir con él.
+- **Referencias:** Bradesco con Segura, Pier, Junto Seguros, Iglu de AVLA, Mapfre «A Tu Lado».
+- **Por qué en Perú:** el corredor es el canal más relevante, el digital directo es caro y un corredor más productivo es la forma de sostener las comisiones.
+- **Cautelas:** no hay métricas independientes de productividad.
+
+**3. Seguros embebidos de bajo ticket.**
+- **Qué es:** coberturas simples dentro de la compra de otro producto: billeteras, comercio electrónico, viajes, telefonía, crédito.
+- **Referencias:** Mercado Pago, PicPay, Nubank, Assurant con Bemol; en Perú, Pacífico con Yape y Falabella, seguros de viaje desde S/ 3, y RIMAC con Grupo EFE.
+- **Por qué en Perú:** 43% compraría un seguro embebido; es la vía para llegar a quien nunca compró.
+- **Cautelas:** aporta alcance antes que prima; quien no pertenezca al grupo de Yape necesita un socio equivalente; riesgo de desintermediación y de sanciones por venta atada.
+
+**4. Antifraude documental y en reembolsos de salud.**
+- **Qué es:** validación automática de documentos y modelos de detección sobre siniestros y reembolsos.
+- **Referencias:** Colombia (60% del fraude es documental), Brasil (2,7% de los siniestros), SulAmérica, Qantev, RIMAC.
+- **Por qué en Perú:** cada punto recuperado de los siniestros pagados equivaldría a unos S/ 100 millones para el sistema.
+- **Cautelas:** no hay cifra gremial de fraude para Perú; los ahorros medidos los publican proveedores.
+
+**5. Paramétricos de sismo y lluvia.**
+- **Qué es:** seguros que pagan cuando un índice supera un umbral, sin ajuste de daños.
+- **Referencias:** reglamento SBS de 2026; Mapfre Perú (terremoto a una caja; conversa por El Niño); La Positiva («Café Seguro Perú»); MiCRO de Howden (690 mil asegurados y US$ 26 millones pagados en Colombia y Centroamérica) (Howden, s. f.); Sancor (índice satelital de déficit hídrico).
+- **Por qué en Perú:** 96,5% de las viviendas sin seguro sísmico, El Niño y un producto que por diseño se vende y se paga en digital.
+- **Cautelas:** el riesgo de base es real: el piloto de Ecuador no pagó en su primer ciclo; la escala llega cuando hay un programa público detrás.
+
+**6. Cobro recurrente digital.**
+- **Qué es:** cobrar la prima por débito recurrente sobre pagos instantáneos y billeteras para reducir cancelaciones por impago.
+- **Referencias:** Pix Automático (MAG, Tokio Marine), Justos, UPI AutoPay; TAPP desde 2027.
+- **Cautelas:** en seguros solo hay expectativas de menor morosidad; se pierde la señal temprana del débito fallido; límite legal del consentimiento.
+
+**7. Plataforma de datos y nube por etapas.**
+- **Qué es:** ordenar los datos y modernizar el núcleo por dominios antes de escalar la IA.
+- **Referencias:** RIMAC prioriza casos de IA por disponibilidad de datos, preparación de la unidad de negocio e impacto potencial (IMD, s. f.); Seguros Bolívar se consolidó como entidad guiada por datos; San Cristóbal tardó casi una década.
+- **Cautelas:** horizonte de 3 a 5 años, sin costos publicados. La pregunta ya no es si la aseguradora usará IA, sino cuántos de sus pilotos llegaron a producción.
+
+**Apuestas con evidencia en contra:**
+- Una aseguradora digital separada o el canal directo como tesis central (Youse, Pier).
+- Invertir temprano en casos de uso de finanzas abiertas (unos 3.000 consentimientos en Brasil).
+- El ecosistema de bienestar como motor de rentabilidad (Betterfly; telemedicina sin efecto medido).
+
+**Una tercera opción poco explorada:** la Resolución SBS N.° 02645-2026 permite a la aseguradora actuar ella misma como distribuidora de productos financieros de terceros.
+
+---
+
+## 16. Mapa de señales de innovación
+
+Propuestas que todavía no reportan impacto en el negocio, pero indican hacia dónde se mueve la región. Sirven para decidir qué vigilar y qué probar a pequeña escala, no para sostener un caso de inversión. Madurez: *anuncio* (comunicado sin datos), *piloto* (en prueba o alcance limitado), *en producción* (operando, sin resultados de negocio publicados).
+
+### 16.1 Agentes de IA que venden y atienden
+
+| Señal | Quién | Madurez | Qué vigilar |
+| --- | --- | --- | --- |
+| Siniestro resuelto íntegramente por IA en WhatsApp; apertura por nota de voz | Mapfre Brasil (TI Inside, 2025) | En producción | Casos que terminan sin humano |
+| Agentes en WhatsApp que cotizan y emiten pólizas | HDI Seguros Colombia (Impacto TIC, s. f.-a) | En producción | HDI reconoce que la IA rinde menos que el humano con clientes de alta intención de compra |
+| Venta del SOAP por WhatsApp en 2-3 minutos | Lider Bci, Chile (Chócale, 2025) | En producción | Conversión y persistencia |
+| Venta de seguros asistida por IA dentro de la billetera | Mercado Pago (CQCS, s. f.-e) | Anuncio | Si desplaza al portador del riesgo |
+| Sitio web como asesor digital; rediseño que sube 10% los leads en un mes | RIMAC (sin confirmar) | En producción | Costo de adquisición |
+| Meta de que la mitad de las interacciones pase por IA a fines de 2026 | Seguros Bolívar (Impacto TIC, 2026) | Meta declarada | Si publica el resultado |
+| «Humanos aumentados»: agentes que amplían al equipo de servicio | Seguros Mundial (Impacto TIC, s. f.-b) | Piloto | Productividad por agente |
+| Nueve de cada diez siniestros pagados en línea | Cardif Colombia (Valora Analitik, s. f.) | En producción | Tiempos y reclamos |
+| Asistente con IA y voz, 24/7 | Sancor Seguros, Argentina (Revista Seguros, s. f.) | En producción | Sin métricas |
+| Agentes de voz en asistencia vial y robo parcial | Quálitas, México (SoundHound, s. f.) | En producción | Fuera de Sudamérica |
+| Cotización dentro de ChatGPT | Pier, Tuio, Aviva (Let's Money, 2026c) | En producción | Walmart cerró su compra en ChatGPT por convertir tres veces menos |
+
+### 16.2 IA en el trabajo interno y de corredores
+
+| Señal | Quién | Madurez | Qué vigilar |
+| --- | --- | --- | --- |
+| IA generativa en la ingeniería de productos | HDI Seguros Brasil con insureMO (CQCS, s. f.-d) | Piloto | Tiempo real de salida al mercado |
+| Emisiones y consultas en lenguaje natural para corredores | Junto Seguros, Brasil (Baguete, s. f.) | En producción | Adopción entre corredores |
+| Plataforma de IA gratuita para corredores, pagada por las aseguradoras | Segura, Brasil (InfoMoney, 2026) | En producción | Dependencia de un tercero |
+| Análisis automático de documentos en siniestros de vida | Colmena Seguros, Colombia (sin confirmar) | En producción | Tasa de error |
+| Póliza simplificada que se lee en 7 minutos; más de 70 mil clientes al mes | Pacífico (El Comercio, s. f.-b) | En producción | Efecto en reclamos y cancelaciones |
+| Reconocimiento de imágenes que aprueba 59% de los siniestros de hogar | Pacífico (sin confirmar) | En producción | Fuente no localizada |
+| Inspección vehicular digital desde el celular | La Positiva (sin confirmar) | En producción | Fraude en la inspección remota |
+| Asistente digital Trusty | La Positiva (Gestión, 2025b) | En producción | Sin métricas publicadas |
+| Política de uso de IA aprobada por directorio y certificada | Interseguro (Interseguro, 2026b) | En producción | Si otras la siguen |
+| Startup propia de IA y analítica para prevención | La Segunda, Argentina (iProUP, s. f.) | Anuncio | Clientes externos |
+| Recepción y clasificación automática de siniestros desde el correo | Aseguradora colombiana (Ditempo, s. f.) | Piloto | Resultados de un proveedor |
+| Plataforma de datos e IA para fraude, suscripción y siniestros | GNP, México, con Palantir (Let's Money, s. f.-b) | Anuncio | Sin resultados |
+
+### 16.3 Nuevos productos y modelos de distribución
+
+| Señal | Quién | Madurez | Qué vigilar |
+| --- | --- | --- | --- |
+| Unidad de embebidos en fintech; cobertura que un repartidor activa al aceptar un pedido | MetLife Xcelerator (Chócale, 2026) | En producción | Volúmenes reales |
+| Más de 12 productos embebidos y 14 más previstos; viaje desde S/ 3 | Pacífico (Gestión, 2026b) | En producción | Hoy pesa menos de 1% |
+| Seguro de salud dentro de la billetera | Pacífico con Yape (Perú Retail, s. f.) | Piloto (2.100 pólizas iniciales) | Siniestralidad y permanencia |
+| Pruebas de demanda con botón «Me interesa» | Yape (Yape, 2026) | Prueba | Intención frente a compra |
+| Co-creación con un grupo de retail usando IA sobre perfiles de cliente | RIMAC con Grupo EFE (Mercado Negro, 2026) | Anuncio | Distribución fuera de Lima |
+| Microseguros para emprendedores vendidos por microfinancieras | Mapfre «A Tu Lado» (Mapfre, 2026; Coverager, s. f.) | En producción | Meta de 250.000 clientes |
+| Aseguradora que vende productos financieros de terceros | Resolución SBS N.° 02645-2026 (LP Derecho, 2026) | Regulación nueva | Quién lo usa primero |
+| Cobro de primas con Pix Automático | MAG, Tokio Marine (Let's Money, 2026b) | En producción | Morosidad |
+| Programa de salud incluido: 13 programas en línea sin costo | BCI Seguros, Chile (BCI Seguros, s. f.) | En producción | Uso, renovación, siniestralidad |
+| Compra en grupo de seguro de auto | BBVA México (BBVA, 2026a) | En producción | Persistencia del grupo |
+
+### 16.4 Riesgo, datos y prevención
+
+| Señal | Quién | Madurez | Qué vigilar |
+| --- | --- | --- | --- |
+| Paramétrico de terremoto para una entidad financiera | Mapfre Perú (Gestión, 2026c) | En producción (un caso) | Réplica en cajas y municipios |
+| Paramétrico para caficultores | La Positiva con Midagri y Blue Marble (Agraria.pe, 2025) | Lanzamiento | Calibración del índice |
+| Índice satelital de déficit hídrico para soja y maíz | Sancor, Argentina (Innovación Digital 360, s. f.) | En producción | Minoritario frente al granizo |
+| Microseguro paramétrico: 690 mil asegurados, US$ 26 millones pagados | MiCRO de Howden (Howden, s. f.) | En producción | Depende de programas públicos |
+| Telemetría y autos conectados | Mapfre Argentina (iProfesional, s. f.) | Piloto | Adopción, hoy baja; el auto por uso en Brasil mostró 57% de siniestralidad frente a 73% (dato de proveedor, 2022) |
+| Wearables, telemedicina y bienestar en un recorrido de cuidado | Aseguradoras de salud y vida en Brasil (Legismap, 2025b) | Piloto | Betterfly mostró que el bienestar solo no sostiene el negocio |
+| Auto por comportamiento de conducción medido desde el celular | Justos (DriveQuant, 2025) | En producción | «Aún es pronto para medir cambios de conducta» |
+| Puntos por manejar bien, con detección de choques | SURA con Jooycar, Chile (OCTO Telematics, s. f.) | En producción | Predice nueve veces mejor los siniestros, según el proveedor |
+| Localización y telemetría en flotas | Quálitas (Quálitas, 2025) | En producción | 53% de recuperación; solo 7% de los robados lo tenía |
+
+### 16.5 Lectura de las señales
+
+1. **El chat es la interfaz.** Casi todas las señales de venta y servicio pasan por WhatsApp, no por apps nuevas.
+2. **La IA pasa del aviso a la resolución y de la atención al producto** (Mapfre Brasil, HDI).
+3. **El modelo híbrido se impone.** HDI admite que la IA vende peor que el humano cuando el cliente ya quiere comprar; Seguros Mundial habla de «humanos aumentados»; «La IA es un commodity. El humano es el nuevo lujo» (Gestión, 2026e).
+4. **La regulación abre productos antes de que exista demanda probada** (paramétricos, productos de terceros).
+
+**Tres señales para una prueba pequeña en Perú, por su bajo costo de entrada (lectura nuestra):** la apertura de siniestros por nota de voz, la póliza simplificada y el paramétrico para carteras de crédito de cajas y microfinancieras.
+
+**Financiación:** la inversión insurtech regional cayó a US$ 92 millones en 2024 y repuntó a US$ 199 millones en 2025 (+117%), con 536 empresas activas (Reinsurance News, 2026). El capital va a IA y a modelos que venden a las aseguradoras: para una aseguradora tradicional es un mercado de compradores.
+
+---
+
+## 17. De lo más probado a lo que aún está en prueba
 
 | Solución | Para quién | Componente COM-B | Dato |
 | --- | --- | --- | --- |
@@ -929,7 +1256,7 @@ Tres mercados donde ya ocurre, a mayor escala, lo que en Sudamérica recién emp
 
 ---
 
-## 15. Lo que no funcionó y lo que nadie publica
+## 18. Lo que no funcionó y lo que nadie publica
 
 **En una frase:** lo que falló forzó el canal o el producto en vez de seguir al cliente. Los fracasos rara vez se publican, así que la muestra sobrerrepresenta los éxitos.
 
@@ -944,6 +1271,8 @@ Tres mercados donde ya ocurre, a mayor escala, lo que en Sudamérica recién emp
 | Seguros en neobancos con socios cambiantes | Ualá (Argentina) cambió dos veces de socio asegurador; su primera oferta redirigía al sitio del corredor justo en el momento de contratar | Romper el flujo en el momento de comprar | iProUP (2021) |
 | Vender dentro de un asistente de IA | El proceso de compra de Walmart dentro de ChatGPT se cerró tras convertir tres veces menos que sus canales tradicionales | Suponer que un canal nuevo convierte solo | Let's Money (2026c) |
 | Datos abiertos por norma | El sistema brasileño para compartir datos de seguros registró solo unos 3.000 consentimientos | Creer que la infraestructura crea demanda | InfoMoney (2024) |
+| Marca digital directa | Youse, de Caixa Seguradora, tiene aseguradora propia autorizada pero, según el informe de noviembre, sin pólizas emitidas (sin confirmar), y se reestructuró hacia la venta a través de socios | Una aseguradora digital separada como tesis central | Youse (2025) |
+| Paramétrico sin calibrar | El primer ciclo del seguro agrícola paramétrico de Ecuador cubrió a 2.511 agricultores (cifra sin confirmar en la lectura completa) y no pagó, porque las lluvias no alcanzaron el umbral | Lanzar sin calibrar el índice ni explicar el riesgo de base | El Diario (2026) |
 
 Encontrado y no usado en la presentación: Latú (Brasil) cerró en 2025; se dejó fuera para no sumar casos de Brasil.
 
@@ -959,22 +1288,30 @@ Encontrado y no usado en la presentación: Latú (Brasil) cerró en 2025; se dej
 
 ---
 
-## 16. Perú: competencia, grupos financieros y lo que viene
+## 19. Perú: competencia, grupos financieros y lo que viene
 
-### 16.1 Cómo captura valor cada competidor
+### 19.1 Cómo captura valor cada competidor
 
 **En una frase:** cada competidor captura valor digital por un camino distinto, y ninguno publica cifras de su canal digital propio que podamos comparar.
 
 | Aseguradora | Participación 2025 | Camino | Qué hace | Fuente |
 | --- | --- | --- | --- | --- |
-| RIMAC | 28,4% | Servicio digital e IA | 76% de las interacciones por canal digital; agente de IA que analiza un siniestro vehicular en 60 segundos en lugar de 48 horas (sección 17.1) | RIMAC (2026e); Infomercado (2025a) |
+| RIMAC | 28,4% | Servicio digital e IA | 76% de las interacciones por canal digital; agente de IA que analiza un siniestro vehicular en 60 segundos en lugar de 48 horas (sección 20.1) | RIMAC (2026e); Infomercado (2025a) |
 | Pacífico (Credicorp) | 22,6% | Ecosistema | Seguro de salud dentro de Yape con meta de 30.000 afiliados en su primer año; Yape vende SOAT y protección de tarjeta y cuenta. Lo embebido es menos de 1% de su portafolio; proyecta 14 productos embebidos. Yape: «Lo que nos falta es lograr un mayor uso» | Descubre.vc (2025); RPP (2026); Gestión (2026b) |
 | Pacífico | — | IA en el siniestro | Su asistente «Vera» redujo 70% el tiempo de atención en rotura de lunas y robo de autopartes | El Peruano (2026a) |
 | Mapfre Perú | 13,0% | Microfinancieras e IA | «A Tu Lado» (abril de 2026, Arequipa): microseguros simples vendidos por microfinancieras, con un asistente de IA en WhatsApp de empatIA Technology que responde en tiempo real al asesor y al cliente; ya opera en Brasil y Colombia; meta de 250.000 clientes a fines de 2026. Colocó un paramétrico de terremoto a una caja de ahorro | Mapfre (2026); Gestión (2026c) |
 | La Positiva | 12,3% (Seguros + Vida) | Producto y WhatsApp | Seguro contra El Niño desde enero de 2010 (Piura); socia, con el Midagri y Blue Marble, de «Café Seguro Perú», un paramétrico para caficultores contra el exceso o la falta de lluvias | Proactivo (s. f.); Agraria.pe (2025) |
 | Interseguro (Intercorp) | 9,4% | Banco del grupo | Utilidad +52% y primas emitidas +30% a septiembre de 2026; IFS no lo atribuye al canal digital | Perú Retail (2026b) |
 
-### 16.2 Los grupos financieros: Credicorp e Intercorp
+**Lo que declaran las competidoras en sus memorias y comunicados** (cifras propias, no auditadas ni comparables entre sí; no las usamos para ordenar a las compañías por madurez):
+
+- **Pacífico:** su app Mi Espacio Pacífico registró 7,5 millones de transacciones en 2025 (+45%); más de 80% de la posventa se autogestiona; 76% de resolución en el primer contacto; la mitad de los siniestros leves de auto se declara en menos de cinco minutos; su chatbot Vera completó más de 330 mil transacciones autónomas con un NPS 13% mejor (Pacífico Seguros, 2026b).
+- **Interseguro:** NPS de 56 (+10 puntos), atribuido en parte a su canal de WhatsApp (Interseguro, 2026a, documento ya no disponible en la dirección citada); migra a Google Cloud con Kyndryl (Revista Economía, 2024); aprobó una política de uso de IA por directorio (Interseguro, 2026b).
+- **Mapfre:** más de 150 casos de uso de IA en el grupo durante 2025 (Interempresas, 2025).
+- **La Positiva:** asistente digital Trusty (Gestión, 2025b); el informe de noviembre le atribuye inspección vehicular desde el celular e IA para detectar fraude en masivos (sin confirmar).
+- **RIMAC:** 76% de interacciones digitales en 2025 y migración de sus bases críticas a Oracle Cloud (RIMAC, 2026e; Oracle, s. f.); detalle en la sección 20.1.
+
+### 19.2 Los grupos financieros: Credicorp e Intercorp
 
 **En una frase:** Pacífico vende más por el banco que por Yape: la bancaseguros aporta 35% de sus primas (26% en 2021), y lo vendido en Yape y otras apps de socios, menos de 1%. Yape es un canal real, pero todavía pequeño para el seguro.
 
@@ -1008,7 +1345,7 @@ Encontrado y no usado en la presentación: Latú (Brasil) cerró en 2025; se dej
 
 **Sobre los usuarios de Yape:** las fuentes dan cifras distintas porque miden cosas distintas: más de 20 millones de usuarios (RPP, 2026), 16,7 millones activos al mes (Forbes Perú e Infomercado, citados en RIMAC, 2026b) y 17,0 millones activos al mes en septiembre de 2026 (Gan@Más, 2026). Usamos esta última.
 
-### 16.3 Lo que llega a Perú
+### 19.3 Lo que llega a Perú
 
 | Frente | Cuándo | Qué | Fuente |
 | --- | --- | --- | --- |
@@ -1022,7 +1359,7 @@ Encontrado y no usado en la presentación: Latú (Brasil) cerró en 2025; se dej
 | Riesgo climático | 2026–2027 | Ante un Fenómeno El Niño que podría ser extraordinario, Credicorp e Interbank preparan ofertas preventivas y provisiones | Gan@Más (2026); Perú Retail (2026b) |
 | Advertencia | — | La infraestructura no crea demanda: los datos abiertos de seguros de Brasil sumaron unos 3.000 consentimientos | InfoMoney (2024) |
 
-### 16.4 Ocho vectores de cambio (matriz del equipo)
+### 19.4 Ocho vectores de cambio (matriz del equipo)
 
 | Vector | Qué significa | Un dato que lo ilustra |
 | --- | --- | --- |
@@ -1039,9 +1376,9 @@ Los vectores son una agrupación del equipo, no un marco publicado. Las cifras d
 
 ---
 
-## 17. RIMAC por dentro (USO INTERNO)
+## 20. RIMAC por dentro (USO INTERNO)
 
-### 17.1 La línea base pública
+### 20.1 La línea base pública
 
 Todos los datos de esta subsección los declara RIMAC en sus memorias o en notas de prensa; no tienen verificación independiente.
 
@@ -1060,7 +1397,7 @@ Todos los datos de esta subsección los declara RIMAC en sus memorias o en notas
     - Canales de otros: cerca de 30.000 seguros al mes a través del banco del Grupo EFE y más de 20 alianzas de bancaseguros (Revista Economía, 2026).
     - Corredores: portal donde gestionan y emiten pólizas por su cuenta (RIMAC, 2026e).
 
-### 17.2 Radiografía digital (USO INTERNO)
+### 20.2 Radiografía digital (USO INTERNO)
 
 Corte a julio de 2026 (RIMAC, 2026d), con la versión corregida de la presentación al CEO (RIMAC, 2026b). «Penetración digital» = clientes registrados en la app o la web privada; «MAU» = usuarios activos en el mes. Un cliente con varios productos aparece en cada uno.
 
@@ -1185,11 +1522,11 @@ En vida e inversión el flujo genera contactos para un asesor: Vida con Devoluci
 
 ---
 
-## 18. Lo que dicen las usuarias
+## 21. Lo que dicen las usuarias
 
 Dos entrevistas en profundidad realizadas por el equipo en noviembre de 2026 a usuarias de apps de varias aseguradoras (RIMAC, 2026c). Participantes anonimizadas como «Mujer, 40» y «Mujer, 45». Ilustran motivos, no miden frecuencias. La mujer de 45 es cliente de salud de RIMAC.
 
-### 18.1 Perfiles
+### 21.1 Perfiles
 
 | | Mujer, 40 | Mujer, 45 |
 | --- | --- | --- |
@@ -1200,7 +1537,7 @@ Dos entrevistas en profundidad realizadas por el equipo en noviembre de 2026 a u
 
 **Canal por momento:** comprar, por banco o teléfono; pagar, por banco o tarjeta; consultar, en la app; reclamar, por WhatsApp o teléfono; renovar, con recordatorios por WhatsApp.
 
-### 18.2 Ocho hallazgos y sus verbatims
+### 21.2 Ocho hallazgos y sus verbatims
 
 1. **El siniestro bien resuelto pasa por WhatsApp con una persona, no por la app.**
    > «En menos de 10 minutos yo ya había reportado el choque, mandado las fotos […]. Siento que es más fácil hasta que entrar a un mismo aplicativo […]. En el aplicativo te dan las opciones marca A, B, C, D, y tú no quieres ninguna de esas. Siento que alguien respondiendo es la mejor opción.» (Mujer, 40)
@@ -1221,7 +1558,7 @@ Dos entrevistas en profundidad realizadas por el equipo en noviembre de 2026 a u
 7. **En el canal de un socio, la marca de la aseguradora se pierde.** La mujer de 45 dudó si su seguro vehicular, comprado en su banco, era de La Positiva o de Pacífico.
 8. **El seguro se gestiona en el hogar.** En el hogar de la mujer de 40, la pareja es «el más tecnológico» y maneja las apps; ella organiza los pagos y le recuerda la cuota. Las dos pólizas están a nombre de él.
 
-### 18.3 Cruce con los datos internos (USO INTERNO)
+### 21.3 Cruce con los datos internos (USO INTERNO)
 
 | Lo que dijeron | Lo que muestran los datos de RIMAC | Idea |
 | --- | --- | --- |
@@ -1234,11 +1571,11 @@ Dos entrevistas en profundidad realizadas por el equipo en noviembre de 2026 a u
 
 ---
 
-## 19. Qué significa para RIMAC: prioridades y hoja de ruta
+## 22. Qué significa para RIMAC: prioridades y hoja de ruta
 
 Esta sección es lectura nuestra de los datos anteriores; no la formula ninguna fuente.
 
-### 19.1 Dónde está RIMAC en cada idea
+### 22.1 Dónde está RIMAC en cada idea
 
 | Idea | Dónde está RIMAC | Brecha frente a la región | Siguiente paso sugerido |
 | --- | --- | --- | --- |
@@ -1247,7 +1584,7 @@ Esta sección es lectura nuestra de los datos anteriores; no la formula ninguna 
 | 3 · Corredores | Portal donde el corredor emite. Internamente: 29% de la cartera llegó por corredores; más de 97% en EPS | En Brasil, el corredor prefiere a quien le simplifica la rutina, y la herramienta documentada es gratuita para él | Medir cuántas horas le ahorra el portal y la participación de RIMAC en su cartera |
 | 4 · Un clic | Internamente: 79.791 consultas del cronograma frente a 15.927 pagos y 1.392 afiliaciones; renovación vehicular digital 22 frente a 734 | India y Brasil ya cobran primas con una sola autorización | Ofrecer el pago o la afiliación en la pantalla del cronograma; probar la renovación de un paso en SOAT sin siniestro (fuga de 6,22% en no digitales); prepararla sobre TAPP |
 
-### 19.2 Cómo encaja con la presentación al CEO
+### 22.2 Cómo encaja con la presentación al CEO
 
 La presentación «Radiografía del cliente digital» ordena el crecimiento en tres momentos y dos horizontes (RIMAC, 2026b):
 
@@ -1259,11 +1596,11 @@ La presentación «Radiografía del cliente digital» ordena el crecimiento en t
 
 El horizonte 2 deja abierta la pregunta del indicador: si el valor se captura fuera de la app, los usuarios activos al mes dejan de medir el éxito. **Propuesta:** la persistencia de la cartera como indicador principal, acompañada del costo por gestión resuelta.
 
-### 19.3 La palanca que conecta todo
+### 22.3 La palanca que conecta todo
 
 Si el siniestro es la puerta de entrada y los clientes digitales abandonan menos, el siniestro resuelto en digital puede conectar las cuatro ideas: mejora la experiencia (1), recupera la relación con los clientes de socios (2), libera al corredor (3) y abre la puerta al pago y la renovación de un paso (4). **Para comprobarlo:** una prueba con grupo de control que invite a registrarse durante el siniestro a una parte de los clientes y compare su fuga a 12 meses con la del resto. Las entrevistas sugieren dos ajustes: ofrecer el aviso también por WhatsApp con una persona, y ofrecer el débito en el mismo momento del siniestro o la renovación, conectado al banco donde el cliente ya paga.
 
-### 19.4 Hoja de ruta sugerida
+### 22.4 Hoja de ruta sugerida
 
 | Plazo | Acción | Idea | Indicador | ¿Universal o contexto? |
 | --- | --- | --- | --- | --- |
@@ -1276,7 +1613,7 @@ Si el siniestro es la puerta de entrada y los clientes digitales abandonan menos
 | 12 a 24 meses | Débito de un paso sobre TAPP y renovación automática con elección activa, validada con legal | 4 | Persistencia de la cartera | Mecanismo universal; medio de pago y norma locales |
 | 12 a 24 meses | Decidir el juego del ecosistema: dónde embeberse y con qué reparto de margen y de relación | 2 | Primas y persistencia por socio | Contexto |
 
-### 19.5 Preguntas abiertas para decidir
+### 22.5 Preguntas abiertas para decidir
 
 - **Corredores:** ¿cobrarles por las herramientas digitales o ganar su preferencia? En el caso documentado, el corredor no paga.
 - **Venta embebida:** ¿con qué socio y con qué reparto del margen, si el canal de mayor alcance pertenece al grupo de un competidor?
@@ -1284,9 +1621,49 @@ Si el siniestro es la puerta de entrada y los clientes digitales abandonan menos
 
 ---
 
-## 20. Conclusiones, preguntas de investigación, límites, discrepancias y pendientes
+## 23. Veinte insights en una página
 
-### 20.1 Conclusiones
+Síntesis del documento «20 insights» (noviembre de 2026).
+
+**Sudamérica**
+
+1. La región compra poco seguro voluntario, y la penetración que se publica lo esconde.
+2. Hay dos Sudaméricas, y los casos vienen de la que menos se parece a Perú.
+3. Lo digital entra por el seguro obligatorio y simple.
+4. La distribución se muda a billeteras y fintech, que se quedan con la relación.
+5. El alcance de lo embebido todavía no se convierte en negocio.
+6. El intermediario sigue mandando, y la IA entra para ayudarlo, no para reemplazarlo.
+7. WhatsApp e IA ya resuelven siniestros y ventas, pero se miden en minutos, no en dinero.
+8. Los medios de pago se están construyendo ahora, y Perú llega en 2027.
+9. La inclusión se diseña con la población y se financia en conjunto.
+10. El bienestar como negocio fracasó en la región.
+11. La confianza es la restricción, y casi nadie la está trabajando.
+12. La macroeconomía y el sistema público mueven la demanda más que lo digital.
+13. En Perú, el cliente busca en digital pero compra con personas, y el margen se aprieta.
+
+**Brasil**
+
+14. Lo digital eleva la satisfacción, pero casi no mueve los ingresos.
+15. El poder se desplaza al distribuidor, y el corredor se arma con tecnología.
+16. Un medio de pago cambia el cobro; los datos abiertos, todavía no.
+
+**México**
+
+17. El siniestro digital ya opera a escala y previene pérdidas.
+18. Infraestructura sin adopción y crecimiento sin inclusión.
+
+**Turquía**
+
+19. La única gran aseguradora que pone precio a su IA.
+20. Obligar no asegura; facilitar el pago y el acceso, sí ayuda.
+
+**Lo que se agregó después de los 20 insights:** el índice de desarrollo estructural y los dos bloques; la matriz conductual (la familia primero); el peso de la bancaseguros frente a Yape en Pacífico; la síntesis de tácticas por momento del cliente.
+
+---
+
+## 24. Conclusiones, preguntas de investigación, límites, discrepancias, pendientes y estado de la evidencia
+
+### 24.1 Conclusiones
 
 1. **El freno es el seguro, no el pago.** 51,7% de los peruanos ya paga en digital, pero los seguros voluntarios + SOAT son 1,7% del PBI, frente a 2,7% en América Latina.
 2. **Perú compra menos seguro que países con su mismo desarrollo.** México (2,6%) y Colombia (2,2%) tienen un índice de desarrollo estructural parecido. La brecha no se explica solo por desarrollo: apunta a la conducta y las creencias.
@@ -1300,7 +1677,7 @@ Si el siniestro es la puerta de entrada y los clientes digitales abandonan menos
 10. **En Perú, el ecosistema vende por el banco, no por la billetera:** 35% de las primas de Pacífico por bancaseguros, menos de 1% por Yape y otras apps.
 11. **RIMAC no necesita que más clientes abran la app, sino que la prima se cobre sola y que el siniestro se resuelva donde el cliente ya está.**
 
-### 20.2 Qué investigar en Perú antes de decidir
+### 24.2 Qué investigar en Perú antes de decidir
 
 1. **¿Cómo influyen las creencias y la idiosincrasia de los peruanos en su relación con la banca y los seguros?** La confianza en las instituciones, el papel de la familia, la relación con el riesgo y la suerte. Ejemplo: en Colombia, parte de la población cree que un seguro «llama la desgracia» (Orozco y Morales, 2022); casi ningún caso del benchmark trabaja estas creencias.
 2. **¿Por qué la familia le gana al seguro?** Ante una emergencia, 39,4% recurriría a familia o amigos y 20,8% ya les pidió prestado; solo 10,2% paga un seguro.
@@ -1310,7 +1687,7 @@ Si el siniestro es la puerta de entrada y los clientes digitales abandonan menos
 6. **¿Qué parte de la no renovación es fricción y qué parte decisión?** Medir la fuga por causa antes de que opere TAPP.
 7. **¿El registro digital durante el siniestro reduce la fuga?** Solo una prueba con grupo de control puede responderlo.
 
-### 20.3 Límites del análisis
+### 24.3 Límites del análisis
 
 - **Casi todo lo publicado lo declara la propia empresa o su proveedor.** Ningún caso de seguros tiene evaluación experimental independiente de su impacto en el negocio.
 - **Sesgo de publicación:** los fracasos rara vez se anuncian.
@@ -1321,7 +1698,7 @@ Si el siniestro es la puerta de entrada y los clientes digitales abandonan menos
 - **Países con pocas fuentes:** para Ecuador, Paraguay, Bolivia y Uruguay encontramos pocos casos con cifras, y varias fuentes locales no fueron accesibles desde nuestro entorno de trabajo.
 - **Ventana temporal:** publicaciones hasta noviembre de 2026; la mayoría de anuncios de IA son de 2025 y 2026, demasiado recientes para ver su efecto en resultados.
 
-### 20.4 Discrepancias entre fuentes y cómo las resolvimos
+### 24.4 Discrepancias entre fuentes y cómo las resolvimos
 
 | Tema | Cifras en conflicto | Qué usamos y por qué |
 | --- | --- | --- |
@@ -1336,7 +1713,7 @@ Si el siniestro es la puerta de entrada y los clientes digitales abandonan menos
 | 39,4% | «Acudiría a la familia» | «Familia o amigos como principal fuente de dinero para una emergencia en 30 días» (fin24fam) |
 | Letras de referencias de RIMAC y Gestión | El informe y la presentación usan letras distintas | Este documento usa las de la presentación y suma las nuevas al final de cada serie |
 
-### 20.5 Pendientes de verificación
+### 24.5 Pendientes de verificación
 
 | Tema | Qué falta |
 | --- | --- |
@@ -1349,9 +1726,57 @@ Si el siniestro es la puerta de entrada y los clientes digitales abandonan menos
 | Let's Money (2026a, 2026c) y Multibagg (2026) | Título exacto no verificado |
 | Costo por contacto en Perú | La presentación al CEO usa referencias de mercado (US$ 1,84 y US$ 13,50); falta el costo real |
 
+### 24.6 Estado de la evidencia del informe de noviembre
+
+**Confirmado en la fuente original:**
+- Porto: 70% de aperturas de robo y hurto con CSAT superior a 80%; 29% menos contactos; 85% de análisis liberados automáticamente; 4 millones de usuarios de la app; gastos administrativos de 10,9%.
+- RIMAC: 68% de interacciones digitales en 2024 (76% en 2025); 48 horas a 60 segundos.
+- Pacífico: más de 330 mil transacciones de Vera y NPS 13% mejor; 70% menos tiempo de atención; cuota de 24,2% en 2024; alianza con Falabella; embebidos bajo 1%.
+- Mercado peruano: primas de 2025 y del primer semestre de 2026; resultado técnico; advertencia de Moody's; 25% de emisiones digitales; siniestros pagados; reglamento de paramétricos.
+- Región: penetración y densidad de MAPFRE Economics; inversión insurtech de 2025; encuesta de la CNseg; fraude en Brasil; Brasilprev, Bradesco, Tokio Marine, Mercado Pago y Nubank.
+- Bain: NPS por tipo de jornada; potencial en gastos de ajuste y fugas; valor del promotor; 78% frente a 4%.
+
+**Corregido durante la verificación:**
+- El NPS de Vera mejoró 13%, no 13 puntos.
+- Bain no publica «−15 puntos»; publica el paso de 65 a 48.
+- El supuesto +8% de ventas digitales de Bradesco era el crecimiento de su resultado de operaciones.
+- La CNseg dice que 77% ve ganancias incrementales y 84% no espera más de 1% de ingresos.
+- Bain estima la reducción de fugas entre 30% y 50%; el 40% era un caso puntual.
+- Riesgos Generales en Perú retrocedió 2,9% en 2025, no 1,1%.
+- Oracle publica tiempos de respuesta hasta 80% menores, no «75% del volumen en nube».
+- En la presentación: Seguros Mundial (pólizas de SOAT y otras), Quálitas (atiende, no cierra), Lider Bci (corredora) y el 39,4% (familia o amigos).
+
+**Sin confirmar tras intentar la lectura completa** (el sitio rechazó el acceso o la cifra no apareció): McKinsey (tres páginas), BCG, SBS, Acionista, Coverager, LP Derecho, Perú21, Mercado Negro, Guidewire, Nubank (2 millones de pólizas), Fasecolda, Notícias do Brasil; Interseguro (documentos con error 404: NPS de 56 y política de IA); 1 de cada 4 vehículos asegurados; 79% de uso de internet (el INEI da 58,9% de hogares con internet y 95,2% con celular); que RIMAC pausara la IA para ordenar datos; que Youse no haya emitido pólizas; los 2.511 agricultores de Ecuador; la encuesta argentina de 51%, 29% y 11%; los paramétricos del Midagri; el repartidor de MetLife; los 3.000 corredores de Segura. «No apareció» no equivale a «es falso».
+
+**Otras cifras en conflicto:**
+
+| Dato | Versiones | Tratamiento |
+| --- | --- | --- |
+| Penetración regional | APESEG: Chile 3,8%, Brasil 4%, Colombia 2,9%; MAPFRE Economics: Chile 4,6%, Brasil 3,3%, Colombia 3,3% | Se usa MAPFRE |
+| Cuotas de mercado en Perú | Pacífico 26,78% y RIMAC 26,03% (fuente de baja calidad); Pacífico 24,2% (memoria 2024); RIMAC 28,44% (BNP Paribas Cardif, 2026); RIMAC «más de 30%» (prensa) | Se usa BNP Paribas Cardif con datos SBS |
+| Bradesco, NPS | +11 puntos en cuatro años; +9 según Genesys | Sin conciliar |
+| Bradesco, WhatsApp | Casi +600% en dos años; otra nota habla de 23% a 24% anual | Probablemente miden cosas distintas |
+| Mercado Pago, 11 millones | Primer trimestre de 2026 frente a junio de 2026 | Se usa el primer trimestre |
+| Open Insurance Brasil | 16,5 millones de transacciones frente a 165 millones | Se usa 16,5 millones |
+| Insurtech en la región | 507, 536 o 576 empresas según la edición | Se usa 536 para 2025 |
+| Corredores en Brasil | 80% u 89% de la venta; McKinsey: más de 60% | Sin año ni método en las primeras |
+| Seguros inclusivos de Credicorp | «Casi 3 millones», 2,7 millones o 3,6 millones | Personas frente a pólizas |
+| Plin | Más de 4 millones o más de 8 millones de usuarios | Sin conciliar |
+| Finanzas abiertas en Perú | Inicio en 2027 o el 1 de enero de 2028 | Las fuentes difieren |
+
+**Vacíos que ninguna búsqueda cubrió:**
+- Primas por canal en Perú y cuota digital real.
+- Volumen de seguros vendidos por Yape.
+- Cifras de fraude en seguros en Perú.
+- Costo por contacto y ahorro en moneda de cualquier automatización de siniestros.
+- Costos y periodos de recuperación de programas de núcleo y nube.
+- Datos que separen retención o venta cruzada entre clientes digitales y no digitales.
+- Resultados medidos de Sura, BCI Seguros, Consorcio, Chubb, Protecta y Qualitas.
+- Alianzas de seguros con Plin o con operadores de telefonía en Perú.
+
 ---
 
-## 21. Glosario
+## 25. Glosario
 
 - **AMI / EPS:** asistencia médica individual y entidades prestadoras de salud; productos de salud de RIMAC.
 - **Bancaseguros:** venta de seguros a través de bancos y financieras.
@@ -1376,15 +1801,19 @@ Si el siniestro es la puerta de entrada y los clientes digitales abandonan menos
 
 ---
 
-## 22. Referencias
+## 26. Referencias
 
-Formato APA 7. Abreviaturas usadas en las citas: OIT = Organización Internacional del Trabajo; PNUD = Programa de las Naciones Unidas para el Desarrollo; SBS = Superintendencia de Banca, Seguros y AFP. Las letras de RIMAC, Gestión, El Peruano, Perú Retail, Let's Money y CQCS siguen las de la presentación; las fuentes que se suman llevan la letra siguiente de cada serie. RIMAC (2026a, b, c, d) son documentos internos. Las cifras citadas «en RIMAC (2026a)» o «en RIMAC (2026b)» vienen de fuentes secundarias recogidas en esos documentos.
+Formato APA 7. Abreviaturas usadas en las citas: OIT = Organización Internacional del Trabajo; PNUD = Programa de las Naciones Unidas para el Desarrollo; SBS = Superintendencia de Banca, Seguros y AFP. Las letras de RIMAC, Gestión, El Peruano, Perú Retail, Let's Money y CQCS siguen las de la presentación; las fuentes que se suman llevan la letra siguiente de cada serie. Las fuentes sin fecha visible llevan «s. f.» y, si son varias del mismo autor, una letra («s. f.-a», «s. f.-b»). Las que vienen del documento de literatura «Valor digital aseguradoras Sudamérica Perú» se citan con el enlace que usó ese documento. RIMAC (2026a, b, c, d) son documentos internos. Las cifras citadas «en RIMAC (2026a)» o «en RIMAC (2026b)» vienen de fuentes secundarias recogidas en esos documentos.
 
 100% Seguro. (2026). *La IA entra en acción: las insurtech latinoamericanas revelaron sus novedades en ITC Vegas 2026*. https://100seguro.com.ar/la-ia-entra-en-accion-las-insurtech-latinoamericanas-revelaron-sus-novedades-en-el-breaking-news-de-la-aip-en-itc-vegas-2026/
 
 AAPAS. (2023, 16 de agosto). Crece la participación de los PAS y Sociedades de Productores. *Revista Seguros*. https://revistaseguros.aapas.org.ar/crece-la-participacion-de-los-pas-y-sociedades-de-productores/
 
 ABC Economía. (2026). *Aseguradora Solidaria y sus más de 300 APIs*. https://abceconomia.co/?p=52699
+
+Acionista. (2026). *Porto Seguro (PSSA3) divulga resultados do 2T26 com crescimento em receita e lucro*. https://acionista.com.br/porto-seguro-pssa3-divulga-resultados-do-2t26-com-crescimento-em-receita-e-lucro/
+
+act digital. (s. f.). *Insurer saves over BRL 16 million in one year with predictive analysis*. https://actdigital.com/en/cases/insurer-saves-over-brl-16-million-in-one-year-with-predictive-analysis/
 
 Agraria.pe. (2025, 10 de diciembre). *Lanzan proyecto Café Seguro Perú*. https://agraria.pe/noticias/lanzan-proyecto-cafe-seguro-peru-41290
 
@@ -1394,15 +1823,27 @@ Allianz Türkiye. (2026, 14 de agosto). *Allianz Türkiye yapay zekâyı iş mod
 
 Allianz Türkiye. (s. f.). *Sağlıklı Puan kampanyası*. https://www.allianz.com.tr/tr_TR/faaliyetlerimiz/kampanyalar/saglikli-puan-kampanyasi.html
 
+Angel One. (s. f.-a). *IRDAI to roll out major insurance reforms, launch Bima Sugam marketplace in 4-6 months*. https://www.angelone.in/news/economy/irdai-to-roll-out-major-insurance-reforms-launch-bima-sugam-marketplace-in-4-6-months
+
+Angel One. (s. f.-b). *IRDAI's zero-commission push on Bima Sugam to reshape insurance distribution*. https://www.angelone.in/news/economy/irdai-s-zero-commission-push-on-bima-sugam-to-reshape-insurance-distribution
+
 APESEG. (2021). *Mitos y realidades en la distribución de seguros*. https://www.apeseg.org.pe/2021/09/distribucion-de-seguros-mitos-y-realidades/
 
 APESEG. (2023). *Construyamos confianza: la apuesta del Insurance Day 2023*. https://www.apeseg.org.pe/2023/06/construyamos-confianza-la-apuesta-del-insurance-day-2023/
 
 APESEG. (2025). *Resultados del sistema asegurador al tercer trimestre de 2025*. https://www.apeseg.org.pe/wp-content/uploads/2025/10/Resultados-Sistema-Asegurador-3T25-web.pdf
 
+Assurant. (s. f.). *Assurant e Bemol inovam com embedded insurance na prática* [Comunicado de prensa]. https://www.assurant.com.br/noticias-insights/comunicados-imprensa-artigos/assurant-bemol-inovam-embedded-insurance-pratica
+
+Baguete. (s. f.). *Junto Seguros usa IA agêntica com AWS*. https://www.baguete.com.br/noticias/junto-seguros-usa-ia-agentica-com-aws
+
+Bain & Company. (2014). *Customer loyalty in P&C insurance: US edition 2014* [Informe]. https://media.bain.com/Images/BAIN_BRIEF_Customer_loyalty_in_PC_insurance_US_edition_2014.pdf
+
 Bain & Company. (2021, 18 de agosto). *NPS Prism: seguradoras* [Comunicado de prensa]. https://www.bain.com/pt-br/about/media-center/press-releases/south-america/2021/nps-prism-seguradoras/
 
 Bain & Company. (2022). *Canais digitais melhoram avaliação de seguradoras, aponta o NPS Prism da Bain* [Comunicado de prensa]. https://www.bain.com/pt-br/about/media-center/press-releases/south-america/2022/canais-digitais-melhoram-avaliacao-de-seguradoras-aponta-o-nps-prism-da-bain/
+
+Bain & Company. (s. f.). *A $100 billion opportunity for generative AI in P&C claims handling*. https://www.bain.com/insights/100-billion-dollar-opportunity-for-generative-ai-in-p-and-c-claims-handling/
 
 Banco Mundial. (2025). *The Global Findex Database 2025* [Base de datos]. https://api.worldbank.org/v2/sources/28
 
@@ -1415,6 +1856,10 @@ Baymard Institute. (2026). *Cart abandonment rate: 50 statistics and why people 
 BBVA. (2026a, 26 de agosto). *BBVA México lanza Club Seguro para ampliar el acceso al seguro de autos y motocicletas*. https://www.bbva.com/es/innovacion/bbva-mexico-lanza-club-seguro-para-ampliar-el-acceso-al-seguro-de-auto/
 
 BBVA. (2026b, 24 de febrero). *BBVA Seguros pagó más de 519 mil siniestros por más de 44,913 millones de pesos en 2025*. https://www.bbva.com/es/mx/bbva-seguros-pago-mas-de-519-mil-siniestros-por-mas-de-44913-millones-de-pesos-en-2025/
+
+BCG. (s. f.). *How commercial insurers can grow when margins tighten* [Informe]. https://web-assets.bcg.com/pdf-src/prod-live/how-commercial-insurers-can-grow-when-margins-tighten.pdf
+
+BCI Seguros. (s. f.). *CareAssistance*. https://www.bciseguros.cl/nuestros_seguros/personas/careassistance/
 
 BCP. (s. f.). *Protección de compras Visa*. https://www.viabcp.com/beneficios/tarjetas/visa-proteccion-compras
 
@@ -1434,21 +1879,41 @@ Brasilprev. (2025). *Brasilprev registra lucro de R$ 771,7 milhões no primeiro 
 
 Brasilprev. (2026). *Brasilprev amplia negócios pelo ambiente digital em quase 14% em 2025*. Legismap. https://legismap.com.br/conteudos/artigos-e-noticias/brasilprev-amplia-negocios-pelo-ambiente-digital-em-quase-14-em-2025
 
+Business Standard. (s. f.). *Mis-selling in Indian insurance sector a significant concern: IRDAI*. https://www.business-standard.com/finance/insurance/mis-selling-indian-insurance-sector-significant-concern-irdai-125123001092_1.html
+
 Business Today. (2026, 6 de mayo). *83% health cashless requests approved within 30 minutes: Digit Insurance*. https://www.businesstoday.in/personal-finance/insurance/story/83-health-cashless-requests-approved-within-30-minutes-digit-insurance-530108-2026-05-06
 
 Capgemini y LIMRA. (2026, 10 de septiembre). *World Life Insurance Report 2027* [Comunicado de prensa]. https://www.capgemini.com/news/press-releases/life-insurers-under-pressure-42-of-consumers-are-confused-and-unconvinced-by-policies/
+
+Caretas. (2026). País seguro. *Caretas*, (2757). https://caretas.pe/edicion_2757/pais-seguro
 
 Carroll, G. D., Choi, J. J., Laibson, D., Madrian, B. C. y Metrick, A. (2009). Optimal defaults and active decisions. *The Quarterly Journal of Economics, 124*(4), 1639–1674. https://www.nber.org/papers/w11074
 
 Chócale. (2025, 29 de mayo). *Lider Bci habilita contratación de seguros por WhatsApp*. https://chocale.cl/2025/05/lider-bci-habilita-contratacion-de-seguros-por-whatsapp/
 
+Chócale. (2026, mayo). *MetLife Xcelerator: adopción de seguros embebidos en fintechs*. https://chocale.cl/2026/05/metlife-xcelerator-adopcion-de-seguros-embebidos-en-fintechs/
+
 CNseg. (2026). *Estudio sobre inteligencia artificial en las aseguradoras brasileñas* [Reseñado por Revista Apólice, 18 de agosto]. https://revistaapolice.com.br/2026/08/ia-avanca-nas-seguradoras-mas-retorno-ainda-e-incremental/
 
+Coverager. (s. f.). *Mapfre lanza A Tu Lado: microseguros para emprendedores vía microfinancieras* [Nota]. https://coverager.com/?p=233279
+
 CQCS. (2024, 15 de julio). *Tokio Marine encurta prazo de pagamento de sinistros no seguro auto*. https://cqcs.com.br/noticia/tokio-marine-encurta-prazo-de-pagamento-de-sinistros-no-seguro-auto/
+
+CQCS. (2025). *Fraudes no setor de seguros somam R$ 1,1 bilhão em 2024*. https://cqcs.com.br/noticia/fraudes-no-setor-de-seguros-somam-r-11-bilhao-em-2024/
 
 CQCS. (2026a, 3 de septiembre). *Bradesco Seguros e Segura lançam modelo que combina inteligência artificial e atendimento humano para apoiar vendas de mais de 1.200 corretores*. https://cqcs.com.br/noticia/bradesco-seguros-e-segura-lancam-modelo-que-combina-inteligencia-artificial-e-atendimento-humano-para-apoiar-vendas-de-mais-de-1-200-corretores/
 
 CQCS. (2026b, 25 de junio). *Porto simplifica jornada de sinistro e investe em novos recursos*. https://cqcs.com.br/noticia/porto-simplifica-jornada-de-sinistro-e-investe-em-novos-recursos/
+
+CQCS. (s. f.-a). *Porto investe em IA para se destacar no mercado de seguros auto no Brasil*. https://cqcs.com.br/noticia/porto-investe-em-ia-para-se-destacar-no-mercado-de-seguros-auto-no-brasil/
+
+CQCS. (s. f.-b). *Corretores sempre serão o principal canal do Grupo Bradesco Seguros, diz Ivan Gontijo*. https://cqcs.com.br/noticia/corretores-sempre-serao-o-principal-canal-do-grupo-bradesco-seguros-diz-ivan-gontijo/
+
+CQCS. (s. f.-c). *MAG Seguros disponibiliza nova forma de pagamento para todo Brasil*. https://cqcs.com.br/noticia/mag-seguros-disponibiliza-nova-forma-de-pagamento-para-todo-brasil/
+
+CQCS. (s. f.-d). *HDI Seguros e insureMO levam inteligência artificial para a engenharia de produtos de seguros após migração recorde*. https://cqcs.com.br/noticia/hdi-seguros-e-insuremo-levam-inteligencia-artificial-para-a-engenharia-de-produtos-de-seguros-apos-migracao-recorde/
+
+CQCS. (s. f.-e). *Mercado Livre anuncia venda de seguro através da IA*. https://cqcs.com.br/noticia/mercado-livre-anuncia-venda-de-seguro-atraves-da-ia/
 
 Daily Guardian. (2024). *GCash GInsure* [Datos del segundo trimestre de 2024]. https://dailyguardian.com.ph/?p=371951
 
@@ -1462,9 +1927,19 @@ Descubre.vc. (2025, 24 de junio). *Yape lanzará seguro de salud con Pacífico S
 
 Descubre.vc. (s. f.). *Crabi*. https://www.descubre.vc/crabi
 
+Diário do Pará. (s. f.). *Venda casada proibida: PicPay ressarce beneficiários do INSS com milhões*. https://diariodopara.com.br/noticias/brasil/venda-casada-proibida-picpay-ressarce-beneficiarios-do-inss-com-milhoes/
+
 Diario Financiero. (2025, 14 de febrero). *Aseguradora Southbridge alcanza 25% del mercado SOAP y supera 1,3 millones en ventas*. https://www.df.cl/mercados/seguros/aseguradora-southbridge-alcanza-25-del-mercado-soap-y-supera-1-3-millones
 
+Diario Financiero. (s. f.). *América Latina lidera crecimiento global en seguros y abre espacio para…*. https://www.df.cl/mercados/seguros/america-latina-lidera-crecimiento-global-en-seguros-y-abre-espacio-para
+
+Digital Health News. (s. f.). *Star Health targets AI-driven settlement for majority of cashless claims*. https://www.digitalhealthnews.com/star-health-targets-ai-driven-settlement-for-majority-of-cashless-claims
+
+Ditempo. (s. f.). *AI claims management* [Caso de estudio]. https://www.ditempo.com/en/case-studies/ai-claims-management/
+
 DPL News. (2026, 10 de septiembre). *Paraguay consolida el salto hacia los pagos digitales: el 82% de los servicios ya se paga de forma electrónica*. https://dplnews.com/paraguay-consolida-el-salto-hacia-los-pagos-digitales-el-82-de-los-servicios-ya-se-paga-de-forma-electronica/
+
+DPL News. (s. f.). *Mercado Pago entra al negocio de seguros en México* [Nota]. https://dplnews.com/?p=182472
 
 DriveQuant. (2025, 8 de julio). *Justos in Brazil: Connected insurance program*. https://blog.drivequant.com/case-study/justos-in-brazil-connected-insurance-program
 
@@ -1474,11 +1949,17 @@ Effie Perú. (2025). *Finalistas 2025*. https://effie-peru.com/wp-content/upload
 
 Einav, L., Klopack, B. y Mahoney, N. (2025). Selling subscriptions. *American Economic Review, 115*(5), 1650–1671. https://www.nber.org/digest/202310/consumer-inattention-and-subscription-renewals
 
+El Comercio. (s. f.-a). *Canales de venta de seguros: cómo está repartido el mercado peruano; el seguro de desgravamen es el que más comisiones de intermediación se lleva*. Día1. https://elcomercio.pe/economia/dia-1/canales-de-venta-de-seguros-como-esta-repartido-el-mercado-peruano-el-seguro-de-desgravamen-es-el-que-mas-comisiones-de-intermediacion-se-lleva-noticia/
+
+El Comercio. (s. f.-b). *¿No entiendes tu seguro? Ahora leerás tu póliza en solo 7 minutos* [Publirreportaje]. https://elcomercio.pe/publirreportaje/no-entiendes-tu-seguro-ahora-leeras-tu-poliza-en-solo-7-minutos-noticia/
+
 El Cronista. (2024, 2 de febrero). *Siete de cada 10 argentinos planea cambios en su prepaga o darse de baja*. https://www.cronista.com/negocios/siete-de-cada-10-argentinos-planea-cambios-en-su-prepaga-o-darse-de-baja-cuanto-paga-hoy/
 
 El Cronista. (2026a). *Primas del sector asegurador crecieron 16%, pero la tenencia bajó*. https://www.cronista.com/mexico/finanzas-economia/primas-del-sector-asegurador-crecieron-16-pero-la-tenencia-bajo
 
 El Cronista. (2026b). *Crisis en seguros: costos hospitalarios devoran la rentabilidad y dejan pérdidas del 6% en 2025*. https://www.cronista.com/mexico/finanzas-economia/crisis-en-seguros-costos-hospitalarios-devoran-la-rentabilidad-y-dejan-perdidas-del-6-en-2025
+
+El Cronista. (s. f.). *Insurtech en México: así están reinventando el seguro con datos, apps y salud digital*. https://www.cronista.com/mexico/finanzas-economia/insurtech-en-mexico-asi-estan-reinventando-el-seguro-con-datos-apps-y-salud-digital
 
 El Diario. (2025, 13 de septiembre). *Seguro de salud privado y público en Ecuador: comparaciones y brechas en el acceso*. https://www.eldiario.ec/vida/seguro-de-salud-privado-y-publico-en-ecuador-comparaciones-y-brechas-en-el-acceso-13092025/
 
@@ -1488,13 +1969,29 @@ El Peruano. (2026a, 7 de mayo). *¿Choque o robo? La IA acelera la atención de 
 
 El Peruano. (2026b). *SBS anuncia que publicará en julio el reglamento del BaaS y a inicios del 2027 la norma del open finance*. https://elperuano.pe/noticia/298694-sbs-anuncia-que-publicara-en-julio-reglamento-del-baas-y-a-inicios-del-2027-la-norma-del-open-finance
 
+El Peruano. (s. f.). *SBS aprueba modificaciones en la comercialización de seguros*. https://elperuano.pe/noticia/114968-sbs-aprueba-modificaciones-en-la-comercializacion-de-seguros
+
 Equentis. (2025). *UPI AutoPay takes over 53% share in recurring transactions*. https://www.equentis.com/blog/upi-autopay-takes-over-53-share-in-recurring-transactions-leaves-cards-behind-in-2025/
+
+Expansión. (2026, 13 de octubre). *Quejas contra aseguradoras en México crecen 7,76% y los reclamos suman 2.386 mdp*. https://expansion.mx/economia/2026/10/13/quejas-contra-aseguradoras-en-mexico-crecen-7-76-y-los-reclamos-suman-2-386-mdp
+
+Fasecolda. (s. f.). *NoCaiga: nueva herramienta para combatir el fraude* [Documento]. https://new-site.fasecolda.com/wp-content/uploads/NoCaiga-Nueva-herramienta-para-combatir-el-fraude.pdf
 
 FID Seguros. (2026). *Memoria anual integrada 2025*. https://www.fidseguros.cl/content/uploads/2026/04/vf.subir-memoria-integrada-fid-2025-ver-02.04.26.pdf
 
 Forbes Chile. (2025, 17 de marzo). *Betterfly cierra en cinco países y despide a 30 empleados por plan de reestructuración*. https://forbes.cl/negocios/2025-03-17/betterfly-cierra-en-cinco-paises-y-despide-a-30-empleados-por-plan-de-reestructuracion
 
 Gan@Más. (2026). *Credicorp redefine su estrategia para rentabilizar la escala de su ecosistema financiero*. https://revistaganamas.com.pe/credicorp-redefine-su-estrategia-para-rentabilizar-la-escala-de-su-ecosistema-financiero/
+
+Garrigues. (2025). *Perú publica nuevo reglamento de la Ley de Protección de Datos Personales*. https://www.garrigues.com/es_ES/noticia/peru-publica-nuevo-reglamento-ley-proteccion-datos-personales
+
+Genesys. (s. f.). *Bradesco Seguros* [Caso de cliente]. https://www.genesys.com/es-mx/customer-stories/bradesco-seguros
+
+Gestión. (2024). *Hablan los expertos: cómo impulsar el acceso a los seguros en el Perú (APESEG Insurance Day 2024)* [Publirreportaje]. https://gestion.pe/publirreportaje/hablan-los-expertos-como-impulsar-el-acceso-a-los-seguros-en-el-peru-apeseg-insurance-day-2024-mypes-noticia/
+
+Gestión. (2025a). *Pacífico: «Queremos ser el Amazon de los seguros»*. https://gestion.pe/economia/empresas/pacifico-queremos-ser-el-amazon-de-los-seguros-noticia/
+
+Gestión. (2025b). *Trusty, el nuevo integrante de La Positiva que llegó para cuidarte* [Publirreportaje]. https://gestion.pe/publirreportaje/trusty-el-nuevo-integrante-de-la-positiva-que-llego-para-cuidarte-noticia/
 
 Gestión. (2026a, 2 de octubre). *Ganancias bajan en la mitad de las compañías de seguros*. https://gestion.pe/tu-dinero/ganancias-bajan-en-la-mitad-de-las-companias-de-seguros-cuanto-gana-la-suya-noticia/
 
@@ -1506,19 +2003,43 @@ Gestión. (2026d). *SBS alista plan para seguros baratos y ágiles*. https://ges
 
 Gestión. (2026e, 9 de octubre). *Agentes de IA: el reto para brokers de seguros*. https://gestion.pe/tu-dinero/agentes-de-ia-empiezan-a-moverle-el-piso-a-brokers-de-seguros-que-quieren-los-clientes-noticia/
 
+Gestión. (2026f). *Seguros en Perú: en qué indemnizaron más a clientes y qué puede venir*. https://gestion.pe/tu-dinero/seguros-en-peru-en-que-indemnizaron-mas-a-clientes-y-que-puede-venir-noticia/
+
+Gestión. (2026g). *Aseguradoras simplifican contratos y aceleran respuesta digital a siniestros*. https://gestion.pe/tu-dinero/finanzas-personales/aseguradoras-simplifican-contratos-y-aceleran-respuesta-digital-a-siniestros-noticia/
+
+Gestión. (2026h). *SBS reglamentó los seguros paramétricos: cómo funcionará este nuevo tipo de cobertura*. https://gestion.pe/economia/empresas/sbs-reglamento-los-seguros-parametricos-como-funcionara-este-nuevo-tipo-de-cobertura-noticia/
+
+Gestión. (s. f.). *El 43% de peruanos compraría un seguro integrado a la adquisición de otro producto o servicio* [Publirreportaje]. https://gestion.pe/publirreportaje/el-43-de-peruanos-compraria-un-seguro-integrado-a-la-adquisicion-de-otro-producto-o-servicio-noticia/
+
 Go Digit. (2026, 6 de mayo). *Resultados del ejercicio 2025-26* [Publicados por Whalesbook]. https://www.whalesbook.com/corporate-news/English/insurance/Go-Digits-FY26-Premiums-Surpass-indian-rupee11300-Cr-ROE-Strong-at-177percent/69fb1142d27867b982d38f90
+
+Guidewire. (s. f.). *San Cristóbal Seguros* [Caso de éxito]. https://www.guidewire.com/es/customers/success-stories/san-cristobal-seguros
 
 Habertürk. (2025, 17 de septiembre). *Türkiye Sigorta, kaskoya erişimi kolaylaştırmak için taksit imkanı getirdi*. https://www.haberturk.com/turkiye-sigorta-kaskoya-erisimi-kolaylastirmak-icin-taksit-imkani-getirdi-3823055-ekonomi
 
 Howden. (s. f.). *MiCRO: microseguro paramétrico*. https://www.howdengroup.com/pe-es/micro-seguro
 
+Hoy Regional. (2026, 12 de agosto). *Perú en la desprotección: el 96,5% de viviendas carece de seguro ante sismos*. https://hoyregional.pe/2026/08/12/peru-en-la-desproteccion-el-96-5-de-viviendas-carece-de-seguro-ante-sismos/
+
 IDC Online. (2019, 12 de noviembre). *CoDi cuenta con 918,744 cuentas válidas*. https://idconline.mx/corporativo/2019/11/12/codi-cuenta-con-918-744-cuentas-validas
 
+IESS. (2023). *Estudo de fraudes e desperdícios em saúde suplementar* [Informe]. Instituto de Estudos de Saúde Suplementar. https://www.iess.org.br/sites/default/files/2023-11/IESS_Estudo%20de%20Fraudes%20e%20Desperd%C3%ADcios%20em%20Sa%C3%BAde%20Suplementar_Vers%C3%A3o%20Completa_15112023.pdf
+
+IMD. (s. f.). *RIMAC: How a Peruvian insurance company is scaling AI* [Caso de estudio]. https://www.imd.org/research-knowledge/digital/case-studies/rimac-how-a-peruvian-insurance-company-is-scaling-ai/
+
 Impacto TIC. (2026, 28 de mayo). *Transformación de Seguros Bolívar mediante la arquitectura de datos e IA*. https://impactotic.co/micrositios-tic/inteligencia-artificial/transformacion-de-seguros-bolivar-mediante-la-arquitectura-de-datos-e-ia/
+
+Impacto TIC. (s. f.-a). *HDI Seguros: cuando los agentes llegan a WhatsApp*. https://impactotic.co/inteligencia-artificial/hdi-seguros-cuando-los-agentes-llegan-a-whatsapp/
+
+Impacto TIC. (s. f.-b). *Seguros Mundial: hacia una empresa agéntica*. https://impactotic.co/inteligencia-artificial/seguros-mundial-hacia-una-empresa-agentica/
 
 Inc42. (2025). *How PhonePe makes money: UPI, loans, merchants and more*. https://inc42.com/features/how-phonepe-makes-money-upi-loans-merchants-more/
 
 Inc42. (2026, 11 de mayo). *IPO-bound Acko's insurance arm turns profitable, posts ₹43.6 Cr profit in FY26*. https://inc42.com/buzz/ipo-bound-acko-turns-profitable-posts-%E2%82%B943-6-cr-profit-in-fy26/
+
+INEI. (2025). *Estadísticas de las tecnologías de información y comunicación en los hogares: enero-febrero-marzo 2025* [Informe técnico]. Instituto Nacional de Estadística e Informática. https://www.inei.gob.pe/media/MenuRecursivo/boletines/informe-tecnico_tecnologiasdelainformacion_ene_feb_mar2025.pdf
+
+Infomercado. (2022, 28 de abril). *AVLA lanza Iglu, la nueva plataforma digital para corredores de seguros*. https://infomercado.pe/avla-lanza-iglu-la-nueva-plataforma-digital-para-corredores-de-seguros-280422-gb/
 
 Infomercado. (2025a, 17 de noviembre). *RIMAC Seguros: IA reduce a un minuto el análisis de siniestros y agiliza la atención al cliente*. https://infomercado.pe/rimac-seguros-ia-reduce-a-un-minuto-el-analisis-de-siniestros-y-agiliza-la-atencion-al-cliente/
 
@@ -1530,9 +2051,21 @@ InfoMoney. (2026, 27 de abril). *Segura capta R$ 45 mi com a16z e Kaszek para le
 
 Infonegocios. (2018, 24 de mayo). *Pólizas 24/7: conocé la nueva propuesta de esta aseguradora*. https://infonegocios.com.py/default/polizas-24-7-conoce-la-nueva-propuesta-de-esta-aseguradora
 
+Innovación Digital 360. (s. f.). *Agrotech: seguros paramétricos para el agro argentino con tecnología satelital*. https://www.innovaciondigital360.com/agrotech/agrotech-seguros-parametricos-agro-argentina-tecnologia-satelital-2026/
+
+Insurance Business. (s. f.). *India's insurance growth shifts to non-metros*. https://www.insurancebusinessmag.com/asia/news/breaking-news/indias-insurance-growth-shifts-to-nonmetros-572184.aspx
+
+Interempresas. (2025). *Mapfre desarrolla más de 150 casos de uso de IA durante 2025*. https://www.interempresas.net/TIC/664331-Mapfre-desarrolla-mas-de-150-casos-de-uso-de-IA-durante-2025.html
+
+Interseguro. (2026a). *Memoria anual 2025*. https://www.interseguro.pe/wp-content/uploads/2026/04/Memoria-Anual-2025-Revisado-EY-VF.18.03.26.pdf
+
+Interseguro. (2026b). *Certificación de la política de inteligencia artificial de Interseguro*. https://www.interseguro.pe/wp-content/uploads/2026/09/Certificacion_Politica_IA_Interseguro.pdf
+
 iProfesional. (2024, 11 de marzo). *Naranja X lanza seguros para emprendedores y oficios*. https://www.iprofesional.com/finanzas/401752-naranja-x-lanza-seguros-para-emprendedores-y-oficios
 
 iProfesional. (2026, 6 de mayo). *Prepagas más caras y menos cobertura: 740.000 personas migraron al sistema público*. https://www.iprofesional.com/salud/454136-prepagas-subieron-417-por-ciento-dejaron-sin-cobertura-742-mil-argentinos-mayo-2026
+
+iProfesional. (s. f.). *Aseguradoras en Argentina suman IA y autos conectados para el negocio*. https://www.iprofesional.com/finanzas/467089-aseguradoras-en-argentina-suman-ia-y-autos-conectados-para-el-negocio
 
 iProUP. (2021). *Ualá se mete en el rubro de los seguros*. https://www.iproup.com/finanzas/22040-uala-se-mete-en-el-rubro-de-los-seguros
 
@@ -1540,7 +2073,11 @@ iProUP. (2026a, 11 de octubre). *El seguro embebido avanza en Argentina*. https:
 
 iProUP. (2026b, 15 de octubre). *Ualá lanza seguros de autos mientras el parque asegurado de particulares retrocede*. https://www.iproup.com/finanzas/72358-seguros-autos-uala-polizas-accesibles-cotizar-celular
 
+iProUP. (s. f.). *Aseguradora argentina lanza su propia startup enfocada en IA y big data*. https://www.iproup.com/startups/72126-aseguradora-argentina-lanza-su-propia-startup-enfocada-en-ia-y-big-data
+
 IRDAI. (2025). *Informe anual 2024-25* [Reseñado por Angel One]. https://www.angelone.in/news/economy/life-insurance-penetration-falls-for-third-year-overall-insurance-coverage-stays-flat-in-fy25
+
+IT Forum. (s. f.). *Setor de seguros deve investir R$ 2,6 bilhões em IA em 2026* [Nota]. https://itforum.com.br/?p=9618268
 
 IT Sitio. (2026). *Sofía apuesta por la salud digital como inversión estratégica para las empresas*. https://www.itsitio.com/mx/software/sofia-apuesta-por-la-salud-digital-como-inversion-estrategica-para-las-empresas/
 
@@ -1550,21 +2087,53 @@ Karlan, D., McConnell, M., Mullainathan, S. y Zinman, J. (2016). Getting to the 
 
 KCH FM. (2026, 25 de febrero). *Seguros Alianza repotencia su canal de WhatsApp Business con «Ali», su asistente virtual 24/7*. https://kchcomunicacion.com/?p=336186
 
+Legismap. (2025a). *Porto registra lucro líquido de R$ 832,3 milhões e cresce 28% no primeiro trimestre de 2025*. https://legismap.com.br/conteudos/artigos-e-noticias/porto-registra-lucro-liquido-de-r-832-3-milhoes-e-cresce-28-no-primeiro-trimestre-de-2025
+
+Legismap. (2025b, 2 de diciembre). *CNseg: notícias do seguro em 02/12/2025*. https://legismap.com.br/conteudos/artigos-e-noticias/cnseg-noticias-do-seguro-em-02-12-2025
+
+Legismap. (2026a). *Tokio Marine reduz prazo para pagamento de sinistros e devolve mais de R$ 7,9 bi para a sociedade*. https://legismap.com.br/conteudos/artigos-e-noticias/tokio-marine-reduz-prazo-para-pagamento-de-sinistros-e-devolve-mais-de-r-7-9-bi-para-sociedade
+
+Legismap. (2026b). *Lucro do Grupo Bradesco Seguros cresce 20,4% no primeiro semestre de 2026, totalizando R$ 5,7 bilhões*. https://legismap.com.br/conteudos/artigos-e-noticias/lucro-do-grupo-bradesco-seguros-cresce-20-4-no-primeiro-semestre-de-2026-totalizando-r-5-7-bilhoes
+
+Legismap. (2026c). *Lucro do Grupo Bradesco Seguros cresce 18,2% no ano, totalizando R$ 8,6 bilhões*. https://legismap.com.br/conteudos/artigos-e-noticias/lucro-do-grupo-bradesco-seguros-cresce-18-2-no-ano-totalizando-r-8-6-bilhoes
+
+Legismap. (s. f.-a). *Bradesco Seguros explora IA de parceiros para atender pelo WhatsApp*. https://legismap.com.br/conteudos/artigos-e-noticias/bradesco-seguros-explora-ia-de-parceiros-para-atender-pelo-whatsapp
+
+Legismap. (s. f.-b). *Metade dos clientes de seguro de vida do Nubank afirmam ter contratado esse tipo de serviço pela primeira vez*. https://legismap.com.br/conteudos/artigos-e-noticias/metade-dos-clientes-de-seguro-de-vida-do-nubank-afirmam-ter-contratado-esse-tipo-servico-pela-primeira-vez
+
+Legismap. (s. f.-c). *Pier acelera crescimento no canal corretor com seis novas parcerias*. https://legismap.com.br/conteudos/artigos-e-noticias/pier-acelera-crescimento-no-canal-corretor-com-seis-novas-parcerias
+
+Legismap. (s. f.-d). *Pix e pagamentos digitais chegam ao setor de seguros e prometem reduzir cancelamentos de apólices por falta de pagamento*. https://legismap.com.br/conteudos/artigos-e-noticias/pix-e-pagamentos-digitais-chegam-ao-setor-de-seguros-e-prometem-reduzir-cancelamentos-de-apolices-por-falta-de-pagamento
+
 Let's Money. (2026a). [Facturación de R$ 200 millones y punto de equilibrio de Pier]. https://www.letsmoney.com.br/noticias/pier-200-milhoes-faturamento-breakeven/
 
 Let's Money. (2026b). *Pix Automático: 1 ano, R$ 1 bilhão por mês*. https://www.letsmoney.com.br/noticias/pix-automatico-1-ano-1-bilhao-mes/
 
 Let's Money. (2026c). [Pier y Aviva venden seguros dentro de ChatGPT]. https://www.letsmoney.com.br/ia/pier-integra-seguros-chatgpt-distribuicao/
 
+Let's Money. (s. f.-a). *Bradesco Seguros usa IA externa no WhatsApp e eleva NPS*. https://www.letsmoney.com.br/ia/bradesco-seguros-ia-externa-whatsapp-nps/
+
+Let's Money. (s. f.-b). *Palantir e GNP Seguros: IA contra fraude*. https://www.letsmoney.com.br/noticias/palantir-gnp-seguros-ia-fraude/
+
+LP Derecho. (2026). *SBS autoriza a empresas de seguros y AFP comercializar productos y servicios financieros de terceros (Resolución SBS 02645-2026)*. https://lpderecho.pe/sbs-autoriza-empresas-seguros-afp-comercializar-productos-servicios-financieros-terceros-resolucion-sbs-02645-2026/
+
 Madrian, B. C. y Shea, D. F. (2001). The power of suggestion: Inertia in 401(k) participation and savings behavior. *The Quarterly Journal of Economics, 116*(4), 1149–1187. https://doi.org/10.1162/003355301753265543
 
-MAPFRE Economics. (2025). *El mercado asegurador latinoamericano en 2024*. Fundación MAPFRE. https://www.mapfre.com/media/MAPFRE-Economics_Mercado-Latam-2024_05.11.2025-REDUCIDO.pdf
-
 Mapfre. (2026, 23 de abril). *Mapfre promotes protection for small entrepreneurs in Peru with new microinsurance products*. https://www.mapfre.com/en/communicate/sustainability-communicate/entrepreneurs-peru-microinsurance/
+
+MAPFRE Economics. (2025). *El mercado asegurador latinoamericano en 2024*. Fundación MAPFRE. https://www.mapfre.com/media/MAPFRE-Economics_Mercado-Latam-2024_05.11.2025-REDUCIDO.pdf
 
 Marchi, R., Dogliani, G. y Craddock, C. (2026, 21 de julio). No mercado de seguros, o corretor escolhe quem o ajuda a crescer. *Brazil Journal*. https://braziljournal.com/on-business/no-mercado-de-seguros-o-corretor-escolhe-quem-o-ajuda-a-crescer/
 
 McKinsey & Company. (2025). *Informe global de seguros 2025* [Reseñado por Diario Financiero]. https://www.df.cl/mercados/seguros/america-latina-lidera-crecimiento-global-en-seguros-y-abre-espacio-para
+
+McKinsey & Company. (s. f.-a). *Em busca do crescimento de seguros na América Latina*. https://www.mckinsey.com/br/our-insights/em-busca-do-crescimento-de-seguros-na-america-latina
+
+McKinsey & Company. (s. f.-b). *How AI will reshape the economics of insurance: A CEO's guide to strategy*. https://www.mckinsey.com/industries/financial-services/our-insights/how-ai-will-reshape-the-economics-of-insurance-a-ceos-guide-to-strategy
+
+Medicina S/A. (s. f.). [Telemedicina y resolutividad en operadoras de salud]. https://medicinasa.com.br/?p=162507
+
+Mercado Negro. (2026). *Seguros al alcance de todos: Grupo EFE abre las puertas de su ecosistema a RIMAC*. https://www.mercadonegro.pe/actualidad/seguros-al-alcance-de-todos-grupo-efe-abre-las-puertas-de-su-ecosistema-a-rimac/
 
 Mercado Pago. (2026, 13 de julio). *Mercado Pago expande oferta de seguros com IA e chega a 11 milhões de clientes no Brasil*. Legismap. https://legismap.com.br/conteudos/artigos-e-noticias/mercado-pago-expande-oferta-de-seguros-com-ia-e-chega-a-11-milhoes-de-clientes-no-brasil
 
@@ -1572,9 +2141,21 @@ Michie, S., van Stralen, M. M. y West, R. (2011). The behaviour change wheel: A 
 
 Milliyet Uzmanpara. (2026, 16 de agosto). *Türkiye genelindeki konutların yarısının deprem sigortası bulunmuyor*. https://uzmanpara.milliyet.com.tr/uzmanpara/turkiye-genelindeki-konutlarin-yarisinin-deprem-sigortasi-bulunmuyor-7642412
 
+Mobile Time. (2026, 24 de abril). *Porto Seguro otimiza análise de sinistros*. https://www.mobiletime.com.br/noticias/24/04/2026/porto-seguro-otimiza/
+
 Moody's Local. (2025). *Seguros en Latinoamérica: perspectivas 2026*. https://moodyslocal.com.gt/wp-content/uploads/2025/12/Research-Regional-Seguros-en-Latinoamerica-Perspectivas-2026-1.pdf
 
+Mordor Intelligence. (s. f.). *Mercado de seguros de vida y no vida en Perú* [Informe sectorial]. https://www.mordorintelligence.com/es/industry-reports/life-non-life-insurance-market-in-peru
+
 Multibagg. (2026). [Presentación a inversionistas de Aditya Birla Health Insurance]. https://www.multibagg.ai/market-pulse/articles/aditya-birla-health-insurance-outcomes-ppt-cmvuu5klp002u2klze0uqbf7b
+
+NeoFeed. (s. f.). *SulAmérica avança no Brasil profundo para chegar aos R$ 35 bilhões de receita*. https://neofeed.com.br/negocios/sulamerica-avanca-no-brasil-profundo-para-chegar-aos-r-35-bilhoes-de-receita/
+
+Notícias do Brasil. (s. f.). *Mercado Pago: 11 milhões em seguros e nova aposta*. https://noticias-do-brasil.news/economia/empresas/mercado-pago-11-milhes-em-seguros-e-nova-aposta.html
+
+NTT DATA. (s. f.). *SURA* [Caso de cliente]. https://www.nttdata.com/global/en/insights/reports/sura
+
+Nubank. (s. f.). *Nubank e Chubb alcançam a marca de 2 milhões de apólices de seguros ativas no Brasil*. https://international.nubank.com.br/pt-br/consumidores/nubank-e-chubb-alcancam-a-marca-de-2-milhoes-de-apolices-de-seguros-ativas-no-brasil/
 
 OCTO Telematics. (s. f.). *Customer story: SURA*. https://www.octotelematics.com/octo-customer-stories/sura/
 
@@ -1584,15 +2165,33 @@ Organización Internacional del Trabajo. (2026). *ILOSTAT: Tasa de empleo inform
 
 Orozco, S. y Morales, N. (2022). *Social finance brief: Segurísimo*. Organización Internacional del Trabajo. https://www.ilo.org/publications/social-finance-brief-segurisimo
 
+Outlook Business. (s. f.). *Know how to get your instant motor claim settlement via WhatsApp*. https://www.outlookbusiness.com/personal-finance/insurance/know-how-to-get-your-instant-motor-claim-settlement-via-whatsapp
+
+Outlook Money. (s. f.-a). *PMJJBY enrolments cross 27.8 crore, PMSBY reaches 58.8 crore as insurance coverage expands*. https://www.outlookmoney.com/personal-finance/pmjjby-enrolments-cross-278-crore-pmsby-reaches-588-crore-as-insurance-coverage-expands-finance-ministry
+
+Outlook Money. (s. f.-b). *IRDAI flags mis-selling, tells insurers to look inward as profits climb*. https://www.outlookmoney.com/insurance/irdai-flags-mis-selling-tells-insurers-to-look-inward-as-profits-climb
+
+Pacífico Seguros. (2025). *Memoria integrada 2024*. https://www.pacifico.com.pe/documents/28730/151929053/Memoria+integrada+2024.pdf/74e4c16c-e4b2-e36c-b522-cdaebf9c91cf
+
+Pacífico Seguros. (2026a). *Memoria integrada 2025*. https://www.pacifico.com.pe/documents/28730/209427323/Memoria+Integrada+2025+-+Pac%C3%ADfico+Seguros+3.pdf/68fe0eba-5ba2-e589-7a4b-7bb9b34e09ef
+
+Pacífico Seguros. (2026b). *Memoria 2025*. https://www.pacifico.com.pe/documents/28730/195143110/Memoria+2025.pdf/683b04b6-7896-8764-54b6-dfa803a7692e
+
 PB Fintech. (2026, 6 de mayo). *Resultados del ejercicio 2025-26* [Publicados por Whalesbook]. https://www.whalesbook.com/corporate-news/English/tech/PB-Fintech-FY26-Profit-Soars-115percent-to-indian-rupee670-Cr-as-Revenue-Jumps-37percent/69fb38ffd27867b982d4414d
 
 PCR. (2025). *Perú: sector seguros* [Datos a junio de 2025]. https://ww3.ratingspcr.com/peru-sector-seguros/
+
+Perú Retail. (2025). *Credicorp destaca crecimiento de Yape tras llegar a más de 15 millones de usuarios activos mensuales*. https://www.peru-retail.com/credicorp-destaca-crecimiento-de-yape-tras-llegar-a-mas-de15-millones-de-usuarios-activos-mensuales/
 
 Perú Retail. (2026a, 3 de julio). *BCRP lanzará TAPP: cómo funcionará la nueva plataforma de pagos inmediatos*. https://www.peru-retail.com/bcrp-lanzara-tapp-como-funcionara-la-nueva-plataforma-de-pagos-inmediatos/
 
 Perú Retail. (2026b, 13 de noviembre). *IFS: utilidad neta creció 11% a septiembre, impulsada por Interbank e Interseguro*. https://www.peru-retail.com/ifs-elevo-su-utilidad-neta-11-a-septiembre-de-2026-que-resultados-impulsaron-su-crecimiento/
 
+Perú Retail. (s. f.). [Pacífico y Yape lanzan seguro de salud digital]. https://www.peru-retail.com/?p=391863
+
 PicPay. (2026, 24 de julio). *PicPay recebe aprovação regulatória final para a aquisição da Kovr*. Revista Apólice. https://revistaapolice.com.br/2026/07/picpay-recebe-aprovacao-regulatoria-final-para-a-aquisicao-da-kovr/
+
+Porto. (2026). *Release de resultados 4T25*. https://filemanager-cdn.mziq.com/published/b77a3922-d280-4451-b3ee-0afec4577834/19bc6865-5ec0-4d81-a826-c2543932ada9_release_4t25_04.02.pdf
 
 Prensa Aseguradora. (2026, 17 de noviembre). *Cartera digital Río Uruguay Seguros*. https://www.prensaaseguradora.com/post/cartera-digital-r%C3%ADo-uruguay-seguros
 
@@ -1600,13 +2199,23 @@ Proactivo. (s. f.). *La Positiva desarrolla seguros para la adaptación al cambi
 
 Programa de las Naciones Unidas para el Desarrollo. (2025). *Human Development Report 2025: A matter of choice: People and possibilities in the age of AI* [Informe y base de datos]. https://hdr.undp.org/data-center/documentation-and-downloads
 
+Pulse 2.0. (s. f.). *Crabi: $13.6 million raised for scaling access to auto insurance across Mexico*. https://pulse2.com/crabi-13-6-million-raised-for-scaling-access-to-auto-insurance-across-mexico/
+
+Qantev. (s. f.). *Fraud, waste and abuse detection for an insurer in Mexico* [Caso de estudio]. https://www.qantev.com/case-studies/fraud-waste-and-abuse-detection-for-an-insurer-in-mexico
+
 Quálitas. (2025). *Integrated annual report 2024*. https://qinversionistas.qualitas.com.mx/uploads/informes/2024/anual/en/IA_Qualitas_2024_FINAL_ING.pdf
+
+Reinsurance News. (2026). *LatAm insurtech investment surges 117% in 2025: Mapfre*. https://www.reinsurancene.ws/latam-insurtech-investment-surges-117-in-2025-mapfre/
 
 Reserve Bank of India. (2026, 21 de abril). *Digital payments – E-mandate framework, 2026*. https://taxguru.in/rbi/rbi-issues-consolidated-directions-digital-payments-e-mandate-framework-2026.html
 
 Revista Apólice. (2026, 1 de octubre). *Porto automatiza 70% dos sinistros de roubo e furto*. https://revistaapolice.com.br/2026/10/porto-automatiza-70-dos-sinistros-de-roubo-e-furto/
 
+Revista Economía. (2024, marzo). *Interseguro elige a Kyndryl para acelerar la modernización empresarial a través de la migración a la nube*. https://www.revistaeconomia.com/interseguro-elige-a-kyndryl-para-acelerar-la-modernizacion-empresarial-a-traves-de-la-migracion-a-la-nube/
+
 Revista Economía. (2026, 6 de noviembre). *RIMAC apunta a crecer en la colocación de microseguros mediante alianza con Efectibank*. https://www.revistaeconomia.com/?p=144412
+
+Revista Seguros. (s. f.). *Sancor Seguros presenta a Cori y evoluciona su experiencia de atención digital con IA*. AAPAS. https://revistaseguros.aapas.org.ar/sancor-seguros-presenta-a-cori-y-evoluciona-su-experiencia-de-atencion-digital-con-ia/
 
 RIMAC. (2025). *Memoria anual 2024*. https://imagescdn.rimac.com/bltb70019030cc20952/67e2d31942bb037f9d625309/Memoria_Anual_2024_-_24_03.pdf
 
@@ -1620,6 +2229,8 @@ RIMAC. (2026d). *Radiografía digital RIMAC* [Archivo interno no publicado, cort
 
 RIMAC. (2026e). *Annual report 2025: Choosing right, being well*. https://imagescdn.rimac.com/blt471a502a3b77dfc6/6a47e998699b4a94e4b07817/Annual_Report_2025.pdf
 
+Risk & Insurance. (s. f.). *Generative AI in insurance claims faces a scale problem*. https://riskandinsurance.com/generative-ai-in-insurance-claims-faces-a-scale-problem/
+
 RPP. (2026, 5 de noviembre). *Tras colocar más de dos millones de créditos, Yape ahora apunta a facilitar el acceso a seguros a sus usuarios*. https://rpp.pe/economia/economia/tras-colocar-mas-de-dos-millones-de-creditos-yape-ahora-apunta-a-facilitar-el-acceso-a-seguros-a-sus-usuarios-noticia-1716179
 
 S&P Global. (2026). *Insurify CEO flags overreaction to new AI app as brokers take a hit*. https://www.spglobal.com/market-intelligence/en/news-insights/articles/2026/2/insurify-ceo-flags-overreaction-to-new-ai-app-as-brokers-take-a-hit-98554977
@@ -1630,14 +2241,34 @@ Semana. (2026, 4 de agosto). *Seguros Mundial creció 21 % en seguros generales 
 
 Sigorta Kulisi. (2026). *Sigorta onaylarının yüzde 90'dan fazlası yapay zeka ile veriliyor*. https://www.sigortakulisi.com/sektor/sigorta-onaylarinin-yuzde-90dan-fazlasi-yapay-zeka-ile-veriliyor/3242
 
+Solera. (s. f.). *Mapfre Brazil becomes the first insurer in Latin America to adopt Solera's Qapter with visual intelligence technology*. https://www.solera.com/blog/mapfre-brazil-becomes-the-first-insurer-in-latin-america-to-adopt-soleras-qapter-with-visual-intelligence-technology/
+
+SoundHound. (s. f.). *Insurance containment rate jumps 3x with agentic AI* [Caso de estudio]. https://www.soundhound.com/resource/insurance-containment-rate-jumps-3x-with-agentic-ai
+
 Startups.com.br. (2023, 12 de enero). *Insurtech Pier demite cerca de 39% da força de trabalho*. https://startups.com.br/negocios/insurtech-pier-demite-cerca-de-39-da-forca-de-trabalho/
 
 Super Rádio Tupi. (2026). *Alice: 100 mil miembros* [Con datos de la ANS]. https://www.tupi.fm/?p=2489048
 
 Superintendencia de Banca, Seguros y AFP. (2026). *Resolución SBS N.° 02260-2026: Reglamento de seguros paramétricos*. Reseñada por El Peruano. https://elperuano.pe/noticia/304690-terremotos-tsunamis-y-lluvias-sbs-regula-seguros-parametricos-que-activan-pagos-automaticamente
 
+Superintendencia de Banca, Seguros y AFP. (s. f.). *Hoja de ruta de finanzas abiertas* [Nota de prensa]. https://www.sbs.gob.pe/noticia/detallenoticia/idnoticia/3897
+
+TI Inside. (2025, 29 de septiembre). *Mapfre implementa primeira jornada de sinistro 100% resolutiva por IA no WhatsApp*. https://tiinside.com.br/29/09/2025/mapfre-implementa-primeira-jornada-de-sinistro-100-resolutiva-por-ia-no-whatsapp/
+
+TI Inside. (2026, 12 de marzo). *Tokio Marine reduz em 95% o tempo de cotação do seguro de transportes avulso com uso de IA*. https://tiinside.com.br/12/03/2026/tokio-marine-reduz-em-95-o-tempo-de-cotacao-do-seguro-de-transportes-avulso-com-uso-de-ia/
+
 Valora Analitik. (2025, 20 de febrero). *Industria aseguradora creció tres veces más que la economía colombiana en 2024*. https://www.valoraanalitik.com/industria-aseguradora-crecio-tres-veces-mas-que-la-economia-colombiana-en-2024/
+
+Valora Analitik. (s. f.). [Cardif Colombia paga en línea nueve de cada diez siniestros]. https://www.valoraanalitik.com/?p=273415
+
+Vanguardia. (s. f.). *Alcanzan 23% pólizas de seguros en México; pide Hacienda a IP cerrar brecha*. https://vanguardia.com.mx/noticias/mexico/alcanzan-23-polizas-de-seguros-en-mexico-pide-hacienda-a-ip-cerrar-brecha-CC20664798
 
 Vodanovic, L. (2026). Nace TAPP para modernizar los pagos digitales en el Perú. *Gestión*. https://gestion.pe/opinion/nace-tapp-para-modernizar-los-pagos-digitales-en-el-peru-por-ljubica-vodanovic-noticia/
 
+Whalesbook. (s. f.). *India's NHCX health insurance overhaul stalls with slow adoption*. https://www.whalesbook.com/news/English/insurance/Indias-NHCX-Health-Insurance-Overhaul-Stalls-With-Slow-Adoption/69f9b511d87e3288bea940bc
+
 Yape. (2026). *Mundo Protección* [Aplicación móvil, observada en noviembre de 2026].
+
+Yape. (s. f.). *Seguro de vida*. https://www.yape.com.pe/productos/seguro-vida
+
+Youse. (2025). *Relatório de sustentabilidade 2025*. https://cdn.youse.com.br/docs/cnp/relatorios/relatorio-de-sustentabilidade-2025.pdf
