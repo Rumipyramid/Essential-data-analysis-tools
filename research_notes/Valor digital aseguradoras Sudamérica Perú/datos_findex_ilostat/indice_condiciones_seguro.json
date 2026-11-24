@@ -1,0 +1,112 @@
+{
+ "PER": {
+  "acct": 59.3,
+  "acct_y": "2024",
+  "pagos": 51.7,
+  "pagos_y": "2024",
+  "cuentas": 27.9,
+  "cuentas_y": "2024",
+  "ley": 47.8,
+  "idx": 46.7
+ },
+ "ECU": {
+  "acct": 64.5,
+  "acct_y": "2024",
+  "pagos": 43.3,
+  "pagos_y": "2024",
+  "cuentas": 19.6,
+  "cuentas_y": "2024",
+  "ley": 41.6,
+  "idx": 42.2
+ },
+ "BOL": {
+  "acct": 56.8,
+  "acct_y": "2024",
+  "pagos": 43.6,
+  "pagos_y": "2024",
+  "cuentas": 14.7,
+  "cuentas_y": "2024",
+  "ley": 36.4,
+  "idx": 37.9
+ },
+ "PRY": {
+  "acct": 60.9,
+  "acct_y": "2024",
+  "pagos": 55.5,
+  "pagos_y": "2024",
+  "cuentas": 18.6,
+  "cuentas_y": "2024",
+  "ley": 48.2,
+  "idx": 45.8
+ },
+ "COL": {
+  "acct": 57.1,
+  "acct_y": "2024",
+  "pagos": 49.2,
+  "pagos_y": "2024",
+  "cuentas": 18.9,
+  "cuentas_y": "2024",
+  "ley": 48.3,
+  "idx": 43.4
+ },
+ "MEX": {
+  "acct": 53.0,
+  "acct_y": "2024",
+  "pagos": 41.4,
+  "pagos_y": "2024",
+  "cuentas": 17.4,
+  "cuentas_y": "2024",
+  "ley": 39.4,
+  "idx": 37.8
+ },
+ "ARG": {
+  "acct": 81.7,
+  "acct_y": "2024",
+  "pagos": 72.2,
+  "pagos_y": "2024",
+  "cuentas": 43.9,
+  "cuentas_y": "2024",
+  "ley": 56.9,
+  "idx": 63.7
+ },
+ "BRA": {
+  "acct": 86.4,
+  "acct_y": "2024",
+  "pagos": 77.4,
+  "pagos_y": "2024",
+  "cuentas": 54.8,
+  "cuentas_y": "2024",
+  "ley": 50.6,
+  "idx": 67.3
+ },
+ "CHL": {
+  "acct": 85.1,
+  "acct_y": "2024",
+  "pagos": 84.3,
+  "pagos_y": "2021",
+  "cuentas": 51.5,
+  "cuentas_y": "2021",
+  "ley": 69.8,
+  "idx": 72.7
+ },
+ "URY": {
+  "acct": 73.7,
+  "acct_y": "2024",
+  "pagos": 68.0,
+  "pagos_y": "2021",
+  "cuentas": 32.3,
+  "cuentas_y": "2021",
+  "ley": 74.1,
+  "idx": 62.0
+ },
+ "TUR": {
+  "acct": 81.6,
+  "acct_y": "2024",
+  "pagos": 71.4,
+  "pagos_y": "2024",
+  "cuentas": 51.4,
+  "cuentas_y": "2024",
+  "ley": 45.2,
+  "idx": 62.4
+ }
+}
