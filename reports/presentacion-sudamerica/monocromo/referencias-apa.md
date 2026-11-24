@@ -28,6 +28,8 @@ Blumenstock, J., Callen, M. y Ghani, T. (2018). Why do defaults affect behavior?
 
 BNP Paribas Cardif Perú. (2026). *Memoria anual 2025*. https://bnpparibascardif.com/peru/wp-content/uploads/sites/20/2026/04/Memoria-Anual-2025.pdf
 
+Capgemini y LIMRA. (2026, 10 de septiembre). *World Life Insurance Report 2027* [Comunicado de prensa]. https://www.capgemini.com/news/press-releases/life-insurers-under-pressure-42-of-consumers-are-confused-and-unconvinced-by-policies/
+
 CQCS. (2024, 15 de julio). *Tokio Marine encurta prazo de pagamento de sinistros no seguro auto*. https://cqcs.com.br/noticia/tokio-marine-encurta-prazo-de-pagamento-de-sinistros-no-seguro-auto/
 
 CQCS. (2026a, 3 de septiembre). *Bradesco Seguros e Segura lançam modelo que combina inteligência artificial e atendimento humano para apoiar vendas de mais de 1.200 corretores*. https://cqcs.com.br/noticia/bradesco-seguros-e-segura-lancam-modelo-que-combina-inteligencia-artificial-e-atendimento-humano-para-apoiar-vendas-de-mais-de-1-200-corretores/
