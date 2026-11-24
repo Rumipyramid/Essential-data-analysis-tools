@@ -1,0 +1,783 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seguros digitales: Perú y la región</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap">
+<style>
+* { box-sizing: border-box; margin: 0; }
+html, body { height: 100%; background: #0A0A09; overflow: hidden; }
+#stage { position: absolute; left: 50%; top: 50%; width: 1920px; height: 1080px; transform-origin: 0 0; }
+#stage > section { position: absolute; inset: 0; width: 1920px; height: 1080px; display: none; overflow: hidden; }
+#stage > section.on { display: flex; }
+#stage > section aside { display: none; }
+#notes { position: fixed; left: 0; right: 0; bottom: 0; max-height: 40vh; overflow: auto; background: #1B1B19; color: #ECEBE6; font: 16px/1.45 'Space Mono', monospace; padding: 16px 24px; border-top: 2px solid #ECEBE6; display: none; z-index: 10; }
+#notes.on { display: block; }
+#hud { position: fixed; right: 16px; bottom: 12px; color: #A3A29C; font: 13px 'Space Mono', monospace; z-index: 11; user-select: none; }
+#hud button { background: none; border: 1px solid #4A4944; color: #ECEBE6; font: inherit; padding: 4px 10px; cursor: pointer; margin-left: 6px; }
+@media print {
+  html, body { overflow: visible; height: auto; background: none; }
+  #stage { position: static; transform: none !important; width: auto; height: auto; }
+  #stage > section { position: relative; display: flex !important; page-break-after: always; break-after: page; }
+  #notes, #hud { display: none !important; }
+  @page { size: 1920px 1080px; margin: 0; }
+}
+/* Estilos compartidos de la presentación */
+body { font-family: 'Space Mono', 'Courier New', monospace; color: #ECEBE6; }
+section { background: #0F0F0E; color: #ECEBE6; font-family: 'Space Mono', 'Courier New', monospace; padding: 128px 128px 160px; display: flex; flex-direction: column; gap: 20px; }
+section.alt { background: #1B1B19; }
+section.inv { background: #ECEBE6; color: #0F0F0E; }
+.t { font-family: 'Archivo Black', Arial, sans-serif; font-size: 80px; font-weight: 400; line-height: 1.0; text-transform: uppercase; }
+.sub { font-size: 28px; line-height: 1.3; color: #A3A29C; }
+.src { font-size: 24px; line-height: 1.3; color: #A3A29C; }
+.foot { position: absolute; left: 128px; bottom: 64px; width: 1664px; font-size: 24px; line-height: 1.2; color: #A3A29C; text-transform: uppercase; letter-spacing: 2px; }
+.inv .sub { color: #4A4944; }
+.inv .src { color: #4A4944; }
+.inv .foot { color: #4A4944; }
+.spacer { flex: 1; }
+.row { display: flex; flex-direction: row; gap: 56px; }
+.host { position: relative; }
+.lab { position: absolute; font-size: 24px; line-height: 1.25; color: #A3A29C; }
+.labpe { position: absolute; font-size: 24px; line-height: 1.25; color: #ECEBE6; font-weight: 700; }
+.big { font-family: 'Archivo Black', Arial, sans-serif; font-size: 88px; font-weight: 400; line-height: 1.0; }
+.k { font-size: 24px; line-height: 1.3; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; }
+.txt { font-size: 24px; line-height: 1.35; }
+.dim { font-size: 24px; line-height: 1.35; color: #A3A29C; }
+.inv .dim { color: #4A4944; }
+.stat { display: flex; flex-direction: column; gap: 8px; border-top: 4px solid #ECEBE6; padding-top: 16px; }
+.cols3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 48px; }
+.cols2 { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; }
+.col { display: flex; flex-direction: column; gap: 14px; border-top: 8px solid #ECEBE6; padding-top: 20px; }
+.inv .col { border-top-color: #0F0F0E; }
+.strip { border: 4px solid #ECEBE6; padding: 18px 28px; font-size: 24px; line-height: 1.35; }
+.inv .strip { border-color: #0F0F0E; }
+.tbl { font-size: 24px; line-height: 1.3; width: 100%; color: #ECEBE6; }
+.inv .tbl { color: #0F0F0E; }
+.card { display: flex; flex-direction: column; gap: 12px; border-top: 4px solid #ECEBE6; padding-top: 16px; }
+.inv .card { border-top-color: #0F0F0E; }
+.refs { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; }
+.refcol { display: flex; flex-direction: column; gap: 14px; }
+.ref { font-size: 24px; line-height: 1.3; color: #ECEBE6; }
+.mid { font-family: 'Archivo Black', Arial, sans-serif; font-size: 56px; font-weight: 400; line-height: 1.0; }
+.refs4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 28px; }
+.refcol4 { display: flex; flex-direction: column; gap: 6px; }
+.refsm { font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 1.22; color: #ECEBE6; }
+.cover-t { font-family: 'Archivo Black', Arial, sans-serif; font-size: 128px; font-weight: 400; line-height: 1.0; text-transform: uppercase; }
+
+</style>
+</head>
+<body>
+<div id="stage">
+<section id="portada" data-transition="fade">
+<p class="k">Benchmark · Noviembre de 2026</p>
+<div class="spacer"></div>
+<h1 class="cover-t">Seguros digitales:<br>Perú y la región</h1>
+<p class="sub" style="width:1300px">Cómo capturan valor las aseguradoras de los países que se parecen a Perú y de los que marcan el horizonte.</p>
+<div class="spacer"></div>
+<div style="border-top:8px solid #ECEBE6;padding-top:20px"><p class="dim">Documento de trabajo · Uso interno: incluye citas de entrevistas</p></div>
+<aside>Portada. Qué decir: esta presentación responde dos preguntas. Primero, dónde está Perú frente a la región en formalidad, seguros y digitalización. Segundo, cómo capturan valor con ecosistemas digitales y tecnología, en el front y en el back, las aseguradoras de los países que se parecen a Perú y las de los países que marcan el horizonte; cierra con lo que hace la competencia en Perú y lo que viene. Es un documento de trabajo de uso interno porque incluye citas de dos entrevistas a usuarias. Puente: empecemos por dónde está Perú.</aside>
+</section>
+<section id="contexto-estructural" data-transition="fade">
+<h2 class="t">Dos bloques de desarrollo</h2>
+<p class="sub">Perú frente a la región. Burbuja: primas totales por habitante.</p>
+<div class="row">
+<div class="host" style="width:1040px;height:530px">
+<svg aria-label="Gráfico de burbujas: índice de desarrollo estructural frente a penetración del seguro sin primas de seguridad social, por país" width="1040" height="530" viewBox="0 0 1040 530">
+<line x1="90" y1="46" x2="90" y2="450" stroke="#4A4A45" stroke-width="2"/>
+<line x1="90" y1="450" x2="1020" y2="450" stroke="#4A4A45" stroke-width="2"/>
+<line x1="496.9" y1="46" x2="496.9" y2="450" stroke="#A3A29C" stroke-width="2" stroke-dasharray="8 8"/>
+<line x1="90" y1="185.8" x2="1020" y2="185.8" stroke="#A3A29C" stroke-width="2" stroke-dasharray="8 8"/>
+<circle cx="759.6" cy="372.3" r="38" fill="#2A2A27" stroke="#A3A29C" stroke-width="3"/>
+<circle cx="861.9" cy="170.3" r="35.9" fill="#2A2A27" stroke="#A3A29C" stroke-width="3"/>
+<circle cx="648" cy="248" r="26.6" fill="#2A2A27" stroke="#A3A29C" stroke-width="3"/>
+<circle cx="364.4" cy="201.4" r="25.4" fill="none" stroke="#A3A29C" stroke-width="3" stroke-dasharray="6 6"/>
+<circle cx="608.5" cy="92.6" r="23.9" fill="#2A2A27" stroke="#A3A29C" stroke-width="3"/>
+<circle cx="389.9" cy="263.5" r="21" fill="#2A2A27" stroke="#A3A29C" stroke-width="3"/>
+<circle cx="331.8" cy="325.7" r="14.5" fill="#2A2A27" stroke="#A3A29C" stroke-width="3"/>
+<circle cx="345.8" cy="418.9" r="11.5" fill="#2A2A27" stroke="#A3A29C" stroke-width="3"/>
+<circle cx="183" cy="356.8" r="10.3" fill="#2A2A27" stroke="#A3A29C" stroke-width="3"/>
+<circle cx="345.8" cy="341.2" r="17.1" fill="#ECEBE6" stroke="#0F0F0E" stroke-width="3"/>
+</svg>
+<p class="lab" style="left:0px;top:0px;width:720px">↑ Seguro sin seguridad social, % del PBI</p>
+<p class="lab" style="left:0px;top:46px;width:80px;text-align:right">3,5%</p>
+<p class="lab" style="left:0px;top:171px;width:80px;text-align:right">2,7%</p>
+<p class="lab" style="left:0px;top:357px;width:80px;text-align:right">1,5%</p>
+<p class="lab" style="left:60px;top:458px;width:60px;text-align:center">45</p>
+<p class="lab" style="left:525px;top:458px;width:60px;text-align:center">65</p>
+<p class="lab" style="left:960px;top:458px;width:60px;text-align:right">85</p>
+<p class="lab" style="left:90px;top:492px;width:950px">Índice de desarrollo estructural: ingreso, años de estudio, empleo formal, adultos con cuenta e instituciones →</p>
+<p class="lab" style="left:507px;top:412px;width:200px">Bloque alto →</p>
+<p class="labpe" style="left:370px;top:326px;width:200px">PERÚ · 1,7%</p>
+<p class="lab" style="left:170px;top:288px;width:140px;text-align:right">Ecuador</p>
+<p class="lab" style="left:364px;top:404px;width:130px">Paraguay</p>
+<p class="lab" style="left:128px;top:372px;width:110px;text-align:center">Bolivia</p>
+<p class="lab" style="left:416px;top:248px;width:140px">Colombia</p>
+<p class="lab" style="left:259px;top:140px;width:210px;text-align:center">México (ref.)</p>
+<p class="lab" style="left:638px;top:78px;width:120px">Brasil</p>
+<p class="lab" style="left:680px;top:233px;width:150px">Argentina</p>
+<p class="lab" style="left:902px;top:155px;width:110px">Chile</p>
+<p class="lab" style="left:802px;top:357px;width:130px">Uruguay</p>
+</div>
+<div style="width:568px;display:flex;flex-direction:column;gap:12px">
+<p class="k">Dónde está Perú</p>
+<div class="stat"><p class="mid">56 de 100</p><p class="dim">en desarrollo estructural, bloque bajo. Chile: 78.</p></div>
+<div class="stat"><p class="mid">1,7% del PBI</p><p class="dim">en seguros sin seguridad social; incluye el SOAT. América Latina: 2,7%.</p></div>
+<div class="stat"><p class="mid">US$ 173</p><p class="dim">primas totales por habitante, con seguridad social: no es gasto voluntario.</p></div>
+</div>
+</div>
+<p class="src">Índice propio: cinco partes de igual peso, de 0 a 100 · PNUD (2025) · OIT (2026) · Banco Mundial (2025, 2026) · MAPFRE (2025)</p>
+<p class="foot">Dónde está Perú · 02 / 21</p>
+<aside>Qué decir: para el eje horizontal armamos un índice propio de desarrollo estructural, de 0 a 100, con cinco partes del mismo peso. Ingreso: ingreso nacional por habitante en dólares PPA de 2021, con la escala logarítmica del IDH (100 a 75.000 dólares) (PNUD, 2025, datos de 2023). Educación: años promedio de escolaridad de los adultos sobre 15 años, el máximo del IDH (PNUD, 2025). Empleo formal: 100 menos la tasa de empleo informal (OIT, 2026, datos de 2025). Inclusión financiera: adultos con una cuenta en un banco, una financiera o una billetera (Banco Mundial, 2025, datos de 2024). Instituciones: promedio de efectividad del gobierno y Estado de derecho, en escala de 0 a 100 (Banco Mundial, 2026, Worldwide Governance Indicators, datos de 2025). La nota al pie resume cómo se arma el índice. Perú saca, por parte: ingreso 75, años de estudio 68, trabajadores formales 30, adultos con cuenta 59 y gobierno y Estado de derecho 49; en total, 56. Chile, el más alto, saca 78. Lo que más lo baja es la informalidad. El gráfico muestra dos bloques separados por un salto de casi 10 puntos: abajo, Bolivia (49), Ecuador (55), Perú y Paraguay (56), México (57) y Colombia (58); arriba, Brasil (67), Argentina (69), Uruguay (74) y Chile (78); Turquía (70) no aparece porque MAPFRE no publica su penetración sin seguridad social; su penetración total es 2,8% del PBI (Allianz Research, citado por Allianz Türkiye, 2025). Dentro del bloque bajo, Perú está a la par de México y Colombia en desarrollo, pero compra menos seguro (1,7% del PBI frente a 2,6% y 2,2%). Uruguay sigue siendo la excepción del bloque alto, con 1,5%. Ojo: es un índice nuestro; los pesos iguales y los cinco componentes son una decisión que se puede discutir, y los datos son de años distintos (2023 a 2025). A la derecha, tres datos de Perú. 56 de 100 en el índice. 1,7% del PBI en seguros sin las primas de seguridad social, que incluye el SOAT, obligatorio; con ellas sería 2,0% (MAPFRE Economics, 2025). Y US$ 173 de primas totales por habitante: todas las primas del país, incluidas las ligadas a la seguridad social (pensiones, salud y riesgos laborales), divididas entre toda la población, incluidos los niños y quienes no tienen seguro; no es gasto voluntario. Sin las primas de seguridad social serían unos US$ 147, que todavía incluyen el SOAT (cálculo nuestro: 173 × 1,7 / 2,0); solo 10,2% de los adultos paga con regularidad a una aseguradora (Banco Mundial, 2025). Además, el mercado peruano casi no crece: en el primer semestre de 2026 las primas subieron 1,1% y las ganancias bajaron en la mitad de las compañías, según datos de la SBS (Gestión, 2026a). México aparece con línea punteada, solo como referencia. Puente: el desarrollo es una mirada; la segunda es cuánto usa la gente los pagos digitales.</aside>
+</section>
+<section id="contexto-digital" data-transition="fade">
+<h2 class="t">Digital a medias</h2>
+<p class="sub">Banca y billeteras como vara de uso digital: adultos con cuenta y con pagos, 2024.</p>
+<div class="row">
+<div style="display:flex;flex-direction:row">
+<div class="host" style="width:200px;height:580px">
+<p class="lab" style="left:0px;top:50px;width:180px;text-align:right">Chile</p>
+<p class="lab" style="left:0px;top:88px;width:180px;text-align:right">Brasil</p>
+<p class="lab" style="left:0px;top:126px;width:180px;text-align:right">Argentina</p>
+<p class="lab" style="left:0px;top:164px;width:180px;text-align:right">Uruguay</p>
+<p class="lab" style="left:0px;top:202px;width:180px;text-align:right">Paraguay</p>
+<p class="labpe" style="left:0px;top:240px;width:180px;text-align:right">PERÚ</p>
+<p class="lab" style="left:0px;top:278px;width:180px;text-align:right">Colombia</p>
+<p class="lab" style="left:0px;top:316px;width:180px;text-align:right">Bolivia</p>
+<p class="lab" style="left:0px;top:354px;width:180px;text-align:right">Ecuador</p>
+<p class="lab" style="left:0px;top:430px;width:180px;text-align:right">Turquía</p>
+<p class="lab" style="left:0px;top:468px;width:180px;text-align:right">India</p>
+<p class="lab" style="left:0px;top:506px;width:180px;text-align:right">México</p>
+</div>
+<div class="host" style="width:868px;height:580px">
+<svg aria-label="Gráfico de puntos: porcentaje de adultos con cuenta y con pagos digitales por país" width="868" height="580" viewBox="0 0 868 580">
+<line x1="118.3" y1="40" x2="118.3" y2="540" stroke="#3A3A36" stroke-width="2" stroke-dasharray="4 8"/>
+<line x1="335" y1="40" x2="335" y2="540" stroke="#3A3A36" stroke-width="2" stroke-dasharray="4 8"/>
+<line x1="551.7" y1="40" x2="551.7" y2="540" stroke="#3A3A36" stroke-width="2" stroke-dasharray="4 8"/>
+<line x1="0" y1="404" x2="868" y2="404" stroke="#4A4A45" stroke-width="2"/>
+<circle cx="18" cy="15" r="9" fill="#A3A29C"/>
+<circle cx="248" cy="15" r="8" fill="none" stroke="#A3A29C" stroke-width="3"/>
+<line x1="598.2" y1="65" x2="606.9" y2="65" stroke="#5A5A54" stroke-width="4"/><circle cx="606.9" cy="65" r="8" fill="#0F0F0E" stroke="#A3A29C" stroke-width="3"/><circle cx="598.2" cy="65" r="9" fill="#A3A29C"/>
+<line x1="523.5" y1="103" x2="621" y2="103" stroke="#5A5A54" stroke-width="4"/><circle cx="621" cy="103" r="8" fill="#0F0F0E" stroke="#A3A29C" stroke-width="3"/><circle cx="523.5" cy="103" r="9" fill="#A3A29C"/>
+<line x1="467.2" y1="141" x2="570.1" y2="141" stroke="#5A5A54" stroke-width="4"/><circle cx="570.1" cy="141" r="8" fill="#0F0F0E" stroke="#A3A29C" stroke-width="3"/><circle cx="467.2" cy="141" r="9" fill="#A3A29C"/>
+<line x1="421.7" y1="179" x2="483.4" y2="179" stroke="#5A5A54" stroke-width="4"/><circle cx="483.4" cy="179" r="8" fill="#0F0F0E" stroke="#A3A29C" stroke-width="3"/><circle cx="421.7" cy="179" r="9" fill="#A3A29C"/>
+<line x1="286.2" y1="217" x2="344.8" y2="217" stroke="#5A5A54" stroke-width="4"/><circle cx="344.8" cy="217" r="8" fill="#0F0F0E" stroke="#A3A29C" stroke-width="3"/><circle cx="286.2" cy="217" r="9" fill="#A3A29C"/>
+<line x1="245.1" y1="255" x2="327.4" y2="255" stroke="#ECEBE6" stroke-width="4"/><circle cx="327.4" cy="255" r="10" fill="#0F0F0E" stroke="#ECEBE6" stroke-width="4"/><circle cx="245.1" cy="255" r="12" fill="#ECEBE6"/>
+<line x1="218" y1="293" x2="303.6" y2="293" stroke="#5A5A54" stroke-width="4"/><circle cx="303.6" cy="293" r="8" fill="#0F0F0E" stroke="#A3A29C" stroke-width="3"/><circle cx="218" cy="293" r="9" fill="#A3A29C"/>
+<line x1="157.3" y1="331" x2="300.3" y2="331" stroke="#5A5A54" stroke-width="4"/><circle cx="300.3" cy="331" r="8" fill="#0F0F0E" stroke="#A3A29C" stroke-width="3"/><circle cx="157.3" cy="331" r="9" fill="#A3A29C"/>
+<line x1="154.1" y1="369" x2="383.8" y2="369" stroke="#5A5A54" stroke-width="4"/><circle cx="383.8" cy="369" r="8" fill="#0F0F0E" stroke="#A3A29C" stroke-width="3"/><circle cx="154.1" cy="369" r="9" fill="#A3A29C"/>
+<line x1="458.5" y1="445" x2="569" y2="445" stroke="#5A5A54" stroke-width="4"/><circle cx="569" cy="445" r="8" fill="#0F0F0E" stroke="#A3A29C" stroke-width="3"/><circle cx="458.5" cy="445" r="9" fill="#A3A29C"/>
+<line x1="210.4" y1="483" x2="649.2" y2="483" stroke="#5A5A54" stroke-width="4"/><circle cx="649.2" cy="483" r="8" fill="#0F0F0E" stroke="#A3A29C" stroke-width="3"/><circle cx="210.4" cy="483" r="9" fill="#A3A29C"/>
+<line x1="133.5" y1="521" x2="259.2" y2="521" stroke="#5A5A54" stroke-width="4"/><circle cx="259.2" cy="521" r="8" fill="#0F0F0E" stroke="#A3A29C" stroke-width="3"/><circle cx="133.5" cy="521" r="9" fill="#A3A29C"/>
+</svg>
+<p class="lab" style="left:36px;top:0px;width:200px">Pago digital</p>
+<p class="lab" style="left:266px;top:0px;width:200px">Tiene cuenta</p>
+<p class="lab" style="left:670px;top:0px;width:198px;text-align:right">Pago · cuenta</p>
+<p class="lab" style="left:690px;top:50px;width:178px;text-align:right">84,3* · 85,1</p>
+<p class="lab" style="left:690px;top:88px;width:178px;text-align:right">77,4 · 86,4</p>
+<p class="lab" style="left:690px;top:126px;width:178px;text-align:right">72,2 · 81,7</p>
+<p class="lab" style="left:690px;top:164px;width:178px;text-align:right">68,0* · 73,7</p>
+<p class="lab" style="left:690px;top:202px;width:178px;text-align:right">55,5 · 60,9</p>
+<p class="labpe" style="left:690px;top:240px;width:178px;text-align:right">51,7 · 59,3</p>
+<p class="lab" style="left:690px;top:278px;width:178px;text-align:right">49,2 · 57,1</p>
+<p class="lab" style="left:690px;top:316px;width:178px;text-align:right">43,6 · 56,8</p>
+<p class="lab" style="left:690px;top:354px;width:178px;text-align:right">43,3 · 64,5</p>
+<p class="lab" style="left:10px;top:404px;width:600px">Referencias fuera de Sudamérica</p>
+<p class="lab" style="left:690px;top:430px;width:178px;text-align:right">71,4 · 81,6</p>
+<p class="lab" style="left:690px;top:468px;width:178px;text-align:right">48,5 · 89,0</p>
+<p class="lab" style="left:690px;top:506px;width:178px;text-align:right">41,4 · 53,0</p>
+<p class="lab" style="left:88px;top:548px;width:60px;text-align:center">40%</p>
+<p class="lab" style="left:305px;top:548px;width:60px;text-align:center">60%</p>
+<p class="lab" style="left:521px;top:548px;width:60px;text-align:center">80%</p>
+</div>
+</div>
+<div style="width:540px;display:flex;flex-direction:column;gap:16px">
+<div class="card"><p class="k">Dos velocidades</p><p class="dim">Chile, Brasil, Argentina y Uruguay: 68% o más paga en digital. Perú: 52%.</p></div>
+<div class="card"><p class="k">Fuerte en billeteras</p><p class="dim">42,5% tiene dinero móvil: tercero en Sudamérica, tras Brasil y Argentina.</p></div>
+<div class="strip"><p class="txt"><b>LECTURA NUESTRA</b> · Tener no es usar. Si la banca aún no cierra esa brecha, al seguro le será más difícil: 67% cotiza en digital, solo 21% compra en línea.</p></div>
+</div>
+</div>
+<p class="src">Banco Mundial (2025), Global Findex 2025, datos de 2024 (FX.OWN.TOTL.ZS y g20.any) · * 2021 · APESEG (2023)</p>
+<p class="foot">Dónde está Perú · 03 / 21</p>
+<aside>Qué decir: la segunda mirada es la digitalización financiera. Para cada país, el punto lleno es el porcentaje de adultos que hizo o recibió un pago digital en el último año y el anillo, el que tiene una cuenta en un banco, una financiera o una billetera. Perú está a mitad de tabla: 59,3% tiene cuenta y 51,7% paga en digital. La región va a dos velocidades: Chile, Brasil, Argentina y Uruguay tienen 68% o más de adultos con pagos digitales; Perú, Colombia, Bolivia y Ecuador están entre 43% y 52%. Tener cuenta no es usarla: en Ecuador, 64,5% tiene cuenta pero solo 43,3% paga en digital; en India, 89,0% frente a 48,5%. Perú destaca en dinero móvil: 42,5% de los adultos tiene una cuenta de dinero móvil, el tercer valor entre los países sudamericanos con dato, después de Brasil (58,2%) y Argentina (56,7%); Chile y Uruguay no tienen dato en la edición 2025. Fuente: Banco Mundial (2025), The Global Findex Database 2025, datos de 2024, consultado en api.worldbank.org en noviembre de 2026; indicadores FX.OWN.TOTL.ZS (tiene una cuenta) y g20.any (hizo o recibió un pago digital). Chile y Uruguay: pago digital de 2021, último dato disponible. En seguros, el salto digital es menor: 67% de los peruanos prefiere buscar y cotizar en digital, pero solo 21% compra su póliza en línea (APESEG, 2023); en América Latina la venta en línea era 10% de las ventas de seguros en 2021, y el cliente sigue valorando la asesoría (McKinsey, citado por APESEG, 2021). Lectura nuestra: tener no es usar; si la banca todavía no logra que quien tiene cuenta la use para pagar, al seguro, que se compra menos y se usa menos, le será aún más difícil. Puente: veamos qué hacen las aseguradoras de los países que se parecen a Perú.</aside>
+</section>
+<section id="p1-resumen" class="inv" data-transition="fade">
+<h2 class="t">Apps ajenas y menos trámite</h2>
+<p class="sub">Colocar seguros no basta: qué hacen cinco aseguradoras de países parecidos a Perú.</p>
+<table class="tbl">
+<tr><th style="width:21%;text-align:left">Aseguradora</th><th style="width:35%;text-align:left">Qué hace</th><th style="width:20%;text-align:left">Dónde captura valor</th><th style="width:24%;text-align:left">Resultado publicado</th></tr>
+<tr><td>Seguros Mundial · Colombia</td><td>Vende el SOAT y otros seguros dentro de Nequi, Rappi y Mercado Libre</td><td>Front · canales de otros</td><td>Más de 1,8 millones de pólizas con aliados</td></tr>
+<tr><td>Aseguradora Solidaria · Colombia</td><td>Más de 300 APIs para que bancos y cooperativas vendan sus seguros</td><td>Front y back · canales de otros</td><td>Primas +6,6%; mercado, +5,95%</td></tr>
+<tr><td>Seguros Alianza · Ecuador</td><td>Asistente en WhatsApp para siniestros, consultas y compras</td><td>Front · servicio</td><td>26% de las atenciones, frente al teléfono</td></tr>
+<tr><td>Quálitas · México</td><td>Ajuste de choques menores con fotos, sin ajustador en el lugar</td><td>Front y back · siniestro</td><td>28% de los siniestros de 2024</td></tr>
+<tr><td>Seguros SURA · México</td><td>IA que lee y clasifica los pedidos de agentes e intermediarios</td><td>Back · corredor</td><td>Respuesta de 20 horas a 8 minutos</td></tr>
+</table>
+<div class="spacer"></div>
+<p class="src">Semana (2026) · ABC Economía (2026) · KCH FM (2026) · Quálitas (2025) · Darío Celis (2026) · Cifras declaradas por las empresas · Bolivia y Paraguay: sin casos con resultados publicados</p>
+<p class="foot">Parte 1 · Países parecidos a Perú · 04 / 21</p>
+<aside>Qué decir: estas son cinco aseguradoras de los países que se parecen a Perú. Las elegimos con tres condiciones: que sean aseguradoras (no billeteras ni bancos), que hagan algo concreto en el front o en el back, y que hayan publicado al menos una cifra de resultado desde 2024. Todas las cifras las declaran las propias empresas. Capturan valor de dos formas: venden en el canal de otro (Seguros Mundial en apps, Solidaria con APIs, Alianza en WhatsApp) y sacan a las personas de los trámites simples (Quálitas en el choque menor, SURA en los pedidos de intermediarios). En Bolivia y Paraguay no encontramos aseguradoras con resultados digitales publicados; en Paraguay, El Sol de Seguros dijo en 2018 que su plataforma para agentes bajó trámites de 24 horas a 15 minutos (Infonegocios, 2018), pero el dato es viejo. Fuentes: Semana (2026), 4 de agosto; ABC Economía (2026), con datos de Fasecolda; KCH FM (2026), comunicado de Seguros Alianza del 25 de febrero; Quálitas (2025), Integrated Annual Report 2024; Darío Celis (2026), 27 de agosto. Puente: primero, el front.</aside>
+</section>
+<section id="p1-front" data-transition="fade">
+<h2 class="t">Front: el canal de otro</h2>
+<div class="cols3">
+<div class="col">
+<p class="k">Seguros Mundial · Colombia</p>
+<p class="big">1,8 M</p>
+<p class="txt">pólizas emitidas con aliados tecnológicos: SOAT y otros seguros.</p>
+<p class="dim">Vende dentro de Nequi, Rappi, Puntos Colombia y Mercado Libre. Sin contar el SOAT, sus seguros generales crecieron 21%.</p>
+<p class="k">Valor: ingresos</p>
+</div>
+<div class="col">
+<p class="k">Solidaria · Colombia</p>
+<p class="big">+6,6%</p>
+<p class="txt">de crecimiento en primas, frente a 5,95% del mercado.</p>
+<p class="dim">Aseguradora Solidaria abrió más de 300 APIs para que bancos, cooperativas y plataformas vendan sus seguros.</p>
+<p class="k">Valor: ingresos</p>
+</div>
+<div class="col">
+<p class="k">Seguros Alianza · Ecuador</p>
+<p class="big">26%</p>
+<p class="txt">de las atenciones por WhatsApp en 2025, frente al teléfono. Meta 2026: 36%.</p>
+<p class="dim">«Ali» atiende las 24 horas siniestros, consultas y compras, y pasa a una persona lo complejo.</p>
+<p class="k">Valor: costo de servir</p>
+</div>
+</div>
+<div class="spacer"></div>
+<div class="strip"><p class="txt"><b>LECTURA NUESTRA</b> · El aliado pone el tráfico y se queda con la relación. Ninguno de estos casos publica cuánto renueva lo vendido ni qué margen se queda el aliado. En Perú, lo embebido es menos de 1% del portafolio de Pacífico.</p></div>
+<p class="src">Semana (2026) · ABC Economía (2026), con datos de Fasecolda · KCH FM (2026) · Gestión (2026b)</p>
+<p class="foot">Parte 1 · Países parecidos a Perú · 05 / 21</p>
+<aside>Qué decir: en el front, las tres aseguradoras usan el canal de otro. Seguros Mundial, en Colombia, vende el SOAT y otros seguros dentro de Nequi (la billetera de Bancolombia), Rappi, Puntos Colombia y Mercado Libre: declara más de 1,8 millones de pólizas emitidas mediante aliados tecnológicos. Ojo: la fuente no separa cuántas son SOAT ni de qué período son; y el +21% en seguros generales excluye el SOAT, así que no se atribuye a la venta en apps. Aseguradora Solidaria abrió más de 300 APIs para que bancos, cooperativas y plataformas vendan sus seguros; sus primas crecieron 6,6% frente a 5,95% del mercado, con datos de Fasecolda; la fuente no atribuye todo el crecimiento a las APIs. Seguros Alianza, en Ecuador, el país más parecido a Perú, atiende por WhatsApp con su asistente «Ali»: en 2025 registró 3.196 interacciones, equivalentes a 26% frente al canal telefónico, y su meta para 2026 es 36%. Es el caso más pequeño, pero muestra que en un mercado informal lo digital empieza por WhatsApp. Lectura nuestra: el SOAT es la puerta de entrada más simple, porque es obligatorio; en Perú el equivalente sería venderlo donde el cliente ya paga. Fuentes: Semana (2026), «Seguros Mundial creció 21% en seguros generales…», 4 de agosto; ABC Economía (2026); KCH FM (2026), 25 de febrero. Puente: ahora, el back.</aside>
+</section>
+<section id="p1-back" data-transition="fade">
+<h2 class="t">Back: tiempo y pérdida</h2>
+<div class="cols3">
+<div class="col">
+<p class="k">Quálitas · México</p>
+<p class="big">28%</p>
+<p class="txt">de sus siniestros de 2024 se atendieron con fotos desde el celular, sin ajustador en el lugar.</p>
+<p class="dim">Satisfacción: 94,1%, casi igual que con ajustador presencial (95,8%).</p>
+<p class="k">Valor: costo y tiempo</p>
+</div>
+<div class="col">
+<p class="k">Seguros SURA · México</p>
+<p class="big">8 min</p>
+<p class="txt">para responder a agentes e intermediarios. Antes, 20 horas.</p>
+<p class="dim">La IA lee y clasifica sus correos de cotización, emisión y renovación: 58.500 entre marzo y julio de 2026.</p>
+<p class="k">Valor: costo y tiempo</p>
+</div>
+<div class="col">
+<p class="k">Quálitas · México</p>
+<p class="big">53%</p>
+<p class="txt">de los autos robados que tenían su localizador fueron recuperados, por encima del promedio del sector.</p>
+<p class="dim">Ofrece localizadores a clientes y flotas, y telemetría para prevenir choques en 56 flotas.</p>
+<p class="k">Valor: menos pérdida</p>
+</div>
+</div>
+<div class="spacer"></div>
+<div class="strip"><p class="txt"><b>EVIDENCIA DE TERCEROS</b> · Un siniestro de auto 100% digital tiene un NPS de 42; uno atendido solo por personas, 27. Pero rápido no es lo mismo que resuelto: avisar en minutos no acorta el taller ni el pago.</p></div>
+<p class="src">Quálitas (2025), con datos de la OCRA · Darío Celis (2026) · Bain &amp; Company (2022), Brasil</p>
+<p class="foot">Parte 1 · Países parecidos a Perú · 06 / 21</p>
+<aside>Qué decir: en el back, dos aseguradoras mexicanas ahorran tiempo y pérdida. Quálitas, líder del seguro de autos en México desde 2001, ofrece el «Ajuste Exprés Digital»: en un choque menor, el cliente toma fotos y da los datos desde su app Q Móvil, por teléfono o con su asistente Qualibot, sin que un ajustador vaya al lugar. En 2024, 28% de todos sus siniestros en México pasó por ese proceso, con 94,1% de satisfacción, frente a 95,8% del ajustador presencial. Además, ofrece localizadores a clientes individuales y flotas: recuperó 53% de los vehículos robados que tenían el dispositivo, equivalentes a 7% del total de vehículos robados que aseguró; según la Oficina Coordinadora de Riesgos Asegurados (OCRA), ese porcentaje supera el promedio del sector. También instaló telemetría en 56 flotas para prevenir choques. Evidencia de terceros para el siniestro digital: en Brasil, un siniestro de auto resuelto 100% en digital obtiene un NPS de 42, uno mixto 36 y uno solo con personas 27; si el recorrido digital se rompe, el NPS cae de 65 a 48 (Bain &amp; Company, 2022). Lectura nuestra: un auto recuperado es un siniestro que no se paga completo, así que aquí el valor va directo al costo de siniestros. Seguros SURA México usa IA para recibir, leer y clasificar los correos de agentes e intermediarios: el tiempo promedio de atención bajó de 20 horas a 8 minutos y procesó más de 58.500 correos entre marzo y julio de 2026, con 85% de efectividad en la clasificación y hasta 30% menos tiempo de resolución de siniestros; lo declaró Marco Guerrero, director de tecnología. Ninguna de las cinco aseguradoras de esta parte publica, en lo que encontramos, cuánto invirtió y cuánto recuperó. Como referencia pública en Perú, RIMAC declaró que su agente de IA analiza un siniestro vehicular en 60 segundos en lugar de 48 horas (Infomercado, 2025). Fuentes: Quálitas (2025), Integrated Annual Report 2024; Darío Celis (2026), «Seguros SURA apuesta por la IA…», 27 de agosto. Puente: tres casos más de este grupo.</aside>
+</section>
+<section id="p1-mas" data-transition="fade">
+<h2 class="t">Producto, socios y datos</h2>
+<div class="cols3">
+<div class="col">
+<p class="k">Sofía · México</p>
+<p class="big">45–50%</p>
+<p class="txt">de los empleados asegurados usa su seguro de salud, frente a 3% a 5% en un seguro tradicional.</p>
+<p class="dim">Aseguradora especializada en salud: vende a pymes un seguro médico sin deducible.</p>
+<p class="k">Front · uso y valor percibido</p>
+</div>
+<div class="col">
+<p class="k">BBVA Seguros · México</p>
+<p class="big">+151%</p>
+<p class="txt">creció en 2025 su seguro Salud Senior, hecho con la healthtech Koltin: 8.280 asegurados.</p>
+<p class="dim">Segunda aseguradora de México (9,5% del mercado). Para 2026 apuesta por la IA y por Blue, dentro de la app del banco.</p>
+<p class="k">Front · ingresos vía socio</p>
+</div>
+<div class="col">
+<p class="k">Seguros Bolívar · Colombia</p>
+<p class="big">70%</p>
+<p class="txt">de la organización usa agentes de IA en su trabajo diario.</p>
+<p class="dim">Rehízo su arquitectura de datos: conectar datos nuevos ahora toma horas. Ya prospecta clientes con agentes automatizados.</p>
+<p class="k">Back · productividad</p>
+</div>
+</div>
+<div class="spacer"></div>
+<div class="strip"><p class="txt"><b>LECTURA NUESTRA</b> · El valor también viene de diseñar el producto para que se use, de crecer con un socio especializado y de ordenar los datos antes de usar IA.</p></div>
+<p class="src">IT Sitio (2026) · BBVA (2026) · Impacto TIC (2026) · Cifras declaradas por las empresas</p>
+<p class="foot">Parte 1 · Países parecidos a Perú · 07 / 21</p>
+<aside>Qué decir: tres casos más de México y Colombia, con otras formas de capturar valor. Sofía es una aseguradora mexicana especializada en salud (una Institución de Seguros Especializada en Salud) que vende a pymes un seguro médico sin deducible y con trámites en la app; su CEO declara que lo usa entre 45% y 50% de la plantilla asegurada, frente a 3% a 5% de un seguro tradicional. Un seguro que se usa es un seguro que se valora y se renueva; el riesgo es el costo de ese uso, que la fuente no detalla. BBVA Seguros, la segunda aseguradora de México con 9,5% del mercado a septiembre de 2025, creció 151% en 2025 con Salud Senior, el producto para adultos mayores que hizo con la healthtech Koltin: sumó 4.990 asegurados y llegó a 8.280. Es pequeño frente a sus 9,8 millones de pólizas, pero muestra cómo crecer con un socio especializado. Para 2026 anuncia IA y las capacidades de Blue dentro de la app de BBVA. Seguros Bolívar, en Colombia, rehizo su arquitectura de datos: conectar datos nuevos ya toma horas, y cerca de 70% de la organización usa agentes de IA para su productividad; sus equipos comerciales ya prospectan con agentes automatizados. Es un dato de adopción, no de resultado financiero. Fuentes: IT Sitio (2026), «Sofía apuesta por la salud digital…»; BBVA (2026), «BBVA Seguros pagó más de 519 mil siniestros…», 24 de febrero; Impacto TIC (2026), «Transformación de Seguros Bolívar mediante la arquitectura de datos e IA», 28 de mayo. Puente: veamos ahora el horizonte.</aside>
+</section>
+<section id="p2-vecindario" class="inv" data-transition="fade">
+<h2 class="t">Del vecindario al horizonte</h2>
+<p class="sub">Corte entre la parte 1 y la parte 2.</p>
+<div style="display:grid;grid-template-columns:1fr 96px 1fr;column-gap:24px;align-items:center">
+<div class="card"><p class="k">Ya vimos · Se parecen a Perú</p><p class="txt"><b>ECUADOR · MÉXICO · COLOMBIA · BOLIVIA · PARAGUAY</b></p><p class="txt">Aseguradoras que venden en apps ajenas y bajan el costo y el tiempo del trámite, en el front y en el back.</p></div>
+<p class="big" style="text-align:center">→</p>
+<div class="card"><p class="k">Ahora · Horizonte</p><p class="txt"><b>BRASIL · CHILE · URUGUAY · TURQUÍA</b></p><p class="txt">Más adelante en pagos digitales (68% a 84% de adultos) y, en Brasil y Chile, en seguro sin seguridad social. ¿Qué hacen sus aseguradoras?</p><p class="dim">Argentina, país puente: informal como Perú, pero con 72,2% de adultos que pagan en digital.</p></div>
+</div>
+<div class="spacer"></div>
+<div class="strip"><p class="txt"><b>POR REVISAR</b> · Falta definir qué indicadores estructurales explican por qué estos países van adelante (candidatos: infraestructura de pagos, regulación, educación, pobreza). Hoy usamos seguro sin seguridad social y pagos digitales.</p></div>
+<p class="src">Banco Mundial (2025), Global Findex, datos de 2024 (Chile y Uruguay, 2021) · MAPFRE Economics (2025) · OIT (2026)</p>
+<p class="foot">Parte 2 · Horizonte · 08 / 21</p>
+<aside>Qué decir: esta lámina marca el paso de la Parte 1 a la Parte 2. Ya vimos a las aseguradoras de los países que se parecen a Perú en desarrollo y conducta financiera, Ecuador, México, Colombia, Bolivia y Paraguay: venden en apps ajenas y bajan el costo y el tiempo del trámite, en el front y en el back. Ahora miramos el horizonte, Brasil, Chile, Uruguay y Turquía: están en el bloque alto del índice de desarrollo estructural de la lámina 2, entre 67 y 78 puntos frente a 56 de Perú, y entre 68% y 84% de sus adultos paga en digital (Uruguay y Chile, datos de 2021), frente a 51,7% en Perú; Brasil (3,3% del PBI) y Chile (2,8%) además tienen más seguro sin seguridad social que el promedio de América Latina (2,7%). Argentina es un país puente: informal como Perú, con 47,2% de trabajadores formales, pero 72,2% de sus adultos paga en digital. Por revisar: falta definir qué indicadores estructurales explican por qué estos países van adelante; los candidatos son la infraestructura de pagos, la regulación, la educación y la pobreza. Fuentes: Banco Mundial (2025), Global Findex, datos de 2024; MAPFRE Economics (2025), datos de 2024; OIT (2026), datos de 2025. Puente: primero, la venta y el siniestro.</aside>
+</section>
+<section id="p2-escala" data-transition="fade">
+<h2 class="t">Escala en venta y siniestro</h2>
+<div class="cols3">
+<div class="col">
+<p class="k">Southbridge · Chile</p>
+<p class="big">25%</p>
+<p class="txt">del parque automotor: más de 1,3 millones de SOAP vendidos en 2024.</p>
+<p class="dim">La compañía señala su canal digital como factor clave de ese crecimiento.</p>
+<p class="k">Front · ingresos y clientes</p>
+</div>
+<div class="col">
+<p class="k">Porto · Brasil</p>
+<p class="big">70%</p>
+<p class="txt">de los avisos de robo y hurto de autos los abre un agente de IA en WhatsApp.</p>
+<p class="dim">Satisfacción sobre 80%. Tras rediseñar el siniestro digital, 29% menos contactos.</p>
+<p class="k">Front y back · costo de servir</p>
+</div>
+<div class="col">
+<p class="k">Tokio Marine · Brasil</p>
+<p class="big">−60%</p>
+<p class="txt">en el tiempo de pago de la pérdida total, el robo y el hurto de autos.</p>
+<p class="dim">Consulta en línea la mayoría de los documentos. Antes esperaba al menos 5 días los papeles.</p>
+<p class="k">Back · experiencia</p>
+</div>
+</div>
+<div class="spacer"></div>
+<div class="strip"><p class="txt"><b>LECTURA NUESTRA</b> · Venden directo y a escala, y abren y pagan el siniestro sin esperar a una persona ni un papel.</p></div>
+<p class="src">Diario Financiero (2025) · Revista Apólice (2026) · CQCS (2024, 2026b) · Cifras declaradas por las empresas</p>
+<p class="foot">Parte 2 · Horizonte · 09 / 21</p>
+<aside>Qué decir: en el horizonte, las cifras son de escala. Southbridge, en Chile, vendió más de 1,3 millones de SOAP en 2024, 25% del parque automotor; su ejecutiva señala el canal digital como factor clave, aunque la nota no separa cuántas pólizas se vendieron en digital. Porto, en Brasil, abre con un agente de IA generativa en WhatsApp 70% de los avisos de robo y hurto de vehículos, con satisfacción sobre 80% en los primeros meses; ojo, el 70% es solo de robo y hurto, no de todos los siniestros. Tras rediseñar el recorrido digital del siniestro de auto (aviso, seguimiento de la reparación y elección del taller), redujo 29% los contactos por siniestro. Tokio Marine, en Brasil, con su «Projeto 72h», redujo 60% el tiempo promedio de pago en pérdida total, robo o hurto: el cliente abre el siniestro en la app o la web, envía dos documentos y la aseguradora consulta la mayoría de los demás con el número de identificación del cliente; antes esperaba al menos 5 días. Lectura nuestra: el ahorro de tiempo no vino de una app, sino de dejar de pedir papeles. Fuentes: Diario Financiero (2025), 14 de febrero; Revista Apólice (2026), «Porto automatiza 70% dos sinistros de roubo e furto», octubre; CQCS (2026b), 25 de junio; CQCS (2024), 15 de julio. Puente: el horizonte también cambia el trabajo del corredor y la forma de medir.</aside>
+</section>
+<section id="p2-corredor" data-transition="fade">
+<h2 class="t">Equipar y medir</h2>
+<div class="cols3">
+<div class="col">
+<p class="k">Bradesco Seguros · Brasil</p>
+<p class="big">1.200+</p>
+<p class="txt">corredores atendidos por IA y especialistas en WhatsApp. El piloto tuvo 135.</p>
+<p class="dim">En algunas sucursales, los corredores aumentaron su producción hasta tres veces.</p>
+<p class="k">Back · ventas vía corredor</p>
+</div>
+<div class="col">
+<p class="k">Río Uruguay Seguros · Argentina</p>
+<p class="big">+67%</p>
+<p class="txt">más productores cotizan en sus plataformas digitales, y cotizan 4 veces más.</p>
+<p class="dim">Su cartera digital creció 27% en un año. El productor vende online con su código, en las mismas condiciones que la compañía.</p>
+<p class="k">Front · ventas vía corredor</p>
+</div>
+<div class="col">
+<p class="k">Allianz Türkiye · Turquía</p>
+<p class="big">€20 M+</p>
+<p class="txt">de valor de negocio declarado, con €15 M invertidos en datos e IA en cinco años.</p>
+<p class="dim">Siniestros decididos 5 veces más rápido; cotización comercial de 4 horas a 15 minutos; fraude detectado +30%.</p>
+<p class="k">Back · retorno medido</p>
+</div>
+</div>
+<div class="spacer"></div>
+<div class="strip"><p class="txt"><b>EVIDENCIA DE TERCEROS</b> · En Brasil, la aseguradora preferida de un corredor recibe 4 veces más primas que la tercera, y el soporte pesa más que la comisión. El corredor dedica solo 3,5 de sus 8 horas a vender.</p></div>
+<p class="src">CQCS (2026a) · Prensa Aseguradora (2026) · Allianz Türkiye (2026) · Marchi, Dogliani y Craddock (2026)</p>
+<p class="foot">Parte 2 · Horizonte · 10 / 21</p>
+<aside>Qué decir: la segunda lección del horizonte está en el back y en el corredor. Bradesco Seguros creó con la insurtech Segura el modelo «Conecta»: agentes de IA supervisados por especialistas atienden por WhatsApp a los corredores en cotizaciones, suscripción, negociación y dudas operativas, y les señalan renovaciones y oportunidades en su cartera. Pasó de 135 corredores en el piloto a más de 1.200 desde marzo de 2026; de los cerca de 3.400 pedidos de mayo, la operación integrada atendió 98,61%; en algunas sucursales, los corredores participantes aumentaron su producción hasta tres veces (no es un promedio). En una encuesta de Segura a más de 2.700 corredores, más de 75% dijo que su principal dificultad es el soporte de la aseguradora. Río Uruguay Seguros, cooperativa aseguradora argentina, incluye al productor asesor en todas sus plataformas de venta por internet: vende con su código en las mismas condiciones que la compañía. Entre enero y octubre de 2026, la cantidad de productores que cotizó en esas plataformas creció 67% y sus cotizaciones se multiplicaron por más de cuatro; su cartera digital creció 27% entre septiembre de 2025 y septiembre de 2026, frente a 21% del comercio electrónico argentino y 1,6% del parque asegurado; 57% de sus pólizas digitales no son de vehículos, y ya registró sus primeras pólizas originadas en una recomendación de ChatGPT. Allianz Türkiye es el único de los diez casos que publica inversión y retorno: más de €15 millones invertidos en datos e IA en cinco años y más de €20 millones de valor de negocio medible, según la empresa, que no detalla el cálculo; además, decisiones de siniestros cinco veces más rápidas, cotización comercial de 4 horas a 15 minutos, 99% de precisión en documentos y +30% en detección de fraude. Evidencia de terceros: en Brasil, la aseguradora que logra ser la socia principal de un corredor pequeño concentra cuatro veces más primas que la tercera en su preferencia; el soporte es el factor más decisivo y la remuneración aparece después del producto y la relación; de una jornada de ocho horas, el corredor dedica solo 3,5 a vender (Marchi, Dogliani y Craddock, 2026, McKinsey, publicado en Brazil Journal). Corredores y agentes canalizan cerca de 65% de las ventas de seguros en América Latina (McKinsey, 2025). Lectura nuestra: si el soporte al corredor es su principal dificultad también en Perú, la tecnología para el corredor podría rendir más que la tecnología para el cliente final. Fuentes: CQCS (2026a), 3 de septiembre; Prensa Aseguradora (2026), «Cartera digital Río Uruguay Seguros», 17 de noviembre; Allianz Türkiye (2026), comunicado del 14 de agosto. Puente: tres aseguradoras de Argentina y Chile que automatizan la atención.</aside>
+</section>
+<section id="p2-mas" data-transition="fade">
+<h2 class="t">Atender con bots e IA</h2>
+<div class="cols3">
+<div class="col">
+<p class="k">La Caja · Argentina</p>
+<p class="big">−30%</p>
+<p class="txt">de carga en su centro de contacto, al automatizar los pedidos de documentación.</p>
+<p class="dim">Su bot «Letizia» atiende y vende pólizas. Si el daño se valida por fotos, el siniestro sigue sin inspección.</p>
+<p class="k">Front y back · costo de servir</p>
+</div>
+<div class="col">
+<p class="k">La Segunda · Argentina</p>
+<p class="big">Minutos</p>
+<p class="txt">toma denunciar un siniestro con su chatbot de WhatsApp. Antes, días entre correos y llamadas.</p>
+<p class="dim">Prueba estimar daños por fotos y visión por computadora para prevenir lesiones laborales.</p>
+<p class="k">Front · siniestro</p>
+</div>
+<div class="col">
+<p class="k">FID Seguros · Chile</p>
+<p class="big">84%</p>
+<p class="txt">de sus pólizas se emitió en cinco días o menos en 2025. Reparó autos en 17,5 días, frente a 19 en 2024.</p>
+<p class="dim">Usa IA en fraude, homologación de vehículos y auditoría de llamadas. Satisfacción: 95%, también por WhatsApp.</p>
+<p class="k">Back · tiempo y control</p>
+</div>
+</div>
+<div class="spacer"></div>
+<div class="strip"><p class="txt"><b>LECTURA NUESTRA</b> · La estrategia común es automatizar lo repetitivo: pedidos de documentos, denuncias y controles. Argentina es un país puente: informal como Perú, pero paga en digital como el horizonte.</p></div>
+<p class="src">De Toma (2025), El Cronista · FID Seguros (2026), Memoria Integrada 2025 · Cifras declaradas por las empresas</p>
+<p class="foot">Parte 2 · Horizonte · 11 / 21</p>
+<aside>Qué decir: tres aseguradoras de Argentina y Chile que usan bots, WhatsApp e IA para automatizar la atención, el siniestro y el control. Argentina no entra en nuestros dos grupos: es informal como Perú (47,2% de formalidad), pero 72,2% de sus adultos paga en digital, como el horizonte; por eso sus aseguradoras sirven como referencia de canal digital. La Caja empezó hace casi seis años con IBM Watson en su centro de contacto: vio que 30% de las llamadas eran pedidos de documentación, los automatizó y bajó 30% la carga de trabajo; hoy su bot «Letizia» atiende y vende «un montón de pólizas por mes», según su director de Tecnología, Jorge Amadeo; además procesa con IA las fotos de siniestros: si valida el daño, el trámite sigue sin inspección, y si no, pasa a una persona. La Segunda tiene un chatbot de WhatsApp para denunciar siniestros: lo que antes llevaba días entre correos y llamadas ahora se resuelve en minutos, según Martín Moser, líder de su programa de innovación abierta; también prueba estimar daños por fotos y visión por computadora para su aseguradora de riesgos del trabajo. FID Seguros, aseguradora chilena de seguros generales nacida hace seis años, emitió 84% de sus propuestas dentro de los cinco días que exige la norma, bajó el tiempo promedio de reparación de autos de 19 a 17,5 días y tuvo 95% de satisfacción en todos sus canales, incluido WhatsApp; usa IA en detección de fraude, homologación de vehículos, auditoría de llamadas y análisis masivo de información. Ojo: la memoria no atribuye esas mejoras solo a la tecnología. Fuentes: De Toma (2025), El Cronista, «Las aseguradoras argentinas que usan IA para vender, prevenir y resolver más rápido», 1 de septiembre; FID Seguros (2026), Memoria Anual Integrada 2025. Puente: falta un lugar donde capturar valor, el cobro.</aside>
+</section>
+<section id="p2-cobro" data-transition="fade">
+<h2 class="t">Cobrar sin pasos</h2>
+<div class="cols3">
+<div class="col">
+<p class="k">Pix Automático · Brasil</p>
+<p class="big">1.200 M</p>
+<p class="txt">de reales al mes se cobran con el débito automático de Pix, a un año de su lanzamiento.</p>
+<p class="dim">MAG Seguros y Tokio Marine ya cobran primas por esa vía.</p>
+<p class="k">Cobro · infraestructura</p>
+</div>
+<div class="col">
+<p class="k">Justos · Brasil</p>
+<p class="big">10 cuotas</p>
+<p class="txt">cobra por el seguro de auto con una sola autorización por Pix, sin tarjeta.</p>
+<p class="dim">La aseguradora lo hace «para evitar la cancelación por olvido».</p>
+<p class="k">Cobro · persistencia</p>
+</div>
+<div class="col">
+<p class="k">Evidencia de terceros</p>
+<p class="big">86%</p>
+<p class="txt">participa cuando la inscripción es por defecto; 37% cuando hay que inscribirse.</p>
+<p class="dim">Ahorro para la jubilación en EE. UU., no seguros. En Afganistán: +40 puntos.</p>
+<p class="k">Medido por terceros</p>
+</div>
+</div>
+<div class="spacer"></div>
+<div class="strip"><p class="txt"><b>EN PERÚ</b> · TAPP, la plataforma de pagos del BCRP, opera desde 2027. Indecopi exige consentimiento expreso: la vía es que el cliente elija el débito, no una casilla premarcada.</p></div>
+<p class="src">Let's Money (2026b) · Justos (2026) · Madrian y Shea (2001) · Blumenstock et al. (2018) · Vodanovic (2026)</p>
+<p class="foot">Parte 2 · Horizonte · 12 / 21</p>
+<aside>Qué decir: ninguno de los casos anteriores trata del cobro, y es donde hay más ciencia detrás. En Brasil, Pix Automático, el débito automático del sistema de pagos inmediatos, mueve más de R$ 1.200 millones al mes a un año de su lanzamiento, y MAG Seguros y Tokio Marine ya cobran primas por esa vía. Justos, aseguradora de auto brasileña, cobra en hasta 10 cuotas con una sola autorización por Pix, sin tarjeta, «para evitar la cancelación por olvido»; la empresa no publica todavía el efecto en renovación. La evidencia de fondo viene de fuera de los seguros: cuando los empleados quedaban inscritos por defecto en el ahorro para la jubilación, participaba 86%; cuando debían inscribirse, 37% (Madrian y Shea, 2001); en Afganistán, la inscripción por defecto subió 40 puntos (Blumenstock, Callen y Ghani, 2018). Ojo: no encontramos estudios que midan, en seguros, cuánto sube la renovación con un pago de un solo paso. En Perú, el BCRP probará TAPP en diciembre de 2026 y lo tendrá en operación desde 2027; permitiría programar pagos como los de seguros médicos. Indecopi sanciona activar productos sin permiso expreso, así que la vía es la elección activa: que el cliente marque el débito, no una casilla premarcada. Esto conecta con lo que dicen las usuarias: el pago vive en el banco. Fuentes: Let's Money (2026b); Justos (2026), comunicado publicado por Legismap el 25 de agosto; Madrian y Shea (2001), Quarterly Journal of Economics; Blumenstock, Callen y Ghani (2018), American Economic Review; Vodanovic (2026), Gestión; Perú Retail (2026a). Puente: antes de ver lo que no funcionó, una síntesis de todo el benchmark.</aside>
+</section>
+<section id="s-tacticas" class="inv" data-transition="fade">
+<h2 class="t">Cada momento, una táctica</h2>
+<div class="host" style="width:1664px;height:80px">
+<svg aria-label="Recorrido del cliente en cuatro etapas: contratar, pagar y renovar, usar y reclamar" width="1664" height="80" viewBox="0 0 1664 80">
+<polygon points="0,0 384,0 410,40 384,80 0,80" fill="#0F0F0E"/>
+<polygon points="418,0 802,0 828,40 802,80 418,80 444,40" fill="#0F0F0E"/>
+<polygon points="836,0 1220,0 1246,40 1220,80 836,80 862,40" fill="#0F0F0E"/>
+<polygon points="1254,0 1664,0 1664,80 1254,80 1280,40" fill="#0F0F0E"/>
+</svg>
+<p class="lab" style="left:28px;top:8px;width:340px;color:#ECEBE6;font-weight:700;letter-spacing:2px">1 · CONTRATAR</p>
+<p class="lab" style="left:28px;top:42px;width:340px;color:#C9C8C2">33 casos</p>
+<p class="lab" style="left:476px;top:8px;width:320px;color:#ECEBE6;font-weight:700;letter-spacing:2px">2 · PAGAR Y RENOVAR</p>
+<p class="lab" style="left:476px;top:42px;width:320px;color:#C9C8C2">10 casos</p>
+<p class="lab" style="left:894px;top:8px;width:320px;color:#ECEBE6;font-weight:700;letter-spacing:2px">3 · USAR</p>
+<p class="lab" style="left:894px;top:42px;width:320px;color:#C9C8C2">18 casos</p>
+<p class="lab" style="left:1312px;top:8px;width:340px;color:#ECEBE6;font-weight:700;letter-spacing:2px">4 · RECLAMAR</p>
+<p class="lab" style="left:1312px;top:42px;width:340px;color:#C9C8C2">13 casos</p>
+</div>
+<div style="display:grid;grid-template-columns:410px 410px 410px 410px;column-gap:8px">
+<div style="padding-right:28px;display:flex;flex-direction:column;gap:10px"><p class="txt"><b>Vender el seguro dentro de una compra que ya ocurre.</b></p><p class="dim">Mercado Libre: carrito<br>IRCTC (India): pasaje<br>TPaga (Colombia): bodega</p></div>
+<div style="padding-right:28px;display:flex;flex-direction:column;gap:10px"><p class="txt"><b>Autorizar el cobro una vez; la prima se paga sola.</b></p><p class="dim">Pix Automático (Brasil)<br>UPI AutoPay (India)<br>TAPP (Perú, desde 2027)</p></div>
+<div style="padding-right:28px;display:flex;flex-direction:column;gap:10px"><p class="txt"><b>Dar motivos para volver aunque no haya siniestro.</b></p><p class="dim">Aditya Birla (India):<br>premia el ejercicio<br>SURA (Chile): buen manejo</p></div>
+<div style="padding-right:28px;display:flex;flex-direction:column;gap:10px"><p class="txt"><b>Avisar y resolver por celular, sin trámites.</b></p><p class="dim">Porto (Brasil): WhatsApp<br>Quálitas (México): fotos<br>Digit (India): 21 minutos</p></div>
+</div>
+<div style="display:grid;grid-template-columns:410px 1fr;column-gap:8px;border-top:4px dashed #0F0F0E;padding-top:6px">
+<div><p class="k">Intermediario</p><p class="dim">7 casos · todo el recorrido</p></div>
+<div><p class="txt"><b>Quitarle trámites al corredor para que tenga más tiempo de vender.</b></p><p class="dim">Segura (Brasil): WhatsApp · Mapfre (Perú): IA · Figuro (Colombia): multicotizador</p></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:2px">
+<p class="k">Lectura conductual · hipótesis nuestra, no medida en el benchmark</p>
+<div style="display:grid;grid-template-columns:410px 410px 410px 410px;column-gap:8px">
+<p class="txt" style="padding-right:28px">Aparece donde ya está.</p>
+<p class="txt" style="padding-right:28px">El cobro por defecto no depende de la memoria.</p>
+<p class="txt" style="padding-right:28px">Motivos para volver sin esperar un siniestro.</p>
+<p class="txt" style="padding-right:28px">Menos pasos en el peor momento.</p>
+</div>
+</div>
+<div class="spacer"></div>
+<div class="strip"><p class="txt"><b>LO QUE CASI NADIE HACE</b> · Generar confianza: solo 2 de 82 casos; ninguno ataca el «llama la desgracia».</p></div>
+<p class="src">RIMAC (2026a), matriz de benchmark del equipo: 82 casos, corte del 11 de noviembre de 2026</p>
+<p class="foot">Síntesis del benchmark · 13 / 21</p>
+<aside>Qué decir: esta lámina ordena los 82 casos de la matriz de benchmark del equipo como un recorrido del cliente, de izquierda a derecha: contratar, pagar y renovar, usar y reclamar. Debajo de cada etapa va lo que hacen las empresas, en una frase, y quién lo hace. Uno, contratar (33 casos): vender el seguro dentro de una compra o un pago que la persona ya está haciendo; por ejemplo, Mercado Libre lo ofrece en el carrito, Mercado Pago al recargar, IRCTC en India al comprar el pasaje de tren y TPaga en Colombia a través del tendero. Dos, pagar y renovar (10): la persona autoriza el cobro una sola vez y luego la prima se descuenta sola, sin tarjeta, con sistemas de pago como Pix Automático en Brasil, UPI AutoPay en India o Bre-B en Colombia; en Perú, TAPP opera desde 2027 y permitiría hacerlo. Tres, usar (18): dar beneficios concretos para que la persona vuelva aunque no tenga un siniestro; Aditya Birla en India devuelve parte de la prima a quien hace actividad física, SURA en Chile da puntos por manejar bien, Segurísimo en Colombia paga montos pequeños y Alan en Francia reembolsa gastos médicos en un día. Cuatro, reclamar (13): que la persona avise el siniestro y lo resuelva desde el celular, sin llevar papeles ni esperar a un inspector; Porto en Brasil recibe el aviso por WhatsApp con un asistente de IA, Quálitas en México evalúa con fotos, Tokio Marine en Brasil pide los documentos con el número de identidad y Digit en India aprueba en 21 minutos. Debajo, con línea punteada, el intermediario (7 casos), que acompaña todo el recorrido: quitarle trámites al corredor para que dedique más tiempo a vender; Segura en Brasil lo apoya por WhatsApp, Mapfre en Perú lo guía con IA, SURA en México le redacta correos con IA y Figuro en Colombia le cotiza varias aseguradoras a la vez. El caso número 82 es de operación interna y no entra en el recorrido. Lectura conductual, que es una hipótesis nuestra y no algo que el benchmark mida: cada táctica quita un obstáculo de conducta. Al contratar, el seguro aparece donde la persona ya está; al pagar, el cobro por defecto no depende de la memoria; al usar, hay motivos para volver sin esperar un siniestro; y al reclamar, hay menos pasos en el peor momento. Lo que casi nadie hace: generar confianza; solo 2 de 82 casos lo intentan, ambos al contratar, y ninguno enfrenta la creencia de que comprar un seguro «llama la desgracia», que en Colombia comparte parte de la población (Orozco y Morales, 2022). Es lo que más falta probar en Perú. Ojo: varios ejemplos son plataformas o sistemas de pago, no aseguradoras. Fuente: RIMAC (2026a), matriz de benchmark del equipo, corte del 11 de noviembre de 2026; la frase de cada momento es lectura propia. Adaptado de la presentación «Digital en seguros LatAm», v0.2. Puente: no todo lo que se intentó funcionó.</aside>
+</section>
+<section id="p2-fracasos" class="alt" data-transition="fade">
+<h2 class="t">Lo que no funcionó</h2>
+<p class="sub">Lo que falló tenía algo en común: forzar el canal en vez de seguir al cliente.</p>
+<table class="tbl">
+<tr><th style="width:22%;text-align:left">Apuesta</th><th style="width:50%;text-align:left">Qué pasó</th><th style="width:28%;text-align:left">Qué evitar</th></tr>
+<tr><td>Competir con el corredor</td><td>Pier (Brasil) despidió a 39% de su equipo en 2023 y giró al canal de corredores. En Argentina, los productores asesores (los corredores) llamaron «amenaza» a que Mercado Libre vendiera seguros.</td><td>Saltarse al intermediario que el cliente prefiere</td></tr>
+<tr><td>Bienestar como negocio</td><td>Betterfly, de beneficios y seguros, cerró en cinco países, entre ellos Perú.</td><td>Beneficios que no calzan con la vida de la persona</td></tr>
+<tr><td>El canal propio como fin</td><td>Interseguro (Perú) llegó a su meta digital dos años tarde; sus clientes digitales bajaron de 580 mil a unos 540 mil.</td><td>Medir el éxito por usuarios de la app</td></tr>
+<tr><td>Vender en la billetera sin demanda</td><td>El seguro de vida de DaviPlata (Colombia), desde $33.700 al año, ya no acepta nuevas solicitudes; no explicó por qué.</td><td>Poner el seguro en la billetera sin medir uso ni renovación</td></tr>
+<tr><td>Obligar a comprar</td><td>En India, atar un seguro de salud al microcrédito hizo que más clientes dejaran el crédito.</td><td>Confundir facilitar con obligar</td></tr>
+</table>
+<div class="spacer"></div>
+<p class="src">Startups.com.br (2023) · Let's Money (2026a) · Forbes Chile (2025) · Forbes Perú (2022, 2025) e Interseguro (2023-2025), citados en RIMAC (2026b) · Saurit Román (2021) · DaviPlata (s. f.) · Banerjee, Duflo y Hornbeck (2014) · Los fracasos rara vez se publican</p>
+<p class="foot">Parte 2 · Lo que no funcionó · 14 / 21</p>
+<aside>Qué decir: para no quedarnos solo con los éxitos, cuatro apuestas que no salieron como se esperaba. Pier, aseguradora digital brasileña nacida para vender directo, despidió a cerca de 39% de su equipo en enero de 2023 y giró hacia el canal de corredores; en 2026 declara punto de equilibrio con unos 200 mil clientes, según cifras de la empresa recogidas por Let's Money. Betterfly, la empresa chilena de beneficios y seguros con premios por hábitos saludables, cerró en cinco países, entre ellos Perú, en marzo de 2025. Interseguro se propuso en 2022 llevar lo digital a cerca de 10% de sus ingresos y lanzó con Betterfly un seguro de vida con premios; en 2023 sus primas cayeron 5,3% con el mercado creciendo 8,1%, llegó a la meta digital en 2024, dos años tarde, y sus clientes digitales bajaron de 580 mil a unos 540 mil; sus primas crecieron 67% en 2025, pero por rentas vitalicias y la venta en Interbank. En India, un experimento que ató un seguro de salud obligatorio al microcrédito hizo que más clientes dejaran el crédito (Banerjee, Duflo y Hornbeck, 2014). Dos casos sudamericanos refuerzan la lectura. En Argentina, cuando Mercado Libre buscó vender seguros, los productores asesores de seguros, como se llama en Argentina a los corredores, lo calificaron como «una verdadera amenaza para el sector» (Saurit Román, 2021): el intermediario defiende su lugar. En Colombia, el seguro de vida de DaviPlata, vendido dentro de la billetera sin requisitos ni exclusiones desde $33.700 pesos al año, ya no acepta nuevas solicitudes y no publicó por qué (DaviPlata, s. f.): estar en la billetera no garantiza que el producto funcione. Lectura nuestra: lo que falló forzó el canal o el producto en lugar de seguir al cliente. Ojo: los fracasos rara vez se publican, así que la muestra de casos sobrerrepresenta los éxitos. Fuentes: Startups.com.br (2023), 12 de enero; Let's Money (2026a), citado como lo recoge la matriz del equipo; Forbes Chile (2025), 17 de marzo; Forbes Perú (2022, 2025) e Interseguro, memorias 2023-2025, citados en RIMAC (2026b); Saurit Román (2021), Revista Seguros de AAPAS, 17 de febrero; DaviPlata (s. f.), Seguro de Vida DaviPlata; Banerjee, Duflo y Hornbeck (2014), American Economic Review. Puente: ¿y qué está pasando en Perú?</aside>
+</section>
+<section id="p3-competencia" class="inv" data-transition="fade">
+<h2 class="t">Perú: billetera y WhatsApp</h2>
+<p class="sub">Pacífico juega con su ecosistema, Mapfre con microfinancieras y La Positiva con producto.</p>
+<div class="cols2">
+<div class="card"><p class="k">Pacífico · 22,6% del mercado · ecosistema</p><p class="txt">Lanzó un seguro de salud dentro de Yape, la billetera de su grupo, con meta de 30.000 afiliados. Yape tiene 17 M de usuarios activos al mes y ya vende SOAT.</p><p class="dim">Pero lo embebido es menos de 1% de su portafolio. Yape: «Lo que nos falta es lograr un mayor uso».</p></div>
+<div class="card"><p class="k">Pacífico · IA en el siniestro</p><p class="txt">Su asistente virtual «Vera» redujo 70% el tiempo de atención en rotura de lunas y robo de autopartes.</p><p class="dim">El conductor ya no necesita una larga llamada para avisar.</p></div>
+<div class="card"><p class="k">Mapfre · 13,0% · microfinancieras e IA</p><p class="txt">«A Tu Lado»: microseguros que venden las microfinancieras, con un asistente de IA en WhatsApp que guía al asesor.</p><p class="dim">Meta: 250.000 clientes a fines de 2026, con Brasil y Colombia. Ya colocó un paramétrico de terremoto a una caja.</p></div>
+<div class="card"><p class="k">La Positiva · 12,3% · producto y WhatsApp</p><p class="txt">Lanzó en 2010 un seguro contra El Niño y es socia de «Café Seguro Perú», un paramétrico para caficultores con el Midagri.</p><p class="dim">Una usuaria reportó su choque por WhatsApp con fotos y se aprobó esa tarde, sin inspector.</p></div>
+</div>
+<div class="spacer"></div>
+<p class="src">BNP Paribas Cardif (2026), datos SBS · RPP (2026) · Gestión (2026b, c) · Mapfre (2026) · Gan@Más (2026)</p>
+<p class="foot">Parte 3 · Competencia en Perú · 15 / 21</p>
+<aside>Qué decir: en Perú, cada competidor captura valor digital por un camino distinto. Las participaciones son de las primas netas de 2025, con datos de la SBS: Pacífico 22,6%, Mapfre 13,0% y La Positiva 12,3% (sumando La Positiva Seguros y La Positiva Vida). Pacífico es del grupo Credicorp, igual que Yape, la billetera con 17 millones de usuarios activos al mes en septiembre de 2026 (Gan@Más, 2026), que hoy vende SOAT y protección de tarjeta y cuenta; con Pacífico, Yape lanzó un seguro de salud con la meta de 30.000 afiliados en su primer año. Pero el propio Yape reconoce el límite: «Lo que nos falta es lograr un mayor uso»; y la gerente de embebidos de Pacífico dijo que esos seguros aún no llegan a 1% de su portafolio, aunque proyecta sumar 14 productos embebidos este año. En el siniestro, Pacífico integró IA en su asistente Vera y redujo 70% el tiempo de atención en casos comunes como rotura de lunas o robo de autopartes. Mapfre presentó en abril de 2026, en Arequipa, «A Tu Lado», microseguros simples que venden las microfinancieras, con un asistente de IA en WhatsApp, desarrollado por empatIA Technology, que responde en tiempo real las dudas del asesor y del cliente; el proyecto ya opera en Brasil y Colombia y apunta a 250.000 clientes a fin de año. Mapfre Perú además colocó un seguro paramétrico de terremoto a una caja de ahorro. La Positiva apuesta por producto: lanzó en enero de 2010, en Piura, un seguro contra el Fenómeno El Niño, y es socia, con el Midagri y Blue Marble, del proyecto «Café Seguro Perú», un seguro paramétrico para caficultores contra el exceso o la falta de lluvias. En las entrevistas, una usuaria reportó un choque con La Positiva con una llamada y un enlace por WhatsApp para enviar fotos, y en la tarde ya sabía a qué taller ir; ese dato es un relato, no una cifra de la empresa. Ninguna de las tres publica cifras de su canal digital propio que podamos comparar. Fuentes: Gan@Más (2026); BNP Paribas Cardif Perú (2026), Memoria Anual 2025, con datos de la SBS; RPP (2026); Descubre.vc (2025); Gestión (2026b) y (2026c); El Peruano (2026a); Mapfre (2026); Proactivo (s. f.), «La Positiva desarrolla seguros para la adaptación al cambio climático»; Agraria (2025), «Lanzan proyecto Café Seguro Perú», 10 de diciembre; RIMAC (2026c), entrevistas en profundidad, noviembre de 2026, uso interno. Puente: ¿por dónde venden hoy los grupos financieros?</aside>
+</section>
+<section id="p3-grupos" class="alt" data-transition="fade">
+<h2 class="t">Apuesta: crecer en ecosistema</h2>
+<div class="host" style="width:1664px;height:244px">
+<svg aria-label="Gráfico de pesas: cuatro indicadores de Credicorp y Pacífico, antes y en 2026, en una escala de 0 a 100%" width="1664" height="244" viewBox="0 0 1664 244">
+<circle cx="610" cy="16" r="8" fill="#1B1B19" stroke="#A3A29C" stroke-width="3"/>
+<circle cx="830" cy="16" r="9" fill="#ECEBE6"/>
+<line x1="600" y1="66" x2="1360" y2="66" stroke="#2E2E2B" stroke-width="4"/>
+<line x1="600" y1="118" x2="1360" y2="118" stroke="#2E2E2B" stroke-width="4"/>
+<line x1="600" y1="170" x2="1360" y2="170" stroke="#2E2E2B" stroke-width="4"/>
+<line x1="600" y1="222" x2="1360" y2="222" stroke="#2E2E2B" stroke-width="4"/>
+<line x1="949.6" y1="66" x2="1215.6" y2="66" stroke="#5A5A54" stroke-width="4"/><circle cx="949.6" cy="66" r="8" fill="#1B1B19" stroke="#A3A29C" stroke-width="3"/><circle cx="1215.6" cy="66" r="9" fill="#ECEBE6"/>
+<line x1="797.6" y1="118" x2="866" y2="118" stroke="#ECEBE6" stroke-width="4"/><circle cx="797.6" cy="118" r="10" fill="#1B1B19" stroke="#ECEBE6" stroke-width="4"/><circle cx="866" cy="118" r="12" fill="#ECEBE6"/>
+<line x1="793.8" y1="170" x2="810.5" y2="170" stroke="#5A5A54" stroke-width="4"/><circle cx="793.8" cy="170" r="8" fill="#1B1B19" stroke="#A3A29C" stroke-width="3"/><circle cx="810.5" cy="170" r="9" fill="#ECEBE6"/>
+<circle cx="606" cy="222" r="12" fill="#ECEBE6"/>
+</svg>
+<p class="lab" style="left:628px;top:1px;width:180px">Antes*</p>
+<p class="lab" style="left:850px;top:1px;width:200px">2026</p>
+<p class="lab" style="left:1390px;top:1px;width:274px;text-align:right">0 a 100%</p>
+<p class="lab" style="left:0px;top:51px;width:560px">Clientes digitales de BCP y Yape</p>
+<p class="labpe" style="left:0px;top:103px;width:560px">Primas de Pacífico vía su banco</p>
+<p class="lab" style="left:0px;top:155px;width:560px">Cuota de Pacífico en seguros retail</p>
+<p class="labpe" style="left:0px;top:207px;width:560px">Vendidas en Yape y otras apps</p>
+<p class="lab" style="left:1390px;top:51px;width:274px;text-align:right">46% → 81%</p>
+<p class="labpe" style="left:1390px;top:103px;width:274px;text-align:right">26% → 35%</p>
+<p class="lab" style="left:1390px;top:155px;width:274px;text-align:right">25,5% → 27,7%</p>
+<p class="labpe" style="left:1390px;top:207px;width:274px;text-align:right">menos de 1%</p>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:28px 40px">
+<div class="card"><p class="k">Pacífico · asegurados</p><p class="mid">7,4 M</p><p class="dim">a agosto de 2026, desde 4,7 M en 2022.</p></div>
+<div class="card"><p class="k">Yape · usuarios</p><p class="mid">17 M</p><p class="dim">activos al mes en 2026, desde 4,5 M en 2021.</p></div>
+<div class="card"><p class="k">BCP · segmento masivo</p><p class="mid">3%</p><p class="dim">tiene seguro de salud. Meta: triplicarlo a 2029.</p></div>
+<div class="card"><p class="k">Credicorp · meta 2031</p><p class="mid">30%</p><p class="dim">Meta ilustrativa: ingresos de innovación, hoy cerca de 10%.</p></div>
+</div>
+<div class="spacer"></div>
+<div class="strip"><p class="txt"><b>LECTURA NUESTRA</b> · La estrategia es crecer clientes como ecosistema; hoy Pacífico vende más por el banco (35% de sus primas) que en Yape (menos de 1%).</p></div>
+<p class="src">Gan@Más (2026) · Gestión (2026b) · Perú Retail (2026b) · * 2021; cuota retail, 2022 · Cifras declaradas</p>
+<p class="foot">Parte 3 · Competencia en Perú · 16 / 21</p>
+<aside>Qué decir: la apuesta de Credicorp es crecer como ecosistema: más clientes digitales que compran más productos del grupo. los dos grandes grupos financieros ya convierten su base de clientes en primas, pero sobre todo por el banco. El gráfico compara cuatro indicadores de Credicorp antes y en 2026, en una escala de 0 a 100%. Uno: los clientes digitales de BCP y Yape pasaron de 46% en 2021 a 81% en septiembre de 2026; Credicorp define cliente digital como quien hace 70% o más de sus transacciones por canales digitales en los últimos seis meses, y dice que eso redujo 34% el costo de servir al segmento masivo. Dos: la bancaseguros ya aporta 35% de las primas totales de Pacífico, frente a 26% en 2021. Tres: la participación de Pacífico en seguros retail subió de 25,5% a 27,7% entre 2022 y agosto de 2026. Cuatro, el contraste: Pacífico sí vende dentro de Yape (un seguro de salud con meta de 30.000 afiliados, SOAT y protección de tarjeta, como vimos en la lámina anterior), pero esos seguros vendidos dentro de apps de socios, los llamados embebidos, aún no llegan a 1% de su portafolio (Gestión, 2026b). Es decir: Yape es un canal real, pero todavía pequeño; el grueso de lo que Pacífico vende fuera de sus propios canales llega por el banco del grupo, con la bancaseguros. Abajo, cuatro cifras. Pacífico pasó de 4,7 a 7,4 millones de asegurados. Yape tiene 17 millones de usuarios activos al mes, desde 4,5 millones en 2021, y hoy monetiza sobre todo con crédito: su cartera casi se cuadruplicó en un año, a S/ 2.300 millones. En el segmento masivo del BCP, solo 3% tiene seguro de salud, y Credicorp apunta a triplicarlo a 2029; Pacífico dice que puede lanzar un producto en 1,5 meses y ofrece atención primaria para la clase media, con unas 60.000 consultas al año. Interseguro, del grupo Intercorp, creció 30% en primas emitidas y 52% en utilidad a septiembre de 2026; IFS no atribuye ese crecimiento al canal digital, pero dice que sigue invirtiendo en soluciones digitales, ciberseguridad e IA generativa, y Plin creció 43% en transacciones. Otras cifras de Credicorp que sirven como contexto: la brecha de protección es amplia, porque solo 2 de cada 7 familias tienen seguro de vida, 1 de cada 4 vehículos está asegurado y 5% de la clase media tiene seguro privado de salud (datos de APESEG citados por Credicorp); su portafolio de innovación aporta cerca de 10% de los ingresos ajustados por riesgo y la meta ilustrativa es 30% en 2031; con agentes de IA busca automatizar entre 40% y 60% de las consultas de clientes; y la banca por WhatsApp de Mibanco sumó 21.000 clientes y 14.700 desembolsos en ocho meses. Todas son cifras y metas declaradas por las empresas, sin evaluación independiente. Lectura nuestra: en Perú, el ecosistema ya vende seguros, pero por el banco y su fuerza de venta, no dentro de la billetera; Yape tiene la escala, falta convertirla en pólizas. Fuentes: Gan@Más (2026), sobre la Actualización Estratégica 2026 de Credicorp; Gestión (2026b); Perú Retail (2026b), sobre los resultados de IFS a septiembre de 2026. Puente: ¿qué dicen quienes usan estas apps?</aside>
+</section>
+<section id="p3-voces" class="inv" data-transition="fade">
+<h2 class="t">Resuelven fuera de la app</h2>
+<div class="row">
+<div style="width:880px;display:flex;flex-direction:column;gap:20px">
+<div class="host" style="width:880px;height:372px">
+<svg aria-label="Matriz: canal que usa cada entrevistada en cada momento del seguro. La app solo aparece al consultar" width="880" height="372" viewBox="0 0 880 372">
+<rect x="220" y="0" width="165" height="372" fill="#D6D5CF"/>
+<line x1="0" y1="80" x2="880" y2="80" stroke="#0F0F0E" stroke-width="4"/>
+<line x1="0" y1="138" x2="880" y2="138" stroke="#BDBCB6" stroke-width="2"/>
+<line x1="0" y1="196" x2="880" y2="196" stroke="#BDBCB6" stroke-width="2"/>
+<line x1="0" y1="254" x2="880" y2="254" stroke="#BDBCB6" stroke-width="2"/>
+<line x1="0" y1="312" x2="880" y2="312" stroke="#BDBCB6" stroke-width="2"/>
+<circle cx="12" cy="17" r="10" fill="#0F0F0E"/>
+<circle cx="12" cy="55" r="9" fill="#ECEBE6" stroke="#0F0F0E" stroke-width="4"/>
+<circle cx="632" cy="109" r="11" fill="#ECEBE6" stroke="#0F0F0E" stroke-width="4"/>
+<circle cx="797" cy="109" r="11" fill="#ECEBE6" stroke="#0F0F0E" stroke-width="4"/>
+<circle cx="614" cy="167" r="12" fill="#0F0F0E"/>
+<circle cx="650" cy="167" r="11" fill="#ECEBE6" stroke="#0F0F0E" stroke-width="4"/>
+<circle cx="284" cy="225" r="12" fill="#0F0F0E"/>
+<circle cx="320" cy="225" r="11" fill="#ECEBE6" stroke="#0F0F0E" stroke-width="4"/>
+<circle cx="467" cy="283" r="12" fill="#0F0F0E"/>
+<circle cx="797" cy="283" r="12" fill="#0F0F0E"/>
+<circle cx="467" cy="341" r="12" fill="#0F0F0E"/>
+</svg>
+<p class="lab" style="left:34px;top:2px;width:186px;color:#0F0F0E">Mujer, 40</p>
+<p class="lab" style="left:34px;top:40px;width:186px;color:#0F0F0E">Mujer, 45</p>
+<p class="lab" style="left:220px;top:22px;width:165px;text-align:center;color:#0F0F0E;font-weight:700">App</p>
+<p class="lab" style="left:385px;top:22px;width:165px;text-align:center;color:#0F0F0E;font-weight:700">WhatsApp</p>
+<p class="lab" style="left:550px;top:6px;width:165px;text-align:center;color:#0F0F0E;font-weight:700">Banco o tarjeta</p>
+<p class="lab" style="left:715px;top:22px;width:165px;text-align:center;color:#0F0F0E;font-weight:700">Teléfono</p>
+<p class="lab" style="left:0px;top:94px;width:210px;color:#4A4944">Comprar</p>
+<p class="lab" style="left:0px;top:152px;width:210px;color:#4A4944">Pagar</p>
+<p class="lab" style="left:0px;top:210px;width:210px;color:#0F0F0E;font-weight:700">Consultar</p>
+<p class="lab" style="left:0px;top:268px;width:210px;color:#4A4944">Reclamar</p>
+<p class="lab" style="left:0px;top:326px;width:210px;color:#4A4944">Renovar</p>
+</div>
+<div class="card"><p class="k">Mujer, 40 · no llamar en lo urgente</p><p class="txt">Pidió médico a domicilio a las 6 a. m.; los medicamentos llegaron pasadas las 2 p. m.</p></div>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:22px">
+<div class="card"><p class="txt">«Siento que alguien respondiendo es la mejor opción.»</p><p class="dim">Mujer, 40 · avisó su choque por WhatsApp, con fotos, en menos de 10 minutos</p></div>
+<div class="card"><p class="txt">«Lo pago mediante mi banco, pago de servicios.»</p><p class="dim">Mujer, 40 · prefiere no registrar tarjetas en la app</p></div>
+<div class="card"><p class="txt">«Esa [la de RIMAC] sí entro sin obligación, no como la de Pacífico, que me obligan.»</p><p class="dim">Mujer, 45 · sobre los sorteos</p></div>
+</div>
+</div>
+<div class="spacer"></div>
+<div class="strip"><p class="txt"><b>LECTURA NUESTRA</b> · La app gana con lo propio (ahorro, clínicas); lo demás va por banco, WhatsApp o teléfono.</p></div>
+<p class="src">RIMAC (2026c), dos entrevistas en profundidad · Ilustran motivos, no miden frecuencias</p>
+<p class="foot">Parte 3 · Competencia en Perú · 17 / 21</p>
+<aside>Qué decir: dos entrevistas en profundidad a usuarias de apps de la competencia. Mujer, 40: vida con ahorro en Mapfre, contratada al nacer su hija, y auto, SOAT y salud en La Positiva. Mujer, 45: dos seguros de vida en Mapfre, uno en Pacífico, auto y SOAT en La Positiva, y salud en RIMAC. La matriz muestra por qué canal resolvió cada una cada momento: el punto lleno es la mujer de 40 y el anillo, la de 45. La columna sombreada es la app, que solo aparece al consultar. Comprar: la mujer de 45 compró auto y SOAT en un paquete de su banco, y por eso dudó si su aseguradora era La Positiva o Pacífico; su vida en Pacífico se la vendieron por teléfono desde su tarjeta de tienda. De la mujer de 40 no tenemos el canal de compra. Pagar: la de 40 paga desde su banco, como un servicio más, a fin de mes o por semestre con la gratificación; la de 45 usa el débito automático de su tarjeta de crédito, y pagó un año adelantado de Mapfre para cumplir la meta de puntos de una tarjeta nueva. Consultar: la de 40 entra sobre todo a la app de Mapfre para ver cuánto lleva ahorrado: «Nos indica cuántos meses nos falta, cuánto es el monto que vamos teniendo […], como un banco». La de 45 usa la de RIMAC para buscar clínicas y ver qué le cubre, y la recomienda a sus compañeros; a la de Pacífico entra solo por los sorteos. Reclamar: la de 40 avisó su choque con La Positiva con una llamada y un enlace por WhatsApp para mandar fotos, y esa tarde ya sabía a qué taller ir, sin inspector. En cambio, cuando pidió médico a domicilio llamó a las 6 a. m., pasó muchos filtros de identidad y recibió los medicamentos después de las 2 p. m.: en lo urgente es donde más pesa tener que llamar. La de 45 no ha tenido siniestros. Renovar: «Te escriben 45 días antes por mensaje o por WhatsApp […]. Te atrasas un día y todas te escriben» (mujer, 40); con eso la app sobra. Además, el seguro se gestiona en el hogar: en el caso de la mujer de 40, su pareja maneja las apps y ella organiza los pagos. Lectura nuestra: la app compite cuando muestra algo propio; lo transaccional ocurre donde la persona ya está, y en el canal de un socio la marca de la aseguradora se pierde. Límite: son dos personas; ilustran motivos, no miden frecuencias, y la mujer de 45 es cliente de salud de RIMAC. Fuente: entrevistas en profundidad realizadas por el equipo, noviembre de 2026; participantes anonimizadas; uso interno. Puente: ¿qué viene para Perú?</aside>
+</section>
+<section id="p3-senales" data-transition="fade">
+<h2 class="t">Lo que llega a Perú</h2>
+<p class="sub">Seis movimientos para los próximos dos años.</p>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px 48px">
+<div class="card"><p class="k">Pago · 2027</p><p class="txt">El BCRP prueba TAPP en diciembre de 2026 y lo opera desde 2027: cobrar primas en un paso.</p></div>
+<div class="card"><p class="k">Distribución · hoy</p><p class="txt">Yape muestra seguros aún no disponibles con un botón «Me interesa»: hogar desde S/ 5, mascotas desde S/ 10.</p></div>
+<div class="card"><p class="k">Producto · 2026</p><p class="txt">La SBS reglamentó los seguros paramétricos. Mapfre ya colocó uno de terremoto a una caja.</p></div>
+<div class="card"><p class="k">Canal · emergente</p><p class="txt">Pier, Tuio y Aviva ya cotizan dentro de ChatGPT. Con Insurify ahí, el índice de corredores del S&amp;P 500 cayó 10,7% en una semana.</p></div>
+<div class="card"><p class="k">Regulación · 2027</p><p class="txt">La SBS prepara una norma para productos «más ágiles y menos costosos», dos licencias nuevas y finanzas abiertas.</p></div>
+<div class="card"><p class="k">Advertencia</p><p class="txt">La infraestructura no crea demanda: los datos abiertos de seguros de Brasil sumaron unos 3.000 consentimientos.</p></div>
+</div>
+<div class="spacer"></div>
+<p class="src">Perú Retail (2026a) · Vodanovic (2026) · Yape, app observada (2026) · SBS (2026) · Gestión (2026c, 2026d) · Let's Money (2026c) · S&amp;P Global (2026) · El Peruano (2026b) · InfoMoney (2024)</p>
+<p class="foot">Parte 3 · Competencia en Perú · 18 / 21</p>
+<aside>Qué decir: seis movimientos que llegan a Perú. Pago: el BCRP probará TAPP, su plataforma de pagos entre cuentas, en diciembre de 2026 con unas 20 entidades y la tendrá en operación desde 2027; en Brasil e India ya se cobran primas así. Distribución: Yape, el canal de mayor alcance y del mismo grupo que Pacífico, muestra en su app seguros todavía no disponibles con un botón «Me interesa», como asistencia de hogar desde S/ 5 al mes o mascotas desde S/ 10: está probando qué seguros vender antes de construirlos (observación de la app, noviembre de 2026). Producto: la SBS reglamentó los seguros paramétricos, que pagan cuando un índice como la magnitud de un sismo supera un umbral, y Mapfre Perú ya colocó uno de terremoto a una caja. Canal: Pier en Brasil, Tuio en España y Aviva en Reino Unido ya cotizan dentro de ChatGPT; cuando el comparador Insurify lanzó su app ahí, el índice de corredores de seguros del S&amp;P 500 cayó 10,7% en una semana, aunque su CEO lo llamó una sobrerreacción. Regulación: la SBS anunció una norma para productos «más ágiles y menos costosos», tiene dos licencias de aseguradoras en trámite y prevé la norma de finanzas abiertas para inicios de 2027. Advertencia: la infraestructura no crea demanda por sí sola; los datos abiertos de seguros de Brasil registraron solo unos 3.000 consentimientos. Además, ante un Fenómeno El Niño que podría ser extraordinario, Credicorp estima su exposición directa en 8% de su cartera y prepara ofertas preventivas para clientes en riesgo, como periodos de gracia y seguros (Gan@Más, 2026), e Interbank ya provisionó S/ 185 millones (Perú Retail, 2026b). Fuentes: Perú Retail (2026a); Vodanovic (2026); Yape (2026), observación de la app; SBS (2026), reseñada por El Peruano; Gestión (2026c) y (2026d); Let's Money (2026c); S&amp;P Global (2026); El Peruano (2026b); InfoMoney (2024). Puente: cerremos con las conclusiones.</aside>
+</section>
+<section id="conclusiones" class="inv" data-transition="fade">
+<h2 class="t">Conclusiones</h2>
+<div style="display:grid;grid-template-columns:800px 1fr;gap:56px">
+<div class="col">
+<p class="k">Lo que concluimos</p>
+<div><p class="txt"><b>El freno es el seguro, no el pago.</b></p><p class="txt">51,7% ya paga en digital; el seguro es 1,7% del PBI.</p></div>
+<div><p class="txt"><b>Los países parecidos venden en apps de otros.</b></p><p class="txt">Seguros Mundial: 1,8 M de pólizas con sus aliados.</p></div>
+<div><p class="txt"><b>El horizonte ya opera a escala y lo mide.</b></p><p class="txt">Southbridge: 25% del SOAP; Allianz: €20 M de valor.</p></div>
+<div><p class="txt"><b>El corredor no desaparece: se equipa.</b></p><p class="txt">Bradesco atiende a 1.200 corredores con IA.</p></div>
+<div><p class="txt"><b>El cobro automático llega a Perú en 2027.</b></p><p class="txt">TAPP permitiría programar el pago de primas.</p></div>
+<div><p class="txt"><b>Vender dentro de otras apps aún pesa poco aquí.</b></p><p class="txt">En Pacífico: menos de 1%; por el banco, 35%.</p></div>
+</div>
+<div class="col">
+<p class="k">Qué investigar en Perú antes de decidir</p>
+<div><p class="txt"><b>¿Cómo influyen las creencias y la idiosincrasia de los peruanos en su relación con la banca y los seguros?</b></p><p class="dim">Ejemplo: en Colombia, parte de la población cree que un seguro «llama la desgracia».</p></div>
+<div><p class="txt"><b>¿Por qué la familia le gana al seguro?</b></p><p class="dim">Ante una emergencia, 39,4% recurriría a familia o amigos; solo 10,2% paga un seguro.</p></div>
+<div><p class="txt"><b>¿Cómo lograr que asegure su salud y no se endeude?</b></p><p class="dim">16,3% pidió prestado para salud; para 27,2%, los gastos médicos son su mayor preocupación.</p></div>
+<div><p class="txt"><b>¿Por qué ahorra, pero fuera del sistema financiero?</b></p><p class="dim">44,0% ahorró; solo 31,4%, en banco o billetera.</p></div>
+<div><p class="txt"><b>¿En qué canal confía para pagar y avisar un siniestro?</b></p><p class="dim">Las dos entrevistadas pagan desde su banco y prefieren WhatsApp con una persona.</p></div>
+</div>
+</div>
+<div class="spacer"></div>
+<p class="src">Banco Mundial (2025), Findex Perú 2024, ver anexo · Orozco y Morales (2022) · Gan@Más (2026) · RIMAC (2026c)</p>
+<p class="foot">Conclusiones · 19 / 21</p>
+<aside>Qué decir: la lámina tiene dos mitades. A la izquierda, lo que concluimos de los casos; a la derecha, lo que todavía no sabemos de Perú y debemos investigar antes de decidir. Lo que concluimos. Uno: el freno es el seguro, no el pago; 51,7% de los adultos peruanos ya paga en digital (Banco Mundial, 2025), pero el seguro sin primas de seguridad social es solo 1,7% del PBI, frente a 2,7% de América Latina (MAPFRE Economics, 2025). Dos: las aseguradoras de los países parecidos a Perú venden dentro de apps de otros; Seguros Mundial emitió más de 1,8 millones de pólizas con aliados como Nequi y Rappi (Semana, 2026); además simplifican el siniestro: Quálitas atendió 28% de sus siniestros de 2024 con fotos (Quálitas, 2025). Tres: en el horizonte, lo digital ya tiene escala y alguien mide su valor; Southbridge vendió 25% del SOAP chileno (Diario Financiero, 2025) y Allianz Türkiye declara más de €20 millones de valor con €15 millones invertidos (Allianz Türkiye, 2026). Cuatro: el corredor no desaparece, se equipa; Bradesco Seguros atiende a más de 1.200 corredores con IA y especialistas (CQCS, 2026a), y Río Uruguay Seguros suma 67% más productores cotizando en digital (Prensa Aseguradora, 2026). Cinco: el cobro automático llega a Perú en 2027 con TAPP, que permitiría programar pagos como los de seguros (Vodanovic, 2026); en ahorro, la inscripción por defecto sube la participación de 37% a 86% (Madrian y Shea, 2001), pero en Perú tendrá que ser con elección activa. Seis: vender seguros dentro de otras compras todavía pesa poco en Perú: en Pacífico es menos de 1% de su cartera (Gestión, 2026b), mientras que la bancaseguros ya aporta 35% de sus primas (Gan@Más, 2026). Qué investigar. Lo que funciona afuera depende de creencias y hábitos que todavía no medimos en Perú. Uno: cómo influyen las creencias y la idiosincrasia culturales de los peruanos en su relación con la banca y los seguros: la confianza en las instituciones, el papel de la familia, la relación con el riesgo y la suerte. Un ejemplo: en Colombia, parte de la población cree que comprar un seguro «llama la desgracia» (Orozco y Morales, 2022); no sabemos si pasa en Perú, y casi ningún caso del benchmark trabaja estas creencias. Dos: la familia es la primera red; ante una emergencia, 39,4% de los adultos peruanos tendría a su familia o sus amigos como principal fuente de dinero, frente a 17,8% que usaría sus ahorros; 20,8% ya pidió prestado a familiares o amigos, mientras solo 10,2% paga con regularidad a una aseguradora. Tres: la salud se financia con deuda; 16,3% pidió prestado para gastos de salud y, para 27,2%, los gastos médicos graves son su mayor preocupación; en el segmento masivo del BCP, solo 3% tiene seguro de salud (Gan@Más, 2026). Cuatro: 44,0% ahorró en el último año, pero solo 31,4% lo hizo en un banco, financiera o billetera, y solo 17,8% usaría sus ahorros ante una emergencia. Cinco: las dos entrevistadas pagan su seguro desde el banco y prefieren resolver el siniestro por WhatsApp con una persona (RIMAC, 2026c). Las cifras de Perú vienen del Global Findex 2025, datos de 2024 (indicadores fin24fam, fin22b, fin19, fin22d, fin45c, save.any.t.d, fin17a.17a1.d y fin24sav). La matriz completa, con los nueve indicadores y los países de comparación, está en el anexo. Son preguntas, no hallazgos. Puente: en el anexo, la matriz conductual y las referencias.</aside>
+</section>
+<section id="anexo-conducta" data-transition="fade">
+<h2 class="t">Primero la familia</h2>
+<p class="sub">Matriz conductual: nueve hábitos financieros de Perú frente a los países del benchmark.</p>
+<table class="tbl" style="border-collapse:collapse">
+<tr><th style="width:31%;text-align:left;color:#A3A29C;font-weight:400;border-bottom:4px solid #ECEBE6;padding:6px 0">% de adultos, 2024</th><th style="width:9%;background:#2A2A27;font-weight:700;color:#ECEBE6;text-align:right;border-bottom:4px solid #ECEBE6;padding:6px 14px 6px 0">Perú</th><th style="width:8.6%;text-align:right;color:#A3A29C;font-weight:400;border-bottom:4px solid #ECEBE6;padding:6px 14px 6px 0">Ecuador</th><th style="width:8.6%;text-align:right;color:#A3A29C;font-weight:400;border-bottom:4px solid #ECEBE6;padding:6px 14px 6px 0">México</th><th style="width:8.6%;text-align:right;color:#A3A29C;font-weight:400;border-bottom:4px solid #ECEBE6;padding:6px 14px 6px 0">Colombia</th><th style="width:8.6%;text-align:right;color:#A3A29C;font-weight:400;border-bottom:4px solid #ECEBE6;padding:6px 14px 6px 0">Bolivia</th><th style="width:8.6%;text-align:right;color:#A3A29C;font-weight:400;border-bottom:4px solid #ECEBE6;padding:6px 14px 6px 0">Paraguay</th><th style="width:8.6%;text-align:right;color:#A3A29C;font-weight:400;border-bottom:4px solid #ECEBE6;padding:6px 14px 6px 0">Brasil</th><th style="width:8.6%;text-align:right;color:#A3A29C;font-weight:400;border-bottom:4px solid #ECEBE6;padding:6px 14px 6px 0">Turquía</th></tr>
+<tr><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;color:#A3A29C;">Ahorró en el último año</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;background:#2A2A27;font-weight:700;color:#ECEBE6;text-align:right;">44,0</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">36,4</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">48,3</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">34,7</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">51,1</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">37,5</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">46,7</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">41,2</td></tr>
+<tr><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;color:#A3A29C;">Ahorró en banco o billetera</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;background:#2A2A27;font-weight:700;color:#ECEBE6;text-align:right;">31,4</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">22,3</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">17,3</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">25,0</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">26,3</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">19,6</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">38,6</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">27,9</td></tr>
+<tr><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;color:#A3A29C;">Pidió prestado a familia o amigos</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;background:#2A2A27;font-weight:700;color:#ECEBE6;text-align:right;">20,8</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">18,6</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">17,1</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">19,4</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">20,8</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">23,0</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">15,6</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">29,5</td></tr>
+<tr><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;color:#A3A29C;">Pidió prestado para salud</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;background:#2A2A27;font-weight:700;color:#ECEBE6;text-align:right;">16,3</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">17,7</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">16,1</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">14,7</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">14,7</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">16,8</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">12,6</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">3,9</td></tr>
+<tr><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;color:#ECEBE6;font-weight:700;">→ Emergencia: familia o amigos</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;background:#2A2A27;font-weight:700;color:#ECEBE6;text-align:right;">39,4</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;color:#ECEBE6;">43,0</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;color:#ECEBE6;">43,7</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;color:#ECEBE6;">45,1</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;color:#ECEBE6;">28,1</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;color:#ECEBE6;">28,8</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;color:#ECEBE6;">26,2</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;color:#ECEBE6;">41,7</td></tr>
+<tr><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;color:#A3A29C;">Emergencia: sus ahorros</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;background:#2A2A27;font-weight:700;color:#ECEBE6;text-align:right;">17,8</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">19,3</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">15,1</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">11,7</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">24,8</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">6,7</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">15,7</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">22,5</td></tr>
+<tr><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;color:#A3A29C;">Le preocupa más: gastos médicos</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;background:#2A2A27;font-weight:700;color:#ECEBE6;text-align:right;">27,2</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">30,3</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">35,0</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">21,3</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">35,8</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">41,9</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">31,3</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">31,3</td></tr>
+<tr><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;color:#A3A29C;">Le preocupa más: la vejez</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;background:#2A2A27;font-weight:700;color:#ECEBE6;text-align:right;">18,5</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">21,4</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">16,1</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">19,6</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">14,2</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">7,9</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">19,5</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;">22,2</td></tr>
+<tr><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;color:#ECEBE6;font-weight:700;">→ Paga con regularidad un seguro</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;background:#2A2A27;font-weight:700;color:#ECEBE6;text-align:right;">10,2</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;color:#ECEBE6;">5,0</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;color:#ECEBE6;">7,9</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;color:#ECEBE6;">4,4</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;color:#ECEBE6;">6,9</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;color:#ECEBE6;">8,0</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;color:#ECEBE6;">13,9</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;color:#ECEBE6;">14,2</td></tr>
+<tr><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;color:#ECEBE6;font-weight:700;">Distancia a Perú (0 = igual)</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;background:#2A2A27;font-weight:700;color:#ECEBE6;text-align:right;">0</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;color:#ECEBE6;">0,50</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;color:#ECEBE6;">0,56</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;color:#ECEBE6;">0,65</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;color:#ECEBE6;">0,80</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;color:#ECEBE6;">1,20</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;color:#ECEBE6;">0,70</td><td style="border-bottom:2px solid #3A3A36;padding:6px 14px 6px 0;text-align:right;color:#ECEBE6;">0,74</td></tr>
+</table>
+<div class="spacer"></div>
+<p class="src">Banco Mundial (2025), Global Findex 2025 · Emergencia: principal fuente de dinero para cubrirla en 30 días · Distancia: cálculo propio</p>
+<p class="foot">Anexo · Matriz conductual · 20 / 21</p>
+<aside>Qué decir: este anexo muestra de dónde salen las cifras de conducta financiera que usamos en las preguntas de las conclusiones. Son nueve indicadores del Global Findex 2025 del Banco Mundial, con datos de 2024, expresados como porcentaje de adultos de 15 años o más. Perú está en la primera columna; luego los cinco países que se parecen a Perú y dos del horizonte con datos completos (Chile y Uruguay no tienen estos indicadores en 2024). La cifra de la conclusión, 39,4%, es el indicador fin24fam: el porcentaje de adultos que dice que su principal fuente de dinero para cubrir una emergencia en 30 días sería su familia o sus amigos. Solo 17,8% usaría sus ahorros (fin24sav) y solo 10,2% paga con regularidad a un agente o una compañía de seguros (fin19). Además, 20,8% ya pidió prestado a familia o amigos (fin22b) y 16,3% pidió prestado para gastos de salud (fin22d). Para 27,2%, lo que más le preocupa es pagar gastos médicos por una enfermedad o un accidente grave (fin45c), y para 18,5%, el dinero para la vejez (fin45a). 44,0% ahorró en el último año (save.any.t.d), pero solo 31,4% lo hizo en un banco, otra institución financiera o una billetera (fin17a.17a1.d). Lectura nuestra: en Perú, la familia cumple el papel que en otros mercados cumple el seguro; Perú está en la mitad del grupo en recurrir a la familia, pero Colombia, México y Ecuador lo hacen aún más. La última fila resume qué tan parecido es cada país a Perú en estos nueve hábitos: cada indicador se estandariza con los 20 países que tienen los nueve datos, y la distancia es la raíz del promedio de las nueve diferencias al cuadrado; 0 es igual a Perú. Ecuador es el más parecido (0,50) y Paraguay, el más distinto (1,20). Fuente: Banco Mundial (2025), The Global Findex Database 2025, consultada en api.worldbank.org en noviembre de 2026; distancias: elaboración propia. Puente: las referencias completas, en la última lámina.</aside>
+</section>
+<section id="referencias" class="alt" data-transition="fade" style="padding:96px 128px 140px">
+<h2 class="t" style="font-size:64px">Referencias</h2>
+<div class="refs4">
+<div class="refcol4">
+<p class="refsm">ABC Economía. (2026). <i>Aseguradora Solidaria y sus más de 300 APIs</i>.</p>
+<p class="refsm">Agraria.pe. (2025, 10 de diciembre). <i>Lanzan proyecto Café Seguro Perú</i>.</p>
+<p class="refsm">Allianz Türkiye. (2025, 2 de junio). <i>Allianz Küresel Sigorta Raporu 2025</i> [Comunicado de prensa].</p>
+<p class="refsm">Allianz Türkiye. (2026, 14 de agosto). <i>Allianz Türkiye yapay zekâyı iş modelinin merkezine taşıyor</i> [Comunicado de prensa].</p>
+<p class="refsm">APESEG. (2021). <i>Mitos y realidades en la distribución de seguros</i>.</p>
+<p class="refsm">APESEG. (2023). <i>Construyamos confianza: la apuesta del Insurance Day 2023</i>.</p>
+<p class="refsm">Bain &amp; Company. (2022). <i>Canais digitais melhoram avaliação de seguradoras, aponta o NPS Prism da Bain</i> [Comunicado de prensa].</p>
+<p class="refsm">Banco Mundial. (2025). <i>The Global Findex Database 2025</i> [Base de datos].</p>
+<p class="refsm">Banco Mundial. (2026). <i>Worldwide Governance Indicators</i> [Base de datos].</p>
+<p class="refsm">Banerjee, A., Duflo, E. y Hornbeck, R. (2014). Bundling health insurance and microfinance in India: There cannot be adverse selection if there is no demand. <i>American Economic Review, 104</i>(5), 291–297.</p>
+<p class="refsm">BBVA. (2026, 24 de febrero). <i>BBVA Seguros pagó más de 519 mil siniestros por más de 44,913 millones de pesos en 2025</i>.</p>
+<p class="refsm">Blumenstock, J., Callen, M. y Ghani, T. (2018). Why do defaults affect behavior? Experimental evidence from Afghanistan. <i>American Economic Review, 108</i>(10), 2868–2901.</p>
+<p class="refsm">BNP Paribas Cardif Perú. (2026). <i>Memoria anual 2025</i>.</p>
+<p class="refsm">CQCS. (2024, 15 de julio). <i>Tokio Marine encurta prazo de pagamento de sinistros no seguro auto</i>.</p>
+<p class="refsm">CQCS. (2026a, 3 de septiembre). <i>Bradesco Seguros e Segura lançam modelo que combina inteligência artificial e atendimento humano para apoiar vendas de mais de 1.200 corretores</i>.</p>
+<p class="refsm">CQCS. (2026b, 25 de junio). <i>Porto simplifica jornada de sinistro e investe em novos recursos</i>.</p>
+</div>
+<div class="refcol4">
+<p class="refsm">Darío Celis. (2026, 27 de agosto). <i>Seguros SURA apuesta por la IA para anticipar riesgos y acelerar la atención a clientes</i>.</p>
+<p class="refsm">DaviPlata. (s. f.). <i>Seguro de Vida DaviPlata</i>.</p>
+<p class="refsm">De Toma, S. (2025, 1 de septiembre). Las aseguradoras argentinas que usan IA para vender, prevenir y resolver más rápido. <i>El Cronista</i>.</p>
+<p class="refsm">Descubre.vc. (2025, 24 de junio). <i>Yape lanzará seguro de salud con Pacífico Salud para 30.000 usuarios</i>.</p>
+<p class="refsm">Diario Financiero. (2025, 14 de febrero). <i>Aseguradora Southbridge alcanza 25% del mercado SOAP y supera 1,3 millones en ventas</i>.</p>
+<p class="refsm">El Peruano. (2026a, 7 de mayo). <i>¿Choque o robo? La IA acelera la atención de seguros vehiculares</i>.</p>
+<p class="refsm">El Peruano. (2026b). <i>SBS anuncia que publicará en julio el reglamento del BaaS y a inicios del 2027 la norma del open finance</i>.</p>
+<p class="refsm">FID Seguros. (2026). <i>Memoria anual integrada 2025</i>.</p>
+<p class="refsm">Forbes Chile. (2025, 17 de marzo). <i>Betterfly cierra en cinco países y despide a 30 empleados por plan de reestructuración</i>.</p>
+<p class="refsm">Gan@Más. (2026). <i>Credicorp redefine su estrategia para rentabilizar la escala de su ecosistema financiero</i>.</p>
+<p class="refsm">Gestión. (2026a, 2 de octubre). <i>Ganancias bajan en la mitad de las compañías de seguros</i>.</p>
+<p class="refsm">Gestión. (2026b, 22 de abril). <i>Lanzan seguros desde S/ 3 para protección en viajes</i>.</p>
+<p class="refsm">Gestión. (2026c, 31 de julio). <i>Personas podrán protegerse de terremotos y lluvias con seguros más fáciles</i>.</p>
+<p class="refsm">Gestión. (2026d). <i>SBS alista plan para seguros baratos y ágiles</i>.</p>
+<p class="refsm">Impacto TIC. (2026, 28 de mayo). <i>Transformación de Seguros Bolívar mediante la arquitectura de datos e IA</i>.</p>
+<p class="refsm">InfoMoney. (2024). <i>Open Insurance registra 16,5 milhões de transações no último ano</i>.</p>
+<p class="refsm">Infomercado. (2025, 17 de noviembre). <i>RIMAC Seguros: IA reduce a un minuto el análisis de siniestros y agiliza la atención al cliente</i>.</p>
+</div>
+<div class="refcol4">
+<p class="refsm">Infonegocios. (2018, 24 de mayo). <i>Pólizas 24/7: conocé la nueva propuesta de esta aseguradora</i>.</p>
+<p class="refsm">IT Sitio. (2026). <i>Sofía apuesta por la salud digital como inversión estratégica para las empresas</i>.</p>
+<p class="refsm">Justos. (2026, 25 de agosto). <i>Justos adota Pix Automático no seguro auto para evitar cancelamento por esquecimento</i> [Comunicado de prensa]. Legismap.</p>
+<p class="refsm">KCH FM. (2026, 25 de febrero). <i>Seguros Alianza repotencia su canal de WhatsApp Business con «Ali», su asistente virtual 24/7</i>.</p>
+<p class="refsm">Let's Money. (2026a). [Facturación de R$ 200 millones y punto de equilibrio de Pier].</p>
+<p class="refsm">Let's Money. (2026b). <i>Pix Automático: 1 ano, R$ 1 bilhão por mês</i>.</p>
+<p class="refsm">Let's Money. (2026c). [Pier y Aviva venden seguros dentro de ChatGPT].</p>
+<p class="refsm">Madrian, B. C. y Shea, D. F. (2001). The power of suggestion: Inertia in 401(k) participation and savings behavior. <i>The Quarterly Journal of Economics, 116</i>(4), 1149–1187.</p>
+<p class="refsm">Mapfre. (2026, 23 de abril). <i>Mapfre promotes protection for small entrepreneurs in Peru with new microinsurance products</i>.</p>
+<p class="refsm">MAPFRE Economics. (2025). <i>El mercado asegurador latinoamericano en 2024</i>. Fundación MAPFRE.</p>
+<p class="refsm">Marchi, R., Dogliani, G. y Craddock, C. (2026, 21 de julio). No mercado de seguros, o corretor escolhe quem o ajuda a crescer. <i>Brazil Journal</i>.</p>
+<p class="refsm">McKinsey &amp; Company. (2025). <i>Informe global de seguros 2025</i> [Reseñado por Diario Financiero].</p>
+<p class="refsm">Organización Internacional del Trabajo. (2026). <i>ILOSTAT: Tasa de empleo informal (EMP_NIFL_SEX_RT)</i> [Base de datos].</p>
+<p class="refsm">Orozco, S. y Morales, N. (2022). <i>Social finance brief: Segurísimo</i>. Organización Internacional del Trabajo.</p>
+<p class="refsm">Perú Retail. (2026a, 3 de julio). <i>BCRP lanzará TAPP: cómo funcionará la nueva plataforma de pagos inmediatos</i>.</p>
+<p class="refsm">Perú Retail. (2026b, 13 de noviembre). <i>IFS: utilidad neta creció 11% a septiembre, impulsada por Interbank e Interseguro</i>.</p>
+</div>
+<div class="refcol4">
+<p class="refsm">Prensa Aseguradora. (2026, 17 de noviembre). <i>Cartera digital Río Uruguay Seguros</i>.</p>
+<p class="refsm">Proactivo. (s. f.). <i>La Positiva desarrolla seguros para la adaptación al cambio climático</i>.</p>
+<p class="refsm">Programa de las Naciones Unidas para el Desarrollo. (2025). <i>Human Development Report 2025: A matter of choice: People and possibilities in the age of AI</i> [Informe y base de datos].</p>
+<p class="refsm">Quálitas. (2025). <i>Integrated annual report 2024</i>.</p>
+<p class="refsm">Revista Apólice. (2026, 1 de octubre). <i>Porto automatiza 70% dos sinistros de roubo e furto</i>.</p>
+<p class="refsm">RIMAC. (2026a). <i>Benchmark de seguros digitales</i> [Matriz no publicada, corte del 11 de noviembre de 2026].</p>
+<p class="refsm">RIMAC. (2026b). <i>Cliente digital RIMAC: radiografía del cliente digital y funcionalidades asociadas</i> [Presentación interna no publicada].</p>
+<p class="refsm">RIMAC. (2026c). <i>Entrevistas en profundidad a dos usuarias de aplicaciones de aseguradoras</i> [Datos no publicados].</p>
+<p class="refsm">RPP. (2026, 5 de noviembre). <i>Tras colocar más de dos millones de créditos, Yape ahora apunta a facilitar el acceso a seguros a sus usuarios</i>.</p>
+<p class="refsm">S&amp;P Global. (2026). <i>Insurify CEO flags overreaction to new AI app as brokers take a hit</i>.</p>
+<p class="refsm">Saurit Román, N. (2021, 17 de febrero). Mercado Libre, una amenaza que nos debe unir. <i>Revista Seguros</i>.</p>
+<p class="refsm">Semana. (2026, 4 de agosto). <i>Seguros Mundial creció 21 % en seguros generales y abrió nueva sede administrativa en Bogotá</i>.</p>
+<p class="refsm">Startups.com.br. (2023, 12 de enero). <i>Insurtech Pier demite cerca de 39% da força de trabalho</i>.</p>
+<p class="refsm">Superintendencia de Banca, Seguros y AFP. (2026). <i>Resolución SBS N.° 02260-2026: Reglamento de seguros paramétricos</i>.</p>
+<p class="refsm">Vodanovic, L. (2026). Nace TAPP para modernizar los pagos digitales en el Perú. <i>Gestión</i>.</p>
+<p class="refsm">Yape. (2026). <i>Mundo Protección</i> [Aplicación móvil, observada en noviembre de 2026].</p>
+</div>
+</div>
+<p class="foot">Anexo · Referencias en formato APA 7 · 21 / 21</p>
+<aside>Formato APA 7. Las 65 referencias de la presentación, en orden alfabético. Por el límite de espacio de las notas, los enlaces completos están en el archivo referencias-apa.md, en la carpeta reports/presentacion-sudamerica/monocromo del repositorio. Los artículos académicos se encuentran por su DOI: Banerjee, Duflo y Hornbeck (2014), 10.1257/aer.104.5.291; Blumenstock, Callen y Ghani (2018), 10.1257/aer.20171676; Madrian y Shea (2001), 10.1162/003355301753265543. Let's Money (2026a) y (2026c) llevan una descripción entre corchetes porque no pudimos verificar el título exacto. RIMAC (2026a), (2026b) y (2026c) son documentos internos.</aside>
+</section>
+</div>
+<div id="notes"></div>
+<div id="hud"><span id="count"></span><button id="prev" aria-label="Anterior">←</button><button id="next" aria-label="Siguiente">→</button><button id="nbtn" aria-label="Notas">Notas (N)</button></div>
+<script>
+(function(){
+  var stage=document.getElementById('stage'), S=[].slice.call(stage.children), i=0;
+  var notes=document.getElementById('notes'), count=document.getElementById('count');
+  var m=/#slide-(\d+)/.exec(location.hash); if(m) i=Math.min(Math.max(parseInt(m[1],10)-1,0),S.length-1);
+  function fit(){ var s=Math.min(innerWidth/1920, innerHeight/1080); stage.style.transform='scale('+s+') translate(-50%,-50%)'; }
+  function show(n){ i=Math.min(Math.max(n,0),S.length-1); S.forEach(function(x,k){x.classList.toggle('on',k===i);});
+    var a=S[i].querySelector('aside'); notes.textContent=a?a.textContent:''; count.textContent=(i+1)+' / '+S.length;
+    history.replaceState(null,'','#slide-'+(i+1)); }
+  addEventListener('resize',fit);
+  addEventListener('keydown',function(e){
+    if(['ArrowRight','PageDown',' ','Enter'].indexOf(e.key)>=0){show(i+1);e.preventDefault();}
+    else if(['ArrowLeft','PageUp','Backspace'].indexOf(e.key)>=0){show(i-1);e.preventDefault();}
+    else if(e.key==='Home') show(0); else if(e.key==='End') show(S.length-1);
+    else if(e.key==='n'||e.key==='N') notes.classList.toggle('on');
+  });
+  document.getElementById('prev').onclick=function(){show(i-1);};
+  document.getElementById('next').onclick=function(){show(i+1);};
+  document.getElementById('nbtn').onclick=function(){notes.classList.toggle('on');};
+  fit(); show(i);
+})();
+</script>
+</body>
+</html>
