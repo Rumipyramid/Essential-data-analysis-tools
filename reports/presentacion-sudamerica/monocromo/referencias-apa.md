@@ -2,8 +2,6 @@
 
 Presentación «Seguros digitales: Perú y la región» (noviembre de 2026). Lista completa, con enlaces.
 
-100% Seguro. (2026). *La IA entra en acción: las insurtech latinoamericanas revelaron sus novedades en ITC Vegas 2026*. https://100seguro.com.ar/la-ia-entra-en-accion-las-insurtech-latinoamericanas-revelaron-sus-novedades-en-el-breaking-news-de-la-aip-en-itc-vegas-2026/
-
 ABC Economía. (2026). *Aseguradora Solidaria y sus más de 300 APIs*. https://abceconomia.co/?p=52699
 
 Agraria.pe. (2025, 10 de diciembre). *Lanzan proyecto Café Seguro Perú*. https://agraria.pe/noticias/lanzan-proyecto-cafe-seguro-peru-41290
@@ -20,6 +18,8 @@ Bain & Company. (2022). *Canais digitais melhoram avaliação de seguradoras, ap
 
 Banco Mundial. (2025). *The Global Findex Database 2025* [Base de datos]. https://api.worldbank.org/v2/sources/28
 
+Banco Mundial. (2026). *Worldwide Governance Indicators* [Base de datos]. https://api.worldbank.org/v2/sources/3
+
 Banerjee, A., Duflo, E. y Hornbeck, R. (2014). Bundling health insurance and microfinance in India: There cannot be adverse selection if there is no demand. *American Economic Review, 104*(5), 291–297. https://doi.org/10.1257/aer.104.5.291
 
 BBVA. (2026, 24 de febrero). *BBVA Seguros pagó más de 519 mil siniestros por más de 44,913 millones de pesos en 2025*. https://www.bbva.com/es/mx/bbva-seguros-pago-mas-de-519-mil-siniestros-por-mas-de-44913-millones-de-pesos-en-2025/
@@ -27,8 +27,6 @@ BBVA. (2026, 24 de febrero). *BBVA Seguros pagó más de 519 mil siniestros por 
 Blumenstock, J., Callen, M. y Ghani, T. (2018). Why do defaults affect behavior? Experimental evidence from Afghanistan. *American Economic Review, 108*(10), 2868–2901. https://doi.org/10.1257/aer.20171676
 
 BNP Paribas Cardif Perú. (2026). *Memoria anual 2025*. https://bnpparibascardif.com/peru/wp-content/uploads/sites/20/2026/04/Memoria-Anual-2025.pdf
-
-Chócale. (2025, 29 de mayo). *Lider Bci habilita contratación de seguros por WhatsApp*. https://chocale.cl/2025/05/lider-bci-habilita-contratacion-de-seguros-por-whatsapp/
 
 CQCS. (2024, 15 de julio). *Tokio Marine encurta prazo de pagamento de sinistros no seguro auto*. https://cqcs.com.br/noticia/tokio-marine-encurta-prazo-de-pagamento-de-sinistros-no-seguro-auto/
 
@@ -94,8 +92,6 @@ Marchi, R., Dogliani, G. y Craddock, C. (2026, 21 de julio). No mercado de segur
 
 McKinsey & Company. (2025). *Informe global de seguros 2025* [Reseñado por Diario Financiero]. https://www.df.cl/mercados/seguros/america-latina-lidera-crecimiento-global-en-seguros-y-abre-espacio-para
 
-Multibagg. (2026). [Presentación a inversionistas de Aditya Birla Health Insurance]. https://www.multibagg.ai/market-pulse/articles/aditya-birla-health-insurance-outcomes-ppt-cmvuu5klp002u2klze0uqbf7b
-
 Organización Internacional del Trabajo. (2026). *ILOSTAT: Tasa de empleo informal (EMP_NIFL_SEX_RT)* [Base de datos]. https://ilostat.ilo.org/
 
 Orozco, S. y Morales, N. (2022). *Social finance brief: Segurísimo*. Organización Internacional del Trabajo. https://www.ilo.org/publications/social-finance-brief-segurisimo
@@ -107,6 +103,8 @@ Perú Retail. (2026b, 13 de noviembre). *IFS: utilidad neta creció 11% a septie
 Prensa Aseguradora. (2026, 17 de noviembre). *Cartera digital Río Uruguay Seguros*. https://www.prensaaseguradora.com/post/cartera-digital-r%C3%ADo-uruguay-seguros
 
 Proactivo. (s. f.). *La Positiva desarrolla seguros para la adaptación al cambio climático*. https://proactivo.com.pe/la-positiva-desarrolla-seguros-para-la-adaptacion-al-cambio-climatico/
+
+Programa de las Naciones Unidas para el Desarrollo. (2025). *Human Development Report 2025: A matter of choice: People and possibilities in the age of AI* [Informe y base de datos]. https://hdr.undp.org/data-center/documentation-and-downloads
 
 Quálitas. (2025). *Integrated annual report 2024*. https://qinversionistas.qualitas.com.mx/uploads/informes/2024/anual/en/IA_Qualitas_2024_FINAL_ING.pdf
 
