@@ -1,0 +1,234 @@
+{
+ "cultural": {
+  "PER": 0.0,
+  "ECU": 1.44,
+  "BOL": 0.94,
+  "PRY": 0.69,
+  "COL": 0.92,
+  "MEX": 1.57,
+  "ARG": 1.62,
+  "BRA": 1.11,
+  "CHL": 1.1,
+  "URY": 1.59,
+  "TUR": 1.39,
+  "IND": 2.43
+ },
+ "struct": {
+  "PER": 0.0,
+  "ECU": 4.5,
+  "BOL": 8.8,
+  "PRY": 0.9,
+  "COL": 3.3,
+  "MEX": 8.9,
+  "ARG": 17.0,
+  "BRA": 20.6,
+  "CHL": 26.0,
+  "URY": 15.3,
+  "TUR": 15.7
+ },
+ "hof": {
+  "PER": {
+   "power-distance": 64.0,
+   "individualism": 20.0,
+   "motivation": 42.0,
+   "uncertainty-avoidance": 87.0,
+   "long-term-orientation": 5.0,
+   "indulgence": 46.0
+  },
+  "ECU": {
+   "power-distance": 78.0,
+   "individualism": 24.0,
+   "motivation": 63.0,
+   "uncertainty-avoidance": 67.0,
+   "long-term-orientation": 24.0
+  },
+  "BOL": {
+   "power-distance": 78.0,
+   "individualism": 23.0,
+   "motivation": 42.0,
+   "uncertainty-avoidance": 87.0,
+   "long-term-orientation": 21.0,
+   "indulgence": 46.0
+  },
+  "PRY": {
+   "power-distance": 70.0,
+   "individualism": 12.0,
+   "motivation": 40.0,
+   "uncertainty-avoidance": 85.0,
+   "long-term-orientation": 20.0,
+   "indulgence": 56.0
+  },
+  "COL": {
+   "power-distance": 67.0,
+   "individualism": 29.0,
+   "motivation": 64.0,
+   "uncertainty-avoidance": 80.0,
+   "long-term-orientation": 6.0,
+   "indulgence": 83.0
+  },
+  "MEX": {
+   "power-distance": 81.0,
+   "individualism": 34.0,
+   "motivation": 69.0,
+   "uncertainty-avoidance": 82.0,
+   "long-term-orientation": 23.0,
+   "indulgence": 97.0
+  },
+  "ARG": {
+   "power-distance": 49.0,
+   "individualism": 51.0,
+   "motivation": 56.0,
+   "uncertainty-avoidance": 86.0,
+   "long-term-orientation": 29.0,
+   "indulgence": 62.0
+  },
+  "BRA": {
+   "power-distance": 69.0,
+   "individualism": 36.0,
+   "motivation": 49.0,
+   "uncertainty-avoidance": 76.0,
+   "long-term-orientation": 28.0,
+   "indulgence": 59.0
+  },
+  "CHL": {
+   "power-distance": 63.0,
+   "individualism": 49.0,
+   "motivation": 28.0,
+   "uncertainty-avoidance": 86.0,
+   "long-term-orientation": 12.0,
+   "indulgence": 68.0
+  },
+  "URY": {
+   "power-distance": 61.0,
+   "individualism": 60.0,
+   "motivation": 38.0,
+   "uncertainty-avoidance": 98.0,
+   "long-term-orientation": 28.0,
+   "indulgence": 53.0
+  },
+  "TUR": {
+   "power-distance": 66.0,
+   "individualism": 46.0,
+   "motivation": 45.0,
+   "uncertainty-avoidance": 85.0,
+   "long-term-orientation": 35.0,
+   "indulgence": 49.0
+  },
+  "IND": {
+   "power-distance": 77.0,
+   "individualism": 24.0,
+   "motivation": 56.0,
+   "uncertainty-avoidance": 40.0,
+   "long-term-orientation": 51.0,
+   "indulgence": 26.0
+  }
+ },
+ "estructura_pura": {
+  "PER": 55.2,
+  "ECU": 53.1,
+  "MEX": 57.7,
+  "COL": 58.1,
+  "BOL": 47.0,
+  "PRY": 54.7,
+  "ARG": 65.8,
+  "BRA": 62.5,
+  "URY": 73.8,
+  "CHL": 76.4,
+  "TUR": 67.7
+ },
+ "dist_estructura_pura": {
+  "PER": 0.0,
+  "ECU": 2.1,
+  "MEX": 2.5,
+  "COL": 3.0,
+  "BOL": 8.2,
+  "PRY": 0.5,
+  "ARG": 10.6,
+  "BRA": 7.4,
+  "URY": 18.6,
+  "CHL": 21.2,
+  "TUR": 12.5
+ },
+ "correlaciones": {
+  "2024_red": {
+   "cultura": [
+    -0.14,
+    9
+   ],
+   "estructura": [
+    0.05,
+    8
+   ]
+  },
+  "2024_digital": {
+   "cultura": [
+    0.37,
+    9
+   ],
+   "estructura": [
+    0.71,
+    8
+   ]
+  },
+  "2024_ahorro": {
+   "cultura": [
+    0.29,
+    9
+   ],
+   "estructura": [
+    0.18,
+    8
+   ]
+  },
+  "2024_total": {
+   "cultura": [
+    0.2,
+    9
+   ],
+   "estructura": [
+    0.5,
+    8
+   ]
+  },
+  "2021_red": {
+   "cultura": [
+    0.18,
+    10
+   ],
+   "estructura": [
+    0.36,
+    9
+   ]
+  },
+  "2021_digital": {
+   "cultura": [
+    -0.15,
+    10
+   ],
+   "estructura": [
+    0.65,
+    9
+   ]
+  },
+  "2021_ahorro": {
+   "cultura": [
+    0.01,
+    10
+   ],
+   "estructura": [
+    0.5,
+    9
+   ]
+  },
+  "2021_total": {
+   "cultura": [
+    0.03,
+    10
+   ],
+   "estructura": [
+    0.65,
+    9
+   ]
+  }
+ }
+}
