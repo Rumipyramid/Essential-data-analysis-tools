@@ -1,57 +1,54 @@
-import sys
-out=sys.argv[1]
-conc=[
-("El freno es el seguro, no lo digital.","51,7% paga en digital; seguro: 1,7% del PBI."),
-("El socio pone el tráfico, no la demanda.","Yape: 17 M usuarios; embebido, <1% en Pacífico."),
-("Vender al grupo, no a la persona.","Familia primero: 39,4%. Paga un seguro: 10,2%."),
-("Cobrar sin depender de la memoria.","Por defecto: 86% vs. 37%. TAPP llega en 2027."),
-("Un canal para cada momento.","App para consultar; lo urgente, con persona."),
-("La confianza es el espacio vacío.","Solo 2 de 82 casos la trabajan."),
+import sys,os
+D=sys.argv[1]
+rows=[
+("El freno es el seguro, no lo digital.","51,7% paga digital; seguro, 1,7% PBI.",
+ "Dar un motivo para asegurarse donde ya es digital.",
+ "¿Cómo pagó su última emergencia?","H: el seguro es gasto perdido."),
+("El socio da tráfico, no demanda.","Yape: 17 M usuarios; embebido, <1%.",
+ "Producto necesario, marca visible y siniestro pactado.",
+ "¿Por qué la billetera no asegura?","H: al pagar no siente necesidad."),
+("Vender al grupo, no a la persona.","Familia primero: 39,4%; seguro: 10,2%.",
+ "Pólizas colectivas con cooperativas y gremios.",
+ "¿En qué grupo ya paga una cuota?","Juntas, cooperativas, gremios."),
+("Cobrar sin depender de la memoria.","Por defecto: 86% vs. 37%; TAPP en 2027.",
+ "Diseñar ya un débito que el cliente elija.",
+ "¿Aceptaría el cobro automático?","H: sí, con aviso previo y pausa."),
+("Un canal para cada momento.","Consulta en app; urgencia, con persona.",
+ "Lo omnicanal es el dato, no la oferta.",
+ "¿Quién decide, paga y usa en casa?","H: son personas distintas."),
+("La confianza es el espacio vacío.","Solo 2 de 82 casos la trabajan.",
+ "Mostrar cuánto y qué tan rápido se paga.",
+ "¿Qué le haría comprar sin asesor?","H: ver pagos rápidos y la marca."),
 ]
-preg=[
-("¿Quién decide, paga y usa el seguro en casa?","Hipótesis: son personas distintas."),
-("¿Cómo pagaron su última emergencia de salud?","Hipótesis: el seguro se ve como gasto perdido."),
-("¿En qué grupos ya confían y pagan cuota?","Juntas, cooperativas, mercados, mototaxistas."),
-("¿Por qué la billetera no se vuelve seguro?","Hipótesis: al pagar no se siente la necesidad."),
-("¿Aceptaría el cobro automático? ¿Cómo?","Hipótesis: sí, con aviso previo y pausa."),
-("¿Qué le haría confiar para comprar solo?","Hipótesis: ver pagos rápidos y la marca detrás."),
-]
-def item(i,a,b):
-    return (f'<div style="display:grid;grid-template-columns:52px 1fr;column-gap:12px">'
-            f'<p class="txt" style="font-weight:700">{i:02d}</p>'
-            f'<div><p class="txt"><b>{a}</b></p><p class="dim">{b}</p></div></div>')
-L=''.join(item(i+1,a,b) for i,(a,b) in enumerate(conc))
-R=''.join(item(i+1,a,b) for i,(a,b) in enumerate(preg))
-aside=("Qué decir: la lámina tiene dos mitades. A la izquierda, seis conclusiones, cada una con el dato que la sostiene; son lectura nuestra a partir de los 82 casos, el Global Findex y las entrevistas. A la derecha, seis preguntas para el campo, cada una con la hipótesis que queremos poner a prueba. "
-"Lo que concluimos. Uno: el freno es el seguro, no lo digital. 51,7% de los adultos peruanos ya paga en digital, por encima de Colombia (49,2%) y Ecuador (43,3%) (Banco Mundial, 2025), pero el seguro voluntario más el SOAT es 1,7% del PBI, frente a 2,7% de América Latina (MAPFRE Economics, 2025); solo 10,2% paga un seguro con regularidad. Para RIMAC: no hay que digitalizar al cliente, hay que darle un motivo para tener seguro donde ya es digital. "
-"Dos: el socio pone el tráfico, no la demanda. Yape tiene 17 millones de usuarios activos al mes y, aun así, lo embebido es menos de 1% de la cartera de Pacífico (Gestión, 2026b); DaviPlata dejó de aceptar solicitudes de su seguro de vida (DaviPlata, s. f.) e Interseguro llegó dos años tarde a su meta digital (RIMAC, 2026b). En los paquetes del banco o la tienda, la marca de la aseguradora se pierde (RIMAC, 2026c). Para RIMAC: entrar a un ecosistema solo rinde con un producto que se necesite en ese momento, marca visible y el contacto en el siniestro pactado con el socio; el éxito se mide en pólizas que se renuevan, no en usuarios. "
-"Tres: vender al grupo, no a la persona. Ante una emergencia, 39,4% acude primero a su familia o amigos; quien más depende de la familia menos se asegura: del 40% de menores ingresos, 43,9% acude a la familia y solo 3,8% paga un seguro; entre las mujeres, 46,5% y 7,2% (Banco Mundial, 2025). Solo 10,2% de los adultos paga un seguro. Lectura nuestra: en vez de competir contra la familia, vender a través de los grupos que ya reúnen a esa población, como cooperativas, asociaciones y gremios, que ya cobran y ya tienen confianza; en Colombia hay pólizas colectivas de este tipo para cafeteros que contratan las cooperativas. "
-"Cuatro: cobrar sin depender de la memoria. Con inscripción por defecto participa 86%, frente a 37% cuando hay que inscribirse (Madrian y Shea, 2001, en ahorro previsional); Pix Automático cobra R$ 1.200 millones al mes a un año de su lanzamiento (Let's Money, 2026b). TAPP opera en Perú desde 2027 (Vodanovic, 2026) e Indecopi exige consentimiento expreso: hay que diseñar ahora un débito que el cliente elija. Las entrevistadas pagan desde su banco. "
-"Cinco: un canal para cada momento. Es la respuesta a omnicanalidad o mejor canal: comprar con el socio o el corredor equipado; pagar por el banco o TAPP; consultar en la app, que retiene cuando muestra algo propio para decidir, como el ahorro o las clínicas; y resolver lo urgente por WhatsApp o la app, con la identidad ya cargada y una persona detrás. Un siniestro 100% digital tiene NPS de 42 frente a 27 cuando es solo humano (Bain & Company, 2022), y dos de cada tres prefieren un asesor para cerrar (Capgemini y LIMRA, 2026). Lo omnicanal es el dato del cliente, no la oferta. "
-"Seis: la confianza es el espacio vacío. Solo 2 de los 82 casos del benchmark trabajan la confianza y ninguno ataca la creencia de que el seguro «llama la desgracia» (RIMAC, 2026a; Orozco y Morales, 2022); 17,5% de los peruanos menciona la desconfianza como razón para no tener cuenta, frente a 5,7% en Brasil. Lectura nuestra: es el diferencial más defendible: mostrar cuánto y qué tan rápido se paga, hacer visible la marca dentro del canal del socio y apoyarse en la recomendación entre pares. "
-"Preguntas para el campo. Uno: quién decide, quién paga y quién usa el seguro en el hogar; una entrevistada depende de su pareja para ver su ahorro. Método: entrevistas en díada u hogar en NSE C y D, en Lima y una ciudad del interior. Decide: producto familiar o individual y a quién se dirige la venta. "
-"Dos: cómo pagaron su última emergencia de salud y qué habría cambiado un seguro; 16,3% pidió prestado para salud y, para 27,2%, los gastos médicos son su mayor preocupación. Hipótesis: la colecta familiar se percibe segura y el seguro, un gasto que no vuelve, o algo que llama la desgracia. Método: reconstrucción del último incidente crítico. Decide: la propuesta de valor del producto de entrada. "
-"Tres: en qué grupos ya confían y a cuáles pagan una cuota: juntas o panderos, cooperativas, asociaciones de mercado, gremios de mototaxistas. Método: mapeo de campo en dos o tres ciudades. Decide: con qué socios armar pólizas colectivas. "
-"Cuatro: por qué la billetera no se convierte en seguro. Hipótesis: al pagar no se siente la necesidad, hay temor a cargos no autorizados y no está claro quién paga el siniestro. Método: entrevistas a usuarios de Yape o Plin expuestos a ofertas de seguro y prueba A/B de mensajes. Decide: si invertir en ecosistemas y con qué producto. "
-"Cinco: si aceptaría el cobro automático y con qué condiciones. Hipótesis: hoy paga desde su banco para mantener el control; aceptaría el débito con aviso previo y opción de pausar. Método: prueba de prototipos del consentimiento antes de 2027. Decide: el diseño del cobro con TAPP. "
-"Seis: qué le daría confianza para comprar sin asesor y avisar un siniestro sin llamar. Hipótesis: ver que se paga rápido, ver la marca detrás del banco o la tienda y una recomendación conocida. Método: encuesta de unas 800 personas que además mida lo visto en las dos entrevistas. Decide: los mensajes y las pruebas de confianza del recorrido. "
-"Las cifras de casos son declaradas por las empresas; las entrevistas, dos, ilustran motivos y no miden frecuencias. Puente: las referencias completas están en la última lámina.")
+cols="48px 580px 440px 1fr"
+head=(f'<div style="display:grid;grid-template-columns:{cols};column-gap:32px;border-bottom:4px solid #0F0F0E;padding-bottom:8px">'
+      '<p></p><p class="k">Lo que concluimos</p><p class="k">Qué significa para RIMAC</p><p class="k">Qué validar en campo</p></div>')
+body=''
+for i,(c,d,r,q,h) in enumerate(rows,1):
+    body+=(f'<div style="display:grid;grid-template-columns:{cols};column-gap:32px;border-bottom:2px solid #BDBCB6;padding:6px 0">'
+           f'<p class="txt" style="font-weight:700">{i:02d}</p>'
+           f'<div><p class="txt"><b>{c}</b></p><p class="dim">{d}</p></div>'
+           f'<p class="txt">{r}</p>'
+           f'<div><p class="txt">{q}</p><p class="dim">{h}</p></div></div>')
+aside=("Qué decir (en la tabla, H es hipótesis): esta lámina cierra la presentación y conecta cada conclusión con lo que significa para RIMAC y con la pregunta que hay que llevar al campo para validarla. Las conclusiones son lectura nuestra a partir de los 82 casos del benchmark, el Global Findex y dos entrevistas. "
+"Uno: el freno es el seguro, no lo digital. 51,7% de los adultos peruanos ya paga en digital, por encima de Colombia (49,2%) y Ecuador (43,3%) (Banco Mundial, 2025), pero el seguro voluntario más el SOAT es 1,7% del PBI, frente a 2,7% en América Latina, 2,6% en México y 2,2% en Colombia (MAPFRE Economics, 2025). Para RIMAC: no hay que digitalizar al cliente, hay que darle un motivo para tener seguro donde ya es digital. En campo: reconstruir cómo pagaron su última emergencia de salud; 16,3% pidió prestado para salud y para 27,2% los gastos médicos son su mayor preocupación (Banco Mundial, 2025). Hipótesis: la colecta familiar se percibe segura y el seguro, un gasto que no vuelve o algo que «llama la desgracia» (Orozco y Morales, 2022). Decide la propuesta de valor del producto de entrada. "
+"Dos: el socio pone el tráfico, no la demanda. Yape tiene 17 millones de usuarios activos al mes y lo embebido es menos de 1% de la cartera de Pacífico (Gestión, 2026b); DaviPlata dejó de aceptar solicitudes de su seguro de vida (DaviPlata, s. f.); en los paquetes del banco o la tienda la marca de la aseguradora se pierde (RIMAC, 2026c). Para RIMAC: entrar a un ecosistema solo rinde con un producto que se necesite en ese momento, la marca visible y el contacto en el siniestro pactado con el socio; el éxito se mide en pólizas que se renuevan. En campo: entrevistas a usuarios de Yape o Plin expuestos a ofertas de seguro y una prueba A/B de mensajes. Decide si invertir en ecosistemas y con qué producto. "
+"Tres: vender al grupo, no a la persona. Ante una emergencia, 39,4% acude primero a la familia o amigos y solo 10,2% paga un seguro; quien más depende de la familia menos se asegura: mujeres 46,5% y 7,2%; 40% de menores ingresos 43,9% y 3,8% (Banco Mundial, 2025). En Colombia, Café Seguro cubre a 39.589 productores con una póliza colectiva que contratan cooperativas (Seguros Bolívar, 2025). Para RIMAC: pólizas colectivas con cooperativas, asociaciones y gremios que ya cobran y ya tienen confianza; con aseguradora detrás, a diferencia de las AFOCAT. En campo: mapeo de juntas o panderos, cooperativas, asociaciones de mercado y gremios de mototaxistas en dos o tres ciudades. Decide con qué socios armar pólizas colectivas. "
+"Cuatro: cobrar sin depender de la memoria. Con inscripción por defecto participa 86%, frente a 37% cuando hay que inscribirse (Madrian y Shea, 2001, en ahorro previsional); Pix Automático cobra R$ 1.200 millones al mes a un año de su lanzamiento (Let's Money, 2026b); TAPP opera en Perú desde 2027 (Vodanovic, 2026). Indecopi exige consentimiento expreso, así que el débito debe elegirlo el cliente. En campo: prueba de prototipos del consentimiento. Hipótesis: hoy paga desde su banco para tener el control y aceptaría el débito con aviso previo y opción de pausar. Decide el diseño del cobro con TAPP. "
+"Cinco: un canal para cada momento; es la respuesta a omnicanalidad o mejor canal. Comprar con el socio o el corredor equipado; pagar por el banco o TAPP; consultar en la app, que retiene cuando muestra algo propio para decidir; y resolver lo urgente por WhatsApp o la app con la identidad ya cargada y una persona detrás. Un siniestro 100% digital tiene NPS de 42 frente a 27 cuando es solo humano (Bain & Company, 2022) y dos de cada tres prefieren un asesor para cerrar (Capgemini y LIMRA, 2026). Lo omnicanal es el dato del cliente, no la oferta. En campo: entrevistas en díada u hogar en NSE C y D, porque quien decide, quien paga y quien usa la app pueden ser personas distintas; una entrevistada depende de su pareja para ver su ahorro. Decide a quién se dirige cada canal. "
+"Seis: la confianza es el espacio vacío. Solo 2 de los 82 casos trabajan la confianza y ninguno ataca la creencia de que el seguro llama la desgracia (RIMAC, 2026a); 17,5% de los peruanos menciona la desconfianza como razón para no tener cuenta, frente a 5,7% en Brasil (Banco Mundial, 2025). Para RIMAC: es el diferencial más defendible: mostrar cuánto y qué tan rápido se paga, hacer visible la marca en el canal del socio y apoyarse en la recomendación entre pares. En campo: encuesta de unas 800 personas que además mida lo visto en las dos entrevistas. Decide los mensajes y las pruebas de confianza del recorrido. "
+"Prioridad sugerida para el campo: primero las preguntas 1, 3 y 5, porque definen producto, socio y destinatario; luego 2, 4 y 6, que se pueden probar con prototipos. Las cifras de casos son declaradas por las empresas; las entrevistas ilustran motivos y no miden frecuencias.")
 s=f'''<section id="conclusiones" class="inv" data-transition="fade">
-<h2 class="t">Conclusiones</h2>
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:64px">
-<div class="col" style="gap:22px">
-<p class="k">Lo que concluimos</p>
-{L}
-</div>
-<div class="col" style="gap:22px">
-<p class="k">Preguntas para el campo</p>
-{R}
-</div>
+<h2 class="t">Seis apuestas por validar</h2>
+<div style="display:flex;flex-direction:column">
+{head}
+{body}
 </div>
 <div class="spacer"></div>
-<p class="src">Lectura nuestra · Banco Mundial (2025) · MAPFRE Economics (2025) · Gestión (2026b) · Madrian y Shea (2001) · RIMAC (2026a)</p>
+<div class="strip"><p class="txt"><b>LECTURA NUESTRA</b> · Validar primero 3, 5 y 1: definen socio, destinatario y producto.</p></div>
+<p class="src">Banco Mundial (2025) · MAPFRE Economics (2025) · Gestión (2026b) · Madrian y Shea (2001) · RIMAC (2026a)</p>
 <p class="foot">Conclusiones · 19 / 20</p>
 <aside>{aside}</aside>
 </section>
 '''
-open(out,'w').write(s)
+open(os.path.join(D,'conclusiones.html'),'w').write(s)
