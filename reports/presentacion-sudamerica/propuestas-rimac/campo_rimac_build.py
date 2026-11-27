@@ -27,7 +27,7 @@ rows=[
  "51% la usaría para comparar. H: compara con IA y cierra con persona.",
  "Observar una compra real en voz alta y una pregunta en la encuesta.","Si invertir en estar en las respuestas de IA.","05"),
 ]
-body=''.join(f'<div class="row{" pri" if i<=3 else ""}"><p class="n">{i:02d}</p><div><p class="h">{q}</p><p class="b">{h}</p></div><p class="i">{c}</p><p class="i">{d}</p><p class="v">{v}</p></div>' for i,(q,h,c,d,v) in enumerate(rows,1))
+body=''.join(f'<div class="row{" pri" if i<=3 else ""}"><p class="n">{i:02d}</p><div><p class="h">{q}</p><p class="b">{h}</p></div><p class="i">{d}</p></div>' for i,(q,h,c,d,v) in enumerate(rows,1))
 notes=("Qué decir: esta lámina dice qué falta saber antes de decidir. Son ocho preguntas para el campo; cada una tiene la hipótesis que queremos poner a prueba, cómo investigarla, qué decisión desbloquea y qué insight de la lámina anterior valida. Las hipótesis son lectura nuestra a partir del Global Findex, el benchmark de 82 casos y dos entrevistas en profundidad; las entrevistas ilustran motivos y no miden frecuencias, por eso hay que ir a campo. Prioridad: primero las preguntas 1, 2 y 3, marcadas en rojo, porque definen el producto, el socio y el destinatario; las demás se pueden probar después con prototipos, entrevistas y una encuesta. "
 "1. Cómo pagó su última emergencia de salud. 16,3% de los adultos pidió prestado para gastos médicos en el último año y para 27,2% la mayor preocupación financiera es pagar una enfermedad o un accidente graves (Banco Mundial, 2025). Hipótesis: la colecta familiar se percibe segura y el seguro, un gasto que no vuelve o algo que «llama la desgracia» (Orozco y Morales, 2022). Método: reconstrucción del último incidente crítico con familias de NSE C y D, en Lima y una ciudad del interior. Decide qué producto de entrada ofrecer, por ejemplo salud con uso frecuente frente a protección por catástrofe. Valida el insight 07. "
 "2. En qué grupos ya confía y paga una cuota. 39,4% acude primero a la familia ante una emergencia y solo 10,2% paga un seguro (Banco Mundial, 2025). Hipótesis: juntas o panderos, cooperativas, asociaciones de mercado y gremios de mototaxistas ya cobran con regularidad y tienen la confianza de sus miembros, así que podrían contratar pólizas colectivas. Método: mapeo de grupos en Lima y dos ciudades del interior, con entrevistas a dirigentes y miembros. Decide con qué socios hacer pilotos. Valida el insight 07. "
@@ -50,7 +50,7 @@ p{{margin:0}}
 h1{{position:absolute;left:128px;top:128px;margin:0;font-family:'Poppins',Arial,sans-serif;font-weight:700;font-size:64px;letter-spacing:-2.5px;line-height:1}}
 .sub{{position:absolute;left:128px;top:216px;font-size:26px;line-height:1.3}}
 .tbl{{position:absolute;left:128px;top:282px;width:1664px;background:#fff}}
-.hd,.row{{display:grid;grid-template-columns:48px 700px 400px 1fr 80px;column-gap:28px;align-items:start}}
+.hd,.row{{display:grid;grid-template-columns:48px 1000px 1fr;column-gap:28px;align-items:start}}
 .hd{{background:var(--ink);color:#fff;padding:13px 28px;font-size:17px;font-weight:700;letter-spacing:.3px}}
 .row{{padding:7px 28px;border-top:1px solid #E1E3EE;position:relative}}
 .row:first-of-type{{border-top:0}}
@@ -72,7 +72,7 @@ aside{{display:none}}
 <h1>Qué queda por investigar en campo</h1>
 <p class="sub">Ocho preguntas para pasar de hipótesis a decisión. <b>Primero 01, 02 y 03:</b> definen producto, socio y destinatario.</p>
 <div class="tbl">
-<div class="hd"><p></p><p>Pregunta e hipótesis</p><p>Cómo investigarlo</p><p>Qué decide</p><p>Insight</p></div>
+<div class="hd"><p></p><p>Pregunta e hipótesis</p><p>Qué decide</p></div>
 {body}
 </div>
 <p class="src">Banco Mundial (2025), Global Findex, Perú 2024 · Orozco y Morales (2022) · Capgemini y LIMRA (2026) · Gestión (2026b) · RIMAC (2026a, 2026c) · H: hipótesis</p>
