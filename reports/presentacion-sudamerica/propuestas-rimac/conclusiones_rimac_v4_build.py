@@ -62,7 +62,7 @@ h1{{position:absolute;left:128px;top:128px;margin:0;font-family:'Poppins',Arial,
 .dot.on{{background:var(--ink)}}
 .evl{{font-size:17px;color:var(--grey)}}
 .note{{position:absolute;left:128px;top:876px;width:1664px;box-sizing:border-box;background:#fff;border-left:6px solid var(--red);padding:16px 28px;font-size:20px;line-height:1.36}}
-.src{{position:absolute;left:128px;top:952px;width:1664px;font-size:17px;color:var(--grey)}}
+.src{{position:absolute;left:128px;top:943px;width:1664px;font-size:17px;color:var(--grey)}}
 .foot{{position:absolute;left:128px;top:1004px;width:1664px;display:flex;align-items:center;font-size:16px;color:var(--grey)}}
 .foot img{{height:18.5px}}
 .foot .sep{{width:1px;height:28px;background:#C9CCDA;margin:0 22px}}
@@ -76,7 +76,6 @@ aside{{display:none}}
 <div class="hd"><p></p><p>Insight</p><p>Accionable</p><p>Evidencia</p></div>
 {body}
 </div>
-<p class="note"><b>Lo que el benchmark no prueba</b> · Las cifras las declaran las empresas, sin grupo de control, y los fracasos rara vez se publican.</p>
 <p class="src">Banco Mundial (2025) · MAPFRE Economics (2025) · Madrian y Shea (2001) · Justos (2026) · Bain & Company (2022) · Darío Celis (2026) · CQCS (2026a) · Gestión (2026b) · RIMAC (2026c)</p>
 <div class="foot"><img alt="RIMAC" src="data:image/png;base64,{logo}"><span class="sep"></span><span>CoE de Experiencia - Behavioral Design</span><span class="pg">30 / 31</span></div>
 <aside>{notes}</aside>
